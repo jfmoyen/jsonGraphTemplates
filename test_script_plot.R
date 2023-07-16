@@ -1,5 +1,4 @@
 library(GCDkit)
-library(jsonlite)
 library(jsonGraphTemplates)
 
  data("atacazo")
@@ -17,8 +16,11 @@ library(jsonGraphTemplates)
 
 ##### Binary diagrams ######
 
-plotDiagram_json("QANOR.json")
- plotDiagram("DebonBA",F)
+plotDiagram_json(json="Sylvester.json")
+
+plotDiagram_json(wrdata=WR.ata,lbl=lbl.ata,json="Sylvester.json")
+
+ plotDiagram("Batchelor",F)
 #jsonPlotDiagram(path="D:","test.json")
 
  ##### Ternary diagrams ######

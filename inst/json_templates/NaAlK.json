@@ -13,7 +13,7 @@
         "B": "Al2O3",
         "C": "K2O"
     },
-    "supressAxes":true,
+    "suppressAxes":true,
     "limits": {
         "X": [
             -0.03,

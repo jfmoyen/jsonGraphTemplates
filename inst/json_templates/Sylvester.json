@@ -1,0 +1,90 @@
+{
+    "name": "Sylvester",
+    "fullName": "Sylvester (1989)",
+    "details": "",
+    "reference": "Sylvester(1989): J. Geol., 97, 261-280 ",
+    "url": "",
+    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateHistory": "Converted from original GCDkit function",
+    "diagramType": "binary",
+    "dataTransform": null,
+    "dataFilter": "SiO2>68",
+    "axesDefinition": {
+        "X": "100*(MgO+FeOt+TiO2)/SiO2",
+        "Y": "(Al2O3+CaO)/(FeOt+Na2O+K2O)"
+    },
+    "limits": {
+        "X": [
+            0,
+            12
+        ],
+        "Y": [
+            0.8,
+            2.2
+        ]
+    },
+    "template": {
+        "lines1": {
+            "type": "lines",
+            "x": [
+                1.6,
+                4.4,
+                9
+            ],
+            "y": [
+                1.7,
+                1.44,
+                1.44
+            ],
+            "col": "gray8",
+            "lty": "solid"
+        },
+        "lines2": {
+            "type": "lines",
+            "x": [
+                3,
+                4.4
+            ],
+            "y": [
+                1.28,
+                1.44
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "binary",
+            "plot.position": 107,
+            "plot.name": "Sylvester (1989)"
+        },
+        "text1": {
+            "type": "text",
+            "x": 1,
+            "y": 1.85,
+            "text": "Calc-alkaline & Strongly peraluminous",
+            "cex": 1,
+            "adj": 0,
+            "col": "gray8"
+        },
+        "text2": {
+            "type": "text",
+            "x": 1,
+            "y": 1.15,
+            "text": "Alkaline",
+            "cex": 1,
+            "adj": 0,
+            "col": "gray8"
+        },
+        "text3": {
+            "type": "text",
+            "x": 9,
+            "y": 2.15,
+            "text": "SiO2 > 68",
+            "cex": 1,
+            "adj": 0,
+            "col": "darkblue"
+        }
+    }
+}
+

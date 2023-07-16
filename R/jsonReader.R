@@ -49,11 +49,23 @@ plotDiagram_json <- function(wrdata=WR,lbl=labels,json, path = NULL,verbose=F){
 
 #### Prepare the data ####
 
-# If required by the template, calculate the tranformed data
+# If required by the template, calculate the transformed data
 if(is.null(tpl$dataTransform)){
   dd<-wrdata
 }else{
   dd<-eval(parse(text=tpl$dataTransform))()
+}
+
+# If we have a filter
+
+if(!is.null(tpl$dataFilter)){
+  selected <- selectSubset(what=tpl$dataFilter,
+                 where=cbind(lbl,dd),
+                 all.nomatch=F,
+                 save=F)
+  if(selected==""){stop("No data to plot matching criteria")}
+  dd <- dd[selected,,drop=F]
+  lbl <- lbl[selected,,drop=F]
 }
 
 #### Main switch - what are we trying to plot ? ####
@@ -109,7 +121,7 @@ plotDiagram_json_binary <- function(tpl,dd, lbl){
   }
 
   # Suppress axes
-  if(is.null(tpl$supressAxes) || !tpl$supressAxes){
+  if(is.null(tpl$suppressAxes) || !tpl$suppressAxes){
     axes <- TRUE
   }else{
     axes <- FALSE
@@ -207,7 +219,7 @@ plotDiagram_json_ternary <- function(tpl,dd,lbl){
   }
 
   # Suppress axes
-  if(is.null(tpl$supressAxes) || !tpl$supressAxes){
+  if(is.null(tpl$suppressAxes) || !tpl$suppressAxes){
     axes <- TRUE
   }else{
     axes <- FALSE

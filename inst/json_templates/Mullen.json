@@ -1,0 +1,190 @@
+{
+    "name": "Mullen",
+    "fullName": "Mullen (1983) 10MnO-TiO2-10P2O5",
+    "details": "",
+    "reference": "",
+    "url": "",
+    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateHistory": "Converted from original GCDkit function",
+    "diagramType": "ternary",
+    "dataTransform": null,
+    "dataFilter": "SiO2<54&SiO2>45",
+    "axesDefinition": {
+        "A": "MnO*10",
+        "B": "TiO2",
+        "C": "P2O5*10"
+    },
+    "suppressAxes":true,
+    "limits": {
+        "X": [
+            -0.03,
+            1.03
+        ],
+        "Y": [
+            -0.08,
+            1.03
+        ]
+    },
+    "template": {
+        "lines1": {
+            "type": "lines",
+            "x": [
+                0,
+                1,
+                0.5,
+                0
+            ],
+            "y": [
+                0,
+                0,
+                0.866,
+                0
+            ],
+            "col": "black"
+        },
+        "lines2": {
+            "type": "lines",
+            "x": [
+                0.295,
+                0.455,
+                0.585,
+                0.7,
+                0.92
+            ],
+            "y": [
+                0.511,
+                0.2338,
+                0.2338,
+                0.1559,
+                0
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines3": {
+            "type": "lines",
+            "x": [
+                0.385,
+                0.555,
+                0.585
+            ],
+            "y": [
+                0.6668,
+                0.2511,
+                0.2338
+            ],
+            "col": "gray8"
+        },
+        "lines4": {
+            "type": "lines",
+            "x": [
+                0.195,
+                0.3,
+                0.7
+            ],
+            "y": [
+                0.3377,
+                0.1559,
+                0.1559
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines5": {
+            "type": "lines",
+            "x": [
+                0.585,
+                0.775
+            ],
+            "y": [
+                0.2338,
+                0.3897
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "A": {
+            "type": "text",
+            "x": 0,
+            "y": -0.03,
+            "text": "10 MnO",
+            "adj": 0.5
+        },
+        "C": {
+            "type": "text",
+            "x": 1,
+            "y": -0.03,
+            "text": "10 P2O5",
+            "adj": 0.5
+        },
+        "B": {
+            "type": "text",
+            "x": 0.5,
+            "y": 0.896,
+            "text": "TiO2",
+            "adj": 0.5
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "ternary",
+            "plot.position": 204,
+            "plot.name": "Mullen (1983) 10MnO-TiO2-10P2O5"
+        },
+        "text14": {
+            "type": "text",
+            "x": 0.45,
+            "y": 0.1,
+            "text": "CAB",
+            "col": "gray8",
+            "cex": 0.8
+        },
+        "text5": {
+            "type": "text",
+            "x": 0.55,
+            "y": 0.5,
+            "text": "OIT",
+            "col": "gray8",
+            "cex": 0.8
+        },
+        "text6": {
+            "type": "text",
+            "x": 0.43,
+            "y": 0.4,
+            "text": "MORB",
+            "col": "gray8",
+            "cex": 0.8
+        },
+        "text7": {
+            "type": "text",
+            "x": 0.32,
+            "y": 0.3,
+            "text": "IAT",
+            "col": "gray8",
+            "cex": 0.8
+        },
+        "text8": {
+            "type": "text",
+            "x": 0.77,
+            "y": 0.22,
+            "text": "OIA",
+            "col": "gray8",
+            "cex": 0.8
+        },
+        "text9": {
+            "type": "text",
+            "x": 0.2,
+            "y": 0.15,
+            "text": "Bon",
+            "col": "gray8",
+            "cex": 0.8
+        },
+        "text10": {
+            "type": "text",
+            "x": 0.8,
+            "y": 0.9,
+            "text": "45 < SiO2 < 54",
+            "col": "darkblue"
+        }
+    }
+}
+

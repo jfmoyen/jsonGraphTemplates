@@ -45,12 +45,13 @@ readFigaroTemplate<-function(diagram,plot=F,...){
     dataTransform = NULL,
     axesDefinition = list(X=xAxis,Y=yAxis),
     limits=list(X=xlims,Y=ylims),
-   # log=islog,
+    log=islog,
     template = template
   ))
 }
 
 ##########
-ee<-readFigaroTemplate("QANOR")
+ee<-readFigaroTemplate("Sylvester")
+#ee$template$B$text<-NULL
 ee.json <- prettify(toJSON(ee,null="null",auto_unbox = T))
-write(ee.json,"./inst/json_templates/QANOR.json")
+write(ee.json,"./inst/json_templates/Sylvester.json")

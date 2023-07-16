@@ -1,0 +1,280 @@
+{
+    "name": "Batchelor",
+    "fullName": "Batchelor + Bowden (1985)",
+    "details": "",
+    "reference": "R1-R2 diagram - De la Roche et al. 1980; Batchelor and Bowden (1985): Chem.Geology, 48, 43-55; boundaries: NewPet",
+    "url": "",
+    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateHistory": "Converted from original GCDkit function",
+    "diagramType": "binary",
+    "dataTransform": "function(){ LaRocheCalc(wrdata) }",
+    "axesDefinition": {
+        "X": "R1",
+        "Y": "R2"
+    },
+    "axesName": {
+        "X": "R1 = 4Si - 11(Na + K) - 2(Fe + Ti) ",
+        "Y": "R2 = 6Ca + 2Mg + Al "
+    },
+    "limits": {
+        "X": [
+            -1000,
+            4000
+        ],
+        "Y": [
+            0,
+            4000
+        ]
+    },
+    "template": {
+        "lines1": {
+            "type": "abline",
+            "h": 0,
+            "col": "gray8"
+        },
+        "lines2": {
+            "type": "abline",
+            "v": 0,
+            "col": "gray8"
+        },
+        "lines3": {
+            "type": "lines",
+            "x": [
+                525,
+                2875
+            ],
+            "y": [
+                500,
+                280
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines4": {
+            "type": "lines",
+            "x": [
+                3000,
+                2150
+            ],
+            "y": [
+                270,
+                1720
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines5": {
+            "type": "lines",
+            "x": [
+                2310,
+                1435
+            ],
+            "y": [
+                575,
+                1310
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines6": {
+            "type": "lines",
+            "x": [
+                2250,
+                1095
+            ],
+            "y": [
+                580,
+                1000
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines7": {
+            "type": "lines",
+            "x": [
+                0,
+                2875.27
+            ],
+            "y": [
+                0,
+                2875.84
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "binary",
+            "plot.position": 101,
+            "plot.name": "Batchelor + Bowden (1985)"
+        },
+        "text1": {
+            "type": "text",
+            "x": 2600,
+            "y": 1700,
+            "text": "Mantle\nFractionates",
+            "cex": 0.7,
+            "col": "gray8"
+        },
+        "text2": {
+            "type": "text",
+            "x": 2100,
+            "y": 1250,
+            "text": "Pre-plate\nCollision",
+            "cex": 0.7,
+            "col": "gray8"
+        },
+        "text3": {
+            "type": "text",
+            "x": 1600,
+            "y": 1000,
+            "text": "Post-\ncollision\nUplift",
+            "cex": 0.7,
+            "col": "gray8"
+        },
+        "text4": {
+            "type": "text",
+            "x": 1400,
+            "y": 700,
+            "text": "Late-\norogenic",
+            "cex": 0.7,
+            "col": "gray8"
+        },
+        "text5": {
+            "type": "text",
+            "x": 1100,
+            "y": 350,
+            "text": "Anorogenic",
+            "cex": 0.7,
+            "col": "gray8"
+        },
+        "text6": {
+            "type": "text",
+            "x": 2500,
+            "y": 500,
+            "text": "Syn-collision",
+            "cex": 0.7,
+            "col": "gray8"
+        },
+        "text7": {
+            "type": "text",
+            "x": 2900,
+            "y": 250,
+            "text": "Post-\norogenic",
+            "cex": 0.7,
+            "col": "gray8"
+        },
+        "points1": {
+            "type": "points",
+            "x": [
+                6658.0113,
+                359.926,
+                381.1023,
+                2875.5951,
+                0,
+                -2591.6256,
+                -859.3348,
+                239.3905,
+                3984.8197,
+                1515.8902,
+                3694.5304,
+                2843.6366,
+                0.4469,
+                2418.8933,
+                -4928.8653,
+                2472.7854,
+                -2636.7004,
+                0
+            ],
+            "y": [
+                0,
+                359.3531,
+                381.3223,
+                2875.9364,
+                2811.8219,
+                0,
+                195.3688,
+                1677.9486,
+                1992.6053,
+                0,
+                3694.7857,
+                2843.2467,
+                0,
+                2418.1037,
+                703.9947,
+                3091.5356,
+                0,
+                5972.5021
+            ],
+            "col": "darkblue",
+            "pch": 20,
+            "bg": "gray"
+        },
+        "text8": {
+            "type": "text",
+            "x": [
+                6658.0113,
+                359.926,
+                381.1023,
+                2875.5951,
+                0,
+                -2591.6256,
+                -859.3348,
+                239.3905,
+                3984.8197,
+                1515.8902,
+                3694.5304,
+                2843.6366,
+                0.4469,
+                2418.8933,
+                -4928.8653,
+                2472.7854,
+                -2636.7004,
+                0
+            ],
+            "y": [
+                100,
+                459.3531,
+                481.3223,
+                2975.9364,
+                2911.8219,
+                100,
+                295.3688,
+                1777.9486,
+                2092.6053,
+                100,
+                3794.7857,
+                2943.2467,
+                100,
+                2518.1037,
+                803.9947,
+                3191.5356,
+                100,
+                6072.5021
+            ],
+            "text": [
+                "Qtz",
+                "Or",
+                "Ab",
+                "An",
+                "Sp",
+                "Mt",
+                "Bt",
+                "Ph",
+                "En",
+                "Fs",
+                "Di",
+                "Fo",
+                "Fa",
+                "Hd",
+                "Ne",
+                "Ha",
+                "Ilm",
+                "Ap"
+            ],
+            "col": "darkblue",
+            "cex": 0.7
+        }
+    }
+}
+

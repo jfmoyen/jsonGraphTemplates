@@ -12,7 +12,7 @@
         "X": "Nb/Y",
         "Y": "Zr/Ti"
     },
-    "supressAxes":true,
+    "suppressAxes":true,
     "limits": {
         "X": [
             0.01,

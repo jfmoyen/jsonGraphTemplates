@@ -1,0 +1,955 @@
+{
+    "name": "LaurentSource",
+    "fullName": "Source diagram (Laurent et al. 2014)",
+    "details": "",
+    "reference": "Laurent et al 2014 PrecambRes",
+    "url": "",
+    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateHistory": "Converted from original GCDkit function",
+    "diagramType": "ternary",
+    "dataTransform": null,
+    "axesDefinition": {
+        "A": "Al2O3/(FeOt+MgO)",
+        "B": "CaO",
+        "C": "K2O/Na2O"
+    },
+    "suppressAxes":true,
+    "limits": {
+        "X": [
+            -0.03,
+            1.03
+        ],
+        "Y": [
+            -0.05,
+            1.03
+        ]
+    },
+    "template": {
+        "lines1": {
+            "type": "lines",
+            "x": [
+                0,
+                1,
+                0.5,
+                0
+            ],
+            "y": [
+                0,
+                0,
+                0.866,
+                0
+            ],
+            "col": "black"
+        },
+        "lines2": {
+            "type": "lines",
+            "x": [
+                0.175,
+                0.575
+            ],
+            "y": [
+                0.3031,
+                0.3031
+            ],
+            "col": "black"
+        },
+        "lines3": {
+            "type": "lines",
+            "x": [
+                0.4,
+                0.7
+            ],
+            "y": [
+                0,
+                0.5196
+            ],
+            "col": "black"
+        },
+        "lines4": {
+            "type": "lines",
+            "x": [
+                0.375,
+                0.5,
+                0.5
+            ],
+            "y": [
+                0.3031,
+                0.5196,
+                0.866
+            ],
+            "col": "black"
+        },
+        "arrows1": {
+            "type": "arrows",
+            "x0": 0.23,
+            "y0": 0.54,
+            "x1": 0.285,
+            "y1": 0.464,
+            "code": 2,
+            "col": "darkgray",
+            "angle": 30,
+            "length": 0.1,
+            "lty": "solid",
+            "lwd": 1
+        },
+        "arrows2": {
+            "type": "arrows",
+            "x0": 0.04,
+            "y0": 0.22,
+            "x1": 0.133,
+            "y1": 0.204,
+            "code": 2,
+            "col": "darkgray",
+            "angle": 30,
+            "length": 0.1,
+            "lty": "solid",
+            "lwd": 1
+        },
+        "arrows3": {
+            "type": "arrows",
+            "x0": 0.735,
+            "y0": 0.59,
+            "x1": 0.644,
+            "y1": 0.56,
+            "code": 2,
+            "col": "darkgray",
+            "angle": 30,
+            "length": 0.1,
+            "lty": "solid",
+            "lwd": 1
+        },
+        "arrows4": {
+            "type": "arrows",
+            "x0": 0.91,
+            "y0": 0.298,
+            "x1": 0.864,
+            "y1": 0.209,
+            "code": 2,
+            "col": "darkgray",
+            "angle": 30,
+            "length": 0.1,
+            "lty": "solid",
+            "lwd": 1
+        },
+        "A": {
+            "type": "text",
+            "x": 0.1,
+            "y": -0.025,
+            "text": "Al2O3/(FeOt+MgO)",
+            "adj": 0.5
+        },
+        "B": {
+            "type": "text",
+            "x": 0.5,
+            "y": 0.896,
+            "text": "3 CaO",
+            "adj": 0.5
+        },
+        "C": {
+            "type": "text",
+            "x": 0.95,
+            "y": -0.025,
+            "text": "K2O/Na2O",
+            "adj": 0.5
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "ternary",
+            "plot.position": 101.6,
+            "plot.name": "Source diagram (Laurent et al. 2014)"
+        },
+        "text1": {
+            "type": "text",
+            "x": 0.12,
+            "y": 0.25,
+            "adj": 1,
+            "text": "Tonalites",
+            "col": "gray8",
+            "font": 3
+        },
+        "text2": {
+            "type": "text",
+            "x": 1,
+            "y": 0.36,
+            "adj": 1,
+            "text": "Meta-\nsediments",
+            "col": "gray8",
+            "font": 3
+        },
+        "text3": {
+            "type": "text",
+            "x": 0.32,
+            "y": 0.6,
+            "adj": 1,
+            "text": "Low-K\nmafic rocks",
+            "col": "gray8",
+            "font": 3
+        },
+        "text4": {
+            "type": "text",
+            "x": 0.73,
+            "y": 0.6,
+            "adj": 0,
+            "text": "High-K\n mafic rocks",
+            "col": "gray8",
+            "font": 3
+        },
+        "ticklines1": {
+            "type": "lines",
+            "x": [
+                0.05,
+                0.08
+            ],
+            "y": [
+                0.0866,
+                0.0866
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines2": {
+            "type": "lines",
+            "x": [
+                0.05,
+                0.065
+            ],
+            "y": [
+                0.0866,
+                0.0606
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines3": {
+            "type": "lines",
+            "x": [
+                0.95,
+                0.92
+            ],
+            "y": [
+                0.0866,
+                0.0866
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines4": {
+            "type": "lines",
+            "x": [
+                0.95,
+                0.935
+            ],
+            "y": [
+                0.0866,
+                0.0606
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines5": {
+            "type": "lines",
+            "x": [
+                0.1,
+                0.115
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines6": {
+            "type": "lines",
+            "x": [
+                0.1,
+                0.085
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines8": {
+            "type": "lines",
+            "x": [
+                0.1,
+                0.13
+            ],
+            "y": [
+                0.1732,
+                0.1732
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines9": {
+            "type": "lines",
+            "x": [
+                0.1,
+                0.115
+            ],
+            "y": [
+                0.1732,
+                0.1472
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines10": {
+            "type": "lines",
+            "x": [
+                0.9,
+                0.87
+            ],
+            "y": [
+                0.1732,
+                0.1732
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines11": {
+            "type": "lines",
+            "x": [
+                0.9,
+                0.885
+            ],
+            "y": [
+                0.1732,
+                0.1472
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines12": {
+            "type": "lines",
+            "x": [
+                0.2,
+                0.215
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines13": {
+            "type": "lines",
+            "x": [
+                0.2,
+                0.185
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines15": {
+            "type": "lines",
+            "x": [
+                0.15,
+                0.18
+            ],
+            "y": [
+                0.2598,
+                0.2598
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines16": {
+            "type": "lines",
+            "x": [
+                0.15,
+                0.165
+            ],
+            "y": [
+                0.2598,
+                0.2338
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines17": {
+            "type": "lines",
+            "x": [
+                0.85,
+                0.82
+            ],
+            "y": [
+                0.2598,
+                0.2598
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines18": {
+            "type": "lines",
+            "x": [
+                0.85,
+                0.835
+            ],
+            "y": [
+                0.2598,
+                0.2338
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines19": {
+            "type": "lines",
+            "x": [
+                0.3,
+                0.315
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines20": {
+            "type": "lines",
+            "x": [
+                0.3,
+                0.285
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines22": {
+            "type": "lines",
+            "x": [
+                0.2,
+                0.23
+            ],
+            "y": [
+                0.3464,
+                0.3464
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines23": {
+            "type": "lines",
+            "x": [
+                0.2,
+                0.215
+            ],
+            "y": [
+                0.3464,
+                0.3204
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines24": {
+            "type": "lines",
+            "x": [
+                0.8,
+                0.77
+            ],
+            "y": [
+                0.3464,
+                0.3464
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines25": {
+            "type": "lines",
+            "x": [
+                0.8,
+                0.785
+            ],
+            "y": [
+                0.3464,
+                0.3204
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines26": {
+            "type": "lines",
+            "x": [
+                0.4,
+                0.415
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines27": {
+            "type": "lines",
+            "x": [
+                0.4,
+                0.385
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines29": {
+            "type": "lines",
+            "x": [
+                0.25,
+                0.28
+            ],
+            "y": [
+                0.433,
+                0.433
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines30": {
+            "type": "lines",
+            "x": [
+                0.25,
+                0.265
+            ],
+            "y": [
+                0.433,
+                0.407
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines31": {
+            "type": "lines",
+            "x": [
+                0.75,
+                0.72
+            ],
+            "y": [
+                0.433,
+                0.433
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines32": {
+            "type": "lines",
+            "x": [
+                0.75,
+                0.735
+            ],
+            "y": [
+                0.433,
+                0.407
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines33": {
+            "type": "lines",
+            "x": [
+                0.5,
+                0.515
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines34": {
+            "type": "lines",
+            "x": [
+                0.5,
+                0.485
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines36": {
+            "type": "lines",
+            "x": [
+                0.3,
+                0.33
+            ],
+            "y": [
+                0.5196,
+                0.5196
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines37": {
+            "type": "lines",
+            "x": [
+                0.3,
+                0.315
+            ],
+            "y": [
+                0.5196,
+                0.4936
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines38": {
+            "type": "lines",
+            "x": [
+                0.7,
+                0.67
+            ],
+            "y": [
+                0.5196,
+                0.5196
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines39": {
+            "type": "lines",
+            "x": [
+                0.7,
+                0.685
+            ],
+            "y": [
+                0.5196,
+                0.4936
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines40": {
+            "type": "lines",
+            "x": [
+                0.6,
+                0.615
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines41": {
+            "type": "lines",
+            "x": [
+                0.6,
+                0.585
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines43": {
+            "type": "lines",
+            "x": [
+                0.35,
+                0.38
+            ],
+            "y": [
+                0.6062,
+                0.6062
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines44": {
+            "type": "lines",
+            "x": [
+                0.35,
+                0.365
+            ],
+            "y": [
+                0.6062,
+                0.5802
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines45": {
+            "type": "lines",
+            "x": [
+                0.65,
+                0.62
+            ],
+            "y": [
+                0.6062,
+                0.6062
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines46": {
+            "type": "lines",
+            "x": [
+                0.65,
+                0.635
+            ],
+            "y": [
+                0.6062,
+                0.5802
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines47": {
+            "type": "lines",
+            "x": [
+                0.7,
+                0.715
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines48": {
+            "type": "lines",
+            "x": [
+                0.7,
+                0.685
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines50": {
+            "type": "lines",
+            "x": [
+                0.4,
+                0.43
+            ],
+            "y": [
+                0.6928,
+                0.6928
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines51": {
+            "type": "lines",
+            "x": [
+                0.4,
+                0.415
+            ],
+            "y": [
+                0.6928,
+                0.6668
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines52": {
+            "type": "lines",
+            "x": [
+                0.6,
+                0.57
+            ],
+            "y": [
+                0.6928,
+                0.6928
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines53": {
+            "type": "lines",
+            "x": [
+                0.6,
+                0.585
+            ],
+            "y": [
+                0.6928,
+                0.6668
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines54": {
+            "type": "lines",
+            "x": [
+                0.8,
+                0.815
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines55": {
+            "type": "lines",
+            "x": [
+                0.8,
+                0.785
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines57": {
+            "type": "lines",
+            "x": [
+                0.45,
+                0.48
+            ],
+            "y": [
+                0.7794,
+                0.7794
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines58": {
+            "type": "lines",
+            "x": [
+                0.45,
+                0.465
+            ],
+            "y": [
+                0.7794,
+                0.7534
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines59": {
+            "type": "lines",
+            "x": [
+                0.55,
+                0.52
+            ],
+            "y": [
+                0.7794,
+                0.7794
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines60": {
+            "type": "lines",
+            "x": [
+                0.55,
+                0.535
+            ],
+            "y": [
+                0.7794,
+                0.7534
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines61": {
+            "type": "lines",
+            "x": [
+                0.9,
+                0.915
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        },
+        "ticklines62": {
+            "type": "lines",
+            "x": [
+                0.9,
+                0.885
+            ],
+            "y": [
+                0,
+                0.026
+            ],
+            "col": "black",
+            "lwd": 1,
+            "lty": 1
+        }
+    }
+}
+

@@ -1,0 +1,191 @@
+{
+    "name": "Meschede",
+    "fullName": "Meschede (1986) Zr/4-2Nb-Y",
+    "details": "",
+    "reference": "Meschede,1986 coordinates from Rollison 1993",
+    "url": "",
+    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateHistory": "Converted from original GCDkit function",
+    "diagramType": "ternary",
+    "dataTransform": null,
+    "axesDefinition": {
+        "A": "Zr/4",
+        "B": "2*Nb",
+        "C": "Y"
+    },
+    "suppressAxes":true,
+    "limits": {
+        "X": [
+            -0.03,
+            1.03
+        ],
+        "Y": [
+            -0.08,
+            1.03
+        ]
+    },
+    "template": {
+        "lines1": {
+            "type": "lines",
+            "x": [
+                0,
+                1,
+                0.5,
+                0
+            ],
+            "y": [
+                0,
+                0,
+                0.866,
+                0
+            ],
+            "col": "black"
+        },
+        "lines2": {
+            "type": "lines",
+            "x": [
+                0.5,
+                0.34,
+                0.305,
+                0.465,
+                0.77
+            ],
+            "y": [
+                0,
+                0.1039,
+                0.2944,
+                0.6842,
+                0
+            ],
+            "col": "gray8"
+        },
+        "lines3": {
+            "type": "lines",
+            "x": [
+                0.34,
+                0.42,
+                0.5525
+            ],
+            "y": [
+                0.1039,
+                0.433,
+                0.4893
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines4": {
+            "type": "lines",
+            "x": [
+                0.34,
+                0.45,
+                0.58
+            ],
+            "y": [
+                0.1039,
+                0.3031,
+                0.433
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines5": {
+            "type": "lines",
+            "x": [
+                0.45,
+                0.485,
+                0.52,
+                0.455
+            ],
+            "y": [
+                0.3031,
+                0.2685,
+                0.1905,
+                0.026
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines6": {
+            "type": "lines",
+            "x": [
+                0.545,
+                0.68
+            ],
+            "y": [
+                0.2078,
+                0.1905
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "A": {
+            "type": "text",
+            "x": 0,
+            "y": -0.03,
+            "text": "Zr/4",
+            "adj": 0.5
+        },
+        "C": {
+            "type": "text",
+            "x": 1,
+            "y": -0.03,
+            "text": "Y",
+            "adj": 0.5
+        },
+        "B": {
+            "type": "text",
+            "x": 0.5,
+            "y": 0.896,
+            "text": "2 Nb",
+            "adj": 0.5
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "ternary",
+            "plot.position": 203,
+            "plot.name": "Meschede (1986) Zr/4-2Nb-Y"
+        },
+        "text4": {
+            "type": "text",
+            "x": 0.46,
+            "y": 0.543,
+            "text": "AI",
+            "col": "gray8",
+            "cex": 0.8
+        },
+        "text5": {
+            "type": "text",
+            "x": 0.456,
+            "y": 0.387,
+            "text": "AII",
+            "col": "gray8",
+            "cex": 0.8
+        },
+        "text6": {
+            "type": "text",
+            "x": 0.566,
+            "y": 0.302,
+            "text": "B",
+            "col": "gray8",
+            "cex": 0.8
+        },
+        "text7": {
+            "type": "text",
+            "x": 0.431,
+            "y": 0.163,
+            "text": "C",
+            "col": "gray8",
+            "cex": 0.8
+        },
+        "text8": {
+            "type": "text",
+            "x": 0.605,
+            "y": 0.092,
+            "text": "D",
+            "col": "gray8",
+            "cex": 0.8
+        }
+    }
+}
+

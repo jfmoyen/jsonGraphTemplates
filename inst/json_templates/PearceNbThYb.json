@@ -1,0 +1,251 @@
+{
+    "name": "PearceNbThYb",
+    "fullName": "Pearce (2008) Nb-Th-Yb",
+    "details": "",
+    "reference": "",
+    "url": "",
+    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateHistory": "Converted from original GCDkit function",
+    "diagramType": "binary",
+    "dataTransform": null,
+    "axesDefinition": {
+        "X": "Nb/Yb",
+        "Y": "Th/Yb"
+    },
+    "suppressAxes":true,
+    "limits": {
+        "X": [
+            0.1,
+            1000
+        ],
+        "Y": [
+            0.01,
+            100
+        ]
+    },
+    "log": "xy",
+    "template": {
+        "polygon1": {
+            "type": "polygon",
+            "x": [
+                0.1,
+                0.3,
+                1000,
+                1000,
+                800,
+                0.1
+            ],
+            "y": [
+                0.01,
+                0.01,
+                48,
+                100,
+                100,
+                0.01
+            ],
+            "col": "khaki"
+        },
+        "lines1": {
+            "type": "abline",
+            "a": 1.0969,
+            "b": 1.0196,
+            "lty": "dashed",
+            "col": "gray8"
+        },
+        "axis1": {
+            "type": "axis",
+            "side": 1,
+            "at": [
+                0.1,
+                1,
+                10,
+                100,
+                1000
+            ],
+            "labels": [
+                0.1,
+                1,
+                10,
+                100,
+                1000
+            ],
+            "las": 0,
+            "hadj": "NA",
+            "padj": "NA",
+            "lty": "solid"
+        },
+        "axis2": {
+            "type": "axis",
+            "side": 2,
+            "at": [
+                0.01,
+                0.1,
+                1,
+                10,
+                100
+            ],
+            "labels": [
+                0.01,
+                0.1,
+                1,
+                10,
+                100
+            ],
+            "las": 0,
+            "hadj": "NA",
+            "padj": "NA",
+            "lty": "solid"
+        },
+        "rug1": {
+            "type": "rug",
+            "x": [
+                0.01,
+                0.02,
+                0.03,
+                0.04,
+                0.05,
+                0.06,
+                0.07,
+                0.08,
+                0.09,
+                0.1,
+                0.1,
+                0.2,
+                0.3,
+                0.4,
+                0.5,
+                0.6,
+                0.7,
+                0.8,
+                0.9,
+                1,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                10,
+                20,
+                30,
+                40,
+                50,
+                60,
+                70,
+                80,
+                90,
+                100,
+                100,
+                200,
+                300,
+                400,
+                500,
+                600,
+                700,
+                800,
+                900,
+                1000
+            ],
+            "ticksize": 0.015,
+            "side": 1,
+            "lwd": 1,
+            "col": "black"
+        },
+        "rug2": {
+            "type": "rug",
+            "x": [
+                0.1,
+                0.2,
+                0.3,
+                0.4,
+                0.5,
+                0.6,
+                0.7,
+                0.8,
+                0.9,
+                1,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                10,
+                20,
+                30,
+                40,
+                50,
+                60,
+                70,
+                80,
+                90,
+                100,
+                100,
+                200,
+                300,
+                400,
+                500,
+                600,
+                700,
+                800,
+                900,
+                1000,
+                1000,
+                2000,
+                3000,
+                4000,
+                5000,
+                6000,
+                7000,
+                8000,
+                9000,
+                10000
+            ],
+            "ticksize": 0.015,
+            "side": 2,
+            "lwd": 1,
+            "col": "black"
+        },
+        "box": {
+            "type": "box",
+            "which": "plot",
+            "col": "black",
+            "lwd": 1
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "binary",
+            "plot.position": 301,
+            "plot.name": "Pearce (2008) Nb-Th-Yb"
+        },
+        "text1": {
+            "type": "text",
+            "x": 0.15,
+            "y": 1,
+            "text": "Volcanic arc array",
+            "cex": 1,
+            "col": "gray8",
+            "adj": 0,
+            "srt": 42
+        },
+        "text2": {
+            "type": "text",
+            "x": 70,
+            "y": 5,
+            "text": "MORB-OIB array",
+            "cex": 1,
+            "col": "gray8",
+            "adj": 0,
+            "srt": 42
+        }
+    }
+}
+

@@ -1,0 +1,255 @@
+{
+    "name": "Cabanis",
+    "fullName": "Cabanis + Lecolle (1989) La/10-Y/15-Nb/8",
+    "details": "",
+    "reference": " Cabanis B, Lecolle M (1989) The La/10-Y/15-Nb/8 diagram: a tool for  discrimination volcanic series and evidencing continental crust magmaticmixtures and/or contamination. Comptes rendus de l'Académie des sciencesSérie 2, Mécanique, Physique, Chimie, Sciences de l'univers, Sciences de la Terre 309:2023-2029 ",
+    "url": "",
+    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateHistory": "Converted from original GCDkit function",
+    "diagramType": "ternary",
+    "dataTransform": null,
+    "axesDefinition": {
+        "A": "La/10",
+        "B": "Yb/15",
+        "C": "Nb/8"
+    },
+    "suppressAxes":true,
+    "limits": {
+        "X": [
+            -0.03,
+            1.03
+        ],
+        "Y": [
+            -0.08,
+            1.03
+        ]
+    },
+    "template": {
+        "lines1": {
+            "type": "lines",
+            "x": [
+                0,
+                1,
+                0.5,
+                0
+            ],
+            "y": [
+                0,
+                0,
+                0.866,
+                0
+            ],
+            "col": "black"
+        },
+        "lines2": {
+            "type": "lines",
+            "x": [
+                0.38,
+                0.4364,
+                0.285,
+                0.4364,
+                0.4448,
+                0.515,
+                0.4448,
+                0.4508,
+                0.335,
+                0.4508,
+                0.476,
+                0.5,
+                0.476,
+                0.498,
+                0.6175,
+                0.498,
+                0.57,
+                0.7875,
+                0.57,
+                0.62
+            ],
+            "y": [
+                0,
+                0.407,
+                0.4936,
+                0.407,
+                0.4677,
+                0.5023,
+                0.4677,
+                0.511,
+                0.5802,
+                0.511,
+                0.6928,
+                0.866,
+                0.6928,
+                0.5889,
+                0.6625,
+                0.5889,
+                0.2382,
+                0.3681,
+                0.2382,
+                0
+            ],
+            "col": "gray8"
+        },
+        "arrows1": {
+            "type": "arrows",
+            "x0": 0.5243,
+            "y0": 0.883,
+            "x1": 0.651,
+            "y1": 0.68,
+            "code": 3,
+            "col": "gray70",
+            "angle": 30,
+            "length": 0.15,
+            "lty": "solid",
+            "lwd": 1
+        },
+        "arrows2": {
+            "type": "arrows",
+            "x0": 0.651,
+            "y0": 0.68,
+            "x1": 0.8146,
+            "y1": 0.392,
+            "code": 3,
+            "col": "gray70",
+            "angle": 30,
+            "length": 0.15,
+            "lty": "solid",
+            "lwd": 1
+        },
+        "arrows3": {
+            "type": "arrows",
+            "x0": 0.8146,
+            "y0": 0.392,
+            "x1": 1.0255,
+            "y1": 0.0145,
+            "code": 3,
+            "col": "gray70",
+            "angle": 30,
+            "length": 0.15,
+            "lty": "solid",
+            "lwd": 1
+        },
+        "arrows4": {
+            "type": "arrows",
+            "x0": -0.02,
+            "y0": 0.0219,
+            "x1": 0.3086,
+            "y1": 0.6,
+            "code": 3,
+            "col": "gray70",
+            "angle": 30,
+            "length": 0.15,
+            "lty": "solid",
+            "lwd": 1
+        },
+        "arrows5": {
+            "type": "arrows",
+            "x0": 0.234,
+            "y0": 0.521,
+            "x1": 0.462,
+            "y1": 0.883,
+            "code": 3,
+            "col": "gray70",
+            "angle": 30,
+            "length": 0.15,
+            "lty": "solid",
+            "lwd": 1
+        },
+        "A": {
+            "type": "text",
+            "x": 0,
+            "y": -0.03,
+            "text": "La/10",
+            "adj": 0.5
+        },
+        "B": {
+            "type": "text",
+            "x": 0.5,
+            "y": 0.896,
+            "text": "Y/15",
+            "adj": 0.5
+        },
+        "C": {
+            "type": "text",
+            "x": 1,
+            "y": -0.03,
+            "text" : "Nb/8",
+            "adj": 0.5
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "ternary",
+            "plot.position": 302,
+            "plot.name": "Cabanis + Lecolle (1989) La/10-Y/15-Nb/8"
+        },
+        "text1": {
+            "type": "text",
+            "x": 0.5963,
+            "y": 0.7762,
+            "text": "N-MORB",
+            "col": "darkblue",
+            "cex": 1,
+            "srt": -60
+        },
+        "text2": {
+            "type": "text",
+            "x": 0.7452,
+            "y": 0.5182,
+            "text": "E-MORB",
+            "col": "darkblue",
+            "cex": 1,
+            "srt": -60
+        },
+        "text3": {
+            "type": "text",
+            "x": 0.93,
+            "y": 0.1708,
+            "text": "Alkaline",
+            "col": "darkblue",
+            "cex": 1,
+            "srt": -60
+        },
+        "text4": {
+            "type": "text",
+            "x": 0.097,
+            "y": 0.2477,
+            "text": "Calc-alkaline",
+            "col": "darkblue",
+            "cex": 1,
+            "srt": 60
+        },
+        "text5": {
+            "type": "text",
+            "x": 0.34,
+            "y": 0.7167,
+            "text": "Tholeiites",
+            "col": "darkblue",
+            "cex": 1,
+            "srt": 60
+        },
+        "text6": {
+            "type": "text",
+            "x": 0.22,
+            "y": 0.15,
+            "text": "Orogenic \n(compressive)\ndomains (island \narcs,active \nmargins)",
+            "col": "gray8",
+            "cex": 0.7
+        },
+        "text7": {
+            "type": "text",
+            "x": 0.5,
+            "y": 0.15,
+            "text": "Late- \nto post-\norogenic\n(compressive\nto distensive)\nintra-continent.\ndomains",
+            "col": "gray8",
+            "cex": 0.7
+        },
+        "text8": {
+            "type": "text",
+            "x": 0.75,
+            "y": 0.15,
+            "text": "Anorogenic\n(distensive) domains",
+            "col": "gray8",
+            "cex": 0.7
+        }
+    }
+}
+

@@ -14,7 +14,7 @@
         "B": "An",
         "C": "Or"
     },
-    "supressAxes":true,
+    "suppressAxes":true,
     "limits": {
         "X": [
             -3,

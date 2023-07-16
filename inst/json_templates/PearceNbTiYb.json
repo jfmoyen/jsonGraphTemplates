@@ -1,0 +1,290 @@
+{
+    "name": "PearceNbTiYb",
+    "fullName": "Pearce (2008) Nb-TiO2-Yb",
+    "details": "",
+    "reference": "",
+    "url": "",
+    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateHistory": "Converted from original GCDkit function",
+    "diagramType": "binary",
+    "dataTransform": null,
+    "axesDefinition": {
+        "X": "Nb/Yb",
+        "Y": "TiO2/Yb"
+    },
+    "suppressAxes": true,
+    "limits": {
+        "X": [
+            0.1,
+            100
+        ],
+        "Y": [
+            0.1,
+            10
+        ]
+    },
+    "log": "xy",
+    "template": {
+        "polygon1": {
+            "type": "polygon",
+            "x": [
+                0.1,
+                100,
+                100,
+                0.1,
+                0.1
+            ],
+            "y": [
+                0.25,
+                0.34,
+                0.8,
+                0.57,
+                0.25
+            ],
+            "col": "khaki"
+        },
+        "lines1": {
+            "type": "abline",
+            "a": 0.3555,
+            "b": 0.046,
+            "lty": "solid",
+            "col": "gray8"
+        },
+        "lines2": {
+            "type": "lines",
+            "x": [
+                1.5913,
+                1.7754
+            ],
+            "y": [
+                0.4736,
+                0.1995
+            ],
+            "lty": "dashed",
+            "col": "gray8",
+            "lwd": 2
+        },
+        "lines3": {
+            "type": "lines",
+            "x": [
+                8.8,
+                17.4
+            ],
+            "y": [
+                2.4589,
+                0.7298
+            ],
+            "lty": "dashed",
+            "col": "gray8",
+            "lwd": 2
+        },
+        "axis1": {
+            "type": "axis",
+            "side": 1,
+            "at": [
+                0.01,
+                0.1,
+                1,
+                10,
+                100
+            ],
+            "labels": [
+                0.01,
+                0.1,
+                1,
+                10,
+                100
+            ],
+            "las": 0,
+            "hadj": "NA",
+            "padj": "NA",
+            "lty": "solid"
+        },
+        "axis2": {
+            "type": "axis",
+            "side": 2,
+            "at": [
+                0.01,
+                0.1,
+                1,
+                10,
+                100
+            ],
+            "labels": [
+                0.01,
+                0.1,
+                1,
+                10,
+                100
+            ],
+            "las": 0,
+            "hadj": "NA",
+            "padj": "NA",
+            "lty": "solid"
+        },
+        "rug1": {
+            "type": "rug",
+            "x": [
+                0.1,
+                0.2,
+                0.3,
+                0.4,
+                0.5,
+                0.6,
+                0.7,
+                0.8,
+                0.9,
+                1,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                10,
+                20,
+                30,
+                40,
+                50,
+                60,
+                70,
+                80,
+                90,
+                100
+            ],
+            "ticksize": 0.015,
+            "side": 1,
+            "lwd": 1,
+            "col": "black"
+        },
+        "rug2": {
+            "type": "rug",
+            "x": [
+                0.1,
+                0.2,
+                0.3,
+                0.4,
+                0.5,
+                0.6,
+                0.7,
+                0.8,
+                0.9,
+                1,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                10,
+                20,
+                30,
+                40,
+                50,
+                60,
+                70,
+                80,
+                90,
+                100,
+                100,
+                200,
+                300,
+                400,
+                500,
+                600,
+                700,
+                800,
+                900,
+                1000
+            ],
+            "ticksize": 0.015,
+            "side": 2,
+            "lwd": 1,
+            "col": "black"
+        },
+        "box": {
+            "type": "box",
+            "which": "plot",
+            "col": "black",
+            "lwd": 1
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "binary",
+            "plot.position": 301.5,
+            "plot.name": "Pearce (2008) Nb-TiO2-Yb"
+        },
+        "text1": {
+            "type": "text",
+            "x": 7,
+            "y": 1.8,
+            "text": "Th",
+            "cex": 1,
+            "col": "gray8",
+            "adj": 0,
+            "srt": 2
+        },
+        "text2": {
+            "type": "text",
+            "x": 12,
+            "y": 1.8,
+            "text": "Alk",
+            "cex": 1,
+            "col": "gray8",
+            "adj": 0,
+            "srt": 2
+        },
+        "text3": {
+            "type": "text",
+            "x": 0.4,
+            "y": 1.5,
+            "text": "OIB array\n(deep melting)",
+            "cex": 1,
+            "col": "gray8",
+            "adj": 0.5,
+            "srt": 5
+        },
+        "text4": {
+            "type": "text",
+            "x": 25,
+            "y": 0.5,
+            "text": "MORB array\n(shallow melting)",
+            "cex": 1,
+            "col": "gray8",
+            "adj": 0.5,
+            "hadj": 0.5,
+            "srt": 5
+        },
+        "text5": {
+            "type": "text",
+            "x": 1.5,
+            "y": 0.25,
+            "text": "N",
+            "cex": 1,
+            "col": "gray8",
+            "adj": 0.5,
+            "hadj": 0.5,
+            "srt": 5
+        },
+        "text6": {
+            "type": "text",
+            "x": 2.05,
+            "y": 0.25,
+            "text": "E",
+            "cex": 1,
+            "col": "gray8",
+            "adj": 0.5,
+            "hadj": 0.5,
+            "srt": 5
+        }
+    }
+}
+

@@ -1,0 +1,147 @@
+{
+    "name": "Harris",
+    "fullName": "Harris et al. (1986)",
+    "details": "",
+    "reference": "",
+    "url": "",
+    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateHistory": "Converted from original GCDkit function",
+    "diagramType": "ternary",
+    "dataTransform": null,
+    "axesDefinition": {
+        "A": "Hf",
+        "B": "Rb/30",
+        "C": "Ta*3"
+    },
+    "suppressAxes":true,
+    "limits": {
+        "X": [
+            -0.03,
+            1.03
+        ],
+        "Y": [
+            -0.05,
+            1.03
+        ]
+    },
+    "template": {
+        "lines1": {
+            "type": "lines",
+            "x": [
+                0,
+                1,
+                0.5,
+                0
+            ],
+            "y": [
+                0,
+                0,
+                0.866,
+                0
+            ],
+            "col": "black"
+        },
+        "lines2": {
+            "type": "lines",
+            "x": [
+                0.617,
+                0.5,
+                0.479,
+                0.453,
+                0.904
+            ],
+            "y": [
+                0.664,
+                0.624,
+                0.44,
+                0.194,
+                0.169
+            ],
+            "col": "gray8"
+        },
+        "lines3": {
+            "type": "lines",
+            "x": [
+                0.479,
+                0.85
+            ],
+            "y": [
+                0.44,
+                0.261
+            ],
+            "col": "gray8"
+        },
+        "lines4": {
+            "type": "lines",
+            "x": [
+                0.255,
+                0.322,
+                0.391,
+                0.456
+            ],
+            "y": [
+                0.054,
+                0.136,
+                0.194,
+                0.227
+            ],
+            "col": "gray8"
+        },
+        "A": {
+            "type": "text",
+            "x": 0,
+            "y": -0.03,
+            "text": "Hf",
+            "adj": 0.5
+        },
+        "C": {
+            "type": "text",
+            "x": 1,
+            "y": -0.03,
+            "text": "3 Ta",
+            "adj": 0.5
+        },
+        "B": {
+            "type": "text",
+            "x": 0.5,
+            "y": 0.896,
+            "text": "Rb/30",
+            "adj": 0.5
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "ternary",
+            "plot.position": 106,
+            "plot.name": "Harris et al. (1986)"
+        },
+        "text4": {
+            "type": "text",
+            "x": 0.323,
+            "y": 0.314,
+            "text": "VA",
+            "col": "gray8"
+        },
+        "text5": {
+            "type": "text",
+            "x": 0.6,
+            "y": 0.087,
+            "text": "WP",
+            "col": "gray8"
+        },
+        "text6": {
+            "type": "text",
+            "x": 0.6,
+            "y": 0.477,
+            "text": "Group 2",
+            "col": "gray8"
+        },
+        "text7": {
+            "type": "text",
+            "x": 0.6,
+            "y": 0.268,
+            "text": "Group 3",
+            "col": "gray8"
+        }
+    }
+}
+

@@ -14,7 +14,7 @@
         "B": "2*Q",
         "C": "4*An"
     },
-    "supressAxes":true,
+    "suppressAxes":true,
     "limits": {
         "X": [
             -3,

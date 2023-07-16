@@ -13,7 +13,7 @@
         "B": "FeOt+TiO2",
         "C": "MgO"
     },
-    "supressAxes":true,
+    "suppressAxes":true,
     "limits": {
         "X": [
             -0.03,
