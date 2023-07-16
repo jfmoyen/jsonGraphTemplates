@@ -4,6 +4,8 @@
     "details": "",
     "reference": "",
     "url": "",
+    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": "function(){ DebonCalc(milli,GUI=F) }",
     "axesDefinition": {

@@ -39,6 +39,8 @@ readFigaroTemplate<-function(diagram,plot=F,...){
     details = "",
     reference = "",
     url = "",
+    templateAuthor = "J.-F. Moyen [jfmoyen@gmail.com]",
+    templateHistory = "Converted from original GCDkit function",
     diagramType=sheet$demo$template$GCDkit$plot.type,
     dataTransform = NULL,
     axesDefinition = list(X=xAxis,Y=yAxis),
@@ -51,4 +53,4 @@ readFigaroTemplate<-function(diagram,plot=F,...){
 ##########
 ee<-readFigaroTemplate("TASMiddlemostVolc")
 ee.json <- prettify(toJSON(ee,null="null",auto_unbox = T))
-write(ee.json,"./inst/json_templates/TASMiddlemostVolc.json")
+write(ee.json,"./inst/json_templates/foo.json")

@@ -11,9 +11,9 @@ Diagram templates are defined using json format. json follows a tag:value conven
 \section{Mandatory}{
   \itemize{
   The following items are mandatory and must be present in the template
-    \item{"diagramType"}{One of "binary" or "ternary". Describes the geometry, and overall behviour of the diagram.}
-    \item{"axesDefinition"}{Axes mapping. In a binary diagrams, axes are X and Y. In a ternary, apices are A, B and C. This should be either variables from the dataset, or vaues that can be calculated from them. In GCDkit they are calculated using calcCore, in ggplot using data-masking. In base R, only natural variables can be used; you can always calcualte in advance however.}
-    \item{"limits"}{a list of two, X and Y, giving the range on each axis}
+    \item{"diagramType": }{One of "binary" or "ternary". Describes the geometry, and overall behviour of the diagram.}
+    \item{"axesDefinition": }{Axes mapping. In a binary diagrams, axes are X and Y. In a ternary, apices are A, B and C. This should be either variables from the dataset, or vaues that can be calculated from them. In GCDkit they are calculated using calcCore, in ggplot using data-masking. In base R, only natural variables can be used; you can always calcualte in advance however.}
+    \item{"limits": }{a list of two, X and Y, giving the range on each axis}
   }
 }
 
@@ -22,20 +22,22 @@ Diagram templates are defined using json format. json follows a tag:value conven
 These items can be included to customize further the template
 \subsection{metadata}{
 \itemize{
-\item{"name"}{Short name of the diagram, normally the GCDkit function it originates from}
-\item{"fullName"}{Long version of the name, will be printed as diagram title}
-\item{"details"}{If needed. Probably a more clever place to put comments if required}
-\item{"reference"}{Original publication}
-\item{"url"}{Original URL, DOI, etc.}
+\item{"name": }{Short name of the diagram, normally the GCDkit function it originates from}
+\item{"fullName": }{Long version of the name, will be printed as diagram title}
+\item{"details": }{If needed. Probably a more clever place to put comments if required}
+\item{"reference": }{Original publication}
+\item{"url": }{Original URL, DOI, etc.}
+\item{"templateAuthor": }{Name and contact of the person who wrote the template file (not the original diagram)}
+\item{"templateHistory": }{Further comments on the template itself}
 }}
 
 
 \subsection{Data mapping}{
 \itemize{
-\item{"dataTransform"}{null, or a function that returns a data matrix. If null, the current data (WR) will be used. Otherwise code{dataTransform(WR)} will be used.}
-\item{"axesName"}{The name of the axes, as will be printed on the graph. Defaults to axesDefintion.}
-\item{"supressAxes"}{If present (and true), the axes will not be drawn. Neded for ternary plots, and some special plots where custom axes are required (and should be defined in the template)}
-\item{"log"}{If present (and other than ""), defines whoch axes use a log scale using base R convention : "x", "y" or "xy"}
+\item{"dataTransform": }{null, or a function that returns a data matrix. If null, the current data (WR) will be used. Otherwise code{dataTransform(WR)} will be used.}
+\item{"axesName": }{The name of the axes, as will be printed on the graph. Defaults to axesDefintion.}
+\item{"supressAxes": }{If present (and true), the axes will not be drawn. Neded for ternary plots, and some special plots where custom axes are required (and should be defined in the template)}
+\item{"log": }{If present (and other than ""), defines whoch axes use a log scale using base R convention : "x", "y" or "xy"}
 }
 }
 }
@@ -43,11 +45,11 @@ These items can be included to customize further the template
 \section{Template}{
 The template proper is a list of potentially many elements. They all belong to a "template": element, itself a dictionary of the form "element_name":"description". Each template element starts with a "type" element that defines how it will be interpreted by the parser. The following types are understood:
 \itemize{
-\item{"type":"NULL"}{Elements of type "NULL" won't be plotted on the template. Their main use is for classification fields. Classifications fields are defined by a combination of template elements:
+\item{"type":"NULL" }{Elements of type "NULL" won't be plotted on the template. Their main use is for classification fields. Classifications fields are defined by a combination of template elements:
 \itemize{
-\item{"clssf":}{an element named clssf, having "type":"null" and containing "use","rcname", and a number of elements defining the classification polygons. "use" gives the numbers of the template elements that can define classification polygons. "rcname" gives the resulting classification names, and the subsequent elements are polygon coordinates. Note that the polygon coordinates can be of type "NULL" (they will not be plotted), or "line" (they will be drawn)}
+\item{"clssf": }{an element named clssf, having "type":"null" and containing "use","rcname", and a number of elements defining the classification polygons. "use" gives the numbers of the template elements that can define classification polygons. "rcname" gives the resulting classification names, and the subsequent elements are polygon coordinates. Note that the polygon coordinates can be of type "NULL" (they will not be plotted), or "line" (they will be drawn)}
 }}
-\item{"type":"lines"}{lines have x, y and possibly col (colour) and lty (line type) properties.}
+\item{"type":"lines" }{lines have x, y and possibly col (colour) and lty (line type) properties.}
 \item{""}{}
 \item{""}{}
 }

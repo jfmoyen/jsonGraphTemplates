@@ -1,0 +1,47 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# jsonGraphTemplates
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+jsonGraphTemplates allows to define templates for R graphs, using json -- a human readable format (for certain values of "human"). These templates are primarily meant to be used with GCDkit (<http://gcdkit.org>), although the aim is to also supply parsers to use them in ggplot and, to a point, in base R (they will never be very good in base R, that lacks the more advanced functionalities in paticular of calculating combinations of variables).
+
+## Installation
+
+The easiest way to install jsonGraphTemplates for now is from a local zip (or gz) file:
+
+``` r
+install.packages("jsonGraphTemplates",repo=NULL)
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(GCDkit)
+library(jsonGraphTemplates)
+
+ data("atacazo")
+ accessVar("atacazo")
+
+plotDiagram_json("TASMiddlemostVolc.json")
+```
+<img src="man/figures/example_graph.png" width="100%" />
+
+
+<!-- devtools::build_readme() -->

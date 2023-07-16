@@ -1,27 +1,30 @@
 {
-    "name": "TAS",
-    "fullName": "TAS (Le Bas et al. 1986)",
+    "name": "TASMiddlemostVolc",
+    "fullName": "TAS (Middlemost 1994)",
     "details": "",
     "reference": "",
     "url": "",
     "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
-    "dataTransform": "function(){ return(WRanh) }",
+    "dataTransform": null,
     "axesDefinition": {
-        "X": "SiO2",
-        "Y": "Na2O+K2O"
+        "X": "SiO[2]",
+        "Y": "Na[2] * O + K[2] * O"
     },
     "limits": {
         "X": [
-            35,
-            80
+            34,
+            90
         ],
         "Y": [
             0,
-            16
+            19
         ]
     },
+    "log": [
+
+    ],
     "template": {
         "clssf": {
             "type": "NULL",
@@ -40,7 +43,10 @@
                 13,
                 14,
                 15,
-                16
+                16,
+                17,
+                18,
+                19
             ],
             "rcname": [
                 "foidite",
@@ -53,48 +59,57 @@
                 "trachybasalt",
                 "basaltic trachyandesite",
                 "trachyandesite",
-                "trachyte/trachydacite",
-                "tephrite/basanite",
+                "trachydacite",
+                "trachyte",
+                "tephrite",
                 "phonotephrite",
                 "tephriphonolite",
-                "phonolite"
+                "phonolite",
+                "sodalitite/nephelinolith/leucitolith",
+                "silexite"
             ]
         },
         "lines1": {
             "type": "lines",
             "x": [
-                30,
+                37,
                 41,
                 41,
                 45,
                 48.4,
                 52.5,
-                30
+                52.5,
+                37,
+                35,
+                37
             ],
             "y": [
-                0,
-                0,
+                3,
+                3,
                 7,
                 9.4,
                 11.5,
                 14,
-                24.15
+                18,
+                14,
+                9,
+                3
             ],
             "col": "gray8"
         },
         "lines2": {
             "type": "lines",
             "x": [
+                45,
+                45,
                 41,
-                45,
-                45,
                 41
             ],
             "y": [
                 0,
-                0,
                 3,
-                3
+                3,
+                0
             ],
             "col": "gray8"
         },
@@ -150,7 +165,7 @@
             "type": "lines",
             "x": [
                 63,
-                77,
+                77.3,
                 69,
                 63
             ],
@@ -165,17 +180,17 @@
         "lines7": {
             "type": "lines",
             "x": [
-                77,
-                100,
-                100,
-                69,
+                77.3,
+                87.5,
+                85.9,
+                71.8,
                 69
             ],
             "y": [
                 0,
-                0,
-                25,
-                25,
+                4.7,
+                6.8,
+                13.5,
                 8
             ],
             "col": "gray8"
@@ -226,23 +241,41 @@
             ],
             "col": "gray8"
         },
-        "lines11": {
+        "lines12": {
             "type": "lines",
             "x": [
                 63,
                 69,
-                69,
-                57.6
+                71.8,
+                61
             ],
             "y": [
                 7,
                 8,
-                17.73,
+                13.5,
+                8.6
+            ],
+            "col": "gray8"
+        },
+        "lines13": {
+            "type": "lines",
+            "x": [
+                61,
+                71.8,
+                63,
+                61,
+                57.6
+            ],
+            "y": [
+                8.6,
+                13.5,
+                16.2,
+                13.5,
                 11.7
             ],
             "col": "gray8"
         },
-        "lines12": {
+        "lines14": {
             "type": "lines",
             "x": [
                 41,
@@ -262,7 +295,7 @@
             ],
             "col": "gray8"
         },
-        "lines13": {
+        "lines15": {
             "type": "lines",
             "x": [
                 49.4,
@@ -278,7 +311,7 @@
             ],
             "col": "gray8"
         },
-        "lines14": {
+        "lines16": {
             "type": "lines",
             "x": [
                 53,
@@ -294,83 +327,73 @@
             ],
             "col": "gray8"
         },
-        "lines15": {
+        "lines17": {
             "type": "lines",
             "x": [
                 57.6,
-                69,
-                30
+                61,
+                63,
+                57,
+                52.5,
+                52.5
             ],
             "y": [
                 11.7,
-                17.73,
-                24.15
+                13.5,
+                16.2,
+                18,
+                18,
+                14
             ],
             "col": "gray8"
         },
-        "lines16": {
-            "type": "abline",
-            "v": 45,
-            "lty": "dashed",
-            "col": "darkblue"
-        },
-        "lines17": {
-            "type": "abline",
-            "v": 52,
-            "lty": "dashed",
-            "col": "darkblue"
-        },
-        "lines18": {
-            "type": "abline",
-            "v": 63,
-            "lty": "dashed",
-            "col": "darkblue"
-        },
-        "lines19": {
-            "type": "lines",
+        "lines15.1": {
+            "type": "NULL",
             "x": [
-                39.2,
-                40,
-                43.2,
-                45,
-                48,
-                50,
-                53.7,
-                55,
-                60,
-                65,
-                77.4
+                37,
+                52.5,
+                57,
+                71.8,
+                37.99
+            ],
+            "y": [
+                14,
+                18,
+                18,
+                13.5,
+                29.78
+            ],
+            "col": "gray8"
+        },
+        "lines15.2": {
+            "type": "NULL",
+            "x": [
+                77.3,
+                87.5,
+                85.9,
+                100
             ],
             "y": [
                 0,
-                0.4,
-                2,
-                2.8,
-                4,
-                4.75,
-                6,
-                6.4,
-                8,
-                8.8,
-                10
+                4.7,
+                6.8,
+                0
             ],
-            "lty": "dashed",
             "col": "gray8"
         },
         "GCDkit": {
             "type": "NULL",
             "plot.type": "binary",
-            "plot.position": 21,
-            "plot.name": "TAS (Le Bas et al. 1986)"
+            "plot.position": 23,
+            "plot.name": "TAS (Middlemost 1994)"
         },
         "text1": {
             "type": "text",
             "x": 43,
-            "y": 1.55,
-            "text": "Picrobasalt",
+            "y": 1.4,
+            "text": "Picro-\nbasalt",
             "col": "gray8",
-            "srt": 90,
-            "cex": 0.8
+            "srt": 90
         },
         "text2": {
             "type": "text",
@@ -406,24 +429,34 @@
         },
         "text6": {
             "type": "text",
-            "x": 75,
-            "y": 8.3,
+            "x": 80,
+            "y": 6,
             "text": "Rhyolite",
             "col": "gray8"
         },
         "text7": {
             "type": "text",
             "x": 63.5,
-            "y": 11.2,
-            "text": "Trachyte\nTrachydacite",
+            "y": 11.5,
+            "text": "Trachyte",
             "col": "gray8"
+        },
+        "text22": {
+            "type": "text",
+            "x": 66,
+            "y": 9,
+            "text": "Trachy-\ndacite",
+            "col": "gray8",
+            "cex": 0.8,
+            "srt": 50
         },
         "text8": {
             "type": "text",
             "x": 57.8,
             "y": 8.5,
             "text": "Trachy-\nandesite",
-            "col": "gray8"
+            "col": "gray8",
+            "cex": 0.8
         },
         "text9": {
             "type": "text",
@@ -445,80 +478,55 @@
             "type": "text",
             "x": 45,
             "y": 7,
-            "text": "Tephrite\nBasanite",
-            "col": "gray8"
+            "text": "Tephrite",
+            "col": "gray8",
+            "srt": 50
         },
         "text12": {
             "type": "text",
             "x": 49.2,
             "y": 9.3,
             "text": "Phono-\ntephrite",
-            "col": "gray8"
+            "col": "gray8",
+            "cex": 0.8,
+            "srt": 50
         },
         "text13": {
             "type": "text",
             "x": 53,
             "y": 11.5,
             "text": "Tephri-\nphonolite",
-            "col": "gray8"
+            "col": "gray8",
+            "cex": 0.8,
+            "srt": 50
         },
         "text14": {
             "type": "text",
             "x": 57,
-            "y": 14,
+            "y": 15,
             "text": "Phonolite",
             "col": "gray8"
         },
         "text15": {
             "type": "text",
-            "x": 43,
+            "x": 44,
             "y": 12,
             "text": "Foidite",
             "col": "gray8"
         },
-        "text16": {
-            "type": "text",
-            "x": 38,
-            "y": 2,
-            "text": "Alkaline",
-            "col": "gray8",
-            "srt": 45
-        },
-        "text17": {
+        "text22.1": {
             "type": "text",
             "x": 55,
+            "y": 18.5,
+            "text": "Sodalitite/Nephelinolith/Leucitolith",
+            "col": "gray8"
+        },
+        "text23": {
+            "type": "text",
+            "x": 85,
             "y": 1,
-            "text": "Subalkaline/Tholeiitic",
-            "col": "gray8",
-            "srt": 5
-        },
-        "text18": {
-            "type": "text",
-            "x": 41,
-            "y": 15.5,
-            "text": "Ultrabasic",
-            "col": "darkblue"
-        },
-        "text19": {
-            "type": "text",
-            "x": 49,
-            "y": 15.5,
-            "text": "Basic",
-            "col": "darkblue"
-        },
-        "text20": {
-            "type": "text",
-            "x": 58,
-            "y": 15.5,
-            "text": "Intermediate",
-            "col": "darkblue"
-        },
-        "text21": {
-            "type": "text",
-            "x": 67,
-            "y": 15.5,
-            "text": "Acid",
-            "col": "darkblue"
+            "text": "Silexite",
+            "col": "gray8"
         }
     }
 }
