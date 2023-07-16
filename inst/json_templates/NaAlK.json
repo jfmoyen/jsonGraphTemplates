@@ -215,27 +215,6 @@
             "col": "gray8",
             "lty": "dashed"
         },
-        "A": {
-            "type": "text",
-            "x": 0,
-            "y": -0.03,
-            "text": "Na2O",
-            "adj": 0.5
-        },
-        "C": {
-            "type": "text",
-            "x": 1,
-            "y": -0.03,
-            "text": "K2O",
-            "adj": 0.5
-        },
-        "B": {
-            "type": "text",
-            "x": 0.5,
-            "y": 0.896,
-            "text": "Al2O3",
-            "adj": 0.5
-        },
         "GCDkit": {
             "type": "NULL",
             "plot.type": "ternary",

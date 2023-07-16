@@ -154,27 +154,6 @@
             "lty": "solid",
             "lwd": 1
         },
-        "A": {
-            "type": "text",
-            "x": 0,
-            "y": -0.03,
-            "text": "La/10",
-            "adj": 0.5
-        },
-        "B": {
-            "type": "text",
-            "x": 0.5,
-            "y": 0.896,
-            "text": "Y/15",
-            "adj": 0.5
-        },
-        "C": {
-            "type": "text",
-            "x": 1,
-            "y": -0.03,
-            "text" : "Nb/8",
-            "adj": 0.5
-        },
         "GCDkit": {
             "type": "NULL",
             "plot.type": "ternary",

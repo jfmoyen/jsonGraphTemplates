@@ -80,7 +80,7 @@
             "type": "text",
             "x": 9,
             "y": 2.15,
-            "text": "SiO2 > 68",
+            "text": "expression({SiO[2]} > 68*symbol(' ')*wt.*symbol('%'))",
             "cex": 1,
             "adj": 0,
             "col": "darkblue"

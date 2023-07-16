@@ -16,7 +16,7 @@ library(jsonGraphTemplates)
 
 ##### Binary diagrams ######
 
-plotDiagram_json(json="Sylvester.json")
+plotDiagram_json(json="sylvester.json")
 
 plotDiagram_json(wrdata=WR.ata,lbl=lbl.ata,json="Sylvester.json")
 
@@ -25,9 +25,21 @@ plotDiagram_json(wrdata=WR.ata,lbl=lbl.ata,json="Sylvester.json")
 
  ##### Ternary diagrams ######
 
- plotDiagram_json("OConnorVolc.json")
+ plotDiagram_json(json="AFM.json")
 
- plotDiagram("OConnorPlut",F)
+ plotDiagram("OConnor",F)
 
+
+#########
+
+ templ_dir <- system.file("json_templates",package="jsonGraphTemplates")
+ templ_list <- list.files(templ_dir)
+ sapply(templ_list,
+        function(json){
+          thejson <- system.file("json_templates",json,
+                                 package="jsonGraphTemplates")
+          graphDef<-jsonlite::read_json(thejson,simplifyVector = T)
+          if(graphDef$diagramType=="ternary"){cat(json,"is ternary\n")}
+ })
 
 

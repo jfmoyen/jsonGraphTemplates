@@ -4,10 +4,10 @@
 \alias{plotDiagram_json_binary}
 \title{Inner function, for binary plots}
 \usage{
-plotDiagram_json_binary(tpl, dd, lbl)
+plotDiagram_json_binary(graphDef, dd, lbl)
 }
 \arguments{
-\item{tpl}{The template, loaded into a list from json}
+\item{graphDef}{The template, loaded into a list from json}
 
 \item{dd}{The plotting dataset}
 

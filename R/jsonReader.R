@@ -45,202 +45,62 @@ plotDiagram_json <- function(wrdata=WR,lbl=labels,json, path = NULL,verbose=F){
     thejson<-paste(path,json,sep="/")
   }
 
-  tpl<-jsonlite::read_json(thejson,simplifyVector = T)
+  graphDef<-jsonlite::read_json(thejson,simplifyVector = T)
 
 #### Prepare the data ####
-
-# If required by the template, calculate the transformed data
-if(is.null(tpl$dataTransform)){
-  dd<-wrdata
-}else{
-  dd<-eval(parse(text=tpl$dataTransform))()
-}
-
-# If we have a filter
-
-if(!is.null(tpl$dataFilter)){
-  selected <- selectSubset(what=tpl$dataFilter,
-                 where=cbind(lbl,dd),
-                 all.nomatch=F,
-                 save=F)
-  if(selected==""){stop("No data to plot matching criteria")}
-  dd <- dd[selected,,drop=F]
-  lbl <- lbl[selected,,drop=F]
-}
+  preparedData <-data_preparation(graphDef,wrdata,lbl)
 
 #### Main switch - what are we trying to plot ? ####
 
-switch(EXPR = tpl$diagramType,
-       "binary" = plotDiagram_json_binary(tpl,dd,lbl),
-       "ternary" = plotDiagram_json_ternary(tpl,dd,lbl),
-       stop(paste("Sorry, plotting of type",tpl$diagramType,"is not implemented yet",sep=" "))
+switch(EXPR = graphDef$diagramType,
+       "binary" = pp<-plotDiagram_json_binary(graphDef,preparedData$wrdata,preparedData$lbl),
+       "ternary" = pp<-plotDiagram_json_ternary(graphDef,preparedData$wrdata,preparedData$lbl),
+       stop(paste("Sorry, plotting of type",graphDef$diagramType,"is not implemented yet",sep=" "))
        )
+
+  invisible(pp)
 }
 
 ############### Plot json template in Figaro: BINARY ####################
 #' Inner function, for binary plots
 #'
-#' @param tpl The template, loaded into a list from json
+#' @param graphDef The template, loaded into a list from json
 #' @param dd The plotting dataset
 #' @param lbl The labels (GCDkit style)
 #' @details
 #' Internal function, that does the actual plotting
 #' in the case of a binary plot
 
-plotDiagram_json_binary <- function(tpl,dd, lbl){
-  # Multiplier (optional)
-  if(is.null(tpl$dataMultiply)){
-    dataMultiply <- 1
-  }else{
-    dataMultiply <- tpl$dataMultiply
-    }
-
+plotDiagram_json_binary <- function(graphDef,dd, lbl){
   # Get the X and Y values
-  x.data <<- GCDkit::calcCore(tpl$axesDefinition$X,where="dd")$results * dataMultiply
-  y.data <<- GCDkit::calcCore(tpl$axesDefinition$Y,where="dd")$results * dataMultiply
+  x.data <- GCDkit::calcCore(graphDef$axesDefinition$X,where="dd")$results
+  y.data <- GCDkit::calcCore(graphDef$axesDefinition$Y,where="dd")$results
 
-  #### Optional tags ####
-  # Custom axes names
-  if(!is.null(tpl$axesName$X)){
-    xlab <- GCDkit::annotate(tpl$axesName$X)
+  ##### Optional tags #####
+  # Parse axes labels, axes suppression and log scale
+  parsedAxesOptions <- axes_parser_binary(graphDef)
+
+  #### Parse the template proper #####
+  if(is.null(graphDef$template)){
+    template_nice <- NULL
   }else{
-    xlab <- GCDkit::annotate(tpl$axesDefinition$X)
+    template_nice<-lapply(graphDef$template,
+                          template_element_parser)
   }
 
-  if(!is.null(tpl$axesName$Y)){
-    ylab <- GCDkit::annotate(tpl$axesName$Y)
-  }else{
-    ylab <- GCDkit::annotate(tpl$axesDefinition$Y)
-  }
-
-  # Log scales
-  if(is.null(tpl$log)){
-    which.log <- ""
-  }else{
-    which.log <- tpl$log
-  }
-
-  # Suppress axes
-  if(is.null(tpl$suppressAxes) || !tpl$suppressAxes){
-    axes <- TRUE
-  }else{
-    axes <- FALSE
-  }
 
   #### Build the figaro "style sheet" ####
   sheet<-list(demo=list(fun="plot",
-                        call=list(xlim = tpl$limits$X,
-                                  ylim = tpl$limits$Y,
-                                  xlab=xlab,
-                                  ylab=ylab,
-                                  log=which.log,
+                        call=list(xlim = graphDef$limits$X,
+                                  ylim = graphDef$limits$Y,
+                                  xlab=parsedAxesOptions$xlab,
+                                  ylab=parsedAxesOptions$ylab,
+                                  log=parsedAxesOptions$which.log,
                                   bg="transparent",
                                   fg="black",
                                   xaxs = "i", yaxs = "i",
                                   #asp=1,
-                                  axes=axes),
-                        template=tpl$template))
-
-  # Assign to global env
-  assign("sheet", sheet, .GlobalEnv)
-  assign("x.data", x.data, .GlobalEnv)
-  assign("y.data", y.data, .GlobalEnv)
-
-  #### Create the actual figaro object and plot ####
-  pp <- GCDkit::figaro(demo, prefix = "sheet")
-
-  pp$draw(x.data, y.data,
-          main=GCDkit::annotate(tpl$fullName),
-          xlab=xlab,
-          ylab=ylab,
-          col = subset(lbl, rownames(dd) %in% names(x.data),
-                       "Colour",
-                       drop = TRUE),
-          pch = subset(lbl, rownames(dd) %in% names(x.data),
-                       "Symbol",
-                       drop = TRUE),
-          cex = subset(lbl, rownames(dd) %in% names(x.data),
-                       "Size",
-                       drop = TRUE),
-          plotting.function = "fromJSON",
-          new = T
-  )
-}
-
-############### Plot json template in Figaro: TERNARY ####################
-#' Inner function, for binary plots
-#'
-#' @param tpl The template, loaded into a list from json
-#' @param dd The plotting dataset
-#' @param lbl The labels (GCDkit style)
-#' @details
-#' Internal function, that does the actual plotting
-#' in the case of a binary plot
-
-plotDiagram_json_ternary <- function(tpl,dd,lbl){
-
-  # Multiplier (optional)
-  if(is.null(tpl$dataMultiply)){
-    dataMultiply <- 1
-  }else{
-    dataMultiply <- tpl$dataMultiply
-  }
-
-  # Get the A, B and C data (apices)
-  a.data <- GCDkit::calcCore(tpl$axesDefinition$A,where="dd")$results
-  b.data <- GCDkit::calcCore(tpl$axesDefinition$B,where="dd")$results
-  c.data <- GCDkit::calcCore(tpl$axesDefinition$C,where="dd")$results
-
-  # Convert to X and Y
-  sum_apices <- a.data+b.data+c.data
-
-  x.data <<- ((c.data/sum_apices) + (b.data / sum_apices) /2) * dataMultiply
-  y.data <<- (sqrt(3)*(b.data / sum_apices)/2)* dataMultiply
-
-  #### Optional tags ####
-  # Custom axes names
-  if(!is.null(tpl$axesName$X)){
-    xlab <- GCDkit::annotate(tpl$axesName$X)
-  }else{
-    xlab <- GCDkit::annotate(tpl$axesDefinition$X)
-  }
-
-  if(!is.null(tpl$axesName$Y)){
-    ylab <- GCDkit::annotate(tpl$axesName$Y)
-  }else{
-    ylab <- GCDkit::annotate(tpl$axesDefinition$Y)
-  }
-
-  # Log scales
-  if(is.null(tpl$log)){
-    which.log <- ""
-  }else{
-    which.log <- tpl$log
-  }
-
-  # Suppress axes
-  if(is.null(tpl$suppressAxes) || !tpl$suppressAxes){
-    axes <- TRUE
-  }else{
-    axes <- FALSE
-  }
-
-
-template_nice<-lapply(tpl$template,
-       niceText)
-
-  #### Build the figaro "style sheet" ####
-  sheet<-list(demo=list(fun="plot",
-                        call=list(xlim = tpl$limits$X,
-                                  ylim = tpl$limits$Y,
-                                  xlab=xlab,
-                                  ylab=ylab,
-                                  log=which.log,
-                                  bg="transparent",
-                                  fg="black",
-                                  xaxs = "i", yaxs = "i",
-                                  asp=1,
-                                  axes=axes),
+                                  axes=parsedAxesOptions$axes),
                         template=template_nice))
 
   # Assign to global env
@@ -252,9 +112,9 @@ template_nice<-lapply(tpl$template,
   pp <- GCDkit::figaro(demo, prefix = "sheet")
 
   pp$draw(x.data, y.data,
-          main=GCDkit::annotate(tpl$fullName),
-          xlab=xlab,
-          ylab=ylab,
+          main=GCDkit::annotate(graphDef$fullName),
+          xlab=parsedAxesOptions$xlab,
+          ylab=parsedAxesOptions$ylab,
           col = subset(lbl, rownames(dd) %in% names(x.data),
                        "Colour",
                        drop = TRUE),
@@ -267,15 +127,196 @@ template_nice<-lapply(tpl$template,
           plotting.function = "fromJSON",
           new = T
   )
+invisible(pp)
 }
-##### ancillary function to format text using GCDkit annotate
+
+############### Plot json template in Figaro: TERNARY ####################
+#' Inner function, for binary plots
+#'
+#' @param graphDef The template, loaded into a list from json
+#' @param dd The plotting dataset
+#' @param lbl The labels (GCDkit style)
+#' @details
+#' Internal function, that does the actual plotting
+#' in the case of a binary plot
+
+plotDiagram_json_ternary <- function(graphDef,dd,lbl){
+
+  # Get the A, B and C data (apices)
+  a.data <- GCDkit::calcCore(graphDef$axesDefinition$A,where="dd")$results
+  b.data <- GCDkit::calcCore(graphDef$axesDefinition$B,where="dd")$results
+  c.data <- GCDkit::calcCore(graphDef$axesDefinition$C,where="dd")$results
+
+  # Convert to X and Y
+  sum_apices <- a.data+b.data+c.data
+
+  x.data <- ((c.data/sum_apices) + (b.data / sum_apices) /2)
+  y.data <- (sqrt(3)*(b.data / sum_apices)/2)
+
+  ##### Optional tags #####
+  # Parse axes labels, axes suppression and log scale
+  parsedAxesOptions <- axes_parser_ternary(graphDef)
+
+  #### Parse the template proper #####
+  template_nice<-lapply(graphDef$template,
+                      template_element_parser)
+
+  #### Prepare the "pseudo-axes" labels, A, B and C ####
+  A=list(type="text",x=0,y=-0.03,text=annotate(parsedAxesOptions$alab),adj=0.5)
+  B=list(type="text",x=0.5,y=sqrt(3)/2+.03,text=annotate(parsedAxesOptions$blab),adj=0.5)
+  C=list(type="text",x=1,y=-0.03,text=annotate(parsedAxesOptions$clab),adj=0.5)
+
+  ####Merge the elements ####
+  template_nice<- c(template_nice,A=list(A),B=list(B),C=list(C))
+
+  #### Build the figaro "style sheet" ####
+  sheet<-list(demo=list(fun="plot",
+                        call=list(xlim = graphDef$limits$X,
+                                  ylim = graphDef$limits$Y,
+                                  xlab=NULL,
+                                  ylab=NULL,
+                                  log="",
+                                  bg="transparent",
+                                  fg="black",
+                                  xaxs = "i", yaxs = "i",
+                                  asp=1,
+                                  axes=FALSE),
+                        template=template_nice ))
+
+  # Assign to global env
+  assign("sheet", sheet, .GlobalEnv)
+  assign("x.data", x.data, .GlobalEnv)
+  assign("y.data", y.data, .GlobalEnv)
+
+  #### Create the actual figaro object and plot ####
+  pp <- GCDkit::figaro(demo, prefix = "sheet")
+
+  pp$draw(x.data, y.data,
+          main=GCDkit::annotate(graphDef$fullName),
+          xlab=NULL,
+          ylab=NULL,
+          col = subset(lbl, rownames(dd) %in% names(x.data),
+                       "Colour",
+                       drop = TRUE),
+          pch = subset(lbl, rownames(dd) %in% names(x.data),
+                       "Symbol",
+                       drop = TRUE),
+          cex = subset(lbl, rownames(dd) %in% names(x.data),
+                       "Size",
+                       drop = TRUE),
+          plotting.function = "fromJSON",
+          new = T
+  )
+
+invisible(pp)
+}
+
+#### Template prettyfier ####
+#' This function looks at individual template elements,
+#' and modifies them as desired
 #' @param tpl_el A template element
-#' @return if the element is a text AND has no line break,
-#' an expression containing the formatted version of it.
-#' else, the element itself.
-niceText <- function(tpl_el){
-  if(tpl_el$type=="text"&&!grepl("\\n",tpl_el$text)){
-    tpl_el$text <- GCDkit::annotate(tpl_el$text)
-  }
-return(tpl_el)
+template_element_parser<-function(tpl_el){
+
+#### Prettyfy text by using annotate, where possible
+  # if(tpl_el$type=="text"&&!grepl("\\n",tpl_el$text)){
+  #   tpl_el$text <- as.expression(GCDkit::annotate(tpl_el$text) )
+  # }
+
+  return(tpl_el)
 }
+
+#### Custom axes names ####
+#' Ancilary function to get proper labels for axes, if supplied
+#' @param graphDef A graph definition, loaded from json
+#' @param W Axis to process
+.make.names<-function(graphDef,W){
+  if(!is.null(graphDef$axesName[[W]])){
+    wlab <- GCDkit::annotate(graphDef$axesName[[W]])
+  }else{
+    wlab <- GCDkit::annotate(graphDef$axesDefinition[[W]])
+  }
+}
+
+
+#### Axes option parser (binary diagrams) ####
+#' This function parses various elements of a graph definition
+#' used to control the appearance of axes. They include
+#' xlab, ylab, axes suppression of needed (fr ternary, mostly),
+#' log scale.
+#' @param graphDef A graph definition, loaded from json
+axes_parser_binary<-function(graphDef){
+
+  # Custom axes names
+  xlab <- .make.names(graphDef,"X")
+  ylab <- .make.names(graphDef,"Y")
+
+  # Log scales
+  if(is.null(graphDef$log)){
+    which.log <- ""
+  }else{
+    which.log <- graphDef$log
+  }
+
+  # Suppress axes
+  if(is.null(graphDef$suppressAxes) || !graphDef$suppressAxes){
+    axes <- TRUE
+  }else{
+    axes <- FALSE
+  }
+
+  return(list(xlab = xlab,
+              ylab=ylab,
+              which.log=which.log,
+              axes=axes))
+}
+
+#### Axes option parser (ternary diagrams) ####
+#' This function parses various elements of a graph definition
+#' used to control the appearance of axes. They include
+#' xlab, ylab, axes suppression of needed (fr ternary, mostly),
+#' log scale.
+#' @param graphDef A graph definition, loaded from json
+axes_parser_ternary<-function(graphDef){
+
+  alab <- .make.names(graphDef,"A")
+  blab <- .make.names(graphDef,"B")
+  clab <- .make.names(graphDef,"C")
+
+  return(list(alab = alab,
+              blab=blab,
+              clab=clab))
+}
+
+#### Data preparation ####
+#' This function prepares the data by filtering it,
+#' if a filter condition was supplied; and by transform it, if needed.
+#'
+#' @param graphDef A graph definition, loaded from json
+#' @param wrdata WR data (typically WR in GCDkit, or equivalent)
+#' @param lbl label data (typically labels in GCDkit, or equivalent)
+#'
+data_preparation<-function(graphDef,wrdata,lbl){
+  # If required by the template, calculate the transformed data
+  if(is.null(graphDef$dataTransform)){
+    dd<-wrdata
+  }else{
+    dd<-eval(parse(text=graphDef$dataTransform))()
+  }
+
+  # If we have a filter
+
+  if(!is.null(graphDef$dataFilter)){
+    selected <- selectSubset(what=graphDef$dataFilter,
+                             where=cbind(lbl,dd),
+                             all.nomatch=F,
+                             save=F)
+    if(selected==""){stop("No data to plot matching criteria")}
+    dd <- dd[selected,,drop=F]
+    lbl <- lbl[selected,,drop=F]
+  }
+
+  return(list(wrdata = dd,
+              lbl = lbl))
+
+}
+

@@ -150,27 +150,6 @@
             ],
             "col": "gray8"
         },
-        "A": {
-            "type": "text",
-            "x": 0,
-            "y": -0.03,
-            "text": "A",
-            "adj": 0.5
-        },
-        "C": {
-            "type": "text",
-            "x": 1,
-            "y": -0.03,
-            "text": "M",
-            "adj": 0.5
-        },
-        "B": {
-            "type": "text",
-            "x": 0.5,
-            "y": 0.896,
-            "text": "F",
-            "adj": 0.5
-        },
         "GCDkit": {
             "type": "NULL",
             "plot.type": "ternary",

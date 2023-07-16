@@ -131,27 +131,6 @@
             "lty": "solid",
             "lwd": 1
         },
-        "A": {
-            "type": "text",
-            "x": 0.1,
-            "y": -0.025,
-            "text": "Al2O3/(FeOt+MgO)",
-            "adj": 0.5
-        },
-        "B": {
-            "type": "text",
-            "x": 0.5,
-            "y": 0.896,
-            "text": "3 CaO",
-            "adj": 0.5
-        },
-        "C": {
-            "type": "text",
-            "x": 0.95,
-            "y": -0.025,
-            "text": "K2O/Na2O",
-            "adj": 0.5
-        },
         "GCDkit": {
             "type": "NULL",
             "plot.type": "ternary",

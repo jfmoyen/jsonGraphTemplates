@@ -52,6 +52,6 @@ readFigaroTemplate<-function(diagram,plot=F,...){
 
 ##########
 ee<-readFigaroTemplate("Sylvester")
-#ee$template$B$text<-NULL
+ee$template$text3$text<-NULL
 ee.json <- prettify(toJSON(ee,null="null",auto_unbox = T))
 write(ee.json,"./inst/json_templates/Sylvester.json")

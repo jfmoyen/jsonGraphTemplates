@@ -1,0 +1,22 @@
+AFM.json is ternary
+Cabanis.json is ternary
+Enrique.json is ternary
+Harris.json is ternary
+Jensen.json is ternary
+LaurentSource.json is ternary
+Meschede.json is ternary
+Mullen.json is ternary
+NaAlK.json is ternary
+OConnorPlut.json is ternary
+OConnorVolc.json is ternary
+PearceEtAl.json is ternary
+
+Have text to format:
+Mullen
+Sylvester
+
+PearceNbTh needs reservoirs
+
+Have filters to format:
+Mullen
+Sylvester
