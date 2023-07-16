@@ -1,0 +1,467 @@
+{
+    "name": "WinFloyd2",
+    "fullName": "Zr/TiO2 - SiO2 (Winchester + Floyd 1977)",
+    "details": "",
+    "reference": "",
+    "url": "",
+    "diagramType": "binary",
+    "dataTransform": null,
+    "axesDefinition": {
+        "X": "Zr/TiO2/1e4",
+        "Y": "SiO2"
+    },
+    "axesName": {
+        "X": "Zr/TiO2 (ppm)",
+        "Y": "SiO2"
+    },
+    "limits": {
+        "X": [
+            0.001,
+            10
+        ],
+        "Y": [
+            40,
+            80
+        ]
+    },
+    "log": "x",
+    "template": {
+        "clssf": {
+            "type": "NULL",
+            "use": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+            ],
+            "rcname": [
+                "TrAn",
+                "Basanite/Trachybasanite/Nephelinite",
+                "Phonolite",
+                "Trachyte",
+                "Comendite/Pantellerite",
+                "Rhyolite",
+                "Rhyodacite/Dacite",
+                "Andesite",
+                "Sub-AB",
+                "AB"
+            ]
+        },
+        "lines1": {
+            "type": "NULL",
+            "x": [
+                -1.6576,
+                -1.5086,
+                -1,
+                -1.2218,
+                -1.3979,
+                -1.8097,
+                -1.6576
+            ],
+            "y": [
+                53,
+                56,
+                60,
+                61,
+                62,
+                53,
+                53
+            ],
+            "col": "gray8",
+            "lwd": 3
+        },
+        "lines2": {
+            "type": "NULL",
+            "x": [
+                -2,
+                -0.8097,
+                -1.5086,
+                -2
+            ],
+            "y": [
+                45,
+                49,
+                53,
+                45
+            ],
+            "col": "gray8",
+            "lwd": 3
+        },
+        "lines3": {
+            "type": "NULL",
+            "x": [
+                -0.8097,
+                0.699,
+                -1,
+                -1.5086,
+                -1.6576,
+                -1.5086,
+                -0.8097
+            ],
+            "y": [
+                49,
+                62,
+                60,
+                56,
+                53,
+                53,
+                49
+            ],
+            "col": "gray8",
+            "lwd": 3
+        },
+        "lines4": {
+            "type": "NULL",
+            "x": [
+                -1,
+                0.699,
+                0.1139,
+                -1.0969,
+                -1.3979,
+                -1.2218,
+                -1
+            ],
+            "y": [
+                60,
+                62,
+                66,
+                66,
+                62,
+                61,
+                60
+            ],
+            "col": "gray8",
+            "lwd": 3
+        },
+        "lines5": {
+            "type": "NULL",
+            "x": [
+                0.1139,
+                -0.1549,
+                -0.6021,
+                -1.0969,
+                0.1139
+            ],
+            "y": [
+                66,
+                79,
+                73,
+                66,
+                66
+            ],
+            "col": "gray8",
+            "lwd": 3
+        },
+        "lines6": {
+            "type": "NULL",
+            "x": [
+                -0.6021,
+                -0.1549,
+                -2,
+                -0.6021
+            ],
+            "y": [
+                73,
+                79,
+                73,
+                73
+            ],
+            "col": "gray8",
+            "lwd": 3
+        },
+        "lines7": {
+            "type": "NULL",
+            "x": [
+                -1.3979,
+                -1.0969,
+                -0.6021,
+                -2,
+                -2.2218,
+                -1.5686,
+                -1.3979
+            ],
+            "y": [
+                62,
+                66,
+                73,
+                73,
+                63,
+                63,
+                62
+            ],
+            "col": "gray8",
+            "lwd": 3
+        },
+        "lines8": {
+            "type": "NULL",
+            "x": [
+                -1.8097,
+                -1.3979,
+                -1.5686,
+                -2.2218,
+                -2.699,
+                -1.8097
+            ],
+            "y": [
+                53,
+                62,
+                63,
+                63,
+                53,
+                53
+            ],
+            "col": "gray8",
+            "lwd": 3
+        },
+        "lines9": {
+            "type": "NULL",
+            "x": [
+                -2.0458,
+                -1.757,
+                -2.699,
+                -2.0458
+            ],
+            "y": [
+                47.5,
+                53,
+                53,
+                47.5
+            ],
+            "col": "gray8",
+            "lwd": 3
+        },
+        "lines10": {
+            "type": "NULL",
+            "x": [
+                -2,
+                -1.5086,
+                -1.757,
+                -2.0458,
+                -2
+            ],
+            "y": [
+                45,
+                53,
+                53,
+                47.5,
+                45
+            ],
+            "col": "gray8",
+            "lwd": 3
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "binary",
+            "plot.position": 28,
+            "plot.name": "Zr/TiO2 - SiO2 (Winchester + Floyd 1977)"
+        },
+        "lines21": {
+            "type": "lines",
+            "x": [
+                0.7,
+                0.04,
+                0.0155
+            ],
+            "y": [
+                79,
+                62,
+                53
+            ],
+            "col": "gray8"
+        },
+        "lines22": {
+            "type": "lines",
+            "x": [
+                0.01,
+                0.25
+            ],
+            "y": [
+                73,
+                73
+            ],
+            "col": "gray8"
+        },
+        "lines23": {
+            "type": "lines",
+            "x": [
+                0.08,
+                1.3
+            ],
+            "y": [
+                66,
+                66
+            ],
+            "col": "gray8"
+        },
+        "lines24": {
+            "type": "lines",
+            "x": [
+                0.006,
+                0.027,
+                0.04,
+                0.06,
+                0.1,
+                5
+            ],
+            "y": [
+                63,
+                63,
+                62,
+                61,
+                60,
+                62
+            ],
+            "col": "gray8"
+        },
+        "lines25": {
+            "type": "lines",
+            "x": [
+                0.002,
+                0.031,
+                0.155
+            ],
+            "y": [
+                53,
+                53,
+                49
+            ],
+            "col": "gray8"
+        },
+        "lines26": {
+            "type": "lines",
+            "x": [
+                0.1,
+                0.031,
+                0.022
+            ],
+            "y": [
+                60,
+                56,
+                53
+            ],
+            "col": "gray8"
+        },
+        "lines27": {
+            "type": "lines",
+            "x": [
+                0.01,
+                0.031
+            ],
+            "y": [
+                45,
+                53
+            ],
+            "col": "gray8"
+        },
+        "lines28": {
+            "type": "lines",
+            "x": [
+                0.009,
+                0.0175
+            ],
+            "y": [
+                47.5,
+                53
+            ],
+            "lty": "dashed",
+            "col": "gray8"
+        },
+        "text1": {
+            "type": "text",
+            "x": 1,
+            "y": 55,
+            "text": "Phonolite",
+            "col": "gray8",
+            "cex": 1,
+            "adj": 0
+        },
+        "text1.1": {
+            "type": "text",
+            "x": 1,
+            "y": 65,
+            "text": "Trachyte",
+            "col": "gray8",
+            "cex": 1,
+            "adj": 0
+        },
+        "text1.2": {
+            "type": "text",
+            "x": 0.002,
+            "y": 75,
+            "text": "Rhyolite",
+            "col": "gray8",
+            "cex": 1,
+            "adj": 0
+        },
+        "text1.3": {
+            "type": "text",
+            "x": 0.002,
+            "y": 70,
+            "text": "Rhyodacite\nDacite",
+            "col": "gray8",
+            "cex": 1,
+            "adj": 0
+        },
+        "text1.4": {
+            "type": "text",
+            "x": 0.002,
+            "y": 50,
+            "text": "Sub-AB",
+            "col": "gray8",
+            "cex": 1,
+            "adj": 0
+        },
+        "text1.5": {
+            "type": "text",
+            "x": 0.04,
+            "y": 60.5,
+            "text": "TrAn",
+            "col": "gray8",
+            "cex": 1,
+            "adj": 0
+        },
+        "text1.6": {
+            "type": "text",
+            "x": 0.007,
+            "y": 46,
+            "text": "AB",
+            "col": "gray8",
+            "cex": 1,
+            "adj": 0
+        },
+        "text1.7": {
+            "type": "text",
+            "x": 1,
+            "y": 75,
+            "text": "Comendite\nPantellerite",
+            "col": "gray8",
+            "cex": 1,
+            "adj": 0
+        },
+        "text1.8": {
+            "type": "text",
+            "x": 0.03,
+            "y": 46,
+            "text": "Basanite\nTrachybasanite\nNephelinite",
+            "col": "gray8",
+            "cex": 1,
+            "adj": 0
+        },
+        "text1.9": {
+            "type": "text",
+            "x": 0.002,
+            "y": 60,
+            "text": "Andesite",
+            "col": "gray8",
+            "cex": 1,
+            "adj": 0
+        }
+    }
+}
+

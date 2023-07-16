@@ -1,0 +1,269 @@
+{
+    "name": "DebonBA",
+    "fullName": "B-A (Debon + Le Fort 1983)",
+    "details": "",
+    "reference": "",
+    "url": "",
+    "diagramType": "binary",
+    "dataTransform": "function(){ DebonCalc(milli,GUI=F) }",
+    "axesDefinition": {
+        "X": "B",
+        "Y": "A"
+    },
+    "axesName": {
+        "X": "B = Fe + Mg +Ti",
+        "Y": "A = Al - (K + Na + 2Ca)"
+    },
+    "limits": {
+        "X": [
+            0,
+            500
+        ],
+        "Y": [
+            -500,
+            500
+        ]
+    },
+    "template": {
+        "clssf": {
+            "type": "NULL",
+            "use": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "rcname": [
+                "I",
+                "II",
+                "III",
+                "IV",
+                "V",
+                "VI"
+            ]
+        },
+        "lines1": {
+            "type": "NULL",
+            "x": [
+                0,
+                435,
+                0,
+                0
+            ],
+            "y": [
+                0,
+                500,
+                500,
+                0
+            ]
+        },
+        "lines2": {
+            "type": "NULL",
+            "x": [
+                0,
+                435,
+                500,
+                600,
+                0
+            ],
+            "y": [
+                0,
+                500,
+                500,
+                250,
+                0
+            ]
+        },
+        "lines3": {
+            "type": "NULL",
+            "x": [
+                0,
+                600,
+                1500,
+                0
+            ],
+            "y": [
+                0,
+                250,
+                0,
+                0
+            ]
+        },
+        "lines4": {
+            "type": "NULL",
+            "x": [
+                0,
+                1500,
+                500,
+                0
+            ],
+            "y": [
+                0,
+                0,
+                -239.36,
+                0
+            ]
+        },
+        "lines5": {
+            "type": "NULL",
+            "x": [
+                0,
+                500,
+                500,
+                420,
+                0
+            ],
+            "y": [
+                0,
+                -239.36,
+                -885,
+                -885,
+                0
+            ]
+        },
+        "lines6": {
+            "type": "NULL",
+            "x": [
+                0,
+                420,
+                0,
+                0
+            ],
+            "y": [
+                0,
+                -885,
+                -885,
+                0
+            ]
+        },
+        "lines7": {
+            "type": "lines",
+            "x": [
+                0,
+                420
+            ],
+            "y": [
+                0,
+                -885
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines8": {
+            "type": "lines",
+            "x": [
+                0,
+                470
+            ],
+            "y": [
+                0,
+                -225
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines9": {
+            "type": "lines",
+            "x": [
+                0,
+                1500
+            ],
+            "y": [
+                0,
+                0
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines10": {
+            "type": "lines",
+            "x": [
+                0,
+                600
+            ],
+            "y": [
+                0,
+                250
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines11": {
+            "type": "lines",
+            "x": [
+                0,
+                435
+            ],
+            "y": [
+                0,
+                500
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines12": {
+            "type": "lines",
+            "x": [
+                38.8,
+                38.8
+            ],
+            "y": [
+                -500,
+                500
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "binary",
+            "plot.position": 35,
+            "plot.name": "B-A (Debon + Le Fort 1983)"
+        },
+        "text1": {
+            "type": "text",
+            "x": 70,
+            "y": -400,
+            "text": "VI",
+            "col": "gray8"
+        },
+        "text2": {
+            "type": "text",
+            "x": 400,
+            "y": -400,
+            "text": "V",
+            "col": "gray8"
+        },
+        "text3": {
+            "type": "text",
+            "x": 450,
+            "y": -100,
+            "text": "IV",
+            "col": "gray8"
+        },
+        "text4": {
+            "type": "text",
+            "x": 450,
+            "y": 50,
+            "text": "III",
+            "col": "gray8"
+        },
+        "text5": {
+            "type": "text",
+            "x": 400,
+            "y": 250,
+            "text": "II",
+            "col": "gray8"
+        },
+        "text6": {
+            "type": "text",
+            "x": 100,
+            "y": 300,
+            "text": "I",
+            "col": "gray8"
+        }
+    }
+}
+

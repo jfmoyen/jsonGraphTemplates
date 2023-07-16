@@ -1,0 +1,266 @@
+{
+    "name": "PeceTaylor",
+    "fullName": "SiO2 - K2O (Peccerillo + Taylor 1976)",
+    "details": "",
+    "reference": "",
+    "url": "",
+    "diagramType": "binary",
+    "dataTransform": null,
+    "axesDefinition": {
+        "X": "SiO2",
+        "Y": "K2O"
+    },
+    "limits": {
+        "X": [
+            45,
+            78
+        ],
+        "Y": [
+            0,
+            7
+        ]
+    },
+    "template": {
+        "clssf": {
+            "type": "NULL",
+            "use": [
+                2,
+                3,
+                4,
+                5
+            ],
+            "rcname": [
+                "tholeiite series",
+                "calc-alkaline series",
+                "high-K calc-alkaline series",
+                "shoshonite series"
+            ]
+        },
+        "lines11": {
+            "type": "NULL",
+            "x": [
+                78,
+                78,
+                70,
+                63,
+                56,
+                52,
+                48,
+                48,
+                78
+            ],
+            "y": [
+                0,
+                1.6,
+                1.3,
+                1,
+                0.7,
+                0.5,
+                0.3,
+                0,
+                0
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines12": {
+            "type": "NULL",
+            "x": [
+                78,
+                75,
+                70,
+                63,
+                56,
+                52,
+                48,
+                48,
+                52,
+                56,
+                63,
+                70,
+                78
+            ],
+            "y": [
+                1.6,
+                3.43,
+                3,
+                2.4,
+                1.8,
+                1.5,
+                1.2,
+                0.3,
+                0.5,
+                0.7,
+                1,
+                1.3,
+                1.6
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines13": {
+            "type": "NULL",
+            "x": [
+                75,
+                70,
+                63,
+                56,
+                52,
+                48,
+                48,
+                52,
+                56,
+                63,
+                70,
+                75
+            ],
+            "y": [
+                3.43,
+                4.8,
+                4,
+                3.2,
+                2.4,
+                1.6,
+                1.2,
+                1.5,
+                1.8,
+                2.4,
+                3,
+                3.43
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines14": {
+            "type": "NULL",
+            "x": [
+                70,
+                70,
+                48,
+                48,
+                52,
+                56,
+                63,
+                70
+            ],
+            "y": [
+                4.8,
+                7,
+                7,
+                1.6,
+                2.4,
+                3.2,
+                4,
+                4.8
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines15": {
+            "type": "lines",
+            "x": [
+                48,
+                52,
+                56,
+                63,
+                70,
+                78
+            ],
+            "y": [
+                0.3,
+                0.5,
+                0.7,
+                1,
+                1.3,
+                1.6
+            ],
+            "col": "gray8"
+        },
+        "lines16": {
+            "type": "lines",
+            "x": [
+                48,
+                52,
+                56,
+                63,
+                70,
+                75
+            ],
+            "y": [
+                1.2,
+                1.5,
+                1.8,
+                2.4,
+                3,
+                3.43
+            ],
+            "col": "gray8"
+        },
+        "lines17": {
+            "type": "lines",
+            "x": [
+                48,
+                52,
+                56,
+                63,
+                70
+            ],
+            "y": [
+                1.6,
+                2.4,
+                3.2,
+                4,
+                4.8
+            ],
+            "col": "gray8"
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "binary",
+            "plot.position": 12,
+            "plot.name": "SiO2 - K2O (Peccerillo + Taylor 1976)"
+        },
+        "text1": {
+            "type": "text",
+            "x": 77,
+            "y": 0.7,
+            "text": "Tholeiite Series",
+            "col": "gray8",
+            "adj": [
+                1,
+                0.5
+            ]
+        },
+        "text2": {
+            "type": "text",
+            "x": 77,
+            "y": 2.4,
+            "text": "Calc-alkaline\nSeries",
+            "col": "gray8",
+            "adj": [
+                1,
+                0.5
+            ]
+        },
+        "text3": {
+            "type": "text",
+            "x": 77,
+            "y": 4,
+            "text": "High-K calc-alkaline\nSeries",
+            "col": "gray8",
+            "adj": [
+                1,
+                0.5
+            ]
+        },
+        "text4": {
+            "type": "text",
+            "x": 47,
+            "y": 4.5,
+            "text": "Shoshonite Series",
+            "col": "gray8",
+            "adj": 0
+        }
+    }
+}
+

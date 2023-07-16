@@ -1,0 +1,208 @@
+{
+    "name": "Hastie",
+    "fullName": "Co - Th (Hastie et al. 2007)",
+    "details": "",
+    "reference": "",
+    "url": "",
+    "diagramType": "binary",
+    "dataTransform": null,
+    "axesDefinition": {
+        "X": "Co",
+        "Y": "Th"
+    },
+    "limits": {
+        "X": [
+            70,
+            0
+        ],
+        "Y": [
+            0.01,
+            100
+        ]
+    },
+    "log": "y",
+    "template": {
+        "clssf": {
+            "type": "NULL",
+            "use": [
+                2,
+                3,
+                4
+            ],
+            "rcname": [
+                "tholeiite series",
+                "calc-alkaline series",
+                "high-K calc-alkaline and shoshonite series"
+            ]
+        },
+        "lines1": {
+            "type": "NULL",
+            "x": [
+                70,
+                0,
+                0,
+                70,
+                70
+            ],
+            "y": [
+                -2,
+                -2,
+                0.1303,
+                -0.6108,
+                -2
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines2": {
+            "type": "NULL",
+            "x": [
+                70,
+                0,
+                0,
+                70,
+                70
+            ],
+            "y": [
+                -0.6108,
+                0.1303,
+                0.9542,
+                0.3424,
+                -0.6108
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines3": {
+            "type": "NULL",
+            "x": [
+                70,
+                0,
+                0,
+                70,
+                70
+            ],
+            "y": [
+                0.3424,
+                0.9542,
+                2,
+                2,
+                0.3424
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines4": {
+            "type": "lines",
+            "x": [
+                70,
+                0
+            ],
+            "y": [
+                0.245,
+                1.35
+            ],
+            "col": "gray8"
+        },
+        "lines5": {
+            "type": "lines",
+            "x": [
+                70,
+                0
+            ],
+            "y": [
+                2.2,
+                9
+            ],
+            "col": "gray8"
+        },
+        "lines6": {
+            "type": "lines",
+            "x": [
+                38.4,
+                24
+            ],
+            "y": [
+                0.01,
+                100
+            ],
+            "col": "gray8"
+        },
+        "lines7": {
+            "type": "lines",
+            "x": [
+                23,
+                7
+            ],
+            "y": [
+                0.01,
+                100
+            ],
+            "col": "gray8"
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "binary",
+            "plot.position": 13,
+            "plot.name": "Co - Th (Hastie et al. 2007)"
+        },
+        "text1": {
+            "type": "text",
+            "x": 68,
+            "y": 0.1,
+            "text": "Tholeiite\nSeries",
+            "col": "gray8",
+            "adj": [
+                0,
+                0.5
+            ]
+        },
+        "text2": {
+            "type": "text",
+            "x": 68,
+            "y": 1,
+            "text": "Calc-alkaline\nSeries",
+            "col": "gray8",
+            "adj": [
+                0,
+                0.5
+            ]
+        },
+        "text3": {
+            "type": "text",
+            "x": 68,
+            "y": 60,
+            "text": "High-K calc-alkaline\nand Shoshonite Series",
+            "col": "gray8",
+            "adj": [
+                0,
+                0.5
+            ]
+        },
+        "text4": {
+            "type": "text",
+            "x": 50,
+            "y": 0.02,
+            "text": "B",
+            "col": "gray8",
+            "adj": 0.5
+        },
+        "text5": {
+            "type": "text",
+            "x": 30,
+            "y": 0.02,
+            "text": "BA/A",
+            "col": "gray8",
+            "adj": 0.5
+        },
+        "text6": {
+            "type": "text",
+            "x": 10,
+            "y": 0.02,
+            "text": "D/R*",
+            "col": "gray8",
+            "adj": 0.5
+        }
+    }
+}
+

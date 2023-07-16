@@ -1,0 +1,18 @@
+{
+
+
+"diagramType":"binary",
+
+
+"axesDefinition": {  "X": "SiO2-K2O-Na2O",
+                     "Y": "MgO+FeOt"
+                      },
+"axesName": {  "X": "Funny parameter",
+                     "Y": "Clemens's maficity (MgO+FeOt)"
+                      },
+
+"limits": { "X": [50,60] ,
+            "Y": [0,10]
+            }
+
+}

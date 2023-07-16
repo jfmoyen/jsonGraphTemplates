@@ -1,0 +1,528 @@
+{
+    "name": "TASMiddlemostVolc",
+    "fullName": "TAS (Middlemost 1994)",
+    "details": "",
+    "reference": "",
+    "url": "",
+    "diagramType": "binary",
+    "dataTransform": "function(){ return(WRanh) }",
+    "axesDefinition": {
+        "X": "SiO2",
+        "Y": "Na2O+K2O"
+    },
+    "limits": {
+        "X": [
+            34,
+            90
+        ],
+        "Y": [
+            0,
+            19
+        ]
+    },
+    "template": {
+        "clssf": {
+            "type": "NULL",
+            "use": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+            ],
+            "rcname": [
+                "foidite",
+                "picrobasalt",
+                "basalt",
+                "basaltic andesite",
+                "andesite",
+                "dacite",
+                "rhyolite",
+                "trachybasalt",
+                "basaltic trachyandesite",
+                "trachyandesite",
+                "trachydacite",
+                "trachyte",
+                "tephrite",
+                "phonotephrite",
+                "tephriphonolite",
+                "phonolite",
+                "sodalitite/nephelinolith/leucitolith",
+                "silexite"
+            ]
+        },
+        "lines1": {
+            "type": "lines",
+            "x": [
+                37,
+                41,
+                41,
+                45,
+                48.4,
+                52.5,
+                52.5,
+                37,
+                35,
+                37
+            ],
+            "y": [
+                3,
+                3,
+                7,
+                9.4,
+                11.5,
+                14,
+                18,
+                14,
+                9,
+                3
+            ],
+            "col": "gray8"
+        },
+        "lines2": {
+            "type": "lines",
+            "x": [
+                45,
+                45,
+                41,
+                41
+            ],
+            "y": [
+                0,
+                3,
+                3,
+                0
+            ],
+            "col": "gray8"
+        },
+        "lines3": {
+            "type": "lines",
+            "x": [
+                45,
+                52,
+                52,
+                45
+            ],
+            "y": [
+                0,
+                0,
+                5,
+                5
+            ],
+            "col": "gray8"
+        },
+        "lines4": {
+            "type": "lines",
+            "x": [
+                52,
+                57,
+                57,
+                52
+            ],
+            "y": [
+                0,
+                0,
+                5.9,
+                5
+            ],
+            "col": "gray8"
+        },
+        "lines5": {
+            "type": "lines",
+            "x": [
+                57,
+                63,
+                63,
+                57
+            ],
+            "y": [
+                0,
+                0,
+                7,
+                5.9
+            ],
+            "col": "gray8"
+        },
+        "lines6": {
+            "type": "lines",
+            "x": [
+                63,
+                77.3,
+                69,
+                63
+            ],
+            "y": [
+                0,
+                0,
+                8,
+                7
+            ],
+            "col": "gray8"
+        },
+        "lines7": {
+            "type": "lines",
+            "x": [
+                77.3,
+                87.5,
+                85.9,
+                71.8,
+                69
+            ],
+            "y": [
+                0,
+                4.7,
+                6.8,
+                13.5,
+                8
+            ],
+            "col": "gray8"
+        },
+        "lines8": {
+            "type": "lines",
+            "x": [
+                45,
+                52,
+                49.4
+            ],
+            "y": [
+                5,
+                5,
+                7.3
+            ],
+            "col": "gray8"
+        },
+        "lines9": {
+            "type": "lines",
+            "x": [
+                52,
+                57,
+                53,
+                49.4
+            ],
+            "y": [
+                5,
+                5.9,
+                9.3,
+                7.3
+            ],
+            "col": "gray8"
+        },
+        "lines10": {
+            "type": "lines",
+            "x": [
+                57,
+                63,
+                57.6,
+                53
+            ],
+            "y": [
+                5.9,
+                7,
+                11.7,
+                9.3
+            ],
+            "col": "gray8"
+        },
+        "lines12": {
+            "type": "lines",
+            "x": [
+                63,
+                69,
+                71.8,
+                61
+            ],
+            "y": [
+                7,
+                8,
+                13.5,
+                8.6
+            ],
+            "col": "gray8"
+        },
+        "lines13": {
+            "type": "lines",
+            "x": [
+                61,
+                71.8,
+                63,
+                61,
+                57.6
+            ],
+            "y": [
+                8.6,
+                13.5,
+                16.2,
+                13.5,
+                11.7
+            ],
+            "col": "gray8"
+        },
+        "lines14": {
+            "type": "lines",
+            "x": [
+                41,
+                45,
+                45,
+                49.4,
+                45,
+                41
+            ],
+            "y": [
+                3,
+                3,
+                5,
+                7.3,
+                9.4,
+                7
+            ],
+            "col": "gray8"
+        },
+        "lines15": {
+            "type": "lines",
+            "x": [
+                49.4,
+                53,
+                48.4,
+                45
+            ],
+            "y": [
+                7.3,
+                9.3,
+                11.5,
+                9.4
+            ],
+            "col": "gray8"
+        },
+        "lines16": {
+            "type": "lines",
+            "x": [
+                53,
+                57.6,
+                52.5,
+                48.4
+            ],
+            "y": [
+                9.3,
+                11.7,
+                14,
+                11.5
+            ],
+            "col": "gray8"
+        },
+        "lines17": {
+            "type": "lines",
+            "x": [
+                57.6,
+                61,
+                63,
+                57,
+                52.5,
+                52.5
+            ],
+            "y": [
+                11.7,
+                13.5,
+                16.2,
+                18,
+                18,
+                14
+            ],
+            "col": "gray8"
+        },
+        "lines15.1": {
+            "type": "NULL",
+            "x": [
+                37,
+                52.5,
+                57,
+                71.8,
+                37.99
+            ],
+            "y": [
+                14,
+                18,
+                18,
+                13.5,
+                29.78
+            ],
+            "col": "gray8"
+        },
+        "lines15.2": {
+            "type": "NULL",
+            "x": [
+                77.3,
+                87.5,
+                85.9,
+                100
+            ],
+            "y": [
+                0,
+                4.7,
+                6.8,
+                0
+            ],
+            "col": "gray8"
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "binary",
+            "plot.position": 23,
+            "plot.name": "TAS (Middlemost 1994)"
+        },
+        "text1": {
+            "type": "text",
+            "x": 43,
+            "y": 1.4,
+            "text": "Picro-\nbasalt",
+            "col": "gray8",
+            "srt": 90
+        },
+        "text2": {
+            "type": "text",
+            "x": 48.5,
+            "y": 2.8,
+            "text": "Basalt",
+            "col": "gray8",
+            "srt": 90
+        },
+        "text3": {
+            "type": "text",
+            "x": 54.8,
+            "y": 3,
+            "text": "Basaltic\nandesite",
+            "col": "gray8",
+            "srt": 90
+        },
+        "text4": {
+            "type": "text",
+            "x": 59.9,
+            "y": 3,
+            "text": "Andesite",
+            "col": "gray8",
+            "srt": 90
+        },
+        "text5": {
+            "type": "text",
+            "x": 67,
+            "y": 3,
+            "text": "Dacite",
+            "col": "gray8",
+            "srt": 90
+        },
+        "text6": {
+            "type": "text",
+            "x": 80,
+            "y": 6,
+            "text": "Rhyolite",
+            "col": "gray8"
+        },
+        "text7": {
+            "type": "text",
+            "x": 63.5,
+            "y": 11.5,
+            "text": "Trachyte",
+            "col": "gray8"
+        },
+        "text22": {
+            "type": "text",
+            "x": 66,
+            "y": 9,
+            "text": "Trachy-\ndacite",
+            "col": "gray8",
+            "cex": 0.8,
+            "srt": 50
+        },
+        "text8": {
+            "type": "text",
+            "x": 57.8,
+            "y": 8.5,
+            "text": "Trachy-\nandesite",
+            "col": "gray8",
+            "cex": 0.8
+        },
+        "text9": {
+            "type": "text",
+            "x": 52.95,
+            "y": 7,
+            "text": "Basaltic\ntrachy-\nandesite",
+            "col": "gray8",
+            "cex": 0.8
+        },
+        "text10": {
+            "type": "text",
+            "x": 49.2,
+            "y": 5.65,
+            "text": "Trachy-\nbasalt",
+            "col": "gray8",
+            "cex": 0.8
+        },
+        "text11": {
+            "type": "text",
+            "x": 45,
+            "y": 7,
+            "text": "Tephrite",
+            "col": "gray8",
+            "srt": 50
+        },
+        "text12": {
+            "type": "text",
+            "x": 49.2,
+            "y": 9.3,
+            "text": "Phono-\ntephrite",
+            "col": "gray8",
+            "cex": 0.8,
+            "srt": 50
+        },
+        "text13": {
+            "type": "text",
+            "x": 53,
+            "y": 11.5,
+            "text": "Tephri-\nphonolite",
+            "col": "gray8",
+            "cex": 0.8,
+            "srt": 50
+        },
+        "text14": {
+            "type": "text",
+            "x": 57,
+            "y": 15,
+            "text": "Phonolite",
+            "col": "gray8"
+        },
+        "text15": {
+            "type": "text",
+            "x": 44,
+            "y": 12,
+            "text": "Foidite",
+            "col": "gray8"
+        },
+        "text22.1": {
+            "type": "text",
+            "x": 55,
+            "y": 18.5,
+            "text": "Sodalitite/Nephelinolith/Leucitolith",
+            "col": "gray8"
+        },
+        "text23": {
+            "type": "text",
+            "x": 85,
+            "y": 1,
+            "text": "Silexite",
+            "col": "gray8"
+        }
+    }
+}
+

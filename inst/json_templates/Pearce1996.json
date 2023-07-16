@@ -1,0 +1,461 @@
+{
+    "name": "Pearce1996",
+    "fullName": "Nb/Y - Zr/Ti plot (modified by Pearce 1996)",
+    "details": "",
+    "reference": "",
+    "url": "",
+    "diagramType": "binary",
+    "dataTransform": null,
+    "axesDefinition": {
+        "X": "Nb/Y",
+        "Y": "Zr/Ti"
+    },
+    "supressAxes":true,
+    "limits": {
+        "X": [
+            0.01,
+            100
+        ],
+        "Y": [
+            0.001,
+            2
+        ]
+    },
+    "log": "xy",
+    "template": {
+        "clssf": {
+            "type": "NULL",
+            "use": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+            ],
+            "rcname": [
+                "basalt",
+                "alkali basalt",
+                "foidite",
+                "andesite, basaltic andesite",
+                "trachyandesite",
+                "tephriphonolite",
+                "rhyolite, dacite",
+                "trachyte",
+                "phonolite",
+                "alkali rhyolite"
+            ]
+        },
+        "lines1": {
+            "type": "NULL",
+            "x": [
+                -2,
+                -0.1739,
+                -0.1739,
+                -2,
+                -2
+            ],
+            "y": [
+                -3,
+                -3,
+                -1.6198,
+                -2.1192,
+                -3
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines2": {
+            "type": "NULL",
+            "x": [
+                -0.1739,
+                0.4487,
+                0.4487,
+                -0.1739,
+                -0.1739
+            ],
+            "y": [
+                -3,
+                -3,
+                -1.4498,
+                -1.6198,
+                -3
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines3": {
+            "type": "NULL",
+            "x": [
+                0.4487,
+                1.699,
+                1.699,
+                0.4487,
+                0.4487
+            ],
+            "y": [
+                -3,
+                -3,
+                -1.1073,
+                -1.4498,
+                -3
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines4": {
+            "type": "NULL",
+            "x": [
+                -2,
+                -0.1739,
+                -0.1739,
+                -2,
+                -2
+            ],
+            "y": [
+                -2.1192,
+                -1.6198,
+                -1.0862,
+                -1.585,
+                -2.1192
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines5": {
+            "type": "NULL",
+            "x": [
+                -0.1739,
+                0.4487,
+                0.4487,
+                -0.1739,
+                -0.1739
+            ],
+            "y": [
+                -1.6198,
+                -1.4498,
+                -0.9208,
+                -1.0862,
+                -1.6198
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines6": {
+            "type": "NULL",
+            "x": [
+                0.4487,
+                1.699,
+                1.699,
+                0.4487,
+                0.4487
+            ],
+            "y": [
+                -1.4498,
+                -1.1073,
+                -0.5746,
+                -0.9208,
+                -1.4498
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines7": {
+            "type": "NULL",
+            "x": [
+                -2,
+                -0.1739,
+                -0.1739,
+                -1.1871,
+                -2,
+                -2
+            ],
+            "y": [
+                -1.585,
+                -1.0862,
+                -0.699,
+                0.301,
+                0.301,
+                -1.585
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines8": {
+            "type": "NULL",
+            "x": [
+                -0.1739,
+                0.4487,
+                0.4487,
+                -0.1739,
+                -0.1739
+            ],
+            "y": [
+                -1.0862,
+                -0.9208,
+                -0.0044,
+                -0.699,
+                -1.0862
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines9": {
+            "type": "NULL",
+            "x": [
+                0.4487,
+                1.699,
+                1.699,
+                0.7419,
+                0.4487,
+                0.4487
+            ],
+            "y": [
+                -0.9208,
+                -0.5746,
+                0.301,
+                0.301,
+                -0.0044,
+                -0.9208
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines10": {
+            "type": "NULL",
+            "x": [
+                -1.1871,
+                -0.1739,
+                0.4487,
+                0.7419,
+                -1.1871
+            ],
+            "y": [
+                0.301,
+                -0.699,
+                -0.0044,
+                0.301,
+                0.301
+            ],
+            "col": "red",
+            "lwd": 3
+        },
+        "lines11": {
+            "type": "lines",
+            "x": [
+                0.01,
+                0.67,
+                2.81,
+                50
+            ],
+            "y": [
+                0.0076,
+                0.024,
+                0.0355,
+                0.0781
+            ],
+            "col": "gray8"
+        },
+        "lines12": {
+            "type": "lines",
+            "x": [
+                0.01,
+                0.67,
+                2.81,
+                50
+            ],
+            "y": [
+                0.026,
+                0.082,
+                0.12,
+                0.2663
+            ],
+            "col": "gray8"
+        },
+        "lines13": {
+            "type": "lines",
+            "x": [
+                0.67,
+                0.67
+            ],
+            "y": [
+                0.001,
+                0.2
+            ],
+            "col": "gray8"
+        },
+        "lines14": {
+            "type": "lines",
+            "x": [
+                2.81,
+                2.81
+            ],
+            "y": [
+                0.001,
+                0.99
+            ],
+            "col": "gray8"
+        },
+        "lines15": {
+            "type": "lines",
+            "x": [
+                0.065,
+                0.67,
+                5.52
+            ],
+            "y": [
+                2,
+                0.2,
+                2
+            ],
+            "col": "gray8"
+        },
+        "axis1": {
+            "type": "axis",
+            "side": 1,
+            "at": [
+                0.01,
+                0.1,
+                1,
+                10,
+                100,
+                1000
+            ],
+            "labels": [
+                0.01,
+                0.1,
+                1,
+                10,
+                100,
+                1000
+            ],
+            "las": 0,
+            "hadj": "NA",
+            "padj": "NA",
+            "lty": "solid"
+        },
+        "axis2": {
+            "type": "axis",
+            "side": 2,
+            "at": [
+                0.001,
+                0.01,
+                0.1,
+                1
+            ],
+            "labels": [
+                0.001,
+                0.01,
+                0.1,
+                1
+            ],
+            "las": 0,
+            "hadj": "NA",
+            "padj": "NA",
+            "lty": "solid"
+        },
+        "box": {
+            "type": "box",
+            "which": "plot",
+            "col": "black",
+            "lwd": 1
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "binary",
+            "plot.position": 27,
+            "plot.name": "Nb/Y - Zr/Ti plot (modified by Pearce 1996)"
+        },
+        "text1": {
+            "type": "text",
+            "x": 0.08,
+            "y": 0.003,
+            "text": "basalt",
+            "col": "gray8",
+            "adj": 0.5
+        },
+        "text2": {
+            "type": "text",
+            "x": 1.5,
+            "y": 0.01,
+            "text": "alkali\nbasalt",
+            "col": "gray8",
+            "adj": 0.5
+        },
+        "text3": {
+            "type": "text",
+            "x": 8,
+            "y": 0.01,
+            "text": "foidite",
+            "col": "gray8",
+            "adj": [
+                0,
+                0.5
+            ]
+        },
+        "text4": {
+            "type": "text",
+            "x": 0.1,
+            "y": 0.03,
+            "text": "andesite\nbasaltic andesite",
+            "col": "gray8",
+            "adj": 0.5,
+            "srt": 17
+        },
+        "text5": {
+            "type": "text",
+            "x": 1.5,
+            "y": 0.06,
+            "text": "trachy-\nandesite",
+            "col": "gray8",
+            "adj": 0.5,
+            "srt": 17
+        },
+        "text6": {
+            "type": "text",
+            "x": 10,
+            "y": 0.095,
+            "text": "tephriphonolite",
+            "col": "gray8",
+            "adj": 0.5,
+            "srt": 17
+        },
+        "text7": {
+            "type": "text",
+            "x": 0.1,
+            "y": 0.2,
+            "text": "rhyolite\ndacite",
+            "col": "gray8",
+            "adj": 0.5
+        },
+        "text8": {
+            "type": "text",
+            "x": 1.5,
+            "y": 0.2,
+            "text": "trachyte",
+            "col": "gray8",
+            "adj": 0.5
+        },
+        "text9": {
+            "type": "text",
+            "x": 10,
+            "y": 0.4,
+            "text": "phonolite",
+            "col": "gray8",
+            "adj": 0.5
+        },
+        "text10": {
+            "type": "text",
+            "x": 0.8,
+            "y": 0.6,
+            "text": "alkali\nrhyolite",
+            "col": "gray8",
+            "adj": 0.5
+        }
+    }
+}
+

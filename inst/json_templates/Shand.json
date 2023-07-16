@@ -1,0 +1,162 @@
+{
+    "name": "Shand",
+    "fullName": "A/CNK - A/NK (Shand 1943)",
+    "details": "",
+    "reference": "",
+    "url": "",
+    "diagramType": "binary",
+    "dataTransform": null,
+    "axesDefinition": {
+        "X": "A/CNK",
+        "Y": "A/NK"
+    },
+    "limits": {
+        "X": [
+            0.5,
+            1.5
+        ],
+        "Y": [
+            0,
+            7
+        ]
+    },
+    "template": {
+        "clssf": {
+            "type": "NULL",
+            "use": [
+                2,
+                3,
+                4,
+                5
+            ],
+            "rcname": [
+                "metaluminous",
+                "peraluminous",
+                "peralkaline",
+                "undefined"
+            ]
+        },
+        "lines1": {
+            "type": "lines",
+            "x": [
+                1,
+                1,
+                0.5,
+                0.5,
+                1
+            ],
+            "y": [
+                1,
+                7,
+                7,
+                1,
+                1
+            ]
+        },
+        "lines2": {
+            "type": "lines",
+            "x": [
+                1,
+                2,
+                2,
+                1,
+                1
+            ],
+            "y": [
+                1,
+                1,
+                7,
+                7,
+                1
+            ]
+        },
+        "lines3": {
+            "type": "lines",
+            "x": [
+                1,
+                1,
+                0.5,
+                0.5,
+                1
+            ],
+            "y": [
+                1,
+                0,
+                0,
+                1,
+                1
+            ]
+        },
+        "lines4": {
+            "type": "lines",
+            "x": [
+                1,
+                2,
+                2,
+                1,
+                1
+            ],
+            "y": [
+                1,
+                1,
+                0,
+                0,
+                1
+            ]
+        },
+        "lines11": {
+            "type": "abline",
+            "h": 1,
+            "col": "gray8"
+        },
+        "lines12": {
+            "type": "abline",
+            "v": 1,
+            "col": "gray8"
+        },
+        "lines13": {
+            "type": "lines",
+            "x": [
+                0,
+                7
+            ],
+            "y": [
+                0,
+                7
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "binary",
+            "plot.position": 14,
+            "plot.name": "A/CNK - A/NK (Shand 1943)"
+        },
+        "text1": {
+            "type": "text",
+            "x": 0.55,
+            "y": 6,
+            "text": "Metaluminous",
+            "col": "gray8",
+            "adj": 0
+        },
+        "text2": {
+            "type": "text",
+            "x": 1.05,
+            "y": 6,
+            "text": "Peraluminous",
+            "col": "gray8",
+            "adj": 0
+        },
+        "text3": {
+            "type": "text",
+            "x": 0.55,
+            "y": 0.5,
+            "text": "Peralkaline",
+            "col": "gray8",
+            "adj": 0
+        }
+    }
+}
+
