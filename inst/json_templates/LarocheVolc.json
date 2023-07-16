@@ -7,7 +7,7 @@
     "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
-    "dataTransform": "function(){ LaRocheCalc() }",
+    "dataTransform": "function(){ LaRocheCalc(wrdata) }",
     "axesDefinition": {
         "X": "R1",
         "Y": "R2"

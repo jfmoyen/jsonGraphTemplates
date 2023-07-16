@@ -1,0 +1,292 @@
+{
+    "name": "NaAlK",
+    "fullName": "Molar Na2O-Al2O3-K2O plot",
+    "details": "",
+    "reference": "",
+    "url": "",
+    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateHistory": "Converted from original GCDkit function",
+    "diagramType": "ternary",
+    "dataTransform": "function(){ millications(wrdata,print=F,save=F) }",
+    "axesDefinition": {
+        "A": "Na2O",
+        "B": "Al2O3",
+        "C": "K2O"
+    },
+    "supressAxes":true,
+    "limits": {
+        "X": [
+            -0.03,
+            1.03
+        ],
+        "Y": [
+            -0.08,
+            1.03
+        ]
+    },
+    "template": {
+        "clssf": {
+            "type": "NULL",
+            "use": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "rcname": [
+                "metaluminous/peraluminous",
+                "sodic",
+                "peralkaline",
+                "potassic",
+                "perpotassic",
+                "peralkaline",
+                "ultrapotassic"
+            ]
+        },
+        "lines1": {
+            "type": "NULL",
+            "x": [
+                0.25,
+                0.5,
+                0.5,
+                0.25
+            ],
+            "y": [
+                0.433,
+                0.433,
+                0.866,
+                0.433
+            ],
+            "col": "red"
+        },
+        "lines2": {
+            "type": "NULL",
+            "x": [
+                0,
+                0.5,
+                0.5,
+                0.25,
+                0
+            ],
+            "y": [
+                0,
+                0,
+                0.433,
+                0.433,
+                0
+            ],
+            "col": "blue"
+        },
+        "lines3": {
+            "type": "NULL",
+            "x": [
+                0.5,
+                0.625,
+                0.5,
+                0.5
+            ],
+            "y": [
+                0.433,
+                0.433,
+                0.866,
+                0.433
+            ],
+            "col": "orange"
+        },
+        "lines4": {
+            "type": "NULL",
+            "x": [
+                0.5,
+                0.75,
+                0.625,
+                0.5,
+                0.5
+            ],
+            "y": [
+                0,
+                0,
+                0.433,
+                0.433,
+                0
+            ],
+            "col": "green"
+        },
+        "lines5": {
+            "type": "NULL",
+            "x": [
+                0.625,
+                0.75,
+                0.5,
+                0.625
+            ],
+            "y": [
+                0.433,
+                0.433,
+                0.866,
+                0.433
+            ],
+            "col": "blue"
+        },
+        "lines6": {
+            "type": "NULL",
+            "x": [
+                0.75,
+                1,
+                0.75,
+                0.625,
+                0.75
+            ],
+            "y": [
+                0,
+                0,
+                0.433,
+                0.433,
+                0
+            ],
+            "col": "black"
+        },
+        "lines21": {
+            "type": "lines",
+            "x": [
+                0,
+                1,
+                0.5,
+                0
+            ],
+            "y": [
+                0,
+                0,
+                0.866,
+                0
+            ],
+            "col": "black"
+        },
+        "lines22": {
+            "type": "lines",
+            "x": [
+                0.5,
+                0.5
+            ],
+            "y": [
+                0,
+                0.866
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines23": {
+            "type": "lines",
+            "x": [
+                0,
+                0.75
+            ],
+            "y": [
+                0.433,
+                0.433
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines24": {
+            "type": "lines",
+            "x": [
+                0.75,
+                0.5
+            ],
+            "y": [
+                0,
+                0.866
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines25": {
+            "type": "lines",
+            "x": [
+                0.5,
+                0.75
+            ],
+            "y": [
+                0,
+                0.433
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "A": {
+            "type": "text",
+            "x": 0,
+            "y": -0.03,
+            "text": "Na2O",
+            "adj": 0.5
+        },
+        "C": {
+            "type": "text",
+            "x": 1,
+            "y": -0.03,
+            "text": "K2O",
+            "adj": 0.5
+        },
+        "B": {
+            "type": "text",
+            "x": 0.5,
+            "y": 0.896,
+            "text": "Al2O3",
+            "adj": 0.5
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "ternary",
+            "plot.position": 13.5,
+            "plot.name": "Molar Na2O-Al2O3-K2O plot"
+        },
+        "text1": {
+            "type": "text",
+            "x": 0.45,
+            "y": 0.05,
+            "text": "Sodic",
+            "col": "gray8"
+        },
+        "text2": {
+            "type": "text",
+            "x": 0.58,
+            "y": 0.05,
+            "text": "Potassic",
+            "col": "gray8"
+        },
+        "text3": {
+            "type": "text",
+            "x": 0.85,
+            "y": 0.05,
+            "text": "Ultrapotassic",
+            "col": "gray8"
+        },
+        "text4": {
+            "type": "text",
+            "x": 0,
+            "y": 0.5,
+            "text": "Metaluminous\nPeraluminous",
+            "col": "gray8",
+            "adj": 0
+        },
+        "text5": {
+            "type": "text",
+            "x": 0,
+            "y": 0.4,
+            "text": "Peralkaline",
+            "col": "gray8",
+            "adj": 0
+        },
+        "text6": {
+            "type": "text",
+            "x": 0.7,
+            "y": 0.3,
+            "text": "Perpotassic",
+            "col": "gray8",
+            "srt": 60
+        }
+    }
+}
+

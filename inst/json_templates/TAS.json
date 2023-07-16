@@ -7,7 +7,7 @@
     "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
-    "dataTransform": "function(){ return(WRanh) }",
+    "dataTransform": "function(){ recastAnhydrous(wrdata) }",
     "axesDefinition": {
         "X": "SiO2",
         "Y": "Na2O+K2O"

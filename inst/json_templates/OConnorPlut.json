@@ -1,0 +1,300 @@
+{
+    "name": "OConnorPlut",
+    "fullName": "Feldspar triangle (O'Connor 1965) ",
+    "details": "",
+    "reference": "",
+    "url": "",
+    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateHistory": "Converted from original GCDkit function",
+    "diagramType": "ternary",
+    "dataTransform": "function(){ CIPW(wrdata) }",
+    "dataMultiply":100,
+    "axesDefinition": {
+        "A": "Ab",
+        "B": "An",
+        "C": "Or"
+    },
+    "supressAxes":true,
+    "limits": {
+        "X": [
+            -3,
+            103
+        ],
+        "Y": [
+            -10,
+            103
+        ]
+    },
+    "template": {
+        "clssf": {
+            "type": "NULL",
+            "use": [
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            "rcname": [
+                "trondhjemite",
+                "granite",
+                "quartz monzonite",
+                "granodiorite",
+                "tonalite"
+            ]
+        },
+        "polygon1": {
+            "type": "NULL",
+            "x": [
+                0,
+                30,
+                38.75,
+                12.5
+            ],
+            "y": [
+                0,
+                0,
+                15.1554,
+                21.6506
+            ],
+            "lwd": 3,
+            "col": "gray8"
+        },
+        "polygon2": {
+            "type": "NULL",
+            "x": [
+                30,
+                100,
+                38.75
+            ],
+            "y": [
+                0,
+                0,
+                15.1554
+            ],
+            "lwd": 3,
+            "col": "gray8"
+        },
+        "polygon3": {
+            "type": "NULL",
+            "x": [
+                43.125,
+                56.25,
+                63.75,
+                52.875
+            ],
+            "y": [
+                14.0729,
+                10.8253,
+                23.8157,
+                30.9604
+            ],
+            "lwd": 3,
+            "col": "gray8"
+        },
+        "polygon4": {
+            "type": "NULL",
+            "x": [
+                30,
+                43.125,
+                52.875,
+                42
+            ],
+            "y": [
+                17.3205,
+                14.0729,
+                30.9604,
+                38.1051
+            ],
+            "lwd": 3,
+            "col": "gray8"
+        },
+        "polygon5": {
+            "type": "NULL",
+            "x": [
+                12.5,
+                30,
+                42,
+                27.5
+            ],
+            "y": [
+                21.6506,
+                17.3205,
+                38.1051,
+                47.6314
+            ],
+            "lwd": 3,
+            "col": "gray8"
+        },
+        "lines1": {
+            "type": "lines",
+            "x": [
+                30,
+                38.75
+            ],
+            "y": [
+                0,
+                15.1554
+            ],
+            "col": "gray8"
+        },
+        "lines2": {
+            "type": "lines",
+            "x": [
+                30,
+                42
+            ],
+            "y": [
+                17.3205,
+                38.1051
+            ],
+            "col": "gray8"
+        },
+        "lines3": {
+            "type": "lines",
+            "x": [
+                43.125,
+                52.875
+            ],
+            "y": [
+                14.0729,
+                30.9604
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines4": {
+            "type": "lines",
+            "x": [
+                56.25,
+                63.75
+            ],
+            "y": [
+                10.8253,
+                23.8157
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines5": {
+            "type": "lines",
+            "x": [
+                12.5,
+                56.25
+            ],
+            "y": [
+                21.6506,
+                10.8253
+            ],
+            "col": "gray8"
+        },
+        "lines6": {
+            "type": "lines",
+            "x": [
+                56.25,
+                91.25
+            ],
+            "y": [
+                10.8253,
+                2.1651
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines7": {
+            "type": "lines",
+            "x": [
+                91.25,
+                92.75
+            ],
+            "y": [
+                2.1651,
+                4.7631
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines8": {
+            "type": "lines",
+            "x": [
+                0,
+                100,
+                50,
+                0
+            ],
+            "y": [
+                0,
+                0,
+                86.6025,
+                0
+            ],
+            "col": "black"
+        },
+        "A": {
+            "type": "text",
+            "x": 0,
+            "y": -5,
+            "text": "Ab",
+            "adj": 0.5
+        },
+        "C": {
+            "type": "text",
+            "x": 100,
+            "y": -5,
+            "text": "Or",
+            "adj": 0.5
+        },
+        "B": {
+            "type": "text",
+            "x": 50,
+            "y": 89.6025,
+            "text": "An",
+            "adj": 0.5
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "ternary",
+            "plot.position": 39,
+            "plot.name": "Feldspar triangle (O'Connor 1965) "
+        },
+        "text1": {
+            "type": "text",
+            "x": 15,
+            "y": 8.6603,
+            "text": "Trondhjemite",
+            "col": "gray8",
+            "srt": 30
+        },
+        "text2": {
+            "type": "text",
+            "x": 43.5,
+            "y": 6.0622,
+            "text": "Granite",
+            "col": "gray8"
+        },
+        "text3": {
+            "type": "text",
+            "x": 54.5,
+            "y": 21.6506,
+            "text": "Quartz\nmonzonite",
+            "col": "gray8",
+            "srt": 60
+        },
+        "text4": {
+            "type": "text",
+            "x": 42,
+            "y": 25.9808,
+            "text": "Grano-\ndiorite",
+            "col": "gray8"
+        },
+        "text5": {
+            "type": "text",
+            "x": 25,
+            "y": 34.641,
+            "text": "Tonalite",
+            "col": "gray8",
+            "srt": 60
+        }
+    }
+}
+

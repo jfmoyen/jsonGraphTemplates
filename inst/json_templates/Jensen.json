@@ -1,0 +1,563 @@
+{
+    "name": "Jensen",
+    "fullName": "Jensen (1976)",
+    "details": "Jensen 1976; field boundaries Rickwood 1989, corrected by Rollinson 1993 ",
+    "reference": "",
+    "url": "",
+    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateHistory": "Converted from original GCDkit function",
+    "diagramType": "ternary",
+    "dataTransform": "function(){ millications(wrdata,print=F,save=F) }",
+    "axesDefinition": {
+        "A": "Al2O3",
+        "B": "FeOt+TiO2",
+        "C": "MgO"
+    },
+    "supressAxes":true,
+    "limits": {
+        "X": [
+            -0.03,
+            1.03
+        ],
+        "Y": [
+            -0.05,
+            1.03
+        ]
+    },
+    "template": {
+        "clssf": {
+            "type": "NULL",
+            "use": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ],
+            "rcname": [
+                "TH - Rhyolite",
+                "TH - Dacite",
+                "TH - Andesite",
+                "CA - Rhyolite",
+                "CA - Dacite",
+                "CA - Andesite",
+                "CA - Basalt",
+                "TH - high-Mg tholeiite basalt",
+                "KO - Komatiitic basalt",
+                "KO - Komatiite s.s.",
+                "TH - high-Fe tholeiite basalt"
+            ]
+        },
+        "lines1": {
+            "type": "NULL",
+            "x": [
+                0.05,
+                0.1993,
+                0.15,
+                0.05
+            ],
+            "y": [
+                0.0866,
+                0.1744,
+                0.2598,
+                0.0866
+            ]
+        },
+        "lines2": {
+            "type": "NULL",
+            "x": [
+                0.1993,
+                0.274,
+                0.2,
+                0.15,
+                0.1993
+            ],
+            "y": [
+                0.1744,
+                0.2183,
+                0.3464,
+                0.2598,
+                0.1744
+            ]
+        },
+        "lines3": {
+            "type": "NULL",
+            "x": [
+                0.274,
+                0.3225,
+                0.33,
+                0.34,
+                0.3325,
+                0.325,
+                0.25,
+                0.2,
+                0.274
+            ],
+            "y": [
+                0.2183,
+                0.2468,
+                0.2512,
+                0.2512,
+                0.2901,
+                0.3031,
+                0.433,
+                0.3464,
+                0.2183
+            ]
+        },
+        "lines4": {
+            "type": "NULL",
+            "x": [
+                0.2,
+                0.1247,
+                0.05,
+                0,
+                0.2
+            ],
+            "y": [
+                0,
+                0.1305,
+                0.0866,
+                0,
+                0
+            ]
+        },
+        "lines5": {
+            "type": "NULL",
+            "x": [
+                0.3,
+                0.1993,
+                0.1247,
+                0.2,
+                0.3
+            ],
+            "y": [
+                0,
+                0.1744,
+                0.1305,
+                0,
+                0
+            ]
+        },
+        "lines6": {
+            "type": "NULL",
+            "x": [
+                0.3,
+                0.4,
+                0.274,
+                0.1993,
+                0.3
+            ],
+            "y": [
+                0,
+                0,
+                0.2183,
+                0.1744,
+                0
+            ]
+        },
+        "lines7": {
+            "type": "NULL",
+            "x": [
+                0.4225,
+                0.392,
+                0.372,
+                0.3575,
+                0.34,
+                0.33,
+                0.3225,
+                0.274,
+                0.4,
+                0.4225
+            ],
+            "y": [
+                0.1082,
+                0.1732,
+                0.2165,
+                0.2382,
+                0.2512,
+                0.2512,
+                0.2468,
+                0.2183,
+                0,
+                0.1082
+            ]
+        },
+        "lines8": {
+            "type": "NULL",
+            "x": [
+                0.5,
+                0.5005,
+                0.375,
+                0.3726,
+                0.392,
+                0.4225,
+                0.5
+            ],
+            "y": [
+                0,
+                0.2884,
+                0.2165,
+                0.2152,
+                0.1732,
+                0.1082,
+                0
+            ]
+        },
+        "lines9": {
+            "type": "NULL",
+            "x": [
+                0.6,
+                0.8,
+                0.5,
+                0.5,
+                0.6
+            ],
+            "y": [
+                0,
+                0.3464,
+                0.4763,
+                0,
+                0
+            ]
+        },
+        "lines10": {
+            "type": "NULL",
+            "x": [
+                1,
+                0.8,
+                0.6,
+                1
+            ],
+            "y": [
+                0,
+                0.3464,
+                0,
+                0
+            ]
+        },
+        "lines11": {
+            "type": "NULL",
+            "x": [
+                0.3726,
+                0.375,
+                0.5005,
+                0.5,
+                0.25,
+                0.325,
+                0.3325,
+                0.34,
+                0.3579,
+                0.372,
+                0.3726
+            ],
+            "y": [
+                0.2152,
+                0.2165,
+                0.2884,
+                0.4763,
+                0.433,
+                0.3031,
+                0.2901,
+                0.2512,
+                0.2382,
+                0.2165,
+                0.2152
+            ]
+        },
+        "lines21": {
+            "type": "lines",
+            "x": [
+                0,
+                1,
+                0.5,
+                0
+            ],
+            "y": [
+                0,
+                0,
+                0.866,
+                0
+            ],
+            "col": "black"
+        },
+        "lines22": {
+            "type": "lines",
+            "x": [
+                0.5,
+                0.5
+            ],
+            "y": [
+                0,
+                0.4763
+            ],
+            "col": "gray8"
+        },
+        "lines23": {
+            "type": "lines",
+            "x": [
+                0.05,
+                0.3225,
+                0.33,
+                0.34,
+                0.3575,
+                0.372,
+                0.392,
+                0.4225
+            ],
+            "y": [
+                0.0866,
+                0.2468,
+                0.2511,
+                0.2511,
+                0.2382,
+                0.2165,
+                0.1732,
+                0.1083
+            ],
+            "col": "gray8"
+        },
+        "lines24": {
+            "type": "lines",
+            "x": [
+                0.6,
+                0.8
+            ],
+            "y": [
+                0,
+                0.3464
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines27": {
+            "type": "lines",
+            "x": [
+                0.5005,
+                0.375
+            ],
+            "y": [
+                0.2884,
+                0.2165
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines28": {
+            "type": "lines",
+            "x": [
+                0.25,
+                0.325
+            ],
+            "y": [
+                0.433,
+                0.3031
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines29": {
+            "type": "lines",
+            "x": [
+                0.3325,
+                0.34
+            ],
+            "y": [
+                0.2901,
+                0.2511
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines30": {
+            "type": "lines",
+            "x": [
+                0.2,
+                0.35
+            ],
+            "y": [
+                0.3464,
+                0.0866
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines31": {
+            "type": "lines",
+            "x": [
+                0.15,
+                0.3
+            ],
+            "y": [
+                0.2598,
+                0
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "lines32": {
+            "type": "lines",
+            "x": [
+                0.1,
+                0.2
+            ],
+            "y": [
+                0.1732,
+                0
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "A": {
+            "type": "text",
+            "x": 0,
+            "y": -0.03,
+            "text": "Al",
+            "adj": 0.5
+        },
+        "C": {
+            "type": "text",
+            "x": 1,
+            "y": -0.03,
+            "text": "Mg",
+            "adj": 0.5
+        },
+        "B": {
+            "type": "text",
+            "x": 0.5,
+            "y": 0.896,
+            "text": "Fe^T+Ti",
+            "adj": 0.5
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "ternary",
+            "plot.position": 24,
+            "plot.name": "Jensen (1976)"
+        },
+        "text4": {
+            "type": "text",
+            "x": 0.39,
+            "y": 0.4,
+            "text": "High-Fe\ntholeiite\nbasalt",
+            "cex": 0.85,
+            "col": "gray8"
+        },
+        "text5": {
+            "type": "text",
+            "x": 0.26,
+            "y": 0.32,
+            "text": "Andesite",
+            "srt": -60,
+            "cex": 0.85,
+            "col": "gray8"
+        },
+        "text6": {
+            "type": "text",
+            "x": 0.2,
+            "y": 0.25,
+            "text": "Dacite",
+            "srt": -60,
+            "cex": 0.85,
+            "col": "gray8"
+        },
+        "text7": {
+            "type": "text",
+            "x": 0.12,
+            "y": 0.17,
+            "text": "Rhyolite",
+            "srt": 30,
+            "cex": 0.7,
+            "col": "gray8"
+        },
+        "text8": {
+            "type": "text",
+            "x": 0.095,
+            "y": 0.046,
+            "text": "Rhyolite",
+            "srt": -60,
+            "cex": 0.7,
+            "col": "gray8"
+        },
+        "text9": {
+            "type": "text",
+            "x": 0.2,
+            "y": 0.074,
+            "text": "Dacite",
+            "srt": -60,
+            "cex": 0.85,
+            "col": "gray8"
+        },
+        "text10": {
+            "type": "text",
+            "x": 0.285,
+            "y": 0.117,
+            "text": "Andesite",
+            "srt": -60,
+            "cex": 0.85,
+            "col": "gray8"
+        },
+        "text11": {
+            "type": "text",
+            "x": 0.35,
+            "y": 0.163,
+            "text": "Basalt",
+            "srt": -60,
+            "cex": 0.85,
+            "col": "gray8"
+        },
+        "text12": {
+            "type": "text",
+            "x": 0.445,
+            "y": 0.17,
+            "text": "High-Mg\ntholeiite\nbasalt",
+            "cex": 0.7,
+            "col": "gray8"
+        },
+        "text13": {
+            "type": "text",
+            "x": 0.625,
+            "y": 0.29,
+            "text": "Komatiitic\nbasalt",
+            "srt": -60,
+            "col": "gray8"
+        },
+        "text14": {
+            "type": "text",
+            "x": 0.8,
+            "y": 0.12,
+            "text": "Komatiite",
+            "srt": -60,
+            "col": "gray8"
+        },
+        "text15": {
+            "type": "text",
+            "x": 0.414,
+            "y": 0.3,
+            "text": "TH",
+            "col": "gray8"
+        },
+        "text16": {
+            "type": "text",
+            "x": 0.368,
+            "y": 0.043,
+            "text": "CA",
+            "col": "gray8"
+        },
+        "text17": {
+            "type": "text",
+            "x": 0.75,
+            "y": 0.27,
+            "text": "KOMATIITE",
+            "srt": -60,
+            "col": "gray8"
+        }
+    }
+}
+

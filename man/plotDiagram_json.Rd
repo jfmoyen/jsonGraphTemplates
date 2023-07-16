@@ -4,22 +4,28 @@
 \alias{plotDiagram_json}
 \title{Read a template defined in a json file and import it to  figaro graph}
 \usage{
-plotDiagram_json(json, path = NULL, verbose = F)
+plotDiagram_json(wrdata = WR, lbl = labels, json, path = NULL, verbose = F)
 }
 \arguments{
+\item{wrdata}{A matrix containing WR data. Probably GCDkit's WR,
+as in many cases we need GCDkit-calculated things such as A/CNK etc.}
+
+\item{lbl}{A data frame containing gCDkit labels.}
+
 \item{json}{Name of the template file}
 
 \item{path}{Path to json file}
 
 \item{verbose}{Give debugging info
-If not specified, looks in the json_template folder of the package
-Details
+If not specified, looks in the json_template folder of the package}
+}
+\description{
+Read a template defined in a json file and import it to  figaro graph
+}
+\details{
 This function reads a json template and plots a Figaro graph
  (figaro is GCDkit's internal plotting system, that allows
  a level of editing and interactivity). It can NOT work if GCDkit
  is not installed. This is the original function, intended as a
- replacement for GDkit::plotDiagram.}
-}
-\description{
-Read a template defined in a json file and import it to  figaro graph
+ replacement for GDkit::plotDiagram.
 }

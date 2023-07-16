@@ -7,7 +7,7 @@ test_that("All diagrams plot as they should", {
     templ_dir <- system.file("json_templates",package="jsonGraphTemplates")
     templ_list <- list.files(templ_dir)
     sapply(templ_list,
-           function(dd){jsonPlotDiagram(dd,verbose=T)} )
+           function(thediag){plotDiagram_json(WR,labels,thediag,verbose=T)} )
   },
   NA)
 })

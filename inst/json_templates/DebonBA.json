@@ -7,7 +7,7 @@
     "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
-    "dataTransform": "function(){ DebonCalc(milli,GUI=F) }",
+    "dataTransform": "function(){ DebonCalc(millications(wrdata)) }",
     "axesDefinition": {
         "X": "B",
         "Y": "A"

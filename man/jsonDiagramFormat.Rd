@@ -34,7 +34,8 @@ These items can be included to customize further the template
 
 \subsection{Data mapping}{
 \itemize{
-\item{"dataTransform": }{null, or a function that returns a data matrix. If null, the current data (WR) will be used. Otherwise code{dataTransform(WR)} will be used.}
+\item{"dataTransform": }{null, or a function of wrdata that returns a data matrix. If null, the current data will be used. Otherwise code{dataTransform(WR)} will be used.}
+\item{"dataMultiply": }{null, or a number by which the X and Y values will be multiplied before plotting (useful to convert values 0-1 in pct for instance)}
 \item{"axesName": }{The name of the axes, as will be printed on the graph. Defaults to axesDefintion.}
 \item{"supressAxes": }{If present (and true), the axes will not be drawn. Neded for ternary plots, and some special plots where custom axes are required (and should be defined in the template)}
 \item{"log": }{If present (and other than ""), defines whoch axes use a log scale using base R convention : "x", "y" or "xy"}

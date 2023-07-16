@@ -1,0 +1,604 @@
+{
+    "name": "QANOR",
+    "fullName": "Q-ANOR plot (Streckeisen + Le Maitre 1979)",
+    "details": "",
+    "reference": "",
+    "url": "",
+    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateHistory": "Converted from original GCDkit function",
+    "diagramType": "binary",
+    "dataTransform": "function(){ Mesonorm(wrdata,GUI=FALSE) }",
+    "axesDefinition": {
+        "X": "100*Anorthite/(Orthoclase+Anorthite)",
+        "Y": "100*Quartz/(Quartz+Orthoclase+Albite+Anorthite)"
+    },
+    "axesName": {
+        "X": "ANOR",
+        "Y": "Q'"
+    },
+    "limits": {
+        "X": [
+            0,
+            100
+        ],
+        "Y": [
+            0,
+            50
+        ]
+    },
+    "template": {
+        "clssf": {
+            "type": "NULL",
+            "use": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+            ],
+            "rcname": [
+                "2 alkali feldspar granite",
+                "3a granite",
+                "3b granite",
+                "4 granodiorite",
+                "5a tonalite",
+                "5b tonalite",
+                "6* quartz alkali feldspar syenite",
+                "7* quartz syenite",
+                "8* quartz monzonite",
+                "9* quartz monzodiorite/quartz monzogabbro",
+                "10a* quartz diorite/quartz gabbro",
+                "10b* quartz diorite/quartz gabbro",
+                "6 alkali feldspar syenite",
+                "7 syenite",
+                "8 monzonite",
+                "9 monzodiorite/monzogabbro",
+                "10a diorite/gabbro",
+                "10b diorite/gabbro"
+            ]
+        },
+        "polygon2": {
+            "type": "NULL",
+            "x": [
+                -0.1,
+                12.5,
+                5,
+                -0.1,
+                -0.1
+            ],
+            "y": [
+                20,
+                20,
+                50.1,
+                50.1,
+                20
+            ]
+        },
+        "polygon3a": {
+            "type": "NULL",
+            "x": [
+                12.5,
+                22.4,
+                8,
+                5,
+                12.5
+            ],
+            "y": [
+                20,
+                20,
+                50.1,
+                50.1,
+                20
+            ]
+        },
+        "polygon3b": {
+            "type": "NULL",
+            "x": [
+                22.4,
+                40,
+                25,
+                8,
+                22.4
+            ],
+            "y": [
+                20,
+                20,
+                50.1,
+                50.1,
+                20
+            ]
+        },
+        "polygon4": {
+            "type": "NULL",
+            "x": [
+                40,
+                62,
+                50,
+                25,
+                40
+            ],
+            "y": [
+                20,
+                20,
+                50.1,
+                50.1,
+                20
+            ]
+        },
+        "polygon5a": {
+            "type": "NULL",
+            "x": [
+                62,
+                81.8,
+                72.5,
+                50,
+                62
+            ],
+            "y": [
+                20,
+                20,
+                50.1,
+                50.1,
+                20
+            ]
+        },
+        "polygon5b": {
+            "type": "NULL",
+            "x": [
+                81.8,
+                100.1,
+                100.1,
+                72.5,
+                81.8
+            ],
+            "y": [
+                20,
+                20,
+                50.1,
+                50.1,
+                20
+            ]
+        },
+        "polygon6s": {
+            "type": "NULL",
+            "x": [
+                -0.1,
+                16.25,
+                12.5,
+                -0.1,
+                -0.1
+            ],
+            "y": [
+                5,
+                5,
+                20,
+                20,
+                5
+            ]
+        },
+        "polygon7s": {
+            "type": "NULL",
+            "x": [
+                16.25,
+                29.6,
+                22.4,
+                12.5,
+                16.25
+            ],
+            "y": [
+                5,
+                5,
+                20,
+                20,
+                5
+            ]
+        },
+        "polygon8s": {
+            "type": "NULL",
+            "x": [
+                29.6,
+                47.5,
+                40,
+                22.4,
+                29.6
+            ],
+            "y": [
+                5,
+                5,
+                20,
+                20,
+                5
+            ]
+        },
+        "polygon9s": {
+            "type": "NULL",
+            "x": [
+                47.5,
+                68,
+                62,
+                40,
+                47.5
+            ],
+            "y": [
+                5,
+                5,
+                20,
+                20,
+                5
+            ]
+        },
+        "polygon10as": {
+            "type": "NULL",
+            "x": [
+                68,
+                86.45,
+                81.8,
+                62,
+                68
+            ],
+            "y": [
+                5,
+                5,
+                20,
+                20,
+                5
+            ]
+        },
+        "polygon10bs": {
+            "type": "NULL",
+            "x": [
+                86.45,
+                100.1,
+                100.1,
+                81.8,
+                86.45
+            ],
+            "y": [
+                5,
+                5,
+                20,
+                20,
+                5
+            ]
+        },
+        "polygon6": {
+            "type": "NULL",
+            "x": [
+                -0.1,
+                17.5,
+                16.25,
+                -0.1,
+                -0.1
+            ],
+            "y": [
+                -0.1,
+                -0.1,
+                5,
+                5,
+                -0.1
+            ]
+        },
+        "polygon7": {
+            "type": "NULL",
+            "x": [
+                17.5,
+                32,
+                29.6,
+                16.25,
+                17.5
+            ],
+            "y": [
+                -0.1,
+                -0.1,
+                5,
+                5,
+                -0.1
+            ]
+        },
+        "polygon8": {
+            "type": "NULL",
+            "x": [
+                32,
+                50,
+                47.5,
+                29.6,
+                32
+            ],
+            "y": [
+                -0.1,
+                -0.1,
+                5,
+                5,
+                -0.1
+            ]
+        },
+        "polygon9": {
+            "type": "NULL",
+            "x": [
+                50,
+                70,
+                68,
+                47.5,
+                50
+            ],
+            "y": [
+                -0.1,
+                -0.1,
+                5,
+                5,
+                -0.1
+            ]
+        },
+        "polygon10a": {
+            "type": "NULL",
+            "x": [
+                70,
+                88,
+                86.45,
+                68,
+                70
+            ],
+            "y": [
+                -0.1,
+                -0.1,
+                5,
+                5,
+                -0.1
+            ]
+        },
+        "polygon10b": {
+            "type": "NULL",
+            "x": [
+                88,
+                100.1,
+                100.1,
+                86.45,
+                88
+            ],
+            "y": [
+                -0.1,
+                -0.1,
+                5,
+                5,
+                -0.1
+            ]
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "binary",
+            "plot.position": 38.5,
+            "plot.name": "Q-ANOR plot (Streckeisen + Le Maitre 1979)"
+        },
+        "lines1": {
+            "type": "abline",
+            "h": 5,
+            "col": "gray8"
+        },
+        "lines2": {
+            "type": "abline",
+            "h": 20,
+            "col": "gray8"
+        },
+        "lines3": {
+            "type": "lines",
+            "x": [
+                70,
+                50
+            ],
+            "y": [
+                0,
+                50
+            ],
+            "col": "gray8"
+        },
+        "lines4": {
+            "type": "lines",
+            "x": [
+                50,
+                40,
+                25
+            ],
+            "y": [
+                0,
+                20,
+                50
+            ],
+            "col": "gray8"
+        },
+        "lines5": {
+            "type": "lines",
+            "x": [
+                50,
+                40,
+                25
+            ],
+            "y": [
+                0,
+                20,
+                50
+            ],
+            "col": "gray8"
+        },
+        "lines6": {
+            "type": "lines",
+            "x": [
+                17.5,
+                10,
+                5
+            ],
+            "y": [
+                0,
+                30,
+                50
+            ],
+            "col": "gray8"
+        },
+        "lines7": {
+            "type": "lines",
+            "x": [
+                32,
+                29.6,
+                8
+            ],
+            "y": [
+                0,
+                5,
+                50
+            ],
+            "col": "gray8"
+        },
+        "lines8": {
+            "type": "lines",
+            "x": [
+                88,
+                72.5
+            ],
+            "y": [
+                0,
+                50
+            ],
+            "col": "gray8",
+            "lty": "dashed"
+        },
+        "text1": {
+            "type": "text",
+            "x": 5,
+            "y": 25,
+            "text": "(2)",
+            "col": "darkblue"
+        },
+        "text2": {
+            "type": "text",
+            "x": 15,
+            "y": 25,
+            "text": "(3a)",
+            "col": "darkblue"
+        },
+        "text3": {
+            "type": "text",
+            "x": 28,
+            "y": 25,
+            "text": "(3b)",
+            "col": "darkblue"
+        },
+        "text4": {
+            "type": "text",
+            "x": 50,
+            "y": 25,
+            "text": "(4)",
+            "col": "darkblue"
+        },
+        "text5": {
+            "type": "text",
+            "x": 70,
+            "y": 25,
+            "text": "(5a)",
+            "col": "darkblue"
+        },
+        "text6": {
+            "type": "text",
+            "x": 90,
+            "y": 25,
+            "text": "(5b)",
+            "col": "darkblue"
+        },
+        "text7": {
+            "type": "text",
+            "x": 7,
+            "y": 13,
+            "text": "(6*)",
+            "col": "darkblue"
+        },
+        "text8": {
+            "type": "text",
+            "x": 20,
+            "y": 13,
+            "text": "(7*)",
+            "col": "darkblue"
+        },
+        "text9": {
+            "type": "text",
+            "x": 35,
+            "y": 13,
+            "text": "(8*)",
+            "col": "darkblue"
+        },
+        "text10": {
+            "type": "text",
+            "x": 55,
+            "y": 13,
+            "text": "(9*)",
+            "col": "darkblue"
+        },
+        "text11": {
+            "type": "text",
+            "x": 75,
+            "y": 13,
+            "text": "(10a*)",
+            "col": "darkblue"
+        },
+        "text12": {
+            "type": "text",
+            "x": 92,
+            "y": 13,
+            "text": "(10b*)",
+            "col": "darkblue"
+        },
+        "text13": {
+            "type": "text",
+            "x": 9,
+            "y": 2.5,
+            "text": "(6)",
+            "col": "darkblue"
+        },
+        "text14": {
+            "type": "text",
+            "x": 25,
+            "y": 2.5,
+            "text": "(7)",
+            "col": "darkblue"
+        },
+        "text15": {
+            "type": "text",
+            "x": 40,
+            "y": 2.5,
+            "text": "(8)",
+            "col": "darkblue"
+        },
+        "text16": {
+            "type": "text",
+            "x": 58,
+            "y": 2.5,
+            "text": "(9)",
+            "col": "darkblue"
+        },
+        "text17": {
+            "type": "text",
+            "x": 78,
+            "y": 2.5,
+            "text": "(10a)",
+            "col": "darkblue"
+        },
+        "text18": {
+            "type": "text",
+            "x": 95,
+            "y": 2.5,
+            "text": "(10b)",
+            "col": "darkblue"
+        }
+    }
+}
+

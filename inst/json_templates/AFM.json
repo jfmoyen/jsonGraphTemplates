@@ -1,0 +1,196 @@
+{
+    "name": "AFM",
+    "fullName": "AFM (Irvine + Baragar 1971)",
+    "details": "",
+    "reference": "",
+    "url": "",
+    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateHistory": "Converted from original GCDkit function",
+    "diagramType": "ternary",
+    "dataTransform": null,
+    "axesDefinition": {
+        "A": "K2O+Na2O",
+        "B": "FeOt",
+        "C": "MgO"
+    },
+    "supressAxes":true,
+    "limits": {
+        "X": [
+            -0.03,
+            1.03
+        ],
+        "Y": [
+            -0.05,
+            1.03
+        ]
+    },
+    "template": {
+        "clssf": {
+            "type": "NULL",
+            "use": [
+                2,
+                3
+            ],
+            "rcname": [
+                "calc-alkaline series",
+                "tholeiite series"
+            ]
+        },
+        "lines0": {
+            "type": "NULL",
+            "x": [
+                0,
+                0.15,
+                0.231,
+                0.312,
+                0.436,
+                0.473,
+                0.513,
+                0.542,
+                0.5555,
+                0.617,
+                0.675,
+                0.9167,
+                0
+            ],
+            "y": [
+                0,
+                0.2598,
+                0.3135,
+                0.3672,
+                0.4642,
+                0.4728,
+                0.4728,
+                0.4573,
+                0.4425,
+                0.3759,
+                0.3031,
+                0,
+                0
+            ],
+            "lwd": 3,
+            "col": "gray8"
+        },
+        "lines1": {
+            "type": "NULL",
+            "x": [
+                1,
+                0.5,
+                0.15,
+                0.231,
+                0.312,
+                0.436,
+                0.473,
+                0.513,
+                0.542,
+                0.5555,
+                0.617,
+                0.675,
+                0.9167,
+                1
+            ],
+            "y": [
+                0,
+                0.866,
+                0.2598,
+                0.3135,
+                0.3672,
+                0.4642,
+                0.4728,
+                0.4728,
+                0.4573,
+                0.4425,
+                0.3759,
+                0.3031,
+                0,
+                0
+            ],
+            "lwd": 3,
+            "col": "red"
+        },
+        "lines2": {
+            "type": "lines",
+            "x": [
+                0,
+                1,
+                0.5,
+                0
+            ],
+            "y": [
+                0,
+                0,
+                0.866,
+                0
+            ],
+            "col": "black"
+        },
+        "lines3": {
+            "type": "lines",
+            "x": [
+                0.231,
+                0.312,
+                0.436,
+                0.473,
+                0.513,
+                0.542,
+                0.5555,
+                0.617,
+                0.675
+            ],
+            "y": [
+                0.3135,
+                0.3672,
+                0.4642,
+                0.4728,
+                0.4728,
+                0.4573,
+                0.4425,
+                0.3759,
+                0.3031
+            ],
+            "col": "gray8"
+        },
+        "A": {
+            "type": "text",
+            "x": 0,
+            "y": -0.03,
+            "text": "A",
+            "adj": 0.5
+        },
+        "C": {
+            "type": "text",
+            "x": 1,
+            "y": -0.03,
+            "text": "M",
+            "adj": 0.5
+        },
+        "B": {
+            "type": "text",
+            "x": 0.5,
+            "y": 0.896,
+            "text": "F",
+            "adj": 0.5
+        },
+        "GCDkit": {
+            "type": "NULL",
+            "plot.type": "ternary",
+            "plot.position": 11,
+            "plot.name": "AFM (Irvine + Baragar 1971)"
+        },
+        "text4": {
+            "type": "text",
+            "x": 0.5,
+            "y": 0.55,
+            "text": "Tholeiite Series",
+            "col": "gray8"
+        },
+        "text5": {
+            "type": "text",
+            "x": 0.5,
+            "y": 0.1,
+            "text": "Calc-alkaline Series",
+            "col": "gray8"
+        }
+    }
+}
+
