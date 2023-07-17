@@ -2,6 +2,9 @@
 # Mostly we use those from GCDkit, but we can define more
 
 ############### Calculate anhydrous composition ####################
+#' Recalculate WR composition to anhydrous, as done in gCDkit (First.r)
+#' Ultimately there will probably be a GCDkit function by that name !
+#' @export
 #' @param where A matrix with whole-rock composition, probably coming from GCDkit
 recastAnhydrous <- function(where=WR){
   anhydrous.short<-c("SiO2","TiO2","Al2O3","FeOt","MnO","MgO","CaO","Na2O","K2O","P2O5")
@@ -35,6 +38,8 @@ recastAnhydrous <- function(where=WR){
 
 
 ############### Calculate Ohta & Arai parameters ####################
+#' Recalculate Otha + Arai M, F and W parameters
+#' @export
 #' @param where A matrix with whole-rock composition, probably coming from GCDkit
 OhtaAraiParams<-function(where){
   usedox<-c("SiO2","TiO2","Al2O3","Fe2O3t","MgO","CaO_corr","Na2O","K2O")

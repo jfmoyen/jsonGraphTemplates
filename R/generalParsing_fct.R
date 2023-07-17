@@ -76,6 +76,11 @@ template_element_parser<-function(tpl_el,default_options,
 #### Conditional display ####
   if(any(names(tpl_el) == "switch")){
 
+    # If there are no defaults, complain loudly !
+    if(  !(tpl_el$switch %in% names(default_options) ) ){
+       stop("If you use switches, they must have defaults !\n(error in json template)")
+    }
+
     # if the corresponding option is not set,
     # remove switch and use the default
     if( is.null(template_options)||is.na(template_options[tpl_el$switch]) ){
