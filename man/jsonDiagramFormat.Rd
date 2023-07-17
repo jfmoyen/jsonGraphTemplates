@@ -54,12 +54,16 @@ The template proper is a list of potentially many elements. They all belong to a
 \subsection{Special template items}{
 The parser will interpret colors and switches, allowing to configure the template:
 \itemize{
+<<<<<<< HEAD
 \item{colors: }{The field "col" of any template element will be interpreted by the parser. If an explicit color name is supplied ("black", "blue","#123456"), it will be used. If another name is supplied, the parser will lok in the vector called template_colors and replace by the appropriate values, e.g. template_colors = c("textcol"="blue","linecol"="red") will replace every occurence of textcol in the template by "blue", every occurence of linecol by "red", etc. Defaults to black if nothing was supplied.
 
 Figaro parser tries to conform to GCDkit usage. Colours names pltcol1, pltcol2 and pltcol3 in json template will be replaced by plt.col[1] etc, unless the user explicitely says otherwise. If option gcd.plot.bw is set to TRUE, these three colours will be made black, no matter what.
 
 The above will NOT affect any colour defined otherwise in json template : "red" or "myColour" won't be changed by gcd.plot.bw, for instance.}
 
+=======
+\item{colors: }{The field "col" of any template element will be interpreted by the parser. If an explicit color name is supplied ("black", "blue","#123456"), it will be used. If another name is supplied, the parser will lok in the vector called template_colors and replace by the appropriate values, e.g. template_colors = c("textcol"="blue","linecol"="red") will replace every occurence of textcol in the template by "blue", every occurence of linecol by "red", etc. Defaults to black if nothing was supplied.}
+>>>>>>> 26ac802459025c3991b80af585780ff53fa5e667
 \item{switching: }{Elements can be controlled by switching. If an element has a "switch" field, this fields contains the name of the (boolean) switch that will control its appearance. An element with no "switch" will always appear.
 The list of switches should be present in "optionSwitches".
 The defaults MUST be present in "optionDefaults", otherwise the code throws an error.
