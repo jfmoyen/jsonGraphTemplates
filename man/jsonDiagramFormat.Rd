@@ -54,6 +54,7 @@ The template proper is a list of potentially many elements. They all belong to a
 \subsection{Special template items}{
 The parser will interpret colors and switches, allowing to configure the template:
 \itemize{
+
 \item{colors: }{The field "col" of any template element will be interpreted by the parser. If an explicit color name is supplied ("black", "blue","#123456"), it will be used. If another name is supplied, the parser will lok in the vector called template_colors and replace by the appropriate values, e.g. template_colors = c("textcol"="blue","linecol"="red") will replace every occurence of textcol in the template by "blue", every occurence of linecol by "red", etc. Defaults to black if nothing was supplied.
 
 Figaro parser tries to conform to GCDkit usage. Colours names pltcol1, pltcol2 and pltcol3 in json template will be replaced by plt.col[1] etc, unless the user explicitely says otherwise. If option gcd.plot.bw is set to TRUE, these three colours will be made black, no matter what.
