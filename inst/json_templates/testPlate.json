@@ -1,0 +1,15 @@
+{
+    "name": "testPlate",
+    "fullName": "This is an experiment to make plates",
+    "details": "",
+    "reference": "",
+    "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
+    "templateHistory": "Converted from original GCDkit function",
+    "diagramType": "plate",
+
+    "plateTitle":"This is a plate",
+    "nrow":1,
+    "ncol":3,
+    "plateSlots":["AFM.json","Shand.json","Shervais.json"]
+}

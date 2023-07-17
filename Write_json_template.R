@@ -25,7 +25,7 @@ readFigaroTemplate<-function(diagram,plot=F,...){
   for(i in 1:length(template)){
     # Add name to the first element
     nm <- names(template[[i]])
-    names(template[[i]]) <- c("type",nm[-1])
+    names(template[[i]]) <- c("plotFun",nm[-1])
     # # Tag the lines used for classification
     # if(i %in% template$clssf$use ){
     #   template[[i]][["clssf"]] <- T
@@ -51,7 +51,7 @@ readFigaroTemplate<-function(diagram,plot=F,...){
 }
 
 ##########
-ee<-readFigaroTemplate("Sylvester")
-ee$template$text3$text<-NULL
+ee<-readFigaroTemplate("OhtaArai")
+ee$template$B$text<-NULL
 ee.json <- prettify(toJSON(ee,null="null",auto_unbox = T))
-write(ee.json,"./inst/json_templates/Sylvester.json")
+write(ee.json,"./inst/json_templates/OhtaArai.json")

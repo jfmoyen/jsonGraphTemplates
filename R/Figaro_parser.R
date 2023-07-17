@@ -20,6 +20,7 @@ utils::globalVariables(c("demo","sheet","x.data","y.data"))
 #' @param path Path to json file
 #' If not specified, looks in the json_template folder of the package
 #' @param verbose Give debugging info
+#' @param new Open in a new window?
 #' @param template_options Options passed to the parser.
 #' They are of the form list(switch1 = T, switch2 = F, etc)
 #' and they wll affect template elements that have a switch.
@@ -35,7 +36,7 @@ utils::globalVariables(c("demo","sheet","x.data","y.data"))
 
 plotDiagram_json <- function(json, path = NULL,
                              wrdata=WR,lbl=labels,
-                             verbose=F,
+                             verbose=F,new=T,
                              template_options=NULL,
                              template_colors=NULL){
 
@@ -59,8 +60,9 @@ plotDiagram_json <- function(json, path = NULL,
   #### Main switch - what are we trying to plot ? ####
 
   switch(EXPR = graphDef$diagramType,
-         "binary" = pp<-plotDiagram_json_binary(graphDef,preparedData$wrdata,preparedData$lbl,template_options,template_colors),
-         "ternary" = pp<-plotDiagram_json_ternary(graphDef,preparedData$wrdata,preparedData$lbl,template_options,template_colors),
+         "binary" = pp<-plotDiagram_json_binary(graphDef,preparedData$wrdata,preparedData$lbl,new=new,template_options,template_colors),
+         "ternary" = pp<-plotDiagram_json_ternary(graphDef,preparedData$wrdata,preparedData$lbl,new=new,template_options,template_colors),
+         "plate" = pp<-plotDiagram_json_plate(graphDef,preparedData$wrdata,preparedData$lbl,template_options,template_colors),
          stop(paste("Sorry, plotting of type",graphDef$diagramType,"is not implemented yet",sep=" "))
   )
 
@@ -73,13 +75,15 @@ plotDiagram_json <- function(json, path = NULL,
 #' @param graphDef The template, loaded into a list from json
 #' @param dd The plotting dataset
 #' @param lbl The labels (GCDkit style)
-#' @param template_options Further arguments passed to the parser, typically switches
-
+#' @param new Open in a new window?
+#' @param template_options See plotDiagram_json
+#' @param template_colors See plotDiagram_json
 #' @details
 #' Internal function, that does the actual plotting
 #' in the case of a binary plot
 
 plotDiagram_json_binary <- function(graphDef,dd, lbl,
+                                    new,
                                     template_options,template_colors){
   # Get the X and Y values
   x.data <- GCDkit::calcCore(graphDef$axesDefinition$X,where="dd")$results
@@ -93,6 +97,7 @@ plotDiagram_json_binary <- function(graphDef,dd, lbl,
   parsedTemplate <- parse_template(graphDef,template_options,template_colors)
 
   #### Build the figaro "style sheet" ####
+
   sheet<-list(demo=list(fun="plot",
                         call=list(xlim = graphDef$limits$X,
                                   ylim = graphDef$limits$Y,
@@ -103,7 +108,8 @@ plotDiagram_json_binary <- function(graphDef,dd, lbl,
                                   fg="black",
                                   xaxs = "i", yaxs = "i",
                                   #asp=1,
-                                  axes=parsedAxesOptions$axes),
+                                  axes=parsedAxesOptions$axes,
+                                  new=new),
                         template=parsedTemplate))
 
   # Assign to global env
@@ -113,6 +119,7 @@ plotDiagram_json_binary <- function(graphDef,dd, lbl,
 
   #### Create the actual figaro object and plot ####
   pp <- GCDkit::figaro(demo, prefix = "sheet")
+  # figRedraw()
 
   pp$draw(x.data, y.data,
           main=GCDkit::annotate(graphDef$fullName),
@@ -128,8 +135,9 @@ plotDiagram_json_binary <- function(graphDef,dd, lbl,
                        "Size",
                        drop = TRUE),
           plotting.function = "fromJSON",
-          new = T
+          new = new
   )
+
   invisible(pp)
 }
 
@@ -139,13 +147,14 @@ plotDiagram_json_binary <- function(graphDef,dd, lbl,
 #' @param graphDef The template, loaded into a list from json
 #' @param dd The plotting dataset
 #' @param lbl The labels (GCDkit style)
-#' @param template_options Further arguments passed to the parser, typically switches
-
+#' @param new Open in a new window?
+#' @param template_options See plotDiagram_json
+#' @param template_colors See plotDiagram_json
 #' @details
 #' Internal function, that does the actual plotting
-#' in the case of a binary plot
+#' in the case of a ternary plot
 
-plotDiagram_json_ternary <- function(graphDef,dd,lbl,
+plotDiagram_json_ternary <- function(graphDef,dd,lbl,new,
                                      template_options,template_colors){
 
   # Get the A, B and C data (apices)
@@ -185,7 +194,8 @@ plotDiagram_json_ternary <- function(graphDef,dd,lbl,
                                   fg="black",
                                   xaxs = "i", yaxs = "i",
                                   asp=1,
-                                  axes=FALSE),
+                                  axes=FALSE,
+                                  new=new),
                         template=parsedTemplate ))
 
   # Assign to global env
@@ -196,7 +206,7 @@ plotDiagram_json_ternary <- function(graphDef,dd,lbl,
   #### Create the actual figaro object and plot ####
   pp <- GCDkit::figaro(demo, prefix = "sheet")
 
-  pp$draw(x.data, y.data,
+    pp$draw(x.data, y.data,
           main=GCDkit::annotate(graphDef$fullName),
           xlab=NULL,
           ylab=NULL,
@@ -210,8 +220,47 @@ plotDiagram_json_ternary <- function(graphDef,dd,lbl,
                        "Size",
                        drop = TRUE),
           plotting.function = "fromJSON",
-          new = T
+          new = new
   )
 
   invisible(pp)
 }
+
+############### Plot json template in Figaro: PLATES ####################
+#' Inner function, for binary plots
+#'
+#' @param graphDef The template, loaded into a list from json
+#' @param dd The plotting dataset
+#' @param lbl The labels (GCDkit style)
+#' @param template_options Further arguments passed to the parser, see main function
+#' @details
+#' Internal function, that does the actual plotting
+#' in the case of a plate. This function is not very nicely written, it relies on
+#' multiplePerPage and hopes it does the right thing.
+
+plotDiagram_json_plate <- function(graphDef,dd, lbl,
+                                    template_options,template_colors){
+
+## Not nice, there must be a better way to do this !
+  assign("dd", dd, .GlobalEnv)
+  assign("lbl", lbl, .GlobalEnv)
+
+## multiplePerPage uses commands as strings, so we have to assemble them (! ...)
+  pltCommand <- paste("plotDiagram_json(json='",
+                      graphDef$plateSlots,
+                      "',wrdata=dd,lbl=lbl,",
+                      "new=F,",
+                      "template_options=template_options,",
+                      "template_colors=template_colors",")",sep="")
+
+  GCDkit::multiplePerPage(pltCommand,
+                          nrow = graphDef$nrow,
+                          ncol = graphDef$ncol,
+                          title= graphDef$fullName)
+
+## Cleanup
+  remove("dd", envir= .GlobalEnv)
+  remove("lbl", envir = .GlobalEnv)
+
+}
+

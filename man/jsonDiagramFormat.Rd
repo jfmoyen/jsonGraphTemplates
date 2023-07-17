@@ -46,7 +46,7 @@ These items can be included to customize further the template
 \section{Template}{
 The template proper is a list of potentially many elements. They all belong to a "template": element, itself a dictionary of the form "element_name":"description". Each template element starts with a "type" element that defines how it will be interpreted by the parser. The following types are understood:
 \itemize{
-\item{"type":"NULL" }{Elements of type "NULL" won't be plotted on the template. They can, however, be used for clasification}
+\item{"plotFun":"NULL" }{Indicates which plotting function to use. Elements with plotFun "NULL" won't be plotted on the template. They can, however, be used for clasification}
 \item{"type":"lines"}{Elements of type lines will draw lines. Lines are defined by x, y, possibly col, lty }
 \item{"type:""test" }{ .... }
 }
@@ -68,16 +68,19 @@ If an element is named clssf, it is used to define classification polygons, whic
 
 Classification requires closed polygons, so any subsequent definition must loop back to origin, like that:
 
+\code{
  "lines1": {"type": "NULL",
             "x": [0,435,0,0],
             "y": [0,500,500,0]
         },
+}
 
 This specific "lines" will not be plotted (type is NULL).
 
 As clssf explicitely refers to the item numbers, it would be very unwise to reorder them or remove some of them; in particular do NOT switch them !
 
 For example:
+\code{
  "clssf": {"type": "NULL",
             "use": [2,3,4,5,6,7],
             "rcname": ["I","II","III","IV","V","VI]
@@ -87,6 +90,7 @@ For example:
   ...
   "lines6": { ... },
   "lines7": { ... }, (etc)
+}
 
 will use elements lines1 to lines6 for classification (but not lines7 and subsequent)
 }
