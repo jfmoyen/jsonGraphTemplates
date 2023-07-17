@@ -16,7 +16,7 @@ library(jsonGraphTemplates)
 
 ##### Binary diagrams ######
 
-plotDiagram_json(json="sylvester.json")
+plotDiagram_json(json="test2.json")
 
 plotDiagram_json(wrdata=WR.ata,lbl=lbl.ata,json="Sylvester.json")
 

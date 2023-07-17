@@ -54,5 +54,6 @@ The template proper is a list of potentially many elements. They all belong to a
 \item{""}{}
 \item{""}{}
 }
+Template elements will be plotted unless the switch is explicitely set to F
 }
 

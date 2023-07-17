@@ -7,6 +7,7 @@
 "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
 "templateHistory": "Brand new template for demo purpose",
 
+"optionSwitches": {"plotthis": "Plot the word Tholeitic"},
 
 "diagramType":"binary",
 "dataTransform":null,
@@ -31,7 +32,8 @@
                "x":2,
                "y":3.1,
                "text":"Tholeiite Series",
-               "col":"red"
+               "col":"red",
+               "switch":"plotthis"
                       }
               }
 }
