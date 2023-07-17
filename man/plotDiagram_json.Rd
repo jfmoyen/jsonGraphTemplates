@@ -30,6 +30,9 @@ as in many cases we need GCDkit-calculated things such as A/CNK etc.}
 \item{template_options}{Options passed to the parser.
 They are of the form list(switch1 = T, switch2 = F, etc)
 and they wll affect template elements that have a switch.}
+
+\item{template_colors}{A named vector, with names corresponding to the colours
+found in the template, e.g. c(col1="red",col2="blue"). Defaults to black.}
 }
 \description{
 Read a template defined in a json file and import it to  figaro graph

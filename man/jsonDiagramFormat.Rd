@@ -46,14 +46,50 @@ These items can be included to customize further the template
 \section{Template}{
 The template proper is a list of potentially many elements. They all belong to a "template": element, itself a dictionary of the form "element_name":"description". Each template element starts with a "type" element that defines how it will be interpreted by the parser. The following types are understood:
 \itemize{
-\item{"type":"NULL" }{Elements of type "NULL" won't be plotted on the template. Their main use is for classification fields. Classifications fields are defined by a combination of template elements:
+\item{"type":"NULL" }{Elements of type "NULL" won't be plotted on the template. They can, however, be used for clasification}
+\item{"type":"lines"}{Elements of type lines will draw lines. Lines are defined by x, y, possibly col, lty }
+\item{"type:""test" }{ .... }
+}
+
+\subsection{Special template items}{
+The parser will interpret colors and switches, allowing to configure the template:
 \itemize{
-\item{"clssf": }{an element named clssf, having "type":"null" and containing "use","rcname", and a number of elements defining the classification polygons. "use" gives the numbers of the template elements that can define classification polygons. "rcname" gives the resulting classification names, and the subsequent elements are polygon coordinates. Note that the polygon coordinates can be of type "NULL" (they will not be plotted), or "line" (they will be drawn)}
-}}
-\item{"type":"lines" }{lines have x, y and possibly col (colour) and lty (line type) properties.}
-\item{""}{}
-\item{""}{}
+\item{colors: }{The field "col" of any template element will be interpreted by the parser. If an explicit color name is supplied ("black", "blue","#123456"), it will be used. If another name is supplied, the parser will lok in the vector called template_colors and replace by the appropriate values, e.g. template_colors = c("textcol"="blue","linecol"="red") will replace every occurence of textcol in the template by "blue", every occurence of linecol by "red", etc. Defaults to black if nothing was supplied.}
+\item{switch: }{ .... }
 }
-Template elements will be plotted unless the switch is explicitely set to F
 }
+
+\subsection{classification}{
+If an element is named clssf, it is used to define classification polygons, which may, or may not be plotted. clssf must have the following fields:
+\itemize{
+\item{"use": }{The numbers of the template elements to use for classification, in the order in which they appear in the template.}
+\item{"rcname": }{The resulting classification names}
+}
+
+Classification requires closed polygons, so any subsequent definition must loop back to origin, like that:
+
+ "lines1": {"type": "NULL",
+            "x": [0,435,0,0],
+            "y": [0,500,500,0]
+        },
+
+This specific "lines" will not be plotted (type is NULL).
+
+As clssf explicitely refers to the item numbers, it would be very unwise to reorder them or remove some of them; in particular do NOT switch them !
+
+For example:
+ "clssf": {"type": "NULL",
+            "use": [2,3,4,5,6,7],
+            "rcname": ["I","II","III","IV","V","VI]
+        },
+  "lines1": { ... },
+  "lines2": { ... },
+  ...
+  "lines6": { ... },
+  "lines7": { ... }, (etc)
+
+will use elements lines1 to lines6 for classification (but not lines7 and subsequent)
+}
+}
+
 

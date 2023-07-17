@@ -59,7 +59,7 @@ parse_template<-function(graphDef,template_options,template_colors){
 #' @param tpl_el A template element
 template_element_parser<-function(tpl_el,template_options,template_colors){
 
-  ## Elements that have a switch:
+#### Elements that have a switch are conditionaly displayed ####
   if(any(names(tpl_el) == "switch")){
     # if the corresponding option is not set, remove switch (and plot the element)
     if( is.null(template_options[[tpl_el$switch]]) ){
@@ -74,12 +74,27 @@ template_element_parser<-function(tpl_el,template_options,template_colors){
         tpl_el <- NULL
       }
     }
-}
+  }
 
-#### Prettyfy text by using annotate, where possible
-  # if(tpl_el$type=="text"&&!grepl("\\n",tpl_el$text)){
-  #   tpl_el$text <- as.expression(GCDkit::annotate(tpl_el$text) )
-  # }
+#### Convert colors ####
+  if(any(names(tpl_el) == "col")){
+    # This element has a color definition, let's dig further
+    if(!isColor(tpl_el$col)){
+      # If the color is a legitimate colour name, don't touch it.
+      # However, if it is not...
+      if(any(names(template_colors) == tpl_el$col)){
+        # The user has supplied an equivalence
+        tpl_el$col <- template_colors[tpl_el$col]
+      }else{
+        # Default
+        tpl_el$col <- "black"
+      }
+    }
+  }
+
+
+#### Text defined as expressions
+
 
   return(tpl_el)
 }
