@@ -55,7 +55,19 @@ The template proper is a list of potentially many elements. They all belong to a
 The parser will interpret colors and switches, allowing to configure the template:
 \itemize{
 \item{colors: }{The field "col" of any template element will be interpreted by the parser. If an explicit color name is supplied ("black", "blue","#123456"), it will be used. If another name is supplied, the parser will lok in the vector called template_colors and replace by the appropriate values, e.g. template_colors = c("textcol"="blue","linecol"="red") will replace every occurence of textcol in the template by "blue", every occurence of linecol by "red", etc. Defaults to black if nothing was supplied.}
-\item{switch: }{ .... }
+\item{switching: }{Elements can be controlled by switching. If an element has a "switch" field, this fields contains the name of the (boolean) switch that will control its appearance. An element with no "switch" will always appear.
+The list of switches should be present in "optionSwitches".
+The defaults MUST be present in "optionDefaults", otherwise the code throws an error.
+For example:
+
+\code{
+"optionSwitches": {"plotthis": "Plot the word Tholeitic",
+                    "plotthat": "Plot the diagonal line"
+                  },
+"optionDefaults": {"plotthis": false,
+                   "plotthat": true}
+}
+}
 }
 }
 
