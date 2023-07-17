@@ -45,7 +45,9 @@ points(x=blatna_QANOR_coords$wrdata[,"x.data"],
 graph_definition<-json_loader("LaRochePlut.json")
 
 # The template itself
-graph_template<-parse_template(graph_definition)
+graph_template<-parse_template(graph_definition,
+                               template_colors = c(pltcol1="blue",pltcol2="darkblue",pltcol3='red'))
+
 
 # Coordinates of arbitrary points in his diagram
 blatna_LaRochePlut_coords <- points_coordinates(graph_definition,wrdata=WR.blatna,lbl=lbl.blatna)
@@ -57,7 +59,9 @@ points(x=blatna_LaRochePlut_coords$wrdata[,"x.data"],
        pch=lbl.blatna$Symbol,col=lbl.blatna$Colour)
 
 # Or maybe even...
-graph_definition<-json_loader("OConnorPlut.json")
+graph_definition<-json_loader("OConnorPlut.json",
+                              template_colors = c(pltcol1="blue",pltcol2="darkblue",pltcol3='red'))
+
 
 # The template itself
 graph_template<-parse_template(graph_definition)
