@@ -51,6 +51,23 @@ plotDiagram_json <- function(json, path = NULL,
     )
   }
 
+  #### Colors - use default, if defined ####
+  if(is.null(template_colors)){
+    template_colors<-c(
+      "pltcol1" = plt.col[1],
+      "pltcol2" = plt.col[2],
+      "pltcol3" = plt.col[3]
+    )
+  }
+  #### Colors - use B&W, if defined
+  if(getOption("gcd.plot.bw")){
+    template_colors<-c(
+      "pltcol1" = "black",
+      "pltcol2" = "black",
+      "pltcol3" = "black"
+    )
+  }
+
   #### Read the json template ####
   graphDef <- json_loader(json,path)
 
@@ -58,7 +75,6 @@ plotDiagram_json <- function(json, path = NULL,
   preparedData <-data_preparation(graphDef,wrdata,lbl)
 
   #### Main switch - what are we trying to plot ? ####
-
   switch(EXPR = graphDef$diagramType,
          "binary" = pp<-plotDiagram_json_binary(graphDef,preparedData$wrdata,preparedData$lbl,new=new,template_options,template_colors),
          "ternary" = pp<-plotDiagram_json_ternary(graphDef,preparedData$wrdata,preparedData$lbl,new=new,template_options,template_colors),
