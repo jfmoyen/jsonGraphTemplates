@@ -2,9 +2,10 @@
     "name": "Shand",
     "fullName": "A/CNK - A/NK (Shand 1943)",
     "details": "",
-    "reference": "",
+    "reference": "Shand (1943) Eruptive Rocks. John Wiley & Sons",
     "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": null,
@@ -24,7 +25,7 @@
     },
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "use": [
                 2,
                 3,
@@ -39,7 +40,7 @@
             ]
         },
         "lines1": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 1,
                 1,
@@ -56,7 +57,7 @@
             ]
         },
         "lines2": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 1,
                 2,
@@ -73,7 +74,7 @@
             ]
         },
         "lines3": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 1,
                 1,
@@ -90,7 +91,7 @@
             ]
         },
         "lines4": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 1,
                 2,
@@ -107,17 +108,17 @@
             ]
         },
         "lines11": {
-            "type": "abline",
+            "plotfun": "abline",
             "h": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines12": {
-            "type": "abline",
+            "plotfun": "abline",
             "v": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines13": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 0,
                 7
@@ -126,37 +127,37 @@
                 0,
                 7
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "plot.type": "binary",
             "plot.position": 14,
             "plot.name": "A/CNK - A/NK (Shand 1943)"
         },
         "text1": {
-            "type": "text",
+            "plotfun": "text",
             "x": 0.55,
             "y": 6,
             "text": "Metaluminous",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0
         },
         "text2": {
-            "type": "text",
+            "plotfun": "text",
             "x": 1.05,
             "y": 6,
             "text": "Peraluminous",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0
         },
         "text3": {
-            "type": "text",
+            "plotfun": "text",
             "x": 0.55,
             "y": 0.5,
             "text": "Peralkaline",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0
         }
     }

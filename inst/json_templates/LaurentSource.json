@@ -2,9 +2,10 @@
     "name": "LaurentSource",
     "fullName": "Source diagram (Laurent et al. 2014)",
     "details": "",
-    "reference": "Laurent et al 2014 PrecambRes",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Laurent O, Martin H, Moyen JF, Doucelance R (2014) The diversity and evolution of late-Archean granitoids: evidence for the onset of 'modern-style' plate tectonics between 3.0 and 2.5 Ga. Lithos 205:208-235",
+    "url": "https://doi.org/10.1016/j.lithos.2014.06.012",
+    "templateAuthor": "J.-F. Moyen <jfmoyen@gmail.com>, Oscar Laurent <oscarlaurent86@gmail.com>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "ternary",
     "dataTransform": null,
@@ -26,7 +27,7 @@
     },
     "template": {
         "lines1": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 1,
@@ -42,7 +43,7 @@
             "col": "black"
         },
         "lines2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.175,
                 0.575
@@ -54,7 +55,7 @@
             "col": "black"
         },
         "lines3": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.4,
                 0.7
@@ -66,7 +67,7 @@
             "col": "black"
         },
         "lines4": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.375,
                 0.5,
@@ -80,7 +81,7 @@
             "col": "black"
         },
         "arrows1": {
-            "type": "arrows",
+            "plotFun": "arrows",
             "x0": 0.23,
             "y0": 0.54,
             "x1": 0.285,
@@ -93,7 +94,7 @@
             "lwd": 1
         },
         "arrows2": {
-            "type": "arrows",
+            "plotFun": "arrows",
             "x0": 0.04,
             "y0": 0.22,
             "x1": 0.133,
@@ -106,7 +107,7 @@
             "lwd": 1
         },
         "arrows3": {
-            "type": "arrows",
+            "plotFun": "arrows",
             "x0": 0.735,
             "y0": 0.59,
             "x1": 0.644,
@@ -119,7 +120,7 @@
             "lwd": 1
         },
         "arrows4": {
-            "type": "arrows",
+            "plotFun": "arrows",
             "x0": 0.91,
             "y0": 0.298,
             "x1": 0.864,
@@ -132,49 +133,49 @@
             "lwd": 1
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "ternary",
             "plot.position": 101.6,
             "plot.name": "Source diagram (Laurent et al. 2014)"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.12,
             "y": 0.25,
             "adj": 1,
             "text": "Tonalites",
-            "col": "gray8",
+            "col": "pltcol2",
             "font": 3
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1,
             "y": 0.36,
             "adj": 1,
             "text": "Meta-\nsediments",
-            "col": "gray8",
+            "col": "pltcol2",
             "font": 3
         },
         "text3": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.32,
             "y": 0.6,
             "adj": 1,
             "text": "Low-K\nmafic rocks",
-            "col": "gray8",
+            "col": "pltcol2",
             "font": 3
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.73,
             "y": 0.6,
             "adj": 0,
             "text": "High-K\n mafic rocks",
-            "col": "gray8",
+            "col": "pltcol2",
             "font": 3
         },
         "ticklines1": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.05,
                 0.08
@@ -188,7 +189,7 @@
             "lty": 1
         },
         "ticklines2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.05,
                 0.065
@@ -202,7 +203,7 @@
             "lty": 1
         },
         "ticklines3": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.95,
                 0.92
@@ -216,7 +217,7 @@
             "lty": 1
         },
         "ticklines4": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.95,
                 0.935
@@ -230,7 +231,7 @@
             "lty": 1
         },
         "ticklines5": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.1,
                 0.115
@@ -244,7 +245,7 @@
             "lty": 1
         },
         "ticklines6": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.1,
                 0.085
@@ -258,7 +259,7 @@
             "lty": 1
         },
         "ticklines8": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.1,
                 0.13
@@ -272,7 +273,7 @@
             "lty": 1
         },
         "ticklines9": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.1,
                 0.115
@@ -286,7 +287,7 @@
             "lty": 1
         },
         "ticklines10": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.9,
                 0.87
@@ -300,7 +301,7 @@
             "lty": 1
         },
         "ticklines11": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.9,
                 0.885
@@ -314,7 +315,7 @@
             "lty": 1
         },
         "ticklines12": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.2,
                 0.215
@@ -328,7 +329,7 @@
             "lty": 1
         },
         "ticklines13": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.2,
                 0.185
@@ -342,7 +343,7 @@
             "lty": 1
         },
         "ticklines15": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.15,
                 0.18
@@ -356,7 +357,7 @@
             "lty": 1
         },
         "ticklines16": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.15,
                 0.165
@@ -370,7 +371,7 @@
             "lty": 1
         },
         "ticklines17": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.85,
                 0.82
@@ -384,7 +385,7 @@
             "lty": 1
         },
         "ticklines18": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.85,
                 0.835
@@ -398,7 +399,7 @@
             "lty": 1
         },
         "ticklines19": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.3,
                 0.315
@@ -412,7 +413,7 @@
             "lty": 1
         },
         "ticklines20": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.3,
                 0.285
@@ -426,7 +427,7 @@
             "lty": 1
         },
         "ticklines22": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.2,
                 0.23
@@ -440,7 +441,7 @@
             "lty": 1
         },
         "ticklines23": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.2,
                 0.215
@@ -454,7 +455,7 @@
             "lty": 1
         },
         "ticklines24": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.8,
                 0.77
@@ -468,7 +469,7 @@
             "lty": 1
         },
         "ticklines25": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.8,
                 0.785
@@ -482,7 +483,7 @@
             "lty": 1
         },
         "ticklines26": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.4,
                 0.415
@@ -496,7 +497,7 @@
             "lty": 1
         },
         "ticklines27": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.4,
                 0.385
@@ -510,7 +511,7 @@
             "lty": 1
         },
         "ticklines29": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.25,
                 0.28
@@ -524,7 +525,7 @@
             "lty": 1
         },
         "ticklines30": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.25,
                 0.265
@@ -538,7 +539,7 @@
             "lty": 1
         },
         "ticklines31": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.75,
                 0.72
@@ -552,7 +553,7 @@
             "lty": 1
         },
         "ticklines32": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.75,
                 0.735
@@ -566,7 +567,7 @@
             "lty": 1
         },
         "ticklines33": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.5,
                 0.515
@@ -580,7 +581,7 @@
             "lty": 1
         },
         "ticklines34": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.5,
                 0.485
@@ -594,7 +595,7 @@
             "lty": 1
         },
         "ticklines36": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.3,
                 0.33
@@ -608,7 +609,7 @@
             "lty": 1
         },
         "ticklines37": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.3,
                 0.315
@@ -622,7 +623,7 @@
             "lty": 1
         },
         "ticklines38": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.7,
                 0.67
@@ -636,7 +637,7 @@
             "lty": 1
         },
         "ticklines39": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.7,
                 0.685
@@ -650,7 +651,7 @@
             "lty": 1
         },
         "ticklines40": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.6,
                 0.615
@@ -664,7 +665,7 @@
             "lty": 1
         },
         "ticklines41": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.6,
                 0.585
@@ -678,7 +679,7 @@
             "lty": 1
         },
         "ticklines43": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.35,
                 0.38
@@ -692,7 +693,7 @@
             "lty": 1
         },
         "ticklines44": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.35,
                 0.365
@@ -706,7 +707,7 @@
             "lty": 1
         },
         "ticklines45": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.65,
                 0.62
@@ -720,7 +721,7 @@
             "lty": 1
         },
         "ticklines46": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.65,
                 0.635
@@ -734,7 +735,7 @@
             "lty": 1
         },
         "ticklines47": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.7,
                 0.715
@@ -748,7 +749,7 @@
             "lty": 1
         },
         "ticklines48": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.7,
                 0.685
@@ -762,7 +763,7 @@
             "lty": 1
         },
         "ticklines50": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.4,
                 0.43
@@ -776,7 +777,7 @@
             "lty": 1
         },
         "ticklines51": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.4,
                 0.415
@@ -790,7 +791,7 @@
             "lty": 1
         },
         "ticklines52": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.6,
                 0.57
@@ -804,7 +805,7 @@
             "lty": 1
         },
         "ticklines53": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.6,
                 0.585
@@ -818,7 +819,7 @@
             "lty": 1
         },
         "ticklines54": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.8,
                 0.815
@@ -832,7 +833,7 @@
             "lty": 1
         },
         "ticklines55": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.8,
                 0.785
@@ -846,7 +847,7 @@
             "lty": 1
         },
         "ticklines57": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.45,
                 0.48
@@ -860,7 +861,7 @@
             "lty": 1
         },
         "ticklines58": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.45,
                 0.465
@@ -874,7 +875,7 @@
             "lty": 1
         },
         "ticklines59": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.55,
                 0.52
@@ -888,7 +889,7 @@
             "lty": 1
         },
         "ticklines60": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.55,
                 0.535
@@ -902,7 +903,7 @@
             "lty": 1
         },
         "ticklines61": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.9,
                 0.915
@@ -916,7 +917,7 @@
             "lty": 1
         },
         "ticklines62": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.9,
                 0.885

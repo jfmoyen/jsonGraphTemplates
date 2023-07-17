@@ -2,9 +2,10 @@
     "name": "TAS",
     "fullName": "TAS (Le Bas et al. 1986)",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Le Bas MJ, Le Maitre RW, Streckeisen A & Zanettin B (1986) A chemical classification of volcanic rocks based on the total alkali-silica diagram. J Petrology 27: 745-750",
+    "url": "https://doi.org/10.1093/petrology/27.3.745",
+    "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": "function(){ recastAnhydrous(wrdata) }",
@@ -24,7 +25,7 @@
     },
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "use": [
                 2,
                 3,
@@ -61,7 +62,7 @@
             ]
         },
         "lines1": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 30,
                 41,
@@ -80,10 +81,10 @@
                 14,
                 24.15
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines2": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 41,
                 45,
@@ -96,10 +97,10 @@
                 3,
                 3
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines3": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 45,
                 52,
@@ -112,10 +113,10 @@
                 5,
                 5
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines4": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 52,
                 57,
@@ -128,10 +129,10 @@
                 5.9,
                 5
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines5": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 57,
                 63,
@@ -144,10 +145,10 @@
                 7,
                 5.9
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines6": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 63,
                 77,
@@ -160,10 +161,10 @@
                 8,
                 7
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines7": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 77,
                 100,
@@ -178,10 +179,10 @@
                 25,
                 8
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines8": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 45,
                 52,
@@ -192,10 +193,10 @@
                 5,
                 7.3
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines9": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 52,
                 57,
@@ -208,10 +209,10 @@
                 9.3,
                 7.3
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines10": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 57,
                 63,
@@ -224,10 +225,10 @@
                 11.7,
                 9.3
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines11": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 63,
                 69,
@@ -240,10 +241,10 @@
                 17.73,
                 11.7
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines12": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 41,
                 45,
@@ -260,10 +261,10 @@
                 9.4,
                 7
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines13": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 49.4,
                 53,
@@ -276,10 +277,10 @@
                 11.5,
                 9.4
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines14": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 53,
                 57.6,
@@ -292,10 +293,10 @@
                 14,
                 11.5
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines15": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 57.6,
                 69,
@@ -306,28 +307,28 @@
                 17.73,
                 24.15
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines16": {
-            "type": "abline",
+            "plotfun": "abline",
             "v": 45,
             "lty": "dashed",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "lines17": {
-            "type": "abline",
+            "plotfun": "abline",
             "v": 52,
             "lty": "dashed",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "lines18": {
-            "type": "abline",
+            "plotfun": "abline",
             "v": 63,
             "lty": "dashed",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "lines19": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 39.2,
                 40,
@@ -355,170 +356,170 @@
                 10
             ],
             "lty": "dashed",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "plot.type": "binary",
             "plot.position": 21,
             "plot.name": "TAS (Le Bas et al. 1986)"
         },
         "text1": {
-            "type": "text",
+            "plotfun": "text",
             "x": 43,
             "y": 1.55,
             "text": "Picrobasalt",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 90,
             "cex": 0.8
         },
         "text2": {
-            "type": "text",
+            "plotfun": "text",
             "x": 48.5,
             "y": 2.8,
             "text": "Basalt",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 90
         },
         "text3": {
-            "type": "text",
+            "plotfun": "text",
             "x": 54.8,
             "y": 3,
             "text": "Basaltic\nandesite",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 90
         },
         "text4": {
-            "type": "text",
+            "plotfun": "text",
             "x": 59.9,
             "y": 3,
             "text": "Andesite",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 90
         },
         "text5": {
-            "type": "text",
+            "plotfun": "text",
             "x": 67,
             "y": 3,
             "text": "Dacite",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 90
         },
         "text6": {
-            "type": "text",
+            "plotfun": "text",
             "x": 75,
             "y": 8.3,
             "text": "Rhyolite",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text7": {
-            "type": "text",
+            "plotfun": "text",
             "x": 63.5,
             "y": 11.2,
             "text": "Trachyte\nTrachydacite",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text8": {
-            "type": "text",
+            "plotfun": "text",
             "x": 57.8,
             "y": 8.5,
             "text": "Trachy-\nandesite",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text9": {
-            "type": "text",
+            "plotfun": "text",
             "x": 52.95,
             "y": 7,
             "text": "Basaltic\ntrachy-\nandesite",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text10": {
-            "type": "text",
+            "plotfun": "text",
             "x": 49.2,
             "y": 5.65,
             "text": "Trachy-\nbasalt",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text11": {
-            "type": "text",
+            "plotfun": "text",
             "x": 45,
             "y": 7,
             "text": "Tephrite\nBasanite",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text12": {
-            "type": "text",
+            "plotfun": "text",
             "x": 49.2,
             "y": 9.3,
             "text": "Phono-\ntephrite",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text13": {
-            "type": "text",
+            "plotfun": "text",
             "x": 53,
             "y": 11.5,
             "text": "Tephri-\nphonolite",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text14": {
-            "type": "text",
+            "plotfun": "text",
             "x": 57,
             "y": 14,
             "text": "Phonolite",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text15": {
-            "type": "text",
+            "plotfun": "text",
             "x": 43,
             "y": 12,
             "text": "Foidite",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text16": {
-            "type": "text",
+            "plotfun": "text",
             "x": 38,
             "y": 2,
             "text": "Alkaline",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 45
         },
         "text17": {
-            "type": "text",
+            "plotfun": "text",
             "x": 55,
             "y": 1,
             "text": "Subalkaline/Tholeiitic",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 5
         },
         "text18": {
-            "type": "text",
+            "plotfun": "text",
             "x": 41,
             "y": 15.5,
             "text": "Ultrabasic",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text19": {
-            "type": "text",
+            "plotfun": "text",
             "x": 49,
             "y": 15.5,
             "text": "Basic",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text20": {
-            "type": "text",
+            "plotfun": "text",
             "x": 58,
             "y": 15.5,
             "text": "Intermediate",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text21": {
-            "type": "text",
+            "plotfun": "text",
             "x": 67,
             "y": 15.5,
             "text": "Acid",
-            "col": "darkblue"
+            "col": "pltcol3"
         }
     }
 }

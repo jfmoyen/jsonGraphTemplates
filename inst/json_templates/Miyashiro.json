@@ -2,9 +2,10 @@
     "name": "Miyashiro",
     "fullName": "SiO2-FeOt/MgO (Miyashiro 1974)",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Miyashiro A (1974) Volcanic rock series in island arcs and active continental margins. Am J Sci 274, 321-355",
+    "url": "https://doi.org/10.2475/ajs.274.4.321",
+    "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": null,
@@ -24,7 +25,7 @@
     },
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3
@@ -35,7 +36,7 @@
             ]
         },
         "lines11": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 42.8,
                 100.4,
@@ -50,7 +51,7 @@
             "lwd": 3
         },
         "lines12": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 42.8,
                 100.4,
@@ -67,7 +68,7 @@
             "lwd": 3
         },
         "lines13": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 42.8,
                 100.4
@@ -79,28 +80,28 @@
             "col": "black"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 11.5,
             "plot.name": "SiO2-FeOt/MgO (Miyashiro 1974)"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 77,
             "y": 0.7,
             "text": "Calc-alkaline\nSeries",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": [
                 1,
                 0.5
             ]
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 47,
             "y": 4,
             "text": "Tholeiite Series",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": [
                 0,
                 0.5

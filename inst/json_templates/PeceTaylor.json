@@ -2,9 +2,10 @@
     "name": "PeceTaylor",
     "fullName": "SiO2 - K2O (Peccerillo + Taylor 1976)",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Peccerillo A & Taylor SR (1976) Geochemistry of Eocene calc-alkaline volcanic rocks from the Kastamonu area, Northern Turkey. Contrib Mineral Petrol 58: 63-81",
+    "url": "https://doi.org/10.1007/BF00384745",
+    "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": null,
@@ -24,7 +25,7 @@
     },
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3,
@@ -39,7 +40,7 @@
             ]
         },
         "lines11": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 78,
                 78,
@@ -66,7 +67,7 @@
             "lwd": 3
         },
         "lines12": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 78,
                 75,
@@ -101,7 +102,7 @@
             "lwd": 3
         },
         "lines13": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 75,
                 70,
@@ -134,7 +135,7 @@
             "lwd": 3
         },
         "lines14": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 70,
                 70,
@@ -159,7 +160,7 @@
             "lwd": 3
         },
         "lines15": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 48,
                 52,
@@ -176,10 +177,10 @@
                 1.3,
                 1.6
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines16": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 48,
                 52,
@@ -196,10 +197,10 @@
                 3,
                 3.43
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines17": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 48,
                 52,
@@ -214,53 +215,53 @@
                 4,
                 4.8
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 12,
             "plot.name": "SiO2 - K2O (Peccerillo + Taylor 1976)"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 77,
             "y": 0.7,
             "text": "Tholeiite Series",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": [
                 1,
                 0.5
             ]
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 77,
             "y": 2.4,
             "text": "Calc-alkaline\nSeries",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": [
                 1,
                 0.5
             ]
         },
         "text3": {
-            "type": "text",
+            "plotFun": "text",
             "x": 77,
             "y": 4,
             "text": "High-K calc-alkaline\nSeries",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": [
                 1,
                 0.5
             ]
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 47,
             "y": 4.5,
             "text": "Shoshonite Series",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0
         }
     }

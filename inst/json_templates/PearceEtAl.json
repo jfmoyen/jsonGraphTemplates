@@ -2,9 +2,10 @@
     "name": "PearceEtAl",
     "fullName": "Pearce et al. (1977) MgO-FeOt-Al2O3",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Pearce TH, Gorman BE & Birkett TC (1977) The relationship between major element geochemistry and tectonic environment of basic and intermediate volcanic rocks. Earth Planet Sci Lett 36: 121-132",
+    "url": "https://doi.org/0.1016/0012-821X(77)90193-5",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "ternary",
     "dataTransform": null,
@@ -26,7 +27,7 @@
     },
     "template": {
         "lines1": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 1,
@@ -42,7 +43,7 @@
             "col": "black"
         },
         "lines2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.46,
                 0.625,
@@ -53,11 +54,11 @@
                 0.2771,
                 0.4417
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines3": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.625,
                 0.6525,
@@ -70,11 +71,11 @@
                 0.2078,
                 0.1299
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines4": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.6525,
                 0.655,
@@ -93,11 +94,11 @@
                 0.2468,
                 0.1819
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines5": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.6875,
                 0.686,
@@ -110,57 +111,57 @@
                 0.3724,
                 0.4244
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "ternary",
             "plot.position": 207,
             "plot.name": "Pearce et al. (1977) MgO-FeOt-Al2O3"
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1.05,
             "y": 0.327,
             "adj": 1,
             "text": "Spreading Center\nIsland",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.73,
             "y": 0.15,
             "text": "Orogenic",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text6": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.6,
             "y": 0.209,
             "adj": 1,
             "text": "Ocean Ridge\nand Floor",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text7": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.59,
             "y": 0.366,
             "adj": 1,
             "text": "Ocean Island",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text8": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.65,
             "y": 0.4,
             "srt": 90,
             "text": "Continental",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         }
     }

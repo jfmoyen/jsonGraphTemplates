@@ -2,9 +2,10 @@
     "name": "LarocheVolc",
     "fullName": "R1 - R2 (De la Roche et al. 1980)",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "De La Roche H, Leterrier J, Grandclaude P, & Marchal M (1980) A classification of volcanic and plutonic rocks using R1R2- diagram and major element analyses - its relationships with current nomenclature. Chem Geol 29: 183-210",
+    "url": "https://doi.org/10.1016/0009-2541(80)90020-0",
+    "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": "function(){ LaRocheCalc(wrdata) }",
@@ -28,7 +29,7 @@
     },
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3,
@@ -85,7 +86,7 @@
             ]
         },
         "lines4": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 -790.46,
                 112.03,
@@ -116,10 +117,10 @@
                 335.94,
                 223.49
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines5": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 -324.34,
                 -141.77,
@@ -146,10 +147,10 @@
                 223.49,
                 227.05
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines14": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 -324.34,
                 -141.77,
@@ -180,10 +181,10 @@
                 1577.22,
                 1432.74
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines19": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 611.34,
                 739.28,
@@ -208,10 +209,10 @@
                 1682.56,
                 1940.93
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines1": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 2613.42,
                 1432.92,
@@ -238,10 +239,10 @@
                 331.67,
                 291.81
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 1432.92,
                 1446.06,
@@ -276,10 +277,10 @@
                 165.12,
                 147.33
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines3": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 112.03,
                 229.6,
@@ -310,10 +311,10 @@
                 165.12,
                 186.48
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines6": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 3062.93,
                 2465.42,
@@ -348,10 +349,10 @@
                 331.67,
                 291.81
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines7": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 1149.38,
                 1263.49,
@@ -394,10 +395,10 @@
                 759.43,
                 859.07
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines8": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 3062.93,
                 2465.42,
@@ -426,10 +427,10 @@
                 900.36,
                 930.96
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines9": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 2577.46,
                 2360.3,
@@ -472,10 +473,10 @@
                 900.36,
                 930.96
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines10": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 2577.46,
                 2360.3,
@@ -510,10 +511,10 @@
                 1416.37,
                 1526.69
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines11": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 1854.77,
                 1739.28,
@@ -550,10 +551,10 @@
                 972.95,
                 944.48
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines12": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 1138.31,
                 1127.25,
@@ -590,10 +591,10 @@
                 1228.47,
                 1243.42
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines13": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 708.85,
                 848.55,
@@ -634,10 +635,10 @@
                 1212.81,
                 1389.32
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines15": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 -324.34,
                 -50.48,
@@ -662,10 +663,10 @@
                 2550.89,
                 2646.98
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines16": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 2443.98,
                 2094.74,
@@ -706,10 +707,10 @@
                 1416.37,
                 1526.69
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines17": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 1396.96,
                 1312.59,
@@ -742,10 +743,10 @@
                 1269.75,
                 1210.68
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines18": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 1138.31,
                 1170.12,
@@ -774,10 +775,10 @@
                 1254.8,
                 1243.42
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines20": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 2347.86,
                 2252.42,
@@ -808,10 +809,10 @@
                 1637.72,
                 1779.36
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines21": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 1652.14,
                 1728.22,
@@ -868,10 +869,10 @@
                 1947.33,
                 2001.42
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines22": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 1652.14,
                 1598.2,
@@ -904,10 +905,10 @@
                 2017.79,
                 2001.42
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines23": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 991.01,
                 1423.24,
@@ -934,10 +935,10 @@
                 1735.94,
                 1660.5
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines24": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 1100.97,
                 1123.1,
@@ -962,10 +963,10 @@
                 2288.26,
                 2562.99
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines25": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 1090.59,
                 1100.97,
@@ -1012,234 +1013,234 @@
                 2067.62,
                 2113.88
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 25,
             "plot.name": "R1 - R2 (De la Roche et al. 1980)"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 769,
             "y": 2239,
             "text": "ankaratrite",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 30
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1010,
             "y": 1970,
             "text": "basanite",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 30
         },
         "text3": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1305,
             "y": 1791,
             "text": "alkali basalt",
             "srt": 45,
             "cex": 0.85,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1694,
             "y": 1746,
             "text": "basalt",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": 2360,
             "y": 1880,
             "text": "tholeiite",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text6": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.97,
             "y": 1988,
             "text": "nephelinite",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text7": {
-            "type": "text",
+            "plotFun": "text",
             "x": 611,
             "y": 1648,
             "text": "tephrite",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text8": {
-            "type": "text",
+            "plotFun": "text",
             "x": 380,
             "y": 1530,
             "text": "",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text9": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1010,
             "y": 1450,
             "text": "hawaiite",
             "cex": 0.85,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text10": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1316,
             "y": 1360,
             "text": "lati-\nbasalt",
             "cex": 0.85,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text11": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1810,
             "y": 1397,
             "text": "andesi-\nbasalt",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text12": {
-            "type": "text",
+            "plotFun": "text",
             "x": 138,
             "y": 1352,
             "text": "phono-tephrite",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text13": {
-            "type": "text",
+            "plotFun": "text",
             "x": -240,
             "y": 650,
             "text": "",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text14": {
-            "type": "text",
+            "plotFun": "text",
             "x": 770,
             "y": 1145,
             "text": "mugearite",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text15": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1274,
             "y": 1020,
             "text": "latite",
             "cex": 0.85,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text16": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1590,
             "y": 1048,
             "text": "lati-\nandesite",
             "cex": 0.85,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text17": {
-            "type": "text",
+            "plotFun": "text",
             "x": 2125,
             "y": 1182,
             "text": "andesite",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text18": {
-            "type": "text",
+            "plotFun": "text",
             "x": -378,
             "y": 905,
             "text": "phonolite",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text19": {
-            "type": "text",
+            "plotFun": "text",
             "x": 54,
             "y": 590,
             "text": "trachy-\nphonolite",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text20": {
-            "type": "text",
+            "plotFun": "text",
             "x": 685,
             "y": 457,
             "text": "trachyte",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text21": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1220,
             "y": 376,
             "text": "quartz\ntrachyte",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text22": {
-            "type": "text",
+            "plotFun": "text",
             "x": 2030,
             "y": 269,
             "text": "alkali rhyolite",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": -5
         },
         "text23": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1500,
             "y": 700,
             "text": "quartz\nlatite",
             "cex": 0.85,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text24": {
-            "type": "text",
+            "plotFun": "text",
             "x": 2000,
             "y": 860,
             "text": "dacite",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text25": {
-            "type": "text",
+            "plotFun": "text",
             "x": 2085,
             "y": 485,
             "text": "rhyolite",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": -5
         },
         "text26": {
-            "type": "text",
+            "plotFun": "text",
             "x": 2525,
             "y": 690,
             "text": "rhyodacite",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text27": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1800,
             "y": 2200,
             "text": "picritic rock",
             "cex": 1,
-            "col": "gray8"
+            "col": "pltcol2"
         }
     }
 }

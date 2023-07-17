@@ -1,10 +1,11 @@
 {
     "name": "Meschede",
     "fullName": "Meschede (1986) Zr/4-2Nb-Y",
-    "details": "",
-    "reference": "Meschede,1986 coordinates from Rollison 1993",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "details": "Coordinates from Rollison 1993",
+    "reference": "Meschede M (1986) A method of discriminating between different types of mid-ocean ridge basalts and continental tholeiites with the Nb-Zr-Y diagram. Chem Geol 56: 207-218",
+    "url": "https://doi.org/10.1016/0009-2541(86)90004-5",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "ternary",
     "dataTransform": null,
@@ -26,7 +27,7 @@
     },
     "template": {
         "lines1": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 1,
@@ -42,7 +43,7 @@
             "col": "black"
         },
         "lines2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.5,
                 0.34,
@@ -57,10 +58,10 @@
                 0.6842,
                 0
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines3": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.34,
                 0.42,
@@ -71,11 +72,11 @@
                 0.433,
                 0.4893
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines4": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.34,
                 0.45,
@@ -86,11 +87,11 @@
                 0.3031,
                 0.433
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines5": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.45,
                 0.485,
@@ -103,11 +104,11 @@
                 0.1905,
                 0.026
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines6": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.545,
                 0.68
@@ -116,53 +117,53 @@
                 0.2078,
                 0.1905
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "ternary",
             "plot.position": 203,
             "plot.name": "Meschede (1986) Zr/4-2Nb-Y"
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.46,
             "y": 0.543,
             "text": "AI",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.456,
             "y": 0.387,
             "text": "AII",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text6": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.566,
             "y": 0.302,
             "text": "B",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text7": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.431,
             "y": 0.163,
             "text": "C",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text8": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.605,
             "y": 0.092,
             "text": "D",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         }
     }

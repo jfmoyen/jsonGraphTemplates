@@ -2,9 +2,10 @@
     "name": "OConnorVolc",
     "fullName": "CIPW-normative feldspar triangle (O'Connor 1965)",
     "details": "",
-    "reference": "",
+    "reference": "O'Connor JT (1965) A classification for Quartz-rich igneous rocks based on feldspar ratios. U.S. Geol. Survey Prof Paper 525-B: B79-B84",
     "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>, J.-F. Moyen <jfmoyen@gmail.com>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "ternary",
     "dataTransform": "function(){ CIPW(wrdata) }",
@@ -26,7 +27,7 @@
     },
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3,
@@ -43,7 +44,7 @@
             ]
         },
         "polygon1": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0,
                 0.30,
@@ -57,10 +58,10 @@
                 0.216506
             ],
             "lwd": 3,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "polygon2": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.30,
                 1.00,
@@ -72,10 +73,10 @@
                 0.151554
             ],
             "lwd": 3,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "polygon3": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.43125,
                 0.5625,
@@ -89,10 +90,10 @@
                 0.309604
             ],
             "lwd": 3,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "polygon4": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.30,
                 0.43125,
@@ -106,10 +107,10 @@
                 0.381051
             ],
             "lwd": 3,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "polygon5": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.125,
                 0.30,
@@ -123,10 +124,10 @@
                 0.476314
             ],
             "lwd": 3,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines1": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.30,
                 0.3875
@@ -135,10 +136,10 @@
                 0,
                 0.151554
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines1.1": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.30,
                 0.42
@@ -147,10 +148,10 @@
                 0.173205,
                 0.381051
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines1.2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.43125,
                 0.52875
@@ -159,11 +160,11 @@
                 0.140729,
                 0.309604
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines1.3": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.5625,
                 0.6375
@@ -172,11 +173,11 @@
                 0.108253,
                 0.238157
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines1.4": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.125,
                 0.5625
@@ -185,10 +186,10 @@
                 0.216506,
                 0.108253
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines1.5": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.5625,
                 0.9125
@@ -197,11 +198,11 @@
                 0.108253,
                 0.021651
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines1.6": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.9125,
                 0.9275
@@ -210,11 +211,11 @@
                 0.021651,
                 0.047631
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 1.00,
@@ -230,47 +231,47 @@
             "col": "black"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "ternary",
             "plot.position": 29.5,
             "plot.name": "CIPW-normative feldspar triangle (O'Connor 1965)"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.20,
             "y": 0.086603,
             "text": "Quartz\nkeratophyre",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.435,
             "y": 0.060622,
             "text": "Rhyolite",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text3": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.545,
             "y": 0.216506,
             "text": "Quartz\nlatite",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 60
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.42,
             "y": 0.259808,
             "text": "Rhyodacite",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 60
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.30,
             "y": 0.34641,
             "text": "Dacite",
-            "col": "gray8"
+            "col": "pltcol2"
         }
     }
 }

@@ -1,10 +1,11 @@
 {
     "name": "Cabanis",
     "fullName": "Cabanis + Lecolle (1989) La/10-Y/15-Nb/8",
-    "details": "",
-    "reference": " Cabanis B, Lecolle M (1989) The La/10-Y/15-Nb/8 diagram: a tool for  discrimination volcanic series and evidencing continental crust magmaticmixtures and/or contamination. Comptes rendus de l'Académie des sciencesSérie 2, Mécanique, Physique, Chimie, Sciences de l'univers, Sciences de la Terre 309:2023-2029 ",
+    "details": "based on K. Hollocher <hollochk@union.edu>",
+    "reference": "Cabanis B, Lecolle M (1989) Le diagramme La/10-Y/15-Nb/8: un outil pour la discrimination des séries volcaniques et la mise en évidence des processus de mélange et/ou de contamination crustale. CR Acad Sci IIA 309: 2023-2029",
     "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "ternary",
     "dataTransform": null,
@@ -26,7 +27,7 @@
     },
     "template": {
         "lines1": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 1,
@@ -42,7 +43,7 @@
             "col": "black"
         },
         "lines2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.38,
                 0.4364,
@@ -87,10 +88,10 @@
                 0.2382,
                 0
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "arrows1": {
-            "type": "arrows",
+            "plotFun": "arrows",
             "x0": 0.5243,
             "y0": 0.883,
             "x1": 0.651,
@@ -103,7 +104,7 @@
             "lwd": 1
         },
         "arrows2": {
-            "type": "arrows",
+            "plotFun": "arrows",
             "x0": 0.651,
             "y0": 0.68,
             "x1": 0.8146,
@@ -116,7 +117,7 @@
             "lwd": 1
         },
         "arrows3": {
-            "type": "arrows",
+            "plotFun": "arrows",
             "x0": 0.8146,
             "y0": 0.392,
             "x1": 1.0255,
@@ -129,7 +130,7 @@
             "lwd": 1
         },
         "arrows4": {
-            "type": "arrows",
+            "plotFun": "arrows",
             "x0": -0.02,
             "y0": 0.0219,
             "x1": 0.3086,
@@ -142,7 +143,7 @@
             "lwd": 1
         },
         "arrows5": {
-            "type": "arrows",
+            "plotFun": "arrows",
             "x0": 0.234,
             "y0": 0.521,
             "x1": 0.462,
@@ -155,78 +156,78 @@
             "lwd": 1
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "ternary",
             "plot.position": 302,
             "plot.name": "Cabanis + Lecolle (1989) La/10-Y/15-Nb/8"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.5963,
             "y": 0.7762,
             "text": "N-MORB",
-            "col": "darkblue",
+            "col": "pltcol3",
             "cex": 1,
             "srt": -60
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.7452,
             "y": 0.5182,
             "text": "E-MORB",
-            "col": "darkblue",
+            "col": "pltcol3",
             "cex": 1,
             "srt": -60
         },
         "text3": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.93,
             "y": 0.1708,
             "text": "Alkaline",
-            "col": "darkblue",
+            "col": "pltcol3",
             "cex": 1,
             "srt": -60
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.097,
             "y": 0.2477,
             "text": "Calc-alkaline",
-            "col": "darkblue",
+            "col": "pltcol3",
             "cex": 1,
             "srt": 60
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.34,
             "y": 0.7167,
             "text": "Tholeiites",
-            "col": "darkblue",
+            "col": "pltcol3",
             "cex": 1,
             "srt": 60
         },
         "text6": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.22,
             "y": 0.15,
             "text": "Orogenic \n(compressive)\ndomains (island \narcs,active \nmargins)",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.7
         },
         "text7": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.5,
             "y": 0.15,
             "text": "Late- \nto post-\norogenic\n(compressive\nto distensive)\nintra-continent.\ndomains",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.7
         },
         "text8": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.75,
             "y": 0.15,
             "text": "Anorogenic\n(distensive) domains",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.7
         }
     }

@@ -2,9 +2,10 @@
     "name": "Norry",
     "fullName": "Pearce + Norry (1979)",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Pearce JA & Norry MJ (1979) Petrogenetic implications of Ti, Zr, Y, and Nb variations in volcanic rocks. Contrib Mineral Petrol 69: 33-47",
+    "url": "https://doi.org/10.1007/BF00375192",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": null,
@@ -25,7 +26,7 @@
     "log": "xy",
     "template": {
         "lines1": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 17,
                 35,
@@ -40,11 +41,11 @@
                 1.35,
                 1.35
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 35,
                 72.5,
@@ -59,11 +60,11 @@
                 1.9,
                 1.9
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines3": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 72.5,
                 210,
@@ -76,35 +77,35 @@
                 10,
                 3.6
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 206,
             "plot.name": "Pearce + Norry (1979)"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 600,
             "y": 5.8,
             "text": "Within-Plate\nBasalts",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 17,
             "y": 2.2,
             "text": "Island Arc\nBasalts",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text3": {
-            "type": "text",
+            "plotFun": "text",
             "x": 280,
             "y": 2.3,
             "text": "Mid-Ocean\nRidge Basalts",
-            "col": "gray8"
+            "col": "pltcol2"
         }
     }
 }

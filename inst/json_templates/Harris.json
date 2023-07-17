@@ -2,9 +2,10 @@
     "name": "Harris",
     "fullName": "Harris et al. (1986)",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Harris NBW, Pearce JA, Tindle AG (1986) Geochemical characteristics of collision-zone magmatism. In: Coward MP, Ries AC (eds) Collision Tectonics. Geological Society London Special Publication 19, pp 67-81",
+    "url": "https://doi.org/10.1144/GSL.SP.1986.019.01.04",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "ternary",
     "dataTransform": null,
@@ -26,7 +27,7 @@
     },
     "template": {
         "lines1": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 1,
@@ -42,7 +43,7 @@
             "col": "black"
         },
         "lines2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.617,
                 0.5,
@@ -57,10 +58,10 @@
                 0.194,
                 0.169
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines3": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.479,
                 0.85
@@ -69,10 +70,10 @@
                 0.44,
                 0.261
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines4": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.255,
                 0.322,
@@ -85,41 +86,41 @@
                 0.194,
                 0.227
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "ternary",
             "plot.position": 106,
             "plot.name": "Harris et al. (1986)"
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.323,
             "y": 0.314,
             "text": "VA",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.6,
             "y": 0.087,
             "text": "WP",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text6": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.6,
             "y": 0.477,
             "text": "Group 2",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text7": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.6,
             "y": 0.268,
             "text": "Group 3",
-            "col": "gray8"
+            "col": "pltcol2"
         }
     }
 }

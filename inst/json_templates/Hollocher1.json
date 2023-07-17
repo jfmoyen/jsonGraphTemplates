@@ -2,9 +2,10 @@
     "name": "Hollocher1",
     "fullName": "Hollocher et al. (2012) La/Yb vs. Nb/La",
     "details": "",
-    "reference": "Hollocher K, Robinson P, Walsh E, Roberts D (2012) Geochemistry of amphibolite-facies volcanics and gabbros of the Storen Nappe in extensions west and southwest of Trondheim, western gneiss region, Norway: A key to correlations and paleotectonic settings. Amer J Sci 312:357-416",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Hollocher K, Robinson P, Walsh E, Roberts D (2012) Geochemistry of amphibolite-facies volcanics and gabbros of the Storen Nappe in extensions west and southwest of Trondheim, western gneiss region, Norway: a key to correlations and paleotectonic settings. Amer J Sci 312: 357-416",
+    "url": "https://doi.org/10.2475/04.2012.01",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": null,
@@ -25,7 +26,7 @@
     "log": "xy",
     "template": {
         "lines1": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.4,
                 80,
@@ -54,57 +55,57 @@
                 0.622,
                 3
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 211,
             "plot.name": "Hollocher et al. (2012) La/Yb vs. Nb/La"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1.4,
             "y": 1.5,
             "text": "MORB",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 17.2,
             "y": 1.5,
             "text": "Oceanic\nislands",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5
         },
         "text3": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1.3,
             "y": 0.2,
             "text": "Oceanic\narcs",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 6.8,
             "y": 0.2,
             "text": "Continental\narcs",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": 38.2,
             "y": 0.2,
             "text": "Alkaline\narcs",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5
         }
     }

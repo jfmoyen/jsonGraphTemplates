@@ -2,9 +2,10 @@
     "name": "QANOR",
     "fullName": "Q-ANOR plot (Streckeisen + Le Maitre 1979)",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Streckeisen A & Le Maitre RW (1979) A chemical approximation to the modal QAPF classification of the igneous rocks. Neu Jb Mineral, Abh 136: 169-206",
+    "url": "https://doi.org/10.1016/j.lithos.2007.06.016",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>, J.-F. Moyen <jfmoyen@gmail.com>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": "function(){ Mesonorm(wrdata,GUI=FALSE) }",
@@ -28,7 +29,7 @@
     },
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "use": [
                 2,
                 3,
@@ -71,7 +72,7 @@
             ]
         },
         "polygon2": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 -0.1,
                 12.5,
@@ -88,7 +89,7 @@
             ]
         },
         "polygon3a": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 12.5,
                 22.4,
@@ -105,7 +106,7 @@
             ]
         },
         "polygon3b": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 22.4,
                 40,
@@ -122,7 +123,7 @@
             ]
         },
         "polygon4": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 40,
                 62,
@@ -139,7 +140,7 @@
             ]
         },
         "polygon5a": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 62,
                 81.8,
@@ -156,7 +157,7 @@
             ]
         },
         "polygon5b": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 81.8,
                 100.1,
@@ -173,7 +174,7 @@
             ]
         },
         "polygon6s": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 -0.1,
                 16.25,
@@ -190,7 +191,7 @@
             ]
         },
         "polygon7s": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 16.25,
                 29.6,
@@ -207,7 +208,7 @@
             ]
         },
         "polygon8s": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 29.6,
                 47.5,
@@ -224,7 +225,7 @@
             ]
         },
         "polygon9s": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 47.5,
                 68,
@@ -241,7 +242,7 @@
             ]
         },
         "polygon10as": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 68,
                 86.45,
@@ -258,7 +259,7 @@
             ]
         },
         "polygon10bs": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 86.45,
                 100.1,
@@ -275,7 +276,7 @@
             ]
         },
         "polygon6": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 -0.1,
                 17.5,
@@ -292,7 +293,7 @@
             ]
         },
         "polygon7": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 17.5,
                 32,
@@ -309,7 +310,7 @@
             ]
         },
         "polygon8": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 32,
                 50,
@@ -326,7 +327,7 @@
             ]
         },
         "polygon9": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 50,
                 70,
@@ -343,7 +344,7 @@
             ]
         },
         "polygon10a": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 70,
                 88,
@@ -360,7 +361,7 @@
             ]
         },
         "polygon10b": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 88,
                 100.1,
@@ -377,23 +378,23 @@
             ]
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "plot.type": "binary",
             "plot.position": 38.5,
             "plot.name": "Q-ANOR plot (Streckeisen + Le Maitre 1979)"
         },
         "lines1": {
-            "type": "abline",
+            "plotfun": "abline",
             "h": 5,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines2": {
-            "type": "abline",
+            "plotfun": "abline",
             "h": 20,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines3": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 70,
                 50
@@ -402,10 +403,10 @@
                 0,
                 50
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines4": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 50,
                 40,
@@ -416,10 +417,10 @@
                 20,
                 50
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines5": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 50,
                 40,
@@ -430,10 +431,10 @@
                 20,
                 50
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines6": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 17.5,
                 10,
@@ -444,10 +445,10 @@
                 30,
                 50
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines7": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 32,
                 29.6,
@@ -458,10 +459,10 @@
                 5,
                 50
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines8": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 88,
                 72.5
@@ -470,134 +471,134 @@
                 0,
                 50
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "text1": {
-            "type": "text",
+            "plotfun": "text",
             "x": 5,
             "y": 25,
             "text": "(2)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text2": {
-            "type": "text",
+            "plotfun": "text",
             "x": 15,
             "y": 25,
             "text": "(3a)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text3": {
-            "type": "text",
+            "plotfun": "text",
             "x": 28,
             "y": 25,
             "text": "(3b)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text4": {
-            "type": "text",
+            "plotfun": "text",
             "x": 50,
             "y": 25,
             "text": "(4)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text5": {
-            "type": "text",
+            "plotfun": "text",
             "x": 70,
             "y": 25,
             "text": "(5a)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text6": {
-            "type": "text",
+            "plotfun": "text",
             "x": 90,
             "y": 25,
             "text": "(5b)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text7": {
-            "type": "text",
+            "plotfun": "text",
             "x": 7,
             "y": 13,
             "text": "(6*)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text8": {
-            "type": "text",
+            "plotfun": "text",
             "x": 20,
             "y": 13,
             "text": "(7*)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text9": {
-            "type": "text",
+            "plotfun": "text",
             "x": 35,
             "y": 13,
             "text": "(8*)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text10": {
-            "type": "text",
+            "plotfun": "text",
             "x": 55,
             "y": 13,
             "text": "(9*)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text11": {
-            "type": "text",
+            "plotfun": "text",
             "x": 75,
             "y": 13,
             "text": "(10a*)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text12": {
-            "type": "text",
+            "plotfun": "text",
             "x": 92,
             "y": 13,
             "text": "(10b*)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text13": {
-            "type": "text",
+            "plotfun": "text",
             "x": 9,
             "y": 2.5,
             "text": "(6)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text14": {
-            "type": "text",
+            "plotfun": "text",
             "x": 25,
             "y": 2.5,
             "text": "(7)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text15": {
-            "type": "text",
+            "plotfun": "text",
             "x": 40,
             "y": 2.5,
             "text": "(8)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text16": {
-            "type": "text",
+            "plotfun": "text",
             "x": 58,
             "y": 2.5,
             "text": "(9)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text17": {
-            "type": "text",
+            "plotfun": "text",
             "x": 78,
             "y": 2.5,
             "text": "(10a)",
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "text18": {
-            "type": "text",
+            "plotfun": "text",
             "x": 95,
             "y": 2.5,
             "text": "(10b)",
-            "col": "darkblue"
+            "col": "pltcol3"
         }
     }
 }

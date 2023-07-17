@@ -2,9 +2,10 @@
     "name": "OhtaArai",
     "fullName": "Ohta + Arai (2007) FMW weathering index",
     "details": "",
-    "reference": "",
-    "url": "",
+    "reference": "Ohta T, Arai H (2007) Statistical empirical index of chemical weathering in igneous rocks: a new tool for evaluating the degree of weathering. Chem Geol 240: 280-297",
+    "url": "https://doi.org/10.1016/j.chemgeo.2007.02.017",
     "templateAuthor": "J.-F. Moyen <jfmoyen@gmail.com>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "ternary",
     "dataTransform": "function(){ OhtaAraiParams(wrdata) }",
@@ -84,7 +85,7 @@
                 0.7655,
                 0.8409
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed",
             "lwd": 2
         },
@@ -114,7 +115,7 @@
                 0.014,
                 0.0084
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dotted"
         },
         "ditrend": {
@@ -143,7 +144,7 @@
                 0.1676,
                 0.0978
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dotted"
         },
         "bstrend": {
@@ -162,7 +163,7 @@
                 0.4274,
                 0.2654
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dotted"
         },
         "model_rocks": {
@@ -184,7 +185,7 @@
                 0.8185
             ],
             "pch": 15,
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 1.5
         },
         "mr_name": {
@@ -215,7 +216,7 @@
             ],
             "adj": 1,
             "cex": 0.7,
-            "col": "gray8"
+            "col": "pltcol2"
         }
     }
 }

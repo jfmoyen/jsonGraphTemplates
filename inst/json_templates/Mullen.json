@@ -2,9 +2,10 @@
     "name": "Mullen",
     "fullName": "Mullen (1983) 10MnO-TiO2-10P2O5",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Mullen E  (1983) MnO/TiO2/P2O5: a minor element discriminant for basaltic rocks of oceanic environments and its implications for petrogenesis. Earth Planet Sci Lett 62: 53-62",
+    "url": "https://doi.org/10.1016/0012-821X(83)90070-5",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "ternary",
     "dataTransform": null,
@@ -27,7 +28,7 @@
     },
     "template": {
         "lines1": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 1,
@@ -43,7 +44,7 @@
             "col": "black"
         },
         "lines2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.295,
                 0.455,
@@ -58,11 +59,11 @@
                 0.1559,
                 0
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines3": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.385,
                 0.555,
@@ -73,10 +74,10 @@
                 0.2511,
                 0.2338
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines4": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.195,
                 0.3,
@@ -87,11 +88,11 @@
                 0.1559,
                 0.1559
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines5": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.585,
                 0.775
@@ -100,69 +101,69 @@
                 0.2338,
                 0.3897
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "ternary",
             "plot.position": 204,
             "plot.name": "Mullen (1983) 10MnO-TiO2-10P2O5"
         },
         "text14": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.45,
             "y": 0.1,
             "text": "CAB",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.55,
             "y": 0.5,
             "text": "OIT",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text6": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.43,
             "y": 0.4,
             "text": "MORB",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text7": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.32,
             "y": 0.3,
             "text": "IAT",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text8": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.77,
             "y": 0.22,
             "text": "OIA",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text9": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.2,
             "y": 0.15,
             "text": "Bon",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text10": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.8,
             "y": 0.9,
             "text": "45 < SiO2 < 54",
-            "col": "darkblue"
+            "col": "pltcol3"
         }
     }
 }

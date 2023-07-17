@@ -25,7 +25,7 @@ utils::globalVariables(c("demo","sheet","x.data","y.data","WR","mw","plt.col"))
 #' @param new Open in a new window?
 #' @param template_options Options passed to the parser, as named vector
 #' They are of the form c("switch1" = T, "switch2" = F, etc)
-#' and they wll affect template elements that have a switch.
+#' and they will affect template elements that have a switch.
 #' @param template_colors A named vector, with names corresponding to the colours
 #' found in the template, e.g. c(col1="red",col2="blue"). Defaults to black.
 #' @details

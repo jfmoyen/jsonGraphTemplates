@@ -2,9 +2,10 @@
     "name": "WinFloyd2",
     "fullName": "Zr/TiO2 - SiO2 (Winchester + Floyd 1977)",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Winchester JA & Floyd PA (1977) Geochemical discrimination of different magma series and their differentiation products using immobile elements. Chem Geol 20: 325-343",
+    "url": "https://doi.org/10.1016/0009-2541(77)90057-2",
+    "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": null,
@@ -29,7 +30,7 @@
     "log": "x",
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "use": [
                 2,
                 3,
@@ -56,7 +57,7 @@
             ]
         },
         "lines1": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 -1.6576,
                 -1.5086,
@@ -75,11 +76,11 @@
                 53,
                 53
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lwd": 3
         },
         "lines2": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 -2,
                 -0.8097,
@@ -92,11 +93,11 @@
                 53,
                 45
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lwd": 3
         },
         "lines3": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 -0.8097,
                 0.699,
@@ -115,11 +116,11 @@
                 53,
                 49
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lwd": 3
         },
         "lines4": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 -1,
                 0.699,
@@ -138,11 +139,11 @@
                 61,
                 60
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lwd": 3
         },
         "lines5": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 0.1139,
                 -0.1549,
@@ -157,11 +158,11 @@
                 66,
                 66
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lwd": 3
         },
         "lines6": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 -0.6021,
                 -0.1549,
@@ -174,11 +175,11 @@
                 73,
                 73
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lwd": 3
         },
         "lines7": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 -1.3979,
                 -1.0969,
@@ -197,11 +198,11 @@
                 63,
                 62
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lwd": 3
         },
         "lines8": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 -1.8097,
                 -1.3979,
@@ -218,11 +219,11 @@
                 53,
                 53
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lwd": 3
         },
         "lines9": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 -2.0458,
                 -1.757,
@@ -235,11 +236,11 @@
                 53,
                 47.5
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lwd": 3
         },
         "lines10": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 -2,
                 -1.5086,
@@ -254,17 +255,17 @@
                 47.5,
                 45
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lwd": 3
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "plot.type": "binary",
             "plot.position": 28,
             "plot.name": "Zr/TiO2 - SiO2 (Winchester + Floyd 1977)"
         },
         "lines21": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 0.7,
                 0.04,
@@ -275,10 +276,10 @@
                 62,
                 53
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines22": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 0.01,
                 0.25
@@ -287,10 +288,10 @@
                 73,
                 73
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines23": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 0.08,
                 1.3
@@ -299,10 +300,10 @@
                 66,
                 66
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines24": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 0.006,
                 0.027,
@@ -319,10 +320,10 @@
                 60,
                 62
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines25": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 0.002,
                 0.031,
@@ -333,10 +334,10 @@
                 53,
                 49
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines26": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 0.1,
                 0.031,
@@ -347,10 +348,10 @@
                 56,
                 53
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines27": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 0.01,
                 0.031
@@ -359,10 +360,10 @@
                 45,
                 53
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines28": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 0.009,
                 0.0175
@@ -372,95 +373,95 @@
                 53
             ],
             "lty": "dashed",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text1": {
-            "type": "text",
+            "plotfun": "text",
             "x": 1,
             "y": 55,
             "text": "Phonolite",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 1,
             "adj": 0
         },
         "text1.1": {
-            "type": "text",
+            "plotfun": "text",
             "x": 1,
             "y": 65,
             "text": "Trachyte",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 1,
             "adj": 0
         },
         "text1.2": {
-            "type": "text",
+            "plotfun": "text",
             "x": 0.002,
             "y": 75,
             "text": "Rhyolite",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 1,
             "adj": 0
         },
         "text1.3": {
-            "type": "text",
+            "plotfun": "text",
             "x": 0.002,
             "y": 70,
             "text": "Rhyodacite\nDacite",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 1,
             "adj": 0
         },
         "text1.4": {
-            "type": "text",
+            "plotfun": "text",
             "x": 0.002,
             "y": 50,
             "text": "Sub-AB",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 1,
             "adj": 0
         },
         "text1.5": {
-            "type": "text",
+            "plotfun": "text",
             "x": 0.04,
             "y": 60.5,
             "text": "TrAn",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 1,
             "adj": 0
         },
         "text1.6": {
-            "type": "text",
+            "plotfun": "text",
             "x": 0.007,
             "y": 46,
             "text": "AB",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 1,
             "adj": 0
         },
         "text1.7": {
-            "type": "text",
+            "plotfun": "text",
             "x": 1,
             "y": 75,
             "text": "Comendite\nPantellerite",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 1,
             "adj": 0
         },
         "text1.8": {
-            "type": "text",
+            "plotfun": "text",
             "x": 0.03,
             "y": 46,
             "text": "Basanite\nTrachybasanite\nNephelinite",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 1,
             "adj": 0
         },
         "text1.9": {
-            "type": "text",
+            "plotfun": "text",
             "x": 0.002,
             "y": 60,
             "text": "Andesite",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 1,
             "adj": 0
         }

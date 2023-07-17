@@ -2,9 +2,10 @@
     "name": "Villaseca",
     "fullName": "B-A plot (modified by Villaseca et al. 1998)",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Villaseca C, Barbero L, Herreros V (1998) A re-examination of the typology of peraluminous granite types in intracontinental orogenic belts. Trans Roy Soc Edinb, Earth Sci 89: 113-119",
+    "url": "https://doi.org/10.1017/S0263593300007045",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": "function(){ DebonCalc(millications(wrdata)) }",
@@ -28,7 +29,7 @@
     },
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "use": [
                 2,
                 3,
@@ -47,7 +48,7 @@
             ]
         },
         "lines1": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 0.41,
                 6.86,
@@ -98,7 +99,7 @@
             ]
         },
         "lines2": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 132.6,
                 126.2,
@@ -143,7 +144,7 @@
             ]
         },
         "lines3": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 200.3,
                 193.8,
@@ -258,7 +259,7 @@
             ]
         },
         "lines4": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 37.94,
                 43.73,
@@ -377,7 +378,7 @@
             ]
         },
         "lines5": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 0,
                 6.86,
@@ -444,7 +445,7 @@
             ]
         },
         "lines6": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 0,
                 600,
@@ -461,7 +462,7 @@
             ]
         },
         "lines7": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 0,
                 6.86,
@@ -522,11 +523,11 @@
                 13.16,
                 0
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines8": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 38.78,
                 43.73,
@@ -591,11 +592,11 @@
                 49.96,
                 52.77
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines9": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 29.16,
                 30.81,
@@ -630,11 +631,11 @@
                 191.57,
                 199.97
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines10": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 33.27,
                 38.6,
@@ -665,67 +666,67 @@
                 2.13,
                 0.23
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines11": {
-            "type": "abline",
+            "plotfun": "abline",
             "h": 0,
             "col": 1
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "plot.type": "binary",
             "plot.position": 36,
             "plot.name": "B-A plot (modified by Villaseca et al. 1998)"
         },
         "text1": {
-            "type": "text",
+            "plotfun": "text",
             "x": 150,
             "y": 100,
             "text": "h-P",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0
         },
         "text2": {
-            "type": "text",
+            "plotfun": "text",
             "x": 150,
             "y": 25,
             "text": "m-P",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0
         },
         "text3": {
-            "type": "text",
+            "plotfun": "text",
             "x": 60,
             "y": 10,
             "text": "l-P",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0
         },
         "text4": {
-            "type": "text",
+            "plotfun": "text",
             "x": 10,
             "y": 50,
             "text": "f-P",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0
         },
         "text5": {
-            "type": "text",
+            "plotfun": "text",
             "x": 100,
             "y": -70,
             "text": "Metaluminous",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0,
             "font": 3
         },
         "text6": {
-            "type": "text",
+            "plotfun": "text",
             "x": 100,
             "y": 70,
             "text": "Peraluminous",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0,
             "font": 3
         }

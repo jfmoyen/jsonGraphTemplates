@@ -2,9 +2,10 @@
     "name": "AFM",
     "fullName": "AFM (Irvine + Baragar 1971)",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Irvine TM & Baragar WR (1971) A guide to the chemical classification of common volcanic rocks. Canad J Earth Sci 8: 523-548",
+    "url": "https://doi.org/10.1139/e71-055",
+    "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "ternary",
     "dataTransform": null,
@@ -26,7 +27,7 @@
     },
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3
@@ -37,7 +38,7 @@
             ]
         },
         "lines0": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0,
                 0.15,
@@ -69,10 +70,10 @@
                 0
             ],
             "lwd": 3,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines1": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 1,
                 0.5,
@@ -109,7 +110,7 @@
             "col": "red"
         },
         "lines2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 1,
@@ -125,7 +126,7 @@
             "col": "black"
         },
         "lines3": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.231,
                 0.312,
@@ -148,27 +149,27 @@
                 0.3759,
                 0.3031
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "ternary",
             "plot.position": 11,
             "plot.name": "AFM (Irvine + Baragar 1971)"
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.5,
             "y": 0.55,
             "text": "Tholeiite Series",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.5,
             "y": 0.1,
             "text": "Calc-alkaline Series",
-            "col": "gray8"
+            "col": "pltcol2"
         }
     }
 }

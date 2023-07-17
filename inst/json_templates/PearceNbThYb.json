@@ -2,11 +2,16 @@
     "name": "PearceNbThYb",
     "fullName": "Pearce (2008) Nb-Th-Yb",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Pearce JA (2008) Geochemical fingerprinting of oceanic basalts with applications to ophiolite classification and the search for Archean oceanic crust. Lithos 100: 14-48",
+    "url": "https://doi.org/10.1016/j.lithos.2007.06.016",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>, J.-F. Moyen <jfmoyen@gmail.com>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
+
+    "optionSwitches": {"reservoirs": "Add Earth reservoirs"},
+    "optionDefaults": {"reservoirs": true},
+
     "dataTransform": null,
     "axesDefinition": {
         "X": "Nb/Yb",
@@ -26,7 +31,7 @@
     "log": "xy",
     "template": {
         "polygon1": {
-            "type": "polygon",
+            "plotFun": "polygon",
             "x": [
                 0.1,
                 0.3,
@@ -46,14 +51,14 @@
             "col": "khaki"
         },
         "lines1": {
-            "type": "abline",
+            "plotFun": "abline",
             "a": 1.0969,
             "b": 1.0196,
             "lty": "dashed",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "axis1": {
-            "type": "axis",
+            "plotFun": "axis",
             "side": 1,
             "at": [
                 0.1,
@@ -75,7 +80,7 @@
             "lty": "solid"
         },
         "axis2": {
-            "type": "axis",
+            "plotFun": "axis",
             "side": 2,
             "at": [
                 0.01,
@@ -97,7 +102,7 @@
             "lty": "solid"
         },
         "rug1": {
-            "type": "rug",
+            "plotFun": "rug",
             "x": [
                 0.01,
                 0.02,
@@ -156,7 +161,7 @@
             "col": "black"
         },
         "rug2": {
-            "type": "rug",
+            "plotFun": "rug",
             "x": [
                 0.1,
                 0.2,
@@ -215,36 +220,49 @@
             "col": "black"
         },
         "box": {
-            "type": "box",
+            "plotFun": "box",
             "which": "plot",
             "col": "black",
             "lwd": 1
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 301,
             "plot.name": "Pearce (2008) Nb-Th-Yb"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.15,
             "y": 1,
             "text": "Volcanic arc array",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0,
             "srt": 42
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 70,
             "y": 5,
             "text": "MORB-OIB array",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0,
             "srt": 42
+        },
+        "SunMcDonoughMantle": {
+            "plotFun": "reservoirs",
+            "autoscale": false,
+            "var.name": "reservoirs.data",
+            "reserv.condition": "NMORB|EMORB|OIB.* McDonough",
+            "labels": ["NMORB","EMORB","OIB"],
+            "col": "darkgreen",
+            "pch": "*",
+            "cex": 1,
+            "type": "p",
+            "just.draw": true,
+            "switch":"reservoirs"
         }
     }
 }

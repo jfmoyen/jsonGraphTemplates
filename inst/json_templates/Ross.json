@@ -1,10 +1,11 @@
 {
     "name": "Ross",
     "fullName": "Ross + Bedard (2009) Zr/Y-Th/Yb",
-    "details": "",
-    "reference": "Ross PS, Bédard LP (2009) Magmatic affinity of modern and ancient subalkaline volcanic rocks determined from trace-element discriminant diagrams. Can J Earth Sci 46:823-839",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "details": "based on K. Hollocher <hollochk@union.edu>",
+    "reference": "Ross PS, Bédard LP (2009) Magmatic affinity of modern and ancient subalkaline volcanic rocks determined from trace-element discriminant diagrams. Can J Earth Sci 46: 823-839",
+    "url": "https://doi.org/10.1139/E09-054",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": null,
@@ -25,7 +26,7 @@
     "log": "xy",
     "template": {
         "lines1": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 1,
                 20
@@ -34,10 +35,10 @@
                 2.11,
                 0.011
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines2": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 1,
                 20
@@ -46,39 +47,39 @@
                 11,
                 0.059
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "plot.type": "binary",
             "plot.position": 303,
             "plot.name": "Ross + Bedard (2009) Zr/Y-Th/Yb"
         },
         "text1": {
-            "type": "text",
+            "plotfun": "text",
             "x": 10,
             "y": 0.4,
             "text": "\"Calc-alkaline\"",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0
         },
         "text2": {
-            "type": "text",
+            "plotfun": "text",
             "x": 7.2,
             "y": 0.1,
             "text": "\"Transitional\"",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0
         },
         "text3": {
-            "type": "text",
+            "plotfun": "text",
             "x": 5,
             "y": 0.03,
             "text": "\"Tholeiitic\"",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0
         }
     }

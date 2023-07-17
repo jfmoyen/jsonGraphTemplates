@@ -2,9 +2,10 @@
     "name": "Jensen",
     "fullName": "Jensen (1976)",
     "details": "Jensen 1976; field boundaries Rickwood 1989, corrected by Rollinson 1993 ",
-    "reference": "",
+    "reference": "Jensen LS (1976) A New Cation Plot for Classifying Subalkalic Volcanic Rocks. Ontario Geological Survey Miscellaneous Paper 66, pp 1-22",
     "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "ternary",
     "dataTransform": "function(){ millications(wrdata,print=F,save=F) }",
@@ -26,7 +27,7 @@
     },
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3,
@@ -55,7 +56,7 @@
             ]
         },
         "lines1": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.05,
                 0.1993,
@@ -70,7 +71,7 @@
             ]
         },
         "lines2": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.1993,
                 0.274,
@@ -87,7 +88,7 @@
             ]
         },
         "lines3": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.274,
                 0.3225,
@@ -112,7 +113,7 @@
             ]
         },
         "lines4": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.2,
                 0.1247,
@@ -129,7 +130,7 @@
             ]
         },
         "lines5": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.3,
                 0.1993,
@@ -146,7 +147,7 @@
             ]
         },
         "lines6": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.3,
                 0.4,
@@ -163,7 +164,7 @@
             ]
         },
         "lines7": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.4225,
                 0.392,
@@ -190,7 +191,7 @@
             ]
         },
         "lines8": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.5,
                 0.5005,
@@ -211,7 +212,7 @@
             ]
         },
         "lines9": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.6,
                 0.8,
@@ -228,7 +229,7 @@
             ]
         },
         "lines10": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 1,
                 0.8,
@@ -243,7 +244,7 @@
             ]
         },
         "lines11": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.3726,
                 0.375,
@@ -272,7 +273,7 @@
             ]
         },
         "lines21": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 1,
@@ -288,7 +289,7 @@
             "col": "black"
         },
         "lines22": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.5,
                 0.5
@@ -297,10 +298,10 @@
                 0,
                 0.4763
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines23": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.05,
                 0.3225,
@@ -321,10 +322,10 @@
                 0.1732,
                 0.1083
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines24": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.6,
                 0.8
@@ -333,11 +334,11 @@
                 0,
                 0.3464
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines27": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.5005,
                 0.375
@@ -346,11 +347,11 @@
                 0.2884,
                 0.2165
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines28": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.25,
                 0.325
@@ -359,11 +360,11 @@
                 0.433,
                 0.3031
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines29": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.3325,
                 0.34
@@ -372,11 +373,11 @@
                 0.2901,
                 0.2511
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines30": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.2,
                 0.35
@@ -385,11 +386,11 @@
                 0.3464,
                 0.0866
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines31": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.15,
                 0.3
@@ -398,11 +399,11 @@
                 0.2598,
                 0
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines32": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.1,
                 0.2
@@ -411,131 +412,131 @@
                 0.1732,
                 0
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "ternary",
             "plot.position": 24,
             "plot.name": "Jensen (1976)"
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.39,
             "y": 0.4,
             "text": "High-Fe\ntholeiite\nbasalt",
             "cex": 0.85,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.26,
             "y": 0.32,
             "text": "Andesite",
             "srt": -60,
             "cex": 0.85,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text6": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.2,
             "y": 0.25,
             "text": "Dacite",
             "srt": -60,
             "cex": 0.85,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text7": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.12,
             "y": 0.17,
             "text": "Rhyolite",
             "srt": 30,
             "cex": 0.7,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text8": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.095,
             "y": 0.046,
             "text": "Rhyolite",
             "srt": -60,
             "cex": 0.7,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text9": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.2,
             "y": 0.074,
             "text": "Dacite",
             "srt": -60,
             "cex": 0.85,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text10": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.285,
             "y": 0.117,
             "text": "Andesite",
             "srt": -60,
             "cex": 0.85,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text11": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.35,
             "y": 0.163,
             "text": "Basalt",
             "srt": -60,
             "cex": 0.85,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text12": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.445,
             "y": 0.17,
             "text": "High-Mg\ntholeiite\nbasalt",
             "cex": 0.7,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text13": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.625,
             "y": 0.29,
             "text": "Komatiitic\nbasalt",
             "srt": -60,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text14": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.8,
             "y": 0.12,
             "text": "Komatiite",
             "srt": -60,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text15": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.414,
             "y": 0.3,
             "text": "TH",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text16": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.368,
             "y": 0.043,
             "text": "CA",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text17": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.75,
             "y": 0.27,
             "text": "KOMATIITE",
             "srt": -60,
-            "col": "gray8"
+            "col": "pltcol2"
         }
     }
 }

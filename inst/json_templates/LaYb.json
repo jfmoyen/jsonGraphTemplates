@@ -2,9 +2,10 @@
     "name": "LaYb",
     "fullName": "YbN vs LaN/YbN (Martin 1986) TTG/adakite",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Martin H (1986) Effect of steeper Archean geothermal gradient on geochemistry of subduction-zone magmas. Geology 14: 753-756",
+    "url": "https://doi.org/10.1130/0091-7613(1986)14<753:EOSAGG>2.0.CO;2",
+    "templateAuthor": "J.-F. Moyen <jfmoyen@gmail.com>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": null,
@@ -28,7 +29,7 @@
     },
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3
@@ -39,7 +40,7 @@
             ]
         },
         "lines1": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.28,
                 1.55,
@@ -64,10 +65,10 @@
                 35,
                 150
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 4.5,
                 4.5,
@@ -82,28 +83,28 @@
                 2,
                 2
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 109,
             "plot.name": "YbN vs LaN/YbN (Martin 1986) TTG/adakite"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 2.5,
             "y": 100,
             "text": "TTG/adakite",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 14,
             "y": 22,
             "text": "ordinary",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0
         }
     }

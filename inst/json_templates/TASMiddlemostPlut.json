@@ -2,9 +2,10 @@
     "name": "TASMiddlemostPlut",
     "fullName": "TAS Middlemost (1994)",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Middlemost EAK (1994) Naming materials in the magma/igneous rock system. Earth Sci Rev 37: 215-224",
+    "url": "https://doi.org/10.1016/0012-8252(94)90029-9",
+    "templateAuthor": "V. Erban <erban@sopky.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": "function(){ recastAnhydrous(wrdata) }",
@@ -24,7 +25,7 @@
     },
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "use": [
                 2,
                 3,
@@ -67,7 +68,7 @@
             ]
         },
         "lines1": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 37,
                 41,
@@ -92,10 +93,10 @@
                 9,
                 3
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines2": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 45,
                 45,
@@ -108,10 +109,10 @@
                 3,
                 0
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines3": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 45,
                 52,
@@ -124,10 +125,10 @@
                 5,
                 5
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines4": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 52,
                 57,
@@ -140,10 +141,10 @@
                 5.9,
                 5
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines5": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 57,
                 63,
@@ -156,10 +157,10 @@
                 7,
                 5.9
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines6": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 63,
                 77.3,
@@ -172,10 +173,10 @@
                 8,
                 7
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines7": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 77.3,
                 87.5,
@@ -190,10 +191,10 @@
                 13.5,
                 8
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines8": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 45,
                 52,
@@ -204,10 +205,10 @@
                 5,
                 7.3
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines9": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 52,
                 57,
@@ -220,10 +221,10 @@
                 9.3,
                 7.3
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines10": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 57,
                 63,
@@ -236,10 +237,10 @@
                 11.7,
                 9.3
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines12": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 63,
                 69,
@@ -252,10 +253,10 @@
                 13.5,
                 8.6
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines13": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 61,
                 71.8,
@@ -270,10 +271,10 @@
                 13.5,
                 11.7
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines14": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 41,
                 45,
@@ -290,10 +291,10 @@
                 9.4,
                 7
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines15": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 49.4,
                 53,
@@ -306,10 +307,10 @@
                 11.5,
                 9.4
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines16": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 53,
                 57.6,
@@ -322,10 +323,10 @@
                 14,
                 11.5
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines17": {
-            "type": "lines",
+            "plotfun": "lines",
             "x": [
                 57.6,
                 61,
@@ -342,10 +343,10 @@
                 18,
                 14
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines15.1": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 37,
                 52.5,
@@ -360,10 +361,10 @@
                 13.5,
                 29.78
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines15.2": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "x": [
                 77.3,
                 87.5,
@@ -376,156 +377,156 @@
                 6.8,
                 0
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotfun": "NULL",
             "plot.type": "binary",
             "plot.position": 32,
             "plot.name": "TAS Middlemost (1994)"
         },
         "text1": {
-            "type": "text",
+            "plotfun": "text",
             "x": 43,
             "y": 1.4,
             "text": "Peridot\ngabbro",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 90
         },
         "text2": {
-            "type": "text",
+            "plotfun": "text",
             "x": 48.5,
             "y": 2.8,
             "text": "Gabbro",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 90
         },
         "text3": {
-            "type": "text",
+            "plotfun": "text",
             "x": 54.8,
             "y": 3,
             "text": "Gabbroic\ndiorite",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 90
         },
         "text4": {
-            "type": "text",
+            "plotfun": "text",
             "x": 59.9,
             "y": 3,
             "text": "Diorite",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 90
         },
         "text5": {
-            "type": "text",
+            "plotfun": "text",
             "x": 67,
             "y": 3,
             "text": "Granodiorite",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 90
         },
         "text6": {
-            "type": "text",
+            "plotfun": "text",
             "x": 79,
             "y": 6,
             "text": "Granite",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text7": {
-            "type": "text",
+            "plotfun": "text",
             "x": 63.5,
             "y": 11.5,
             "text": "Syenite",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 45
         },
         "text22": {
-            "type": "text",
+            "plotfun": "text",
             "x": 66,
             "y": 9,
             "text": "Quartz\nmonzonite",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 45
         },
         "text8": {
-            "type": "text",
+            "plotfun": "text",
             "x": 57.8,
             "y": 8.5,
             "text": "Monzonite",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text9": {
-            "type": "text",
+            "plotfun": "text",
             "x": 52.95,
             "y": 7,
             "text": "Monzo\ndiorite",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text10": {
-            "type": "text",
+            "plotfun": "text",
             "x": 49.2,
             "y": 5.65,
             "text": "Monzo-\ngabbro",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.8
         },
         "text11": {
-            "type": "text",
+            "plotfun": "text",
             "x": 45,
             "y": 7,
             "text": "Foid\ngabbro",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 50
         },
         "text12": {
-            "type": "text",
+            "plotfun": "text",
             "x": 49.2,
             "y": 9.3,
             "text": "Foid\nmonzo-\ngabbro",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 50,
             "cex": 0.8
         },
         "text13": {
-            "type": "text",
+            "plotfun": "text",
             "x": 53,
             "y": 11.5,
             "text": "Foid\nmonzo-\nsyenite",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 50,
             "cex": 0.8
         },
         "text14": {
-            "type": "text",
+            "plotfun": "text",
             "x": 57,
             "y": 14,
             "text": "Foid\nsyenite",
-            "col": "gray8",
+            "col": "pltcol2",
             "srt": 50,
             "cex": 0.8
         },
         "text15": {
-            "type": "text",
+            "plotfun": "text",
             "x": 44,
             "y": 12,
             "text": "Foidolite",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text22.1": {
-            "type": "text",
+            "plotfun": "text",
             "x": 55,
             "y": 18.5,
             "text": "Tawite/Urtite/Italite",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text23": {
-            "type": "text",
+            "plotfun": "text",
             "x": 85,
             "y": 1,
             "text": "Quartzolite",
-            "col": "gray8"
+            "col": "pltcol2"
         }
     }
 }

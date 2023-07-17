@@ -2,9 +2,10 @@
     "name": "Pearce1996",
     "fullName": "Nb/Y - Zr/Ti plot (modified by Pearce 1996)",
     "details": "",
-    "reference": "",
+    "reference": "Pearce JA (1996) A User's Guide to Basalt Discrimination Diagrams. In Wyman DA (ed) Trace Element Geochemistry of Volcanic Rocks: Applications for Massive Sulphide Exploration. Geological Association of Canada, Short Course Notes 12, pp 79-113",
     "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": null,
@@ -26,7 +27,7 @@
     "log": "xy",
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3,
@@ -53,7 +54,7 @@
             ]
         },
         "lines1": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -2,
                 -0.1739,
@@ -72,7 +73,7 @@
             "lwd": 3
         },
         "lines2": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -0.1739,
                 0.4487,
@@ -91,7 +92,7 @@
             "lwd": 3
         },
         "lines3": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.4487,
                 1.699,
@@ -110,7 +111,7 @@
             "lwd": 3
         },
         "lines4": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -2,
                 -0.1739,
@@ -129,7 +130,7 @@
             "lwd": 3
         },
         "lines5": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -0.1739,
                 0.4487,
@@ -148,7 +149,7 @@
             "lwd": 3
         },
         "lines6": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.4487,
                 1.699,
@@ -167,7 +168,7 @@
             "lwd": 3
         },
         "lines7": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -2,
                 -0.1739,
@@ -188,7 +189,7 @@
             "lwd": 3
         },
         "lines8": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -0.1739,
                 0.4487,
@@ -207,7 +208,7 @@
             "lwd": 3
         },
         "lines9": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.4487,
                 1.699,
@@ -228,7 +229,7 @@
             "lwd": 3
         },
         "lines10": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -1.1871,
                 -0.1739,
@@ -247,7 +248,7 @@
             "lwd": 3
         },
         "lines11": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.01,
                 0.67,
@@ -260,10 +261,10 @@
                 0.0355,
                 0.0781
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines12": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.01,
                 0.67,
@@ -276,10 +277,10 @@
                 0.12,
                 0.2663
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines13": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.67,
                 0.67
@@ -288,10 +289,10 @@
                 0.001,
                 0.2
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines14": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 2.81,
                 2.81
@@ -300,10 +301,10 @@
                 0.001,
                 0.99
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines15": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.065,
                 0.67,
@@ -314,10 +315,10 @@
                 0.2,
                 2
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "axis1": {
-            "type": "axis",
+            "plotFun": "axis",
             "side": 1,
             "at": [
                 0.01,
@@ -341,7 +342,7 @@
             "lty": "solid"
         },
         "axis2": {
-            "type": "axis",
+            "plotFun": "axis",
             "side": 2,
             "at": [
                 0.001,
@@ -361,101 +362,101 @@
             "lty": "solid"
         },
         "box": {
-            "type": "box",
+            "plotFun": "box",
             "which": "plot",
             "col": "black",
             "lwd": 1
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 27,
             "plot.name": "Nb/Y - Zr/Ti plot (modified by Pearce 1996)"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.08,
             "y": 0.003,
             "text": "basalt",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1.5,
             "y": 0.01,
             "text": "alkali\nbasalt",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5
         },
         "text3": {
-            "type": "text",
+            "plotFun": "text",
             "x": 8,
             "y": 0.01,
             "text": "foidite",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": [
                 0,
                 0.5
             ]
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.1,
             "y": 0.03,
             "text": "andesite\nbasaltic andesite",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5,
             "srt": 17
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1.5,
             "y": 0.06,
             "text": "trachy-\nandesite",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5,
             "srt": 17
         },
         "text6": {
-            "type": "text",
+            "plotFun": "text",
             "x": 10,
             "y": 0.095,
             "text": "tephriphonolite",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5,
             "srt": 17
         },
         "text7": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.1,
             "y": 0.2,
             "text": "rhyolite\ndacite",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5
         },
         "text8": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1.5,
             "y": 0.2,
             "text": "trachyte",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5
         },
         "text9": {
-            "type": "text",
+            "plotFun": "text",
             "x": 10,
             "y": 0.4,
             "text": "phonolite",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5
         },
         "text10": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.8,
             "y": 0.6,
             "text": "alkali\nrhyolite",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5
         }
     }

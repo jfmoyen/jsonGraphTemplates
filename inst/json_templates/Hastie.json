@@ -2,9 +2,10 @@
     "name": "Hastie",
     "fullName": "Co - Th (Hastie et al. 2007)",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Hastie AR, Kerr AC, Pearce JA & Mitchell SF (2007) Classification of altered volcanic island arc rocks using immobile trace elements: development of the Th-Co discrimination diagram. J Pet 48: 2341-2357",
+    "url": "https://doi.org/10.1093/petrology/egm062",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": null,
@@ -25,7 +26,7 @@
     "log": "y",
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3,
@@ -38,7 +39,7 @@
             ]
         },
         "lines1": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 70,
                 0,
@@ -57,7 +58,7 @@
             "lwd": 3
         },
         "lines2": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 70,
                 0,
@@ -76,7 +77,7 @@
             "lwd": 3
         },
         "lines3": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 70,
                 0,
@@ -95,7 +96,7 @@
             "lwd": 3
         },
         "lines4": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 70,
                 0
@@ -104,10 +105,10 @@
                 0.245,
                 1.35
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines5": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 70,
                 0
@@ -116,10 +117,10 @@
                 2.2,
                 9
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines6": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 38.4,
                 24
@@ -128,10 +129,10 @@
                 0.01,
                 100
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines7": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 23,
                 7
@@ -140,69 +141,69 @@
                 0.01,
                 100
             ],
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 13,
             "plot.name": "Co - Th (Hastie et al. 2007)"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 68,
             "y": 0.1,
             "text": "Tholeiite\nSeries",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": [
                 0,
                 0.5
             ]
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 68,
             "y": 1,
             "text": "Calc-alkaline\nSeries",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": [
                 0,
                 0.5
             ]
         },
         "text3": {
-            "type": "text",
+            "plotFun": "text",
             "x": 68,
             "y": 60,
             "text": "High-K calc-alkaline\nand Shoshonite Series",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": [
                 0,
                 0.5
             ]
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 50,
             "y": 0.02,
             "text": "B",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": 30,
             "y": 0.02,
             "text": "BA/A",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5
         },
         "text6": {
-            "type": "text",
+            "plotFun": "text",
             "x": 10,
             "y": 0.02,
             "text": "D/R*",
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5
         }
     }

@@ -2,11 +2,16 @@
     "name": "DebonPQ",
     "fullName": "P-Q (Debon + Le Fort 1983)",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Debon F & Le Fort P (1983) A chemical-mineralogical classification of common plutonic rocks and associations. Trans Roy Soc Edinb; Earth Sci 73: 135-149",
+    "url": "https://doi.org/10.1017/S0263593300010117",
+    "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
+
+    "optionSwitches": {"reference.rocks": "Compare to ideal rock compo"},
+    "optionDefaults": {"reference.rocks": false},
+
     "dataTransform": "function(){ DebonCalc(millications(wrdata)) }",
     "axesDefinition": {
         "X": "P",
@@ -28,7 +33,7 @@
     },
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3,
@@ -59,7 +64,7 @@
             ]
         },
         "lines1": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -377,
                 -257,
@@ -78,7 +83,7 @@
             ]
         },
         "lines2": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -257,
                 -188,
@@ -95,7 +100,7 @@
             ]
         },
         "lines3": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -188,
                 -117,
@@ -112,7 +117,7 @@
             ]
         },
         "lines4": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -117,
                 16,
@@ -131,7 +136,7 @@
             ]
         },
         "lines5": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -311,
                 -224,
@@ -152,7 +157,7 @@
             ]
         },
         "lines6": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -205,
                 -143,
@@ -173,7 +178,7 @@
             ]
         },
         "lines7": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -143,
                 -88,
@@ -194,7 +199,7 @@
             ]
         },
         "lines8": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -88,
                 -40,
@@ -217,7 +222,7 @@
             ]
         },
         "lines9": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -274,
                 -172,
@@ -242,7 +247,7 @@
             ]
         },
         "lines10": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -172,
                 -103,
@@ -267,7 +272,7 @@
             ]
         },
         "lines11": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -103,
                 -55,
@@ -292,7 +297,7 @@
             ]
         },
         "lines12": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -55,
                 -30,
@@ -319,17 +324,17 @@
             ]
         },
         "lines20": {
-            "type": "abline",
+            "plotFun": "abline",
             "h": 0,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines21": {
-            "type": "abline",
+            "plotFun": "abline",
             "v": 0,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines22": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 -216,
                 -119,
@@ -344,11 +349,11 @@
                 245,
                 250
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines23": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 -274,
                 -172,
@@ -365,11 +370,11 @@
                 110,
                 110
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines24": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 -311,
                 -224,
@@ -388,11 +393,11 @@
                 38,
                 26
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines25": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 -216,
                 -230,
@@ -409,11 +414,11 @@
                 57,
                 0
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines26": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 -119,
                 -134,
@@ -432,11 +437,11 @@
                 55,
                 0
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines27": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 -59,
                 -71,
@@ -455,11 +460,11 @@
                 48,
                 0
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines28": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 -17,
                 -29,
@@ -478,11 +483,11 @@
                 43,
                 0
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines29": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 105,
                 90,
@@ -499,98 +504,125 @@
                 26,
                 0
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 34,
             "plot.name": "P-Q (Debon + Le Fort 1983)"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 25,
             "y": 175,
             "text": "gr",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": -55,
             "y": 175,
             "text": "ad",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text3": {
-            "type": "text",
+            "plotFun": "text",
             "x": -110,
             "y": 175,
             "text": "gd",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": -190,
             "y": 175,
             "text": "to",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": -15,
             "y": 80,
             "text": "sq",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text6": {
-            "type": "text",
+            "plotFun": "text",
             "x": -90,
             "y": 80,
             "text": "mzq",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text7": {
-            "type": "text",
+            "plotFun": "text",
             "x": -150,
             "y": 80,
             "text": "mzdq",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text8": {
-            "type": "text",
+            "plotFun": "text",
             "x": -240,
             "y": 80,
             "text": "dq",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text9": {
-            "type": "text",
+            "plotFun": "text",
             "x": -35,
             "y": 20,
             "text": "s",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text10": {
-            "type": "text",
+            "plotFun": "text",
             "x": -140,
             "y": 20,
             "text": "mz",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text11": {
-            "type": "text",
+            "plotFun": "text",
             "x": -200,
             "y": 20,
             "text": "mzgo",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text12": {
-            "type": "text",
+            "plotFun": "text",
             "x": -290,
             "y": 20,
             "text": "go",
-            "col": "gray8"
+            "col": "pltcol2"
+        }
+        ,
+        "debonIdeal1": {
+            "plotFun": "reservoirs",
+            "autoscale": false,
+            "var.name": "debon.ideal.data",
+            "sample.names": ["gr","ad","gd","to","dq","go"],
+            "labels": ["gr","ad","gd","to","dq","go"],
+            "col": "gold4",
+            "pch": 19,
+            "cex": 1,
+            "type": "p",
+            "just.draw": true,
+            "switch":"reference.rocks"
+        },
+        "debonIdeal2": {
+            "plotFun": "reservoirs",
+            "autoscale": false,
+            "var.name": "debon.ideal.data",
+            "sample.names": ["sq","mzq","mzdq","s","mz","mzgo"],
+            "labels": ["sq","mzq","mzdq","s","mz","mzgo"],
+            "col": "gold4",
+            "pch": 19,
+            "cex": 1,
+            "type": "p",
+            "just.draw": true,
+            "switch":"reference.rocks"
         }
     }
 }

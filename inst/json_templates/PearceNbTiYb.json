@@ -2,11 +2,16 @@
     "name": "PearceNbTiYb",
     "fullName": "Pearce (2008) Nb-TiO2-Yb",
     "details": "",
-    "reference": "",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Pearce JA (2008) Geochemical fingerprinting of oceanic basalts with applications to ophiolite classification and the search for Archean oceanic crust. Lithos 100: 14-48",
+    "url": "https://doi.org/10.1016/j.lithos.2007.06.016",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
+
+    "optionSwitches": {"reservoirs": "Add Earth reservoirs"},
+    "optionDefaults": {"reservoirs": true},
+
     "dataTransform": null,
     "axesDefinition": {
         "X": "Nb/Yb",
@@ -26,7 +31,7 @@
     "log": "xy",
     "template": {
         "polygon1": {
-            "type": "polygon",
+            "plotFun": "polygon",
             "x": [
                 0.1,
                 100,
@@ -44,14 +49,14 @@
             "col": "khaki"
         },
         "lines1": {
-            "type": "abline",
+            "plotFun": "abline",
             "a": 0.3555,
             "b": 0.046,
             "lty": "solid",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 1.5913,
                 1.7754
@@ -61,11 +66,11 @@
                 0.1995
             ],
             "lty": "dashed",
-            "col": "gray8",
+            "col": "pltcol2",
             "lwd": 2
         },
         "lines3": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 8.8,
                 17.4
@@ -75,11 +80,11 @@
                 0.7298
             ],
             "lty": "dashed",
-            "col": "gray8",
+            "col": "pltcol2",
             "lwd": 2
         },
         "axis1": {
-            "type": "axis",
+            "plotFun": "axis",
             "side": 1,
             "at": [
                 0.01,
@@ -101,7 +106,7 @@
             "lty": "solid"
         },
         "axis2": {
-            "type": "axis",
+            "plotFun": "axis",
             "side": 2,
             "at": [
                 0.01,
@@ -123,7 +128,7 @@
             "lty": "solid"
         },
         "rug1": {
-            "type": "rug",
+            "plotFun": "rug",
             "x": [
                 0.1,
                 0.2,
@@ -162,7 +167,7 @@
             "col": "black"
         },
         "rug2": {
-            "type": "rug",
+            "plotFun": "rug",
             "x": [
                 0.1,
                 0.2,
@@ -211,79 +216,92 @@
             "col": "black"
         },
         "box": {
-            "type": "box",
+            "plotFun": "box",
             "which": "plot",
             "col": "black",
             "lwd": 1
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 301.5,
             "plot.name": "Pearce (2008) Nb-TiO2-Yb"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 7,
             "y": 1.8,
             "text": "Th",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0,
             "srt": 2
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 12,
             "y": 1.8,
             "text": "Alk",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0,
             "srt": 2
         },
         "text3": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.4,
             "y": 1.5,
             "text": "OIB array\n(deep melting)",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5,
             "srt": 5
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 25,
             "y": 0.5,
             "text": "MORB array\n(shallow melting)",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5,
             "hadj": 0.5,
             "srt": 5
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1.5,
             "y": 0.25,
             "text": "N",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5,
             "hadj": 0.5,
             "srt": 5
         },
         "text6": {
-            "type": "text",
+            "plotFun": "text",
             "x": 2.05,
             "y": 0.25,
             "text": "E",
             "cex": 1,
-            "col": "gray8",
+            "col": "pltcol2",
             "adj": 0.5,
             "hadj": 0.5,
             "srt": 5
+        },
+        "SunMcDonoughMantle": {
+            "plotFun": "reservoirs",
+            "autoscale": false,
+            "var.name": "reservoirs.data",
+            "reserv.condition": "NMORB|EMORB|OIB.* McDonough",
+            "labels": ["NMORB","EMORB","OIB"],
+            "col": "darkgreen",
+            "pch": "*",
+            "cex": 1,
+            "type": "p",
+            "just.draw": true,
+            "switch":"reservoirs"
         }
     }
 }

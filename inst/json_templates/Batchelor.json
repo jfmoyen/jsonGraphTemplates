@@ -2,11 +2,16 @@
     "name": "Batchelor",
     "fullName": "Batchelor + Bowden (1985)",
     "details": "",
-    "reference": "R1-R2 diagram - De la Roche et al. 1980; Batchelor and Bowden (1985): Chem.Geology, 48, 43-55; boundaries: NewPet",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Batchelor RA & Bowden P (1985) Petrogenetic interpretation of granitoid rock series using multicationic parameters. Chem Geol 48: 43-55.",
+    "url": "https://doi.org/10.1016/0009-2541(85)90034-8",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
+
+    "optionSwitches": {"idealmins": "Add ideal minerals"},
+    "optionDefaults": {"idealmins": true},
+
     "dataTransform": "function(){ LaRocheCalc(wrdata) }",
     "axesDefinition": {
         "X": "R1",
@@ -19,7 +24,7 @@
     "limits": {
         "X": [
             -1000,
-            4000
+            4100
         ],
         "Y": [
             0,
@@ -28,17 +33,17 @@
     },
     "template": {
         "lines1": {
-            "type": "abline",
+            "plotFun": "abline",
             "h": 0,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines2": {
-            "type": "abline",
+            "plotFun": "abline",
             "v": 0,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "lines3": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 525,
                 2875
@@ -47,11 +52,11 @@
                 500,
                 280
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines4": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 3000,
                 2150
@@ -60,11 +65,11 @@
                 270,
                 1720
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines5": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 2310,
                 1435
@@ -73,11 +78,11 @@
                 575,
                 1310
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines6": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 2250,
                 1095
@@ -86,11 +91,11 @@
                 580,
                 1000
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines7": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 2875.27
@@ -99,73 +104,73 @@
                 0,
                 2875.84
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 101,
             "plot.name": "Batchelor + Bowden (1985)"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 2600,
             "y": 1700,
             "text": "Mantle\nFractionates",
             "cex": 0.7,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 2100,
             "y": 1250,
             "text": "Pre-plate\nCollision",
             "cex": 0.7,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text3": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1600,
             "y": 1000,
             "text": "Post-\ncollision\nUplift",
             "cex": 0.7,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1400,
             "y": 700,
             "text": "Late-\norogenic",
             "cex": 0.7,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": 1100,
             "y": 350,
             "text": "Anorogenic",
             "cex": 0.7,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text6": {
-            "type": "text",
+            "plotFun": "text",
             "x": 2500,
             "y": 500,
             "text": "Syn-collision",
             "cex": 0.7,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text7": {
-            "type": "text",
+            "plotFun": "text",
             "x": 2900,
             "y": 250,
             "text": "Post-\norogenic",
             "cex": 0.7,
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "points1": {
-            "type": "points",
+            "plotFun": "points",
             "x": [
                 6658.0113,
                 359.926,
@@ -206,12 +211,13 @@
                 0,
                 5972.5021
             ],
-            "col": "darkblue",
+            "col": "pltcol3",
             "pch": 20,
-            "bg": "gray"
+            "bg": "gray",
+            "switch":"idealmins"
         },
         "text8": {
-            "type": "text",
+            "plotFun": "text",
             "x": [
                 6658.0113,
                 359.926,
@@ -272,8 +278,9 @@
                 "Ilm",
                 "Ap"
             ],
-            "col": "darkblue",
-            "cex": 0.7
+            "col": "pltcol3",
+            "cex": 0.7,
+            "switch":"idealmins"
         }
     }
 }

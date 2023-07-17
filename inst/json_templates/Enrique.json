@@ -2,9 +2,10 @@
     "name": "Enrique",
     "fullName": "(or+ab)-2Q-4an diagram (Enrique 2018) ",
     "details": "",
-    "reference": "Enrique, 2018",
-    "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "reference": "Enrique P (2018) Clasificación normativa de las rocas plutónicas saturadas y sobresaturadas en sílice basada en la clasificación modal QAP: El diagrama 2Q-(or+ab)-4an. Geogaceta 63:95-98",
+    "url": "https://sge.usal.es/archivos/geogacetas/geo63/geo63_24.pdf",
+    "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "ternary",
     "dataTransform": "function(){ CIPW(wrdata) }",
@@ -26,7 +27,7 @@
     },
     "template": {
         "clssf": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3,
@@ -79,7 +80,7 @@
             ]
         },
         "polygon1": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.449756,
                 0.550244,
@@ -95,7 +96,7 @@
             "col": "#00FF0055"
         },
         "polygon2": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.30,
                 0.70,
@@ -113,7 +114,7 @@
             "col": "#FF000055"
         },
         "polygon3": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.10,
                 0.18,
@@ -131,7 +132,7 @@
             "col": "#FF000055"
         },
         "polygon4": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.18,
                 0.34,
@@ -149,7 +150,7 @@
             "col": "#00FF0055"
         },
         "polygon5": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.34,
                 0.50,
@@ -167,7 +168,7 @@
             "col": "#FF000055"
         },
         "polygon6": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.50,
                 0.62,
@@ -185,7 +186,7 @@
             "col": "#00FF0055"
         },
         "polygon7": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.62,
                 0.74,
@@ -203,7 +204,7 @@
             "col": "#FF000055"
         },
         "polygon8": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.74,
                 0.82,
@@ -221,7 +222,7 @@
             "col": "#00FF0055"
         },
         "polygon9": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.82,
                 0.90,
@@ -239,7 +240,7 @@
             "col": "#FF000055"
         },
         "polygon10": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.025,
                 0.12,
@@ -257,7 +258,7 @@
             "col": "#00FF0055"
         },
         "polygon11": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.12,
                 0.31,
@@ -275,7 +276,7 @@
             "col": "#FF000055"
         },
         "polygon12": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.31,
                 0.50,
@@ -293,7 +294,7 @@
             "col": "#00FF0055"
         },
         "polygon13": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.50,
                 0.6425,
@@ -311,7 +312,7 @@
             "col": "#FF000055"
         },
         "polygon14": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.6425,
                 70.85,
@@ -329,7 +330,7 @@
             "col": "#00FF0055"
         },
         "polygon15": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.785,
                 0.88,
@@ -347,7 +348,7 @@
             "col": "#FF000055"
         },
         "polygon16": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.88,
                 0.975,
@@ -365,7 +366,7 @@
             "col": "#00FF0055"
         },
         "polygon17": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0,
                 0.10,
@@ -383,7 +384,7 @@
             "col": "#FF000055"
         },
         "polygon18": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.10,
                 0.30,
@@ -401,7 +402,7 @@
             "col": "#00FF0055"
         },
         "polygon19": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.30,
                 0.50,
@@ -419,7 +420,7 @@
             "col": "#FF000055"
         },
         "polygon20": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.50,
                 0.65,
@@ -437,7 +438,7 @@
             "col": "#00FF0055"
         },
         "polygon21": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.65,
                 0.80,
@@ -455,7 +456,7 @@
             "col": "#FF000055"
         },
         "polygon22": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.80,
                 0.90,
@@ -473,7 +474,7 @@
             "col": "#00FF0055"
         },
         "polygon23": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.90,
                 1.00,
@@ -491,7 +492,7 @@
             "col": "#FF000055"
         },
         "lines1": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.30,
                 0.70
@@ -500,10 +501,10 @@
                 0.52,
                 0.52
             ],
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "lines2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.10,
                 0.90
@@ -512,10 +513,10 @@
                 0.173,
                 0.173
             ],
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "lines3": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.025,
                 0.975
@@ -524,10 +525,10 @@
                 0.043,
                 0.043
             ],
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "lines4": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.45,
                 0.55
@@ -536,10 +537,10 @@
                 0.779,
                 0.779
             ],
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "lines5": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.10,
                 0.34
@@ -548,10 +549,10 @@
                 0,
                 0.519615
             ],
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "lines6": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.30,
                 0.42
@@ -560,10 +561,10 @@
                 0,
                 0.519615
             ],
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "lines7": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.50,
                 0.50
@@ -572,10 +573,10 @@
                 0,
                 0.519615
             ],
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "lines8": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.65,
                 0.56
@@ -584,10 +585,10 @@
                 0,
                 0.519615
             ],
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "lines9": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.80,
                 0.62
@@ -596,10 +597,10 @@
                 0,
                 0.519615
             ],
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "lines10": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.90,
                 0.66
@@ -608,10 +609,10 @@
                 0,
                 0.519615
             ],
-            "col": "darkblue"
+            "col": "pltcol3"
         },
         "lines20": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 1.00,
@@ -627,193 +628,193 @@
             "col": "black"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "ternary",
             "plot.position": 38.7,
             "plot.name": "(or+ab)-2Q-4an diagram (Enrique 2018) "
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.50,
             "y": 0.823,
             "text": "1",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.50,
             "y": 0.65,
             "text": "2",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text3": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.22,
             "y": 0.3465,
             "text": "3",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text4": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.32,
             "y": 0.3465,
             "text": "4",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text5": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.44,
             "y": 0.3465,
             "text": "5",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text6": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.545,
             "y": 0.3465,
             "text": "6",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text7": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.635,
             "y": 0.3465,
             "text": "7",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text8": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.71,
             "y": 0.3465,
             "text": "8",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text9": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.77,
             "y": 0.3465,
             "text": "9",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text10": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.10,
             "y": 0.1083,
             "text": "10",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text11": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.23,
             "y": 0.1083,
             "text": "11",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text12": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.41,
             "y": 0.1083,
             "text": "12",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text13": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.56,
             "y": 0.1083,
             "text": "13",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text14": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.69,
             "y": 0.1083,
             "text": "14",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text15": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.803,
             "y": 0.1083,
             "text": "15",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text16": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.893,
             "y": 0.1083,
             "text": "16",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text17": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.06,
             "y": 0.02615,
             "text": "17",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text18": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.205,
             "y": 0.02615,
             "text": "18",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text19": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.405,
             "y": 0.02615,
             "text": "19",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text20": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.57,
             "y": 0.02615,
             "text": "20",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text21": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.72,
             "y": 0.02615,
             "text": "21",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text22": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.845,
             "y": 0.02615,
             "text": "22",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         },
         "text23": {
-            "type": "text",
+            "plotFun": "text",
             "x": 0.94,
             "y": 0.02615,
             "text": "23",
-            "col": "gray8",
+            "col": "pltcol2",
             "cex": 0.75
         }
     }

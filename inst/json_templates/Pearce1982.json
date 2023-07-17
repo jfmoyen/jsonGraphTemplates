@@ -2,9 +2,10 @@
     "name": "Pearce1982",
     "fullName": "Pearce (1982)",
     "details": "",
-    "reference": "",
+    "reference": "Pearce JA (1982) Trace element characteristics of lavas from destructive plate boundaries. In: Thorpe RS (ed) Andesites: Orogenic Andesites and Related Rocks. John Wiley & Sons, Chichester, pp 525-548, ISBN 0 471 28034 8",
     "url": "",
-    "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+    "templateAuthor": "J.-F. Moyen <jfmoyen@gmail.com>",
+    "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
     "dataTransform": null,
@@ -25,7 +26,7 @@
     "log": "xy",
     "template": {
         "lines1": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 96.4649,
                 94.8843,
@@ -154,11 +155,11 @@
                 1373.8759,
                 1010.0924
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines2": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 148.2234,
                 135.5724,
@@ -231,11 +232,11 @@
                 17379.9109,
                 17264.0295
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "lines3": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 552.1097,
                 496.7122,
@@ -344,35 +345,35 @@
                 10810.7838,
                 8786.7255
             ],
-            "col": "gray8",
+            "col": "pltcol2",
             "lty": "dashed"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 208,
             "plot.name": "Pearce (1982)"
         },
         "text1": {
-            "type": "text",
+            "plotFun": "text",
             "x": 300,
             "y": 10000,
             "text": "Within-Plate\nLavas",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text2": {
-            "type": "text",
+            "plotFun": "text",
             "x": 100,
             "y": 3000,
             "text": "Island Arc\nLavas",
-            "col": "gray8"
+            "col": "pltcol2"
         },
         "text3": {
-            "type": "text",
+            "plotFun": "text",
             "x": 70,
             "y": 7000,
             "text": "MORB",
-            "col": "gray8"
+            "col": "pltcol2"
         }
     }
 }
