@@ -227,7 +227,7 @@ plotDiagram_json_ternary <- function(graphDef,dd,lbl,new,
 }
 
 ############### Plot json template in Figaro: PLATES ####################
-#' Inner function, for binary plots
+#' Inner function, for plates plots (deprecated)
 #'
 #' @param graphDef The template, loaded into a list from json
 #' @param dd The plotting dataset
@@ -236,9 +236,10 @@ plotDiagram_json_ternary <- function(graphDef,dd,lbl,new,
 #' @details
 #' Internal function, that does the actual plotting
 #' in the case of a plate. This function is not very nicely written, it relies on
-#' multiplePerPage and hopes it does the right thing.
+#' multiplePerPage and hopes it does the right thing. As multiplePerPage
+#' uses command defined as texts, well...
 
-plotDiagram_json_plate <- function(graphDef,dd, lbl,
+plotDiagram_json_plate_DEPRECATED <- function(graphDef,dd, lbl,
                                     template_options,template_colors){
 
 ## Not nice, there must be a better way to do this !
@@ -264,3 +265,90 @@ plotDiagram_json_plate <- function(graphDef,dd, lbl,
 
 }
 
+############### Plot json template in Figaro: PLATES ####################
+#' Inner function, for binary plots
+#'
+#' @param graphDef The template, loaded into a list from json
+#' @param dd The plotting dataset
+#' @param lbl The labels (GCDkit style)
+#' @param template_options Further arguments passed to the parser, see main function
+#' @details
+#' Internal function, that does the actual plotting
+#' in the case of a plate.
+#' This is mostly code from multiplePerPage()
+
+plotDiagram_json_plate <- function(graphDef,dd, lbl,
+                                     template_options,template_colors){
+
+  ## If something was already there, preserve it
+  sheet.bak <- sheet
+  x.data.bak <- x.data
+  y.data.bak <- y.data
+
+  ## Geometry of the plate - rows, columns
+  ncol <- graphDef$ncol
+  nrow <- graphDef$nrow
+
+  nbslots <- length(graphDef$plateSlots)
+
+  if(nrow==F||ncol==F){
+    ncol <- n2mfrow(nbslots)[1]
+    nrow <- n2mfrow(nbslots)[2]
+  }
+
+  ## Create the plate itself
+  plate <- GCDkit::.plateSetup(number, nrow, ncol, title = graphDef$fullName)
+
+    ## Prepare the data structure, empty so far
+  plate.data <- as.list(1:nbslots)
+  plate.data <- lapply(1:nbslots, function(i) {
+    plate.data[[i]] <- list(x = 1, y = 1)
+  })
+  names(plate.data) <- paste("Fig", 1:nbslots, sep = "")
+
+  ## Make global
+  assign("plate", plate, .GlobalEnv)
+  assign("plate.data", plate.data, .GlobalEnv)
+
+  ## Graphic setup and title
+  par(oma = c(0, 0, 4, 0))
+  mtext(text = annotate(plate$title), side = 3, line = 0.25,
+        outer = TRUE, cex = 1.5)
+
+    ## Construct every individual plot
+  ee <- lapply(1:nbslots, function(i) {
+    screen(i, new = FALSE)
+
+    ## Geometric considerations
+    if (.Platform$OS.type == "windows" & .Platform$GUI ==
+        "Rgui") {
+      par(mar = c(4.5, 5.5, 2, 1.5))
+      par(pty = "s")
+    }
+    else {
+      par(mar = c(2, 0.5, 1, 1))
+      par(pty = "s")
+    }
+
+    ## The actual plot
+      plotDiagram_json(json=graphDef$plateSlots[i],
+                       wrdata=dd,lbl=lbl,
+                       new=F,
+                       template_options=template_options,
+                       template_colors=template_colors)
+      .saveCurPlotDef(i)
+    })
+
+  ## Restore the global environment the way it was
+  assign("sheet", sheet.bak, .GlobalEnv)
+  assign("x.data", x.data.bak, .GlobalEnv)
+  assign("y.data", y.data.bak, .GlobalEnv)
+
+  ## Final touch
+  assign("scr.old", 1, .GlobalEnv)
+  screen(1, new = FALSE)
+  if (.Platform$OS.type == "windows" & .Platform$GUI == "Rgui")
+    .menuPopUp()
+  screen(1, new = FALSE)
+
+}

@@ -4,7 +4,14 @@
 \alias{plotDiagram_json_binary}
 \title{Inner function, for binary plots}
 \usage{
-plotDiagram_json_binary(graphDef, dd, lbl, template_options, template_colors)
+plotDiagram_json_binary(
+  graphDef,
+  dd,
+  lbl,
+  new,
+  template_options,
+  template_colors
+)
 }
 \arguments{
 \item{graphDef}{The template, loaded into a list from json}
@@ -13,7 +20,11 @@ plotDiagram_json_binary(graphDef, dd, lbl, template_options, template_colors)
 
 \item{lbl}{The labels (GCDkit style)}
 
-\item{template_options}{Further arguments passed to the parser, typically switches}
+\item{new}{Open in a new window?}
+
+\item{template_options}{See plotDiagram_json}
+
+\item{template_colors}{See plotDiagram_json}
 }
 \description{
 Inner function, for binary plots

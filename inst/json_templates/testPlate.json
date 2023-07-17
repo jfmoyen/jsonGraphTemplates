@@ -8,7 +8,6 @@
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "plate",
 
-    "plateTitle":"This is a plate",
     "nrow":1,
     "ncol":3,
     "plateSlots":["AFM.json","Shand.json","Shervais.json"]

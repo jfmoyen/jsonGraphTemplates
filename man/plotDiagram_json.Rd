@@ -10,6 +10,7 @@ plotDiagram_json(
   wrdata = WR,
   lbl = labels,
   verbose = F,
+  new = T,
   template_options = NULL,
   template_colors = NULL
 )
@@ -26,6 +27,8 @@ as in many cases we need GCDkit-calculated things such as A/CNK etc.}
 \item{lbl}{A data frame containing gCDkit labels.}
 
 \item{verbose}{Give debugging info}
+
+\item{new}{Open in a new window?}
 
 \item{template_options}{Options passed to the parser.
 They are of the form list(switch1 = T, switch2 = F, etc)
