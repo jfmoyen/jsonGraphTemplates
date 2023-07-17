@@ -21,8 +21,8 @@ utils::globalVariables(c("demo","sheet","x.data","y.data"))
 #' If not specified, looks in the json_template folder of the package
 #' @param verbose Give debugging info
 #' @param new Open in a new window?
-#' @param template_options Options passed to the parser.
-#' They are of the form list(switch1 = T, switch2 = F, etc)
+#' @param template_options Options passed to the parser, as named vector
+#' They are of the form c("switch1" = T, "switch2" = F, etc)
 #' and they wll affect template elements that have a switch.
 #' @param template_colors A named vector, with names corresponding to the colours
 #' found in the template, e.g. c(col1="red",col2="blue"). Defaults to black.

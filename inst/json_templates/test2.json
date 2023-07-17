@@ -7,7 +7,11 @@
 "templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
 "templateHistory": "Brand new template for demo purpose",
 
-"optionSwitches": {"plotthis": "Plot the word Tholeitic"},
+"optionSwitches": {"plotthis": "Plot the word Tholeitic",
+                    "plotthat": "Plot the diagonal line"
+                  },
+"optionDefaults": {"plotthis": false,
+                   "plotthat": true},
 
 "diagramType":"binary",
 "dataTransform":null,
@@ -21,14 +25,15 @@
             },
 
 "template":  {"lines0": {
-                "type":"lines",
+                "plotFun":"lines",
                 "x":[0,4.0],
                 "y":[0,10.0],
                 "col":"mycol",
+                "switch":"plotthat",
                 "_notes":"Arbitrary boundary line"
                         },
              "text0": {
-              "type":"text",
+              "plotFun":"text",
                "x":2,
                "y":3.1,
                "text":"Tholeiite Series",

@@ -37,6 +37,8 @@ show_switches<-function(graphDef){
 #' Works with template_element_parser
 #' @param json Name of the template file
 #' @param path Path to json file
+#' @param template_options See plotDiagram_json
+#' @param template_colors See plotDiagram_json
 parse_template<-function(graphDef,template_options,template_colors){
 
   if(is.null(graphDef$template)){
@@ -44,11 +46,19 @@ parse_template<-function(graphDef,template_options,template_colors){
   }else{
     template_nice<-lapply(graphDef$template,
                           function(z){
-                          template_element_parser(z,template_options,template_colors)
+                          template_element_parser(z,
+                                                  template_options,
+                                                  default_options = graphDef$optionDefaults,
+                                                  template_colors)
                          })
   }
   # Remove empty elements
   template_nice <- Filter(Negate(is.null),template_nice)
+
+  # In the case of an empty template, return one dummy element to make Figaro happy
+  if(length(template_nice)==0){
+    template_nice <- list(nothing=list(plotFun=""))
+    }
 
   return(template_nice)
 }
@@ -57,22 +67,25 @@ parse_template<-function(graphDef,template_options,template_colors){
 #' This function looks at individual template elements,
 #' and modifies them as desired
 #' @param tpl_el A template element
-template_element_parser<-function(tpl_el,template_options,template_colors){
+#' @param default_options Switch options, by default
+#' @param template_options See plotDiagram_json
+#' @param template_colors See plotDiagram_json
+template_element_parser<-function(tpl_el,default_options,
+                                  template_options,template_colors){
 
-#### Elements that have a switch are conditionaly displayed ####
+#### Conditional display ####
   if(any(names(tpl_el) == "switch")){
-    # if the corresponding option is not set, remove switch (and plot the element)
-    if( is.null(template_options[[tpl_el$switch]]) ){
-      tpl_el$switch <- NULL
+
+    # if the corresponding option is not set,
+    # remove switch and use the default
+    if( is.null(template_options)||is.na(template_options[tpl_el$switch]) ){
+      swState <- default_options[tpl_el$switch]
     }else{
-      # the option is set explicitely
-      if(template_options[[tpl_el$switch]] ){
-        # .. and is TRUE, remove switch
-        tpl_el$switch <- NULL
-      }else{
-        #... and is FALSE, remove element
-        tpl_el <- NULL
-      }
+      swState <- template_options[tpl_el$switch]
+    }
+    tpl_el$switch <- NULL
+    if(swState == F){
+      tpl_el <- NULL
     }
   }
 

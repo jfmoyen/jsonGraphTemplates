@@ -42,4 +42,17 @@ plotDiagram_json(wrdata=WR.ata,lbl=lbl.ata,json="Sylvester.json")
           if(graphDef$diagramType=="ternary"){cat(json,"is ternary\n")}
  })
 
+###########
+
+ plotDiagram_json("test2.json",new=F)
+ plotDiagram_json("test2.json",new=F,template_options = "")
+ plotDiagram_json("test2.json",new=F,template_options = NULL)
+ plotDiagram_json("test2.json",new=F,template_options = c("plotthat"=FALSE))
+ plotDiagram_json("test2.json",new=F,template_options = c("plotthat"=TRUE))
+ plotDiagram_json("test2.json",new=F,template_options = c("plotthis"=FALSE))
+ plotDiagram_json("test2.json",new=F,template_options = c("plotthis"=TRUE))
+ plotDiagram_json("test2.json",new=F,template_options = c("plotthat"=FALSE, "plotthis"=FALSE))
+ plotDiagram_json("test2.json",new=F,template_options = c("plotthat"=FALSE, "plotthis"=TRUE))
+ plotDiagram_json("test2.json",new=F,template_options = c("plotthat"=TRUE, "plotthis"=FALSE))
+ plotDiagram_json("test2.json",new=F,template_options = c("plotthat"=TRUE, "plotthis"=TRUE))
 
