@@ -7,6 +7,7 @@
 #### Load json template ####
 #' This function loads a json template and returns a list
 #' @importFrom jsonlite read_json
+#' @export
 #'
 #' @param json Name of the template file
 #' @param path Path to json file
@@ -37,8 +38,10 @@ json_loader<-function(json,path=NULL){
 
 #### Show available template switches ####
 #' Indicate the available options for this diagram
+#' @export
 #'
 #' @param graphDef graph definition object, loaded from json
+#'
 show_switches<-function(graphDef){
     print(graphDef$optionSwitches)
 }
@@ -46,6 +49,8 @@ show_switches<-function(graphDef){
 #### Parse template ####
 #' Mostly, a wrapper to parse individual template elements
 #' Works with template_element_parser
+#' @export
+#'
 #' @param json Name of the template file
 #' @param path Path to json file
 #' @param template_options See plotDiagram_json
@@ -129,9 +134,10 @@ template_element_parser<-function(tpl_el,default_options,
 }
 
 #### Custom axes names ####
-#' Ancilary function to get proper labels for axes, if supplied
+#' Ancillary function to get proper labels for axes, if supplied
 #' @param graphDef A graph definition, loaded from json
 #' @param W Axis to process
+#' /!\ uses GCDkit !! Should maybe move to Figaro
 .make.names<-function(graphDef,W){
   if(!is.null(graphDef$axesName[[W]])){
     wlab <- GCDkit::annotate(graphDef$axesName[[W]])
@@ -147,6 +153,7 @@ template_element_parser<-function(tpl_el,default_options,
 #' xlab, ylab, axes suppression of needed (fr ternary, mostly),
 #' log scale.
 #' @param graphDef A graph definition, loaded from json
+#' /!\ uses GCDkit !! Should maybe move to Figaro
 axes_parser_binary<-function(graphDef){
 
   # Custom axes names
@@ -179,6 +186,7 @@ axes_parser_binary<-function(graphDef){
 #' xlab, ylab, axes suppression of needed (fr ternary, mostly),
 #' log scale.
 #' @param graphDef A graph definition, loaded from json
+#' /!\ uses GCDkit !! Should maybe move to Figaro
 axes_parser_ternary<-function(graphDef){
 
   alab <- .make.names(graphDef,"A")
@@ -193,12 +201,17 @@ axes_parser_ternary<-function(graphDef){
 #### Data preparation ####
 #' This function prepares the data by filtering it,
 #' if a filter condition was supplied; and by transforming it, if needed.
+#' @export
 #'
 #' @param graphDef A graph definition, loaded from json
-#' @param wrdata WR data (typically WR in GCDkit, or equivalent)
+#' @param wrdata WR data (typically WR in GCDkit, or equivalent).
+#' This is a matrix, as per GCDkit convention, but is actually
+#' useful for ggplot as well as it will allow coordinate mapping for instance!
+#' If used in ggplot, convert back to tibble.
 #' @param lbl label data (typically labels in GCDkit, or equivalent)
-#'
-data_preparation<-function(graphDef,wrdata,lbl){
+#' @param doFilter Boolean, should the data be filtered acording to template rule?
+#' /!\ uses GCDkit !! Should maybe move to Figaro
+data_preparation<-function(graphDef,wrdata,lbl,doFilter=T){
   # If required by the template, calculate the transformed data
   if(is.null(graphDef$dataTransform)){
     dd<-wrdata
@@ -207,9 +220,8 @@ data_preparation<-function(graphDef,wrdata,lbl){
   }
 
   # If we have a filter
-
-  if(!is.null(graphDef$dataFilter)){
-    selected <- selectSubset(what=graphDef$dataFilter,
+  if(doFilter&&!is.null(graphDef$dataFilter)){
+    selected <- GCDkit::selectSubset(what=graphDef$dataFilter,
                              where=cbind(lbl,dd),
                              all.nomatch=F,
                              save=F)
@@ -223,3 +235,50 @@ data_preparation<-function(graphDef,wrdata,lbl){
 
 }
 
+#### Calculate the coordinates of any point from a well-conformed data matrix ####
+#' Calculate the x.data, y.data, a.data etc for any dataset, following template rules
+#' This should include data transformation, and also filtering (if doFilter = T,
+#' and of course if the template includes a filter).
+#' This function should probably be made figaro-specific...#####
+#' /!\ uses GCDkit !! Should maybe move to Figaro
+#' @export
+#' @param graphDef A graph definition, loaded from json
+#' @param wrdata WR data (typically WR in GCDkit, or equivalent)
+#' @param lbl label data (typically labels in GCDkit, or equivalent)
+#' @param doFilter Boolean, should the data be filtered according to template rule?
+#'
+#'
+points_coordinates<-function(graphDef,wrdata,lbl,doFilter=T){
+  preparedData <-data_preparation(graphDef,wrdata,lbl,doFilter=doFilter)
+
+  if(!(graphDef$diagramType%in%c("binary","ternary") ) ){
+    msg <- paste("Sorry, cannot work on graph of type",graphDef$diagramType,"\n",sep=" ")
+    stop(msg)
+  }
+
+  if(graphDef$diagramType == "binary"){
+    x.data <- GCDkit::calcCore(graphDef$axesDefinition$X,where="preparedData$wrdata",redo=F)$results
+    y.data <- GCDkit::calcCore(graphDef$axesDefinition$Y,where="preparedData$wrdata",redo=F)$results
+
+    retVal <- cbind(x.data,y.data)
+  }
+
+  if(graphDef$diagramType == "ternary"){
+    # Get the A, B and C data (apices)
+    a.data <- GCDkit::calcCore(graphDef$axesDefinition$A,where="preparedData$wrdata",redo=F)$results
+    b.data <- GCDkit::calcCore(graphDef$axesDefinition$B,where="preparedData$wrdata",redo=F)$results
+    c.data <- GCDkit::calcCore(graphDef$axesDefinition$C,where="preparedData$wrdata",redo=F)$results
+
+    # Convert to X and Y
+    sum_apices <- a.data+b.data+c.data
+
+    x.data <- ((c.data/sum_apices) + (b.data / sum_apices) /2)
+    y.data <- (sqrt(3)*(b.data / sum_apices)/2)
+
+    retVal <- cbind(x.data,y.data,a.data,b.data,c.data)
+  }
+
+  return(list(wrdata = retVal,
+              lbl = lbl))
+
+}

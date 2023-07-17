@@ -5,14 +5,20 @@
 \title{This function prepares the data by filtering it,
 if a filter condition was supplied; and by transforming it, if needed.}
 \usage{
-data_preparation(graphDef, wrdata, lbl)
+data_preparation(graphDef, wrdata, lbl, doFilter = T)
 }
 \arguments{
 \item{graphDef}{A graph definition, loaded from json}
 
-\item{wrdata}{WR data (typically WR in GCDkit, or equivalent)}
+\item{wrdata}{WR data (typically WR in GCDkit, or equivalent).
+This is a matrix, as per GCDkit convention, but is actually
+useful for ggplot as well as it will allow coordinate mapping for instance!
+If used in ggplot, convert back to tibble.}
 
 \item{lbl}{label data (typically labels in GCDkit, or equivalent)}
+
+\item{doFilter}{Boolean, should the data be filtered acording to template rule?
+/!\ uses GCDkit !! Should maybe move to Figaro}
 }
 \description{
 This function prepares the data by filtering it,

@@ -5,10 +5,21 @@
 \title{This function looks at individual template elements,
 and modifies them as desired}
 \usage{
-template_element_parser(tpl_el, template_options, template_colors)
+template_element_parser(
+  tpl_el,
+  default_options,
+  template_options,
+  template_colors
+)
 }
 \arguments{
 \item{tpl_el}{A template element}
+
+\item{default_options}{Switch options, by default}
+
+\item{template_options}{See plotDiagram_json}
+
+\item{template_colors}{See plotDiagram_json}
 }
 \description{
 This function looks at individual template elements,

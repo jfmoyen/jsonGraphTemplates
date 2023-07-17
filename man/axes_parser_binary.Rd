@@ -10,7 +10,8 @@ log scale.}
 axes_parser_binary(graphDef)
 }
 \arguments{
-\item{graphDef}{A graph definition, loaded from json}
+\item{graphDef}{A graph definition, loaded from json
+/!\ uses GCDkit !! Should maybe move to Figaro}
 }
 \description{
 This function parses various elements of a graph definition

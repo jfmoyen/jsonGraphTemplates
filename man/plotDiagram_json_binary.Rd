@@ -6,7 +6,7 @@
 \usage{
 plotDiagram_json_binary(
   graphDef,
-  dd,
+  wrdata,
   lbl,
   new,
   template_options,
@@ -16,7 +16,7 @@ plotDiagram_json_binary(
 \arguments{
 \item{graphDef}{The template, loaded into a list from json}
 
-\item{dd}{The plotting dataset}
+\item{wrdata}{The plotting dataset}
 
 \item{lbl}{The labels (GCDkit style)}
 

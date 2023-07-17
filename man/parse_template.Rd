@@ -8,6 +8,10 @@ Works with template_element_parser}
 parse_template(graphDef, template_options, template_colors)
 }
 \arguments{
+\item{template_options}{See plotDiagram_json}
+
+\item{template_colors}{See plotDiagram_json}
+
 \item{json}{Name of the template file}
 
 \item{path}{Path to json file}

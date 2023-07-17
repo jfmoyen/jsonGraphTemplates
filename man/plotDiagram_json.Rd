@@ -30,8 +30,8 @@ as in many cases we need GCDkit-calculated things such as A/CNK etc.}
 
 \item{new}{Open in a new window?}
 
-\item{template_options}{Options passed to the parser.
-They are of the form list(switch1 = T, switch2 = F, etc)
+\item{template_options}{Options passed to the parser, as named vector
+They are of the form c("switch1" = T, "switch2" = F, etc)
 and they wll affect template elements that have a switch.}
 
 \item{template_colors}{A named vector, with names corresponding to the colours

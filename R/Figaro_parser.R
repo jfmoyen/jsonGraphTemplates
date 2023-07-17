@@ -6,12 +6,14 @@
 
 ### This is to avoid check() notes when using global variables
 # or unquoted arguments in dplyr/ggplot
-utils::globalVariables(c("demo","sheet","x.data","y.data"))
+utils::globalVariables(c("demo","sheet","x.data","y.data","WR","mw","plt.col"))
+
+
+##NB There is deliberately no import from GCDkit to avoid creating a dependency !
 
 ############### Plot json template in Figaro ####################
 #' Read a template defined in a json file and import it to  figaro graph
 #' @export
-#' @importFrom jsonlite read_json
 #'
 #' @param wrdata A matrix containing WR data. Probably GCDkit's WR,
 #' as in many cases we need GCDkit-calculated things such as A/CNK etc.
@@ -71,14 +73,11 @@ plotDiagram_json <- function(json, path = NULL,
   #### Read the json template ####
   graphDef <- json_loader(json,path)
 
-  #### Prepare the data ####
-  preparedData <-data_preparation(graphDef,wrdata,lbl)
-
   #### Main switch - what are we trying to plot ? ####
   switch(EXPR = graphDef$diagramType,
-         "binary" = pp<-plotDiagram_json_binary(graphDef,preparedData$wrdata,preparedData$lbl,new=new,template_options,template_colors),
-         "ternary" = pp<-plotDiagram_json_ternary(graphDef,preparedData$wrdata,preparedData$lbl,new=new,template_options,template_colors),
-         "plate" = pp<-plotDiagram_json_plate(graphDef,preparedData$wrdata,preparedData$lbl,template_options,template_colors),
+         "binary" = pp<-plotDiagram_json_binary(graphDef,wrdata,lbl,new=new,template_options,template_colors),
+         "ternary" = pp<-plotDiagram_json_ternary(graphDef,wrdata,lbl,new=new,template_options,template_colors),
+         "plate" = pp<-plotDiagram_json_plate(graphDef,wrdata,lbl,template_options,template_colors),
          stop(paste("Sorry, plotting of type",graphDef$diagramType,"is not implemented yet",sep=" "))
   )
 
@@ -89,7 +88,7 @@ plotDiagram_json <- function(json, path = NULL,
 #' Inner function, for binary plots
 #'
 #' @param graphDef The template, loaded into a list from json
-#' @param dd The plotting dataset
+#' @param wrdata The plotting dataset
 #' @param lbl The labels (GCDkit style)
 #' @param new Open in a new window?
 #' @param template_options See plotDiagram_json
@@ -98,12 +97,16 @@ plotDiagram_json <- function(json, path = NULL,
 #' Internal function, that does the actual plotting
 #' in the case of a binary plot
 
-plotDiagram_json_binary <- function(graphDef,dd, lbl,
+plotDiagram_json_binary <- function(graphDef,wrdata, lbl,
                                     new,
                                     template_options,template_colors){
-  # Get the X and Y values
-  x.data <- GCDkit::calcCore(graphDef$axesDefinition$X,where="dd")$results
-  y.data <- GCDkit::calcCore(graphDef$axesDefinition$Y,where="dd")$results
+
+  #### Prepare the data ####
+  preparedData <-points_coordinates(graphDef,wrdata,lbl,doFilter=T)
+
+   # Get the X and Y values
+  x.data <- preparedData$wrdata[,"x.data"]
+  y.data <- preparedData$wrdata[,"y.data"]
 
   ##### Optional tags #####
   # Parse axes labels, axes suppression and log scale
@@ -141,13 +144,13 @@ plotDiagram_json_binary <- function(graphDef,dd, lbl,
           main=GCDkit::annotate(graphDef$fullName),
           xlab=parsedAxesOptions$xlab,
           ylab=parsedAxesOptions$ylab,
-          col = subset(lbl, rownames(dd) %in% names(x.data),
+          col = subset(lbl, rownames(wrdata) %in% names(x.data),
                        "Colour",
                        drop = TRUE),
-          pch = subset(lbl, rownames(dd) %in% names(x.data),
+          pch = subset(lbl, rownames(wrdata) %in% names(x.data),
                        "Symbol",
                        drop = TRUE),
-          cex = subset(lbl, rownames(dd) %in% names(x.data),
+          cex = subset(lbl, rownames(wrdata) %in% names(x.data),
                        "Size",
                        drop = TRUE),
           plotting.function = "fromJSON",
@@ -161,7 +164,7 @@ plotDiagram_json_binary <- function(graphDef,dd, lbl,
 #' Inner function, for binary plots
 #'
 #' @param graphDef The template, loaded into a list from json
-#' @param dd The plotting dataset
+#' @param wrdata The plotting dataset
 #' @param lbl The labels (GCDkit style)
 #' @param new Open in a new window?
 #' @param template_options See plotDiagram_json
@@ -170,19 +173,15 @@ plotDiagram_json_binary <- function(graphDef,dd, lbl,
 #' Internal function, that does the actual plotting
 #' in the case of a ternary plot
 
-plotDiagram_json_ternary <- function(graphDef,dd,lbl,new,
+plotDiagram_json_ternary <- function(graphDef,wrdata,lbl,new,
                                      template_options,template_colors){
 
-  # Get the A, B and C data (apices)
-  a.data <- GCDkit::calcCore(graphDef$axesDefinition$A,where="dd")$results
-  b.data <- GCDkit::calcCore(graphDef$axesDefinition$B,where="dd")$results
-  c.data <- GCDkit::calcCore(graphDef$axesDefinition$C,where="dd")$results
+  #### Prepare the data ####
+  preparedData <-points_coordinates(graphDef,wrdata,lbl,doFilter=T)
 
-  # Convert to X and Y
-  sum_apices <- a.data+b.data+c.data
-
-  x.data <- ((c.data/sum_apices) + (b.data / sum_apices) /2)
-  y.data <- (sqrt(3)*(b.data / sum_apices)/2)
+  # Get the X and Y values
+  x.data <- preparedData$wrdata[,"x.data"]
+  y.data <- preparedData$wrdata[,"y.data"]
 
   ##### Optional tags #####
   # Parse axes labels, axes suppression and log scale
@@ -192,9 +191,9 @@ plotDiagram_json_ternary <- function(graphDef,dd,lbl,new,
   parsedTemplate <- parse_template(graphDef,template_options,template_colors)
 
   #### Prepare the "pseudo-axes" labels, A, B and C ####
-  A=list(type="text",x=0,y=-0.03,text=annotate(parsedAxesOptions$alab),adj=0.5)
-  B=list(type="text",x=0.5,y=sqrt(3)/2+.03,text=annotate(parsedAxesOptions$blab),adj=0.5)
-  C=list(type="text",x=1,y=-0.03,text=annotate(parsedAxesOptions$clab),adj=0.5)
+  A=list(type="text",x=0,y=-0.03,text=GCDkit::annotate(parsedAxesOptions$alab),adj=0.5)
+  B=list(type="text",x=0.5,y=sqrt(3)/2+.03,text=GCDkit::annotate(parsedAxesOptions$blab),adj=0.5)
+  C=list(type="text",x=1,y=-0.03,text=GCDkit::annotate(parsedAxesOptions$clab),adj=0.5)
 
   ####Merge the elements ####
   parsedTemplate<- c(parsedTemplate,A=list(A),B=list(B),C=list(C))
@@ -226,13 +225,13 @@ plotDiagram_json_ternary <- function(graphDef,dd,lbl,new,
           main=GCDkit::annotate(graphDef$fullName),
           xlab=NULL,
           ylab=NULL,
-          col = subset(lbl, rownames(dd) %in% names(x.data),
+          col = subset(lbl, rownames(wrdata) %in% names(x.data),
                        "Colour",
                        drop = TRUE),
-          pch = subset(lbl, rownames(dd) %in% names(x.data),
+          pch = subset(lbl, rownames(wrdata) %in% names(x.data),
                        "Symbol",
                        drop = TRUE),
-          cex = subset(lbl, rownames(dd) %in% names(x.data),
+          cex = subset(lbl, rownames(wrdata) %in% names(x.data),
                        "Size",
                        drop = TRUE),
           plotting.function = "fromJSON",
@@ -283,6 +282,8 @@ plotDiagram_json_plate_DEPRECATED <- function(graphDef,dd, lbl,
 
 ############### Plot json template in Figaro: PLATES ####################
 #' Inner function, for binary plots
+#' @importFrom graphics mtext screen
+#' @importFrom grDevices n2mfrow
 #'
 #' @param graphDef The template, loaded into a list from json
 #' @param dd The plotting dataset
@@ -308,12 +309,12 @@ plotDiagram_json_plate <- function(graphDef,dd, lbl,
   nbslots <- length(graphDef$plateSlots)
 
   if(nrow==F||ncol==F){
-    ncol <- n2mfrow(nbslots)[1]
-    nrow <- n2mfrow(nbslots)[2]
+    ncol <- grDevices::n2mfrow(nbslots)[1]
+    nrow <- grDevices::n2mfrow(nbslots)[2]
   }
 
   ## Create the plate itself
-  plate <- GCDkit::.plateSetup(number, nrow, ncol, title = graphDef$fullName)
+  plate <- GCDkit::.plateSetup(nbslots, nrow, ncol, title = graphDef$fullName)
 
     ## Prepare the data structure, empty so far
   plate.data <- as.list(1:nbslots)
@@ -328,12 +329,12 @@ plotDiagram_json_plate <- function(graphDef,dd, lbl,
 
   ## Graphic setup and title
   par(oma = c(0, 0, 4, 0))
-  mtext(text = annotate(plate$title), side = 3, line = 0.25,
+  graphics::mtext(text = GCDkit::annotate(plate$title), side = 3, line = 0.25,
         outer = TRUE, cex = 1.5)
 
     ## Construct every individual plot
   ee <- lapply(1:nbslots, function(i) {
-    screen(i, new = FALSE)
+    graphics::screen(i, new = FALSE)
 
     ## Geometric considerations
     if (.Platform$OS.type == "windows" & .Platform$GUI ==
@@ -352,7 +353,7 @@ plotDiagram_json_plate <- function(graphDef,dd, lbl,
                        new=F,
                        template_options=template_options,
                        template_colors=template_colors)
-      .saveCurPlotDef(i)
+      GCDkit::.saveCurPlotDef(i)
     })
 
   ## Restore the global environment the way it was
@@ -362,9 +363,9 @@ plotDiagram_json_plate <- function(graphDef,dd, lbl,
 
   ## Final touch
   assign("scr.old", 1, .GlobalEnv)
-  screen(1, new = FALSE)
+  graphics::screen(1, new = FALSE)
   if (.Platform$OS.type == "windows" & .Platform$GUI == "Rgui")
-    .menuPopUp()
-  screen(1, new = FALSE)
+    GCDkit::.menuPopUp()
+  graphics::screen(1, new = FALSE)
 
 }

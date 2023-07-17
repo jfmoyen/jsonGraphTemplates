@@ -2,15 +2,16 @@
 % Please edit documentation in R/generalParsing_fct.R
 \name{.make.names}
 \alias{.make.names}
-\title{Ancilary function to get proper labels for axes, if supplied}
+\title{Ancillary function to get proper labels for axes, if supplied}
 \usage{
 .make.names(graphDef, W)
 }
 \arguments{
 \item{graphDef}{A graph definition, loaded from json}
 
-\item{W}{Axis to process}
+\item{W}{Axis to process
+/!\ uses GCDkit !! Should maybe move to Figaro}
 }
 \description{
-Ancilary function to get proper labels for axes, if supplied
+Ancillary function to get proper labels for axes, if supplied
 }

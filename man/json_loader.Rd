@@ -14,3 +14,9 @@ json_loader(json, path = NULL)
 \description{
 This function loads a json template and returns a list
 }
+\details{
+If no path is supplied, the function will look in the json_template
+directory of the package folder, and its subdirectories. It will return
+the first match, starting by the top-level folder and exploring
+sub-folders aphabetically.
+}

@@ -101,7 +101,7 @@ For example:
 \code{
  "clssf": {"type": "NULL",
             "use": [2,3,4,5,6,7],
-            "rcname": ["I","II","III","IV","V","VI]
+            "rcname": ["I","II","III","IV","V","VI"]
         },
   "lines1": { ... },
   "lines2": { ... },
