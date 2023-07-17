@@ -10,11 +10,22 @@
 #'
 #' @param json Name of the template file
 #' @param path Path to json file
+#' @details
+#' If no path is supplied, the function will look in the json_template
+#' directory of the package folder, and its subdirectories. It will return
+#' the first match, starting by the top-level folder and exploring
+#' sub-folders aphabetically.
+#'
 json_loader<-function(json,path=NULL){
 
+  ## If no path is defined, look for the template in template dir & sub-dir
   if(is.null(path)){
-    thejson <- system.file("json_templates",json,
-                           package="jsonGraphTemplates")
+    toc <- list.dirs(system.file("json_templates",package="jsonGraphTemplates"))
+    for(i in (1:length(toc) )){
+      ii <- paste(toc[i],json,sep="/")
+      if(file.exists(ii)){ thejson <- ii; break() }
+    }
+
   }else{
     thejson<-paste(path,json,sep="/")
   }
