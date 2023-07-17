@@ -4,6 +4,11 @@ test_that("All diagrams plot as they should", {
   # GCDkit::accessVar(blatna)
 
   expect_error({
+    Sys.setenv(GCDKIT.RUNMODE="noearthchem")
+    library(GCDkit)
+    data(blatna)
+    accessVar("blatna")
+
     templ_dir <- system.file("json_templates",package="jsonGraphTemplates")
     templ_list <- list.files(templ_dir,recursive=T,include.dirs = F)
     sapply(templ_list,
