@@ -29,7 +29,8 @@ plotDiagram_json(wrdata=WR.ata,lbl=lbl.ata,json="LarochePlut.json")
 graph_definition<-json_loader("QANOR.json")
 
 # The template itself
-graph_template<-parse_template(graph_definition)
+graph_template<-parse_template(graph_definition,
+                               template_colors = c(pltcol1="blue",pltcol2="darkblue",pltcol3='red'))
 
 # Coordinates of arbitrary points in his diagram
 blatna_QANOR_coords <- points_coordinates(graph_definition,wrdata=WR.blatna,lbl=lbl.blatna)
