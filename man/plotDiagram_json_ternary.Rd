@@ -10,7 +10,7 @@ plotDiagram_json_ternary(
   lbl,
   new,
   template_options,
-  template_colors,
+  color_options,
   transform_options
 )
 }
@@ -25,7 +25,7 @@ plotDiagram_json_ternary(
 
 \item{template_options}{See plotDiagram_json}
 
-\item{template_colors}{See plotDiagram_json}
+\item{color_options}{See plotDiagram_json}
 
 \item{transform_options}{See plotDiagram_json}
 }

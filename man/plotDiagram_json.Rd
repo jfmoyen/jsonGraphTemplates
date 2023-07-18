@@ -12,7 +12,7 @@ plotDiagram_json(
   verbose = F,
   new = T,
   template_options = NULL,
-  template_colors = NULL,
+  color_options = NULL,
   transform_options = NULL
 )
 }
@@ -35,7 +35,7 @@ as in many cases we need GCDkit-calculated things such as A/CNK etc.}
 They are of the form c("switch1" = T, "switch2" = F, etc)
 and they will affect template elements that have a switch.}
 
-\item{template_colors}{A named vector, with names corresponding to the colours
+\item{color_options}{A named vector, with names corresponding to the colours
 found in the template, e.g. c(col1="red",col2="blue"). Defaults to black.}
 
 \item{transform_options}{Further options to be passed to data transformation function}

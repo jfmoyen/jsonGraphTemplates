@@ -5,12 +5,12 @@
 \title{Mostly, a wrapper to parse individual template elements
 Works with template_element_parser}
 \usage{
-parse_template(graphDef, template_options = NULL, template_colors = NULL)
+parse_template(graphDef, template_options = NULL, color_options = NULL)
 }
 \arguments{
 \item{template_options}{See plotDiagram_json}
 
-\item{template_colors}{See plotDiagram_json}
+\item{color_options}{See plotDiagram_json}
 
 \item{json}{Name of the template file}
 

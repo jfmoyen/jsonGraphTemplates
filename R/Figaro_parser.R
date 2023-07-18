@@ -26,7 +26,7 @@ utils::globalVariables(c("demo","sheet","x.data","y.data","WR","mw","plt.col"))
 #' @param template_options Options passed to the parser, as named vector
 #' They are of the form c("switch1" = T, "switch2" = F, etc)
 #' and they will affect template elements that have a switch.
-#' @param template_colors A named vector, with names corresponding to the colours
+#' @param color_options A named vector, with names corresponding to the colours
 #' found in the template, e.g. c(col1="red",col2="blue"). Defaults to black.
 #' @param transform_options Further options to be passed to data transformation function
 #' @details
@@ -51,7 +51,7 @@ plotDiagram_json <- function(json, path = NULL,
                              wrdata=WR,lbl=labels,
                              verbose=F,new=T,
                              template_options=NULL,
-                             template_colors=NULL,
+                             color_options=NULL,
                              transform_options=NULL){
 
   # Debugging info
@@ -66,16 +66,16 @@ plotDiagram_json <- function(json, path = NULL,
   }
 
   #### Colors - if the user did not specify them, use GCDkit defaults ####
-  if(is.null(template_colors)){
+  if(is.null(color_options)){
 
     if(getOption("gcd.plot.bw")){
-      template_colors<-c(
+      color_options<-c(
         "pltcol1" = "black",
         "pltcol2" = "black",
         "pltcol3" = "black"
       )
     }else{
-      template_colors<-c(
+      color_options<-c(
         "pltcol1" = plt.col[1],
         "pltcol2" = plt.col[2],
         "pltcol3" = plt.col[3]
@@ -101,9 +101,9 @@ plotDiagram_json <- function(json, path = NULL,
 
   #### Main switch - what are we trying to plot ? ####
   switch(EXPR = graphDef$diagramType,
-         "binary" = pp<-plotDiagram_json_binary(graphDef,wrdata,lbl,new=new,template_options,template_colors,transform_options),
-         "ternary" = pp<-plotDiagram_json_ternary(graphDef,wrdata,lbl,new=new,template_options,template_colors,transform_options),
-         "plate" = pp<-plotDiagram_json_plate(graphDef,wrdata,lbl,template_options,template_colors),
+         "binary" = pp<-plotDiagram_json_binary(graphDef,wrdata,lbl,new=new,template_options,color_options,transform_options),
+         "ternary" = pp<-plotDiagram_json_ternary(graphDef,wrdata,lbl,new=new,template_options,color_options,transform_options),
+         "plate" = pp<-plotDiagram_json_plate(graphDef,wrdata,lbl,template_options,color_options),
          stop(paste("Sorry, plotting of type",graphDef$diagramType,"is not implemented yet",sep=" "))
   )
 
@@ -118,7 +118,7 @@ plotDiagram_json <- function(json, path = NULL,
 #' @param lbl The labels (GCDkit style)
 #' @param new Open in a new window?
 #' @param template_options See plotDiagram_json
-#' @param template_colors See plotDiagram_json
+#' @param color_options See plotDiagram_json
 #' @param transform_options See plotDiagram_json
 #' @details
 #' Internal function, that does the actual plotting
@@ -126,7 +126,7 @@ plotDiagram_json <- function(json, path = NULL,
 
 plotDiagram_json_binary <- function(graphDef,wrdata, lbl,
                                     new,
-                                    template_options,template_colors,transform_options){
+                                    template_options,color_options,transform_options){
 
   #### Prepare the data ####
   preparedData <-points_coordinates(graphDef,wrdata,lbl,transform_options,doFilter=T)
@@ -140,7 +140,7 @@ plotDiagram_json_binary <- function(graphDef,wrdata, lbl,
   parsedAxesOptions <- axes_parser_binary(graphDef)
 
   #### Parse the template proper #####
-  parsedTemplate <- parse_template(graphDef,template_options,template_colors)
+  parsedTemplate <- parse_template(graphDef,template_options,color_options)
 
   #### Build the figaro "style sheet" ####
 
@@ -195,14 +195,14 @@ plotDiagram_json_binary <- function(graphDef,wrdata, lbl,
 #' @param lbl The labels (GCDkit style)
 #' @param new Open in a new window?
 #' @param template_options See plotDiagram_json
-#' @param template_colors See plotDiagram_json
+#' @param color_options See plotDiagram_json
 #' @param transform_options See plotDiagram_json
 #' @details
 #' Internal function, that does the actual plotting
 #' in the case of a ternary plot
 
 plotDiagram_json_ternary <- function(graphDef,wrdata,lbl,new,
-                                     template_options,template_colors,transform_options){
+                                     template_options,color_options,transform_options){
 
   #### Prepare the data ####
   preparedData <-points_coordinates(graphDef,wrdata,lbl,transform_options,doFilter=T)
@@ -216,7 +216,7 @@ plotDiagram_json_ternary <- function(graphDef,wrdata,lbl,new,
   parsedAxesOptions <- axes_parser_ternary(graphDef)
 
   #### Parse the template proper #####
-  parsedTemplate <- parse_template(graphDef,template_options,template_colors)
+  parsedTemplate <- parse_template(graphDef,template_options,color_options)
 
   #### Prepare the "pseudo-axes" labels, A, B and C ####
   A=list(type="text",x=0,y=-0.03,text=GCDkit::annotate(parsedAxesOptions$alab),adj=0.5)
@@ -283,7 +283,7 @@ plotDiagram_json_ternary <- function(graphDef,wrdata,lbl,new,
 #' uses command defined as texts, well...
 
 plotDiagram_json_plate_DEPRECATED <- function(graphDef,dd, lbl,
-                                    template_options,template_colors){
+                                    template_options,color_options){
 
 ## Not nice, there must be a better way to do this !
   assign("dd", dd, .GlobalEnv)
@@ -295,7 +295,7 @@ plotDiagram_json_plate_DEPRECATED <- function(graphDef,dd, lbl,
                       "',wrdata=dd,lbl=lbl,",
                       "new=F,",
                       "template_options=template_options,",
-                      "template_colors=template_colors",")",sep="")
+                      "color_options=color_options",")",sep="")
 
   GCDkit::multiplePerPage(pltCommand,
                           nrow = graphDef$nrow,
@@ -323,7 +323,7 @@ plotDiagram_json_plate_DEPRECATED <- function(graphDef,dd, lbl,
 #' This is mostly code from multiplePerPage()
 
 plotDiagram_json_plate <- function(graphDef,dd, lbl,
-                                     template_options,template_colors){
+                                     template_options,color_options){
 
   ## If something was already there, preserve it
   sheet.bak <- sheet
@@ -380,7 +380,7 @@ plotDiagram_json_plate <- function(graphDef,dd, lbl,
                        wrdata=dd,lbl=lbl,
                        new=F,
                        template_options=template_options,
-                       template_colors=template_colors)
+                       color_options=color_options)
       GCDkit::.saveCurPlotDef(i)
     })
 

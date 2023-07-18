@@ -4,7 +4,7 @@
 \alias{plotDiagram_json_plate}
 \title{Inner function, for binary plots}
 \usage{
-plotDiagram_json_plate(graphDef, dd, lbl, template_options, template_colors)
+plotDiagram_json_plate(graphDef, dd, lbl, template_options, color_options)
 }
 \arguments{
 \item{graphDef}{The template, loaded into a list from json}

@@ -9,7 +9,7 @@ plotDiagram_json_plate_DEPRECATED(
   dd,
   lbl,
   template_options,
-  template_colors
+  color_options
 )
 }
 \arguments{

@@ -54,8 +54,8 @@ show_switches<-function(graphDef){
 #' @param json Name of the template file
 #' @param path Path to json file
 #' @param template_options See plotDiagram_json
-#' @param template_colors See plotDiagram_json
-parse_template<-function(graphDef,template_options=NULL,template_colors=NULL){
+#' @param color_options See plotDiagram_json
+parse_template<-function(graphDef,template_options=NULL,color_options=NULL){
 
   if(is.null(graphDef$template)){
     template_nice <- NULL
@@ -65,7 +65,7 @@ parse_template<-function(graphDef,template_options=NULL,template_colors=NULL){
                           template_element_parser(z,
                                                   template_options,
                                                   default_options = graphDef$optionDefaults,
-                                                  template_colors)
+                                                  color_options)
                          })
   }
   # Remove empty elements
@@ -85,9 +85,9 @@ parse_template<-function(graphDef,template_options=NULL,template_colors=NULL){
 #' @param tpl_el A template element
 #' @param default_options Switch options, by default
 #' @param template_options See plotDiagram_json
-#' @param template_colors See plotDiagram_json
+#' @param color_options See plotDiagram_json
 template_element_parser<-function(tpl_el,default_options,
-                                  template_options,template_colors){
+                                  template_options,color_options){
 
 #### Conditional display ####
   if(any(names(tpl_el) == "switch")){
@@ -116,9 +116,9 @@ template_element_parser<-function(tpl_el,default_options,
     if(!isColor(tpl_el$col)){
       # If the color is a legitimate colour name, don't touch it.
       # However, if it is not...
-      if(any(names(template_colors) == tpl_el$col)){
+      if(any(names(color_options) == tpl_el$col)){
         # The user has supplied an equivalence
-        tpl_el$col <- template_colors[tpl_el$col]
+        tpl_el$col <- color_options[tpl_el$col]
       }else{
         # Default
         tpl_el$col <- "black"

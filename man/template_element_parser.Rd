@@ -9,7 +9,7 @@ template_element_parser(
   tpl_el,
   default_options,
   template_options,
-  template_colors
+  color_options
 )
 }
 \arguments{
@@ -19,7 +19,7 @@ template_element_parser(
 
 \item{template_options}{See plotDiagram_json}
 
-\item{template_colors}{See plotDiagram_json}
+\item{color_options}{See plotDiagram_json}
 }
 \description{
 This function looks at individual template elements,

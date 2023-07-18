@@ -33,7 +33,7 @@ plotDiagram_json(wrdata=WR.ata,lbl=lbl.ata,json="LarochePlut.json")
 
 # We can define manually some of them, such as
 plotDiagram_json(wrdata=WR.ata,lbl=lbl.ata,json="LarochePlut.json",
-                 template_colors=c(pltcol2="purple"))
+                 color_options=c(pltcol2="purple"))
 
 # If they are not defined, they default to plt.col
 plotDiagram_json(wrdata=WR.ata,lbl=lbl.ata,json="LarochePlut.json")
@@ -48,7 +48,7 @@ plotDiagram_json(wrdata=WR.ata,lbl=lbl.ata,json="LarochePlut.json")
 
 # ... until we explicitely say otherwise !
 plotDiagram_json(wrdata=WR.ata,lbl=lbl.ata,json="LarochePlut.json",
-                 template_colors=c(pltcol2="purple"))
+                 color_options=c(pltcol2="purple"))
 
 # Clean our mess...
 options(gcd.plot.bw = F)
@@ -90,7 +90,7 @@ graph_definition<-json_loader("QANOR.json")
 
 # The template itself
 graph_template<-parse_template(graph_definition,
-                               template_colors = c(pltcol1="blue",pltcol2="darkblue",pltcol3='red'))
+                               color_options = c(pltcol1="blue",pltcol2="darkblue",pltcol3='red'))
 
 # Coordinates of arbitrary points in his diagram
 blatna_QANOR_coords <- points_coordinates(graph_definition,wrdata=WR.blatna,lbl=lbl.blatna)
@@ -106,7 +106,7 @@ graph_definition<-json_loader("LaRochePlut.json")
 
 # The template itself
 graph_template<-parse_template(graph_definition,
-                               template_colors = c(pltcol1="blue",pltcol2="darkblue",pltcol3='red'))
+                               color_options = c(pltcol1="blue",pltcol2="darkblue",pltcol3='red'))
 
 # Coordinates of arbitrary points in his diagram
 blatna_LaRochePlut_coords <- points_coordinates(graph_definition,wrdata=WR.blatna,lbl=lbl.blatna)
@@ -122,7 +122,7 @@ graph_definition<-json_loader("OConnorPlut.json")
 
 # The template itself
 graph_template<-parse_template(graph_definition,
-                               template_colors = c(pltcol1="blue",pltcol2="darkblue",pltcol3='red'))
+                               color_options = c(pltcol1="blue",pltcol2="darkblue",pltcol3='red'))
 
 
 # Coordinates of arbitrary points in his diagram
