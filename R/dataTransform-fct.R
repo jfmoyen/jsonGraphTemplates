@@ -47,7 +47,7 @@ recastAnhydrous <- function(where=WR){
 #' Recalculate Otha + Arai M, F and W parameters
 #' @export
 #' @param where A matrix with whole-rock composition, probably coming from GCDkit
-#' #' /!\ uses GCDkit !! Should maybe move to Figaro
+
 OhtaAraiParams<-function(where){
 
   # This will fail if GCDkit is not here
@@ -57,7 +57,6 @@ OhtaAraiParams<-function(where){
       call. = FALSE
     )
   }
-
 
   usedox<-c("SiO2","TiO2","Al2O3","Fe2O3t","MgO","CaO_corr","Na2O","K2O")
   oxsubset<-c("SiO2","TiO2","Al2O3","FeOt","MgO","CaO","Na2O","K2O","P2O5","CO2")
@@ -80,7 +79,14 @@ OhtaAraiParams<-function(where){
     my.WR[fixme,"TiO2"]<-my.WR[fixme,"FeOt"]/7
 
   my.WR<-cbind(my.WR,Fe2O3t,CaO_corr)
-  my.WR<-GCDkit::normalize2total(my.WR[,usedox],100)
+
+  y <- t(apply(my.WR[,usedox],
+                FUN = function(r){
+                  r / sum(r,na.rm = T) * 100
+                },
+                MARGIN = 1))
+
+#  my.WR<-GCDkit::normalize2total(my.WR[,usedox],100)
 
   M <- exp(-0.395*log(my.WR[,"SiO2"])+0.206*log(my.WR[,"TiO2"])-0.316*log(my.WR[,"Al2O3"])+0.160*log(my.WR[,"Fe2O3t"])
                +0.246*log(my.WR[,"MgO"])+0.368*log(my.WR[,"CaO_corr"])+0.073*log(my.WR[,"Na2O"])-0.342*log(my.WR[,"K2O"])+2.266)
