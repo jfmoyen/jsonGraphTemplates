@@ -7,6 +7,11 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "binary",
     "dataTransform": null,
     "axesDefinition": {
@@ -62,7 +67,8 @@
             "text": "\"Calc-alkaline\"",
             "cex": 1,
             "col": "pltcol2",
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text2": {
             "plotfun": "text",
@@ -71,7 +77,8 @@
             "text": "\"Transitional\"",
             "cex": 1,
             "col": "pltcol2",
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text3": {
             "plotfun": "text",
@@ -80,7 +87,8 @@
             "text": "\"Tholeiitic\"",
             "cex": 1,
             "col": "pltcol2",
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         }
     }
 }

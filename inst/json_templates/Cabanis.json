@@ -7,6 +7,11 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+    
     "diagramType": "ternary",
     "dataTransform": null,
     "axesDefinition": {
@@ -168,7 +173,8 @@
             "text": "N-MORB",
             "col": "pltcol3",
             "cex": 1,
-            "srt": -60
+            "srt": -60,
+            "showText": true
         },
         "text2": {
             "plotFun": "text",
@@ -177,7 +183,8 @@
             "text": "E-MORB",
             "col": "pltcol3",
             "cex": 1,
-            "srt": -60
+            "srt": -60,
+            "showText": true
         },
         "text3": {
             "plotFun": "text",
@@ -186,7 +193,8 @@
             "text": "Alkaline",
             "col": "pltcol3",
             "cex": 1,
-            "srt": -60
+            "srt": -60,
+            "showText": true
         },
         "text4": {
             "plotFun": "text",
@@ -195,7 +203,8 @@
             "text": "Calc-alkaline",
             "col": "pltcol3",
             "cex": 1,
-            "srt": 60
+            "srt": 60,
+            "showText": true
         },
         "text5": {
             "plotFun": "text",
@@ -204,7 +213,8 @@
             "text": "Tholeiites",
             "col": "pltcol3",
             "cex": 1,
-            "srt": 60
+            "srt": 60,
+            "showText": true
         },
         "text6": {
             "plotFun": "text",
@@ -212,7 +222,8 @@
             "y": 0.15,
             "text": "Orogenic \n(compressive)\ndomains (island \narcs,active \nmargins)",
             "col": "pltcol2",
-            "cex": 0.7
+            "cex": 0.7,
+            "showText": true
         },
         "text7": {
             "plotFun": "text",
@@ -220,7 +231,8 @@
             "y": 0.15,
             "text": "Late- \nto post-\norogenic\n(compressive\nto distensive)\nintra-continent.\ndomains",
             "col": "pltcol2",
-            "cex": 0.7
+            "cex": 0.7,
+            "showText": true
         },
         "text8": {
             "plotFun": "text",
@@ -228,7 +240,8 @@
             "y": 0.15,
             "text": "Anorogenic\n(distensive) domains",
             "col": "pltcol2",
-            "cex": 0.7
+            "cex": 0.7,
+            "showText": true
         }
     }
 }

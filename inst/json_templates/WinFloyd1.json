@@ -7,6 +7,11 @@
     "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "binary",
     "dataTransform": null,
     "axesDefinition": {
@@ -471,7 +476,8 @@
             "text": "Phonolite",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text2": {
             "plotfun": "text",
@@ -480,7 +486,8 @@
             "text": "Trachyte",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text3": {
             "plotfun": "text",
@@ -489,7 +496,8 @@
             "text": "Rhyolite",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text4": {
             "plotfun": "text",
@@ -498,7 +506,8 @@
             "text": "Andesite/Basalt",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text5": {
             "plotfun": "text",
@@ -507,7 +516,8 @@
             "text": "Rhyodacite/Dacite",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text6": {
             "plotfun": "text",
@@ -516,7 +526,8 @@
             "text": "SubAlkaline Basalt",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text7": {
             "plotfun": "text",
@@ -525,7 +536,8 @@
             "text": "Trachy-\nandesite",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text8": {
             "plotfun": "text",
@@ -534,7 +546,8 @@
             "text": "Alk-Bas",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text9": {
             "plotfun": "text",
@@ -543,7 +556,8 @@
             "text": "Comendite\nPantellerite",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text10": {
             "plotfun": "text",
@@ -552,7 +566,8 @@
             "text": "Basanite\nNephelinite",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text11": {
             "plotfun": "text",
@@ -561,7 +576,8 @@
             "text": "Andesite",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         }
     }
 }

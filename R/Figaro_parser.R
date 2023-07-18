@@ -28,6 +28,7 @@ utils::globalVariables(c("demo","sheet","x.data","y.data","WR","mw","plt.col"))
 #' and they will affect template elements that have a switch.
 #' @param template_colors A named vector, with names corresponding to the colours
 #' found in the template, e.g. c(col1="red",col2="blue"). Defaults to black.
+#' @param transform_options Further options to be passed to data transformation function
 #' @details
 #' This function reads a json template and plots a Figaro graph
 #'  (figaro is GCDkit's internal plotting system, that allows
@@ -50,7 +51,8 @@ plotDiagram_json <- function(json, path = NULL,
                              wrdata=WR,lbl=labels,
                              verbose=F,new=T,
                              template_options=NULL,
-                             template_colors=NULL){
+                             template_colors=NULL,
+                             transform_options=NULL){
 
   # Debugging info
   if(verbose)(cat("Plotting",json,"\n",sep=" "))
@@ -99,8 +101,8 @@ plotDiagram_json <- function(json, path = NULL,
 
   #### Main switch - what are we trying to plot ? ####
   switch(EXPR = graphDef$diagramType,
-         "binary" = pp<-plotDiagram_json_binary(graphDef,wrdata,lbl,new=new,template_options,template_colors),
-         "ternary" = pp<-plotDiagram_json_ternary(graphDef,wrdata,lbl,new=new,template_options,template_colors),
+         "binary" = pp<-plotDiagram_json_binary(graphDef,wrdata,lbl,new=new,template_options,template_colors,transform_options),
+         "ternary" = pp<-plotDiagram_json_ternary(graphDef,wrdata,lbl,new=new,template_options,template_colors,transform_options),
          "plate" = pp<-plotDiagram_json_plate(graphDef,wrdata,lbl,template_options,template_colors),
          stop(paste("Sorry, plotting of type",graphDef$diagramType,"is not implemented yet",sep=" "))
   )
@@ -117,16 +119,17 @@ plotDiagram_json <- function(json, path = NULL,
 #' @param new Open in a new window?
 #' @param template_options See plotDiagram_json
 #' @param template_colors See plotDiagram_json
+#' @param transform_options See plotDiagram_json
 #' @details
 #' Internal function, that does the actual plotting
 #' in the case of a binary plot
 
 plotDiagram_json_binary <- function(graphDef,wrdata, lbl,
                                     new,
-                                    template_options,template_colors){
+                                    template_options,template_colors,transform_options){
 
   #### Prepare the data ####
-  preparedData <-points_coordinates(graphDef,wrdata,lbl,doFilter=T)
+  preparedData <-points_coordinates(graphDef,wrdata,lbl,transform_options,doFilter=T)
 
    # Get the X and Y values
   x.data <- preparedData$wrdata[,"x.data"]
@@ -193,15 +196,16 @@ plotDiagram_json_binary <- function(graphDef,wrdata, lbl,
 #' @param new Open in a new window?
 #' @param template_options See plotDiagram_json
 #' @param template_colors See plotDiagram_json
+#' @param transform_options See plotDiagram_json
 #' @details
 #' Internal function, that does the actual plotting
 #' in the case of a ternary plot
 
 plotDiagram_json_ternary <- function(graphDef,wrdata,lbl,new,
-                                     template_options,template_colors){
+                                     template_options,template_colors,transform_options){
 
   #### Prepare the data ####
-  preparedData <-points_coordinates(graphDef,wrdata,lbl,doFilter=T)
+  preparedData <-points_coordinates(graphDef,wrdata,lbl,transform_options,doFilter=T)
 
   # Get the X and Y values
   x.data <- preparedData$wrdata[,"x.data"]

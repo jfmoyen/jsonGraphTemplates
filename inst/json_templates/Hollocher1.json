@@ -7,6 +7,11 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "binary",
     "dataTransform": null,
     "axesDefinition": {
@@ -70,7 +75,8 @@
             "text": "MORB",
             "cex": 1,
             "col": "pltcol2",
-            "adj": 0.5
+            "adj": 0.5,
+            "switch": "showText"
         },
         "text2": {
             "plotFun": "text",
@@ -79,7 +85,8 @@
             "text": "Oceanic\nislands",
             "cex": 1,
             "col": "pltcol2",
-            "adj": 0.5
+            "adj": 0.5,
+            "switch": "showText"
         },
         "text3": {
             "plotFun": "text",
@@ -88,7 +95,8 @@
             "text": "Oceanic\narcs",
             "cex": 1,
             "col": "pltcol2",
-            "adj": 0.5
+            "adj": 0.5,
+            "switch": "showText"
         },
         "text4": {
             "plotFun": "text",
@@ -97,7 +105,8 @@
             "text": "Continental\narcs",
             "cex": 1,
             "col": "pltcol2",
-            "adj": 0.5
+            "adj": 0.5,
+            "switch": "showText"
         },
         "text5": {
             "plotFun": "text",
@@ -106,7 +115,8 @@
             "text": "Alkaline\narcs",
             "cex": 1,
             "col": "pltcol2",
-            "adj": 0.5
+            "adj": 0.5,
+            "switch": "showText"
         }
     }
 }

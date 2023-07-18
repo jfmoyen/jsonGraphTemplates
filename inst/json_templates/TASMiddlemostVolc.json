@@ -7,8 +7,13 @@
     "templateAuthor": "V. Erban <erban@sopky.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "binary",
-    "dataTransform": "function(){ recastAnhydrous(wrdata) }",
+    "dataTransform": "recastAnhydrous",
     "axesDefinition": {
         "X": "SiO2",
         "Y": "Na2O+K2O"
@@ -391,7 +396,8 @@
             "y": 1.4,
             "text": "Picro-\nbasalt",
             "col": "pltcol2",
-            "srt": 90
+            "srt": 90,
+            "switch": "showText"
         },
         "text2": {
             "plotfun": "text",
@@ -399,7 +405,8 @@
             "y": 2.8,
             "text": "Basalt",
             "col": "pltcol2",
-            "srt": 90
+            "srt": 90,
+            "switch": "showText"
         },
         "text3": {
             "plotfun": "text",
@@ -407,7 +414,8 @@
             "y": 3,
             "text": "Basaltic\nandesite",
             "col": "pltcol2",
-            "srt": 90
+            "srt": 90,
+            "switch": "showText"
         },
         "text4": {
             "plotfun": "text",
@@ -415,7 +423,8 @@
             "y": 3,
             "text": "Andesite",
             "col": "pltcol2",
-            "srt": 90
+            "srt": 90,
+            "switch": "showText"
         },
         "text5": {
             "plotfun": "text",
@@ -423,21 +432,24 @@
             "y": 3,
             "text": "Dacite",
             "col": "pltcol2",
-            "srt": 90
+            "srt": 90,
+            "switch": "showText"
         },
         "text6": {
             "plotfun": "text",
             "x": 80,
             "y": 6,
             "text": "Rhyolite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text7": {
             "plotfun": "text",
             "x": 63.5,
             "y": 11.5,
             "text": "Trachyte",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text22": {
             "plotfun": "text",
@@ -446,7 +458,8 @@
             "text": "Trachy-\ndacite",
             "col": "pltcol2",
             "cex": 0.8,
-            "srt": 50
+            "srt": 50,
+            "switch": "showText"
         },
         "text8": {
             "plotfun": "text",
@@ -454,7 +467,8 @@
             "y": 8.5,
             "text": "Trachy-\nandesite",
             "col": "pltcol2",
-            "cex": 0.8
+            "cex": 0.8,
+            "switch": "showText"
         },
         "text9": {
             "plotfun": "text",
@@ -462,7 +476,8 @@
             "y": 7,
             "text": "Basaltic\ntrachy-\nandesite",
             "col": "pltcol2",
-            "cex": 0.8
+            "cex": 0.8,
+            "switch": "showText"
         },
         "text10": {
             "plotfun": "text",
@@ -470,7 +485,8 @@
             "y": 5.65,
             "text": "Trachy-\nbasalt",
             "col": "pltcol2",
-            "cex": 0.8
+            "cex": 0.8,
+            "switch": "showText"
         },
         "text11": {
             "plotfun": "text",
@@ -478,7 +494,8 @@
             "y": 7,
             "text": "Tephrite",
             "col": "pltcol2",
-            "srt": 50
+            "srt": 50,
+            "switch": "showText"
         },
         "text12": {
             "plotfun": "text",
@@ -487,7 +504,8 @@
             "text": "Phono-\ntephrite",
             "col": "pltcol2",
             "cex": 0.8,
-            "srt": 50
+            "srt": 50,
+            "switch": "showText"
         },
         "text13": {
             "plotfun": "text",
@@ -496,35 +514,40 @@
             "text": "Tephri-\nphonolite",
             "col": "pltcol2",
             "cex": 0.8,
-            "srt": 50
+            "srt": 50,
+            "switch": "showText"
         },
         "text14": {
             "plotfun": "text",
             "x": 57,
             "y": 15,
             "text": "Phonolite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text15": {
             "plotfun": "text",
             "x": 44,
             "y": 12,
             "text": "Foidite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text22.1": {
             "plotfun": "text",
             "x": 55,
             "y": 18.5,
             "text": "Sodalitite/Nephelinolith/Leucitolith",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text23": {
             "plotfun": "text",
             "x": 85,
             "y": 1,
             "text": "Silexite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         }
     }
 }

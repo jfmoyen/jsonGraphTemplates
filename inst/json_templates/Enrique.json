@@ -8,7 +8,12 @@
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "ternary",
-    "dataTransform": "function(){ CIPW(wrdata) }",
+
+    "RDialect": "GCDkit",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
+    "dataTransform": "CIPW",
     "axesDefinition": {
         "A": "Or+Ab",
         "B": "2*Q",
@@ -501,7 +506,7 @@
                 0.52,
                 0.52
             ],
-            "col": "pltcol3"
+            "col": "pltcol2"
         },
         "lines2": {
             "plotFun": "lines",
@@ -513,7 +518,7 @@
                 0.173,
                 0.173
             ],
-            "col": "pltcol3"
+            "col": "pltcol2"
         },
         "lines3": {
             "plotFun": "lines",
@@ -525,7 +530,7 @@
                 0.043,
                 0.043
             ],
-            "col": "pltcol3"
+            "col": "pltcol2"
         },
         "lines4": {
             "plotFun": "lines",
@@ -537,7 +542,7 @@
                 0.779,
                 0.779
             ],
-            "col": "pltcol3"
+            "col": "pltcol2"
         },
         "lines5": {
             "plotFun": "lines",
@@ -549,7 +554,7 @@
                 0,
                 0.519615
             ],
-            "col": "pltcol3"
+            "col": "pltcol2"
         },
         "lines6": {
             "plotFun": "lines",
@@ -561,7 +566,7 @@
                 0,
                 0.519615
             ],
-            "col": "pltcol3"
+            "col": "pltcol2"
         },
         "lines7": {
             "plotFun": "lines",
@@ -573,7 +578,7 @@
                 0,
                 0.519615
             ],
-            "col": "pltcol3"
+            "col": "pltcol2"
         },
         "lines8": {
             "plotFun": "lines",
@@ -585,7 +590,7 @@
                 0,
                 0.519615
             ],
-            "col": "pltcol3"
+            "col": "pltcol2"
         },
         "lines9": {
             "plotFun": "lines",
@@ -597,7 +602,7 @@
                 0,
                 0.519615
             ],
-            "col": "pltcol3"
+            "col": "pltcol2"
         },
         "lines10": {
             "plotFun": "lines",
@@ -609,7 +614,7 @@
                 0,
                 0.519615
             ],
-            "col": "pltcol3"
+            "col": "pltcol2"
         },
         "lines20": {
             "plotFun": "lines",
@@ -639,7 +644,8 @@
             "y": 0.823,
             "text": "1",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text2": {
             "plotFun": "text",
@@ -647,7 +653,8 @@
             "y": 0.65,
             "text": "2",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text3": {
             "plotFun": "text",
@@ -655,7 +662,8 @@
             "y": 0.3465,
             "text": "3",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text4": {
             "plotFun": "text",
@@ -663,7 +671,8 @@
             "y": 0.3465,
             "text": "4",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text5": {
             "plotFun": "text",
@@ -671,7 +680,8 @@
             "y": 0.3465,
             "text": "5",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text6": {
             "plotFun": "text",
@@ -679,7 +689,8 @@
             "y": 0.3465,
             "text": "6",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text7": {
             "plotFun": "text",
@@ -687,7 +698,8 @@
             "y": 0.3465,
             "text": "7",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text8": {
             "plotFun": "text",
@@ -695,7 +707,8 @@
             "y": 0.3465,
             "text": "8",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text9": {
             "plotFun": "text",
@@ -703,7 +716,8 @@
             "y": 0.3465,
             "text": "9",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text10": {
             "plotFun": "text",
@@ -711,7 +725,8 @@
             "y": 0.1083,
             "text": "10",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text11": {
             "plotFun": "text",
@@ -719,7 +734,8 @@
             "y": 0.1083,
             "text": "11",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text12": {
             "plotFun": "text",
@@ -727,7 +743,8 @@
             "y": 0.1083,
             "text": "12",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text13": {
             "plotFun": "text",
@@ -735,7 +752,8 @@
             "y": 0.1083,
             "text": "13",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text14": {
             "plotFun": "text",
@@ -743,7 +761,8 @@
             "y": 0.1083,
             "text": "14",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text15": {
             "plotFun": "text",
@@ -751,7 +770,8 @@
             "y": 0.1083,
             "text": "15",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text16": {
             "plotFun": "text",
@@ -759,7 +779,8 @@
             "y": 0.1083,
             "text": "16",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text17": {
             "plotFun": "text",
@@ -767,7 +788,8 @@
             "y": 0.02615,
             "text": "17",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text18": {
             "plotFun": "text",
@@ -775,7 +797,8 @@
             "y": 0.02615,
             "text": "18",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text19": {
             "plotFun": "text",
@@ -783,7 +806,8 @@
             "y": 0.02615,
             "text": "19",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text20": {
             "plotFun": "text",
@@ -791,7 +815,8 @@
             "y": 0.02615,
             "text": "20",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text21": {
             "plotFun": "text",
@@ -799,7 +824,8 @@
             "y": 0.02615,
             "text": "21",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text22": {
             "plotFun": "text",
@@ -807,7 +833,8 @@
             "y": 0.02615,
             "text": "22",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         },
         "text23": {
             "plotFun": "text",
@@ -815,7 +842,8 @@
             "y": 0.02615,
             "text": "23",
             "col": "pltcol2",
-            "cex": 0.75
+            "cex": 0.75,
+            "switch": "showText"
         }
     }
 }

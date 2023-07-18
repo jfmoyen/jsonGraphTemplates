@@ -7,8 +7,18 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>, J.-F. Moyen <jfmoyen@gmail.com>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "GCDkit",
+    "optionSwitches": {
+        "showText":  "Default option to show diagram text"},
+    "optionDefaults": {
+        "showText": true
+    },
+    
     "diagramType": "binary",
-    "dataTransform": "function(){ Mesonorm(wrdata,GUI=FALSE) }",
+    "dataTransform": "Mesonorm",
+	"dataTransformParams": {"GUI":false},
+	
     "axesDefinition": {
         "X": "100*Anorthite/(Orthoclase+Anorthite)",
         "Y": "100*Quartz/(Quartz+Orthoclase+Albite+Anorthite)"
@@ -479,126 +489,144 @@
             "x": 5,
             "y": 25,
             "text": "(2)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text2": {
             "plotfun": "text",
             "x": 15,
             "y": 25,
             "text": "(3a)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text3": {
             "plotfun": "text",
             "x": 28,
             "y": 25,
             "text": "(3b)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text4": {
             "plotfun": "text",
             "x": 50,
             "y": 25,
             "text": "(4)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text5": {
             "plotfun": "text",
             "x": 70,
             "y": 25,
             "text": "(5a)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text6": {
             "plotfun": "text",
             "x": 90,
             "y": 25,
             "text": "(5b)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text7": {
             "plotfun": "text",
             "x": 7,
             "y": 13,
             "text": "(6*)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text8": {
             "plotfun": "text",
             "x": 20,
             "y": 13,
             "text": "(7*)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text9": {
             "plotfun": "text",
             "x": 35,
             "y": 13,
             "text": "(8*)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text10": {
             "plotfun": "text",
             "x": 55,
             "y": 13,
             "text": "(9*)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text11": {
             "plotfun": "text",
             "x": 75,
             "y": 13,
             "text": "(10a*)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text12": {
             "plotfun": "text",
             "x": 92,
             "y": 13,
             "text": "(10b*)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text13": {
             "plotfun": "text",
             "x": 9,
             "y": 2.5,
             "text": "(6)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text14": {
             "plotfun": "text",
             "x": 25,
             "y": 2.5,
             "text": "(7)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text15": {
             "plotfun": "text",
             "x": 40,
             "y": 2.5,
             "text": "(8)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text16": {
             "plotfun": "text",
             "x": 58,
             "y": 2.5,
             "text": "(9)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text17": {
             "plotfun": "text",
             "x": 78,
             "y": 2.5,
             "text": "(10a)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         },
         "text18": {
             "plotfun": "text",
             "x": 95,
             "y": 2.5,
             "text": "(10b)",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         }
     }
 }

@@ -7,6 +7,11 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "binary",
     "dataTransform": null,
     "axesDefinition": {
@@ -104,7 +109,8 @@
             "adj": [
                 0,
                 0
-            ]
+            ],
+            "switch": "showText"
         },
         "text6": {
             "plotfun": "text",
@@ -116,7 +122,8 @@
             "adj": [
                 1,
                 0
-            ]
+            ],
+            "switch": "showText"
         },
         "text7": {
             "plotfun": "text",
@@ -129,7 +136,8 @@
                 0.5,
                 0.5
             ],
-            "srt": 40
+            "srt": 40,
+            "switch": "showText"
         },
         "text8": {
             "plotfun": "text",
@@ -142,7 +150,8 @@
                 0.5,
                 0.5
             ],
-            "srt": 40
+            "srt": 40,
+            "switch": "showText"
         },
         "text9": {
             "plotfun": "text",
@@ -150,7 +159,8 @@
             "y": 0.708,
             "text": "PM",
             "col": "pltcol3",
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text10": {
             "plotfun": "text",
@@ -162,7 +172,8 @@
                 0,
                 1
             ],
-            "srt": 40
+            "srt": 40,
+            "switch": "showText"
         },
         "text10.1": {
             "plotfun": "text",
@@ -174,7 +185,8 @@
                 0.5,
                 0.5
             ],
-            "srt": 40
+            "srt": 40,
+            "switch": "showText"
         },
         "text10.2": {
             "plotfun": "text",
@@ -186,7 +198,8 @@
                 0.5,
                 0.5
             ],
-            "srt": 22
+            "srt": 22,
+            "switch": "showText"
         }
     }
 }

@@ -9,10 +9,17 @@
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
 
-    "optionSwitches": {"reference.rocks": "Compare to ideal rock compo"},
-    "optionDefaults": {"reference.rocks": false},
+    "RDialect": "GCDkit",
+    "optionSwitches": {
+        "reference.rocks": "Compare to ideal rock composition",
+        "showText":  "Default option to show diagram text"
+    },
+    "optionDefaults": {
+        "reference.rocks": false,
+        "showText": true
+    },
 
-    "dataTransform": "function(){ DebonCalc(millications(wrdata)) }",
+    "dataTransform": "DebonCalcFull",
     "axesDefinition": {
         "X": "P",
         "Y": "Q"
@@ -518,84 +525,96 @@
             "x": 25,
             "y": 175,
             "text": "gr",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text2": {
             "plotFun": "text",
             "x": -55,
             "y": 175,
             "text": "ad",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text3": {
             "plotFun": "text",
             "x": -110,
             "y": 175,
             "text": "gd",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text4": {
             "plotFun": "text",
             "x": -190,
             "y": 175,
             "text": "to",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text5": {
             "plotFun": "text",
             "x": -15,
             "y": 80,
             "text": "sq",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text6": {
             "plotFun": "text",
             "x": -90,
             "y": 80,
             "text": "mzq",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text7": {
             "plotFun": "text",
             "x": -150,
             "y": 80,
             "text": "mzdq",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text8": {
             "plotFun": "text",
             "x": -240,
             "y": 80,
             "text": "dq",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text9": {
             "plotFun": "text",
             "x": -35,
             "y": 20,
             "text": "s",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text10": {
             "plotFun": "text",
             "x": -140,
             "y": 20,
             "text": "mz",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text11": {
             "plotFun": "text",
             "x": -200,
             "y": 20,
             "text": "mzgo",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text12": {
             "plotFun": "text",
             "x": -290,
             "y": 20,
             "text": "go",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         }
         ,
         "debonIdeal1": {

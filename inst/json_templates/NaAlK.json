@@ -7,8 +7,15 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "GCDkit",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "ternary",
-    "dataTransform": "function(){ millications(wrdata,print=F,save=F) }",
+    "dataTransform": "millications",
+	"dataTransformParams": {"print":false, "save":false},
+	
     "axesDefinition": {
         "A": "Na2O",
         "B": "Al2O3",
@@ -227,21 +234,24 @@
             "x": 0.45,
             "y": 0.05,
             "text": "Sodic",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text2": {
             "plotFun": "text",
             "x": 0.58,
             "y": 0.05,
             "text": "Potassic",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text3": {
             "plotFun": "text",
             "x": 0.85,
             "y": 0.05,
             "text": "Ultrapotassic",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text4": {
             "plotFun": "text",
@@ -249,7 +259,8 @@
             "y": 0.5,
             "text": "Metaluminous\nPeraluminous",
             "col": "pltcol2",
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text5": {
             "plotFun": "text",
@@ -257,7 +268,8 @@
             "y": 0.4,
             "text": "Peralkaline",
             "col": "pltcol2",
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text6": {
             "plotFun": "text",
@@ -265,7 +277,8 @@
             "y": 0.3,
             "text": "Perpotassic",
             "col": "pltcol2",
-            "srt": 60
+            "srt": 60,
+            "switch": "showText"
         }
     }
 }

@@ -7,6 +7,11 @@
     "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "GCDkit",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "binary",
     "dataTransform": null,
     "axesDefinition": {
@@ -142,7 +147,8 @@
             "y": 6,
             "text": "Metaluminous",
             "col": "pltcol2",
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text2": {
             "plotfun": "text",
@@ -150,7 +156,8 @@
             "y": 6,
             "text": "Peraluminous",
             "col": "pltcol2",
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text3": {
             "plotfun": "text",
@@ -158,7 +165,8 @@
             "y": 0.5,
             "text": "Peralkaline",
             "col": "pltcol2",
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         }
     }
 }

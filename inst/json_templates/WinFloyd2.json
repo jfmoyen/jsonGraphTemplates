@@ -7,6 +7,11 @@
     "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "binary",
     "dataTransform": null,
     "axesDefinition": {
@@ -382,7 +387,8 @@
             "text": "Phonolite",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text1.1": {
             "plotfun": "text",
@@ -391,7 +397,8 @@
             "text": "Trachyte",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text1.2": {
             "plotfun": "text",
@@ -400,7 +407,8 @@
             "text": "Rhyolite",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text1.3": {
             "plotfun": "text",
@@ -409,7 +417,8 @@
             "text": "Rhyodacite\nDacite",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text1.4": {
             "plotfun": "text",
@@ -418,7 +427,8 @@
             "text": "Sub-AB",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text1.5": {
             "plotfun": "text",
@@ -427,7 +437,8 @@
             "text": "TrAn",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text1.6": {
             "plotfun": "text",
@@ -436,7 +447,8 @@
             "text": "AB",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text1.7": {
             "plotfun": "text",
@@ -445,7 +457,8 @@
             "text": "Comendite\nPantellerite",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text1.8": {
             "plotfun": "text",
@@ -454,7 +467,8 @@
             "text": "Basanite\nTrachybasanite\nNephelinite",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text1.9": {
             "plotfun": "text",
@@ -463,7 +477,8 @@
             "text": "Andesite",
             "col": "pltcol2",
             "cex": 1,
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         }
     }
 }

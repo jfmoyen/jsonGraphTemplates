@@ -9,10 +9,16 @@
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
 
-    "optionSwitches": {"idealmins": "Add ideal minerals"},
-    "optionDefaults": {"idealmins": true},
+    "RDialect": "GCDkit",
+    "optionSwitches": {
+        "idealmins": "Add ideal minerals",
+        "showText":  "Default option to show diagram text"},
+    "optionDefaults": {
+        "idealmins": true,
+        "showText": true
+    },
 
-    "dataTransform": "function(){ LaRocheCalc(wrdata) }",
+    "dataTransform": "LaRocheCalc",
     "axesDefinition": {
         "X": "R1",
         "Y": "R2"
@@ -35,12 +41,14 @@
         "lines1": {
             "plotFun": "abline",
             "h": 0,
-            "col": "pltcol2"
+            "col": "black",
+            "lty": "dashed"
         },
         "lines2": {
             "plotFun": "abline",
             "v": 0,
-            "col": "pltcol2"
+            "col": "black",
+            "lty": "dashed"
         },
         "lines3": {
             "plotFun": "lines",
@@ -104,7 +112,7 @@
                 0,
                 2875.84
             ],
-            "col": "pltcol2",
+            "col": "black",
             "lty": "dashed"
         },
         "GCDkit": {
@@ -119,7 +127,8 @@
             "y": 1700,
             "text": "Mantle\nFractionates",
             "cex": 0.7,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text2": {
             "plotFun": "text",
@@ -127,7 +136,8 @@
             "y": 1250,
             "text": "Pre-plate\nCollision",
             "cex": 0.7,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text3": {
             "plotFun": "text",
@@ -135,7 +145,8 @@
             "y": 1000,
             "text": "Post-\ncollision\nUplift",
             "cex": 0.7,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text4": {
             "plotFun": "text",
@@ -143,7 +154,8 @@
             "y": 700,
             "text": "Late-\norogenic",
             "cex": 0.7,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text5": {
             "plotFun": "text",
@@ -151,7 +163,8 @@
             "y": 350,
             "text": "Anorogenic",
             "cex": 0.7,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text6": {
             "plotFun": "text",
@@ -159,7 +172,8 @@
             "y": 500,
             "text": "Syn-collision",
             "cex": 0.7,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text7": {
             "plotFun": "text",
@@ -167,7 +181,8 @@
             "y": 250,
             "text": "Post-\norogenic",
             "cex": 0.7,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "points1": {
             "plotFun": "points",

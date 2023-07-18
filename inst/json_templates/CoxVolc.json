@@ -9,8 +9,14 @@
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
 
-    "optionSwitches": {"alkline": "Alkaline/subalkaline boundary"},
-    "optionDefaults": {"alkline": true},
+    "RDialect": "base",
+    "optionSwitches": {
+        "alkline": "Alkaline/subalkaline boundary",
+        "showText":  "Default option to show diagram text"},
+    "optionDefaults": {
+        "alkline": true,
+        "showText": true
+    },
 
     "dataTransform": null,
     "axesDefinition": {
@@ -386,63 +392,72 @@
             "x": 70,
             "y": 8.5,
             "text": "Rhyolite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text2": {
             "plotFun": "text",
             "x": 65.5,
             "y": 6.5,
             "text": "Dacite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text3": {
             "plotFun": "text",
             "x": 59,
             "y": 4.5,
             "text": "Andesite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text4": {
             "plotFun": "text",
             "x": 48,
             "y": 4,
             "text": "Basalt",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text5": {
             "plotFun": "text",
             "x": 64,
             "y": 11.5,
             "text": "Trachyte",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text6": {
             "plotFun": "text",
             "x": 51.5,
             "y": 8,
             "text": "Mugearite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text7": {
             "plotFun": "text",
             "x": 56,
             "y": 13.5,
             "text": "Phonolite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text8": {
             "plotFun": "text",
             "x": 49.1,
             "y": 6.3,
             "text": "Hawaiite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text9": {
             "plotFun": "text",
             "x": 39.5,
             "y": 7,
             "text": "Nephelinite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text11": {
             "plotFun": "text",
@@ -450,7 +465,8 @@
             "y": 8,
             "text": "Trachy-\nandesite",
             "col": "pltcol2",
-            "cex": 1
+            "cex": 1,
+            "showText": true
         },
         "text12": {
             "plotFun": "text",
@@ -459,7 +475,8 @@
             "text": "Basaltic\nandesite",
             "col": "pltcol2",
             "cex": 1,
-            "srt": 90
+            "srt": 90,
+            "showText": true
         },
         "text13": {
             "plotFun": "text",
@@ -467,7 +484,8 @@
             "y": 10,
             "text": "Benmoreite",
             "col": "pltcol2",
-            "cex": 1
+            "cex": 1,
+            "showText": true
         },
         "text14": {
             "plotFun": "text",
@@ -476,7 +494,8 @@
             "text": "Phonolitic\nnephelinite",
             "col": "pltcol2",
             "cex": 1,
-            "srt": 45
+            "srt": 45,
+            "showText": true
         },
         "text15": {
             "plotFun": "text",
@@ -485,7 +504,8 @@
             "text": "Phonolitic\ntephrite",
             "col": "pltcol2",
             "cex": 1,
-            "srt": 45
+            "srt": 45,
+            "showText": true
         },
         "text16": {
             "plotFun": "text",
@@ -494,7 +514,8 @@
             "text": "Basanite\ntephrite",
             "col": "pltcol2",
             "cex": 1,
-            "srt": 45
+            "srt": 45,
+            "showText": true
         },
         "lines16": {
             "plotFun": "lines",

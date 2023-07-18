@@ -9,10 +9,8 @@
     "templateHistory": "Converted from original GCDkit function",
 
     "RDialect": "base",
-    "optionSwitches": {"showText": "Default option to show diagram text"
-                  },
-     "optionDefaults": {"showText": true
-                  },
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
 
     "diagramType": "ternary",
     "dataTransform": null,

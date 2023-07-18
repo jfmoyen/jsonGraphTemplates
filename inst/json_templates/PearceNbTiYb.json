@@ -7,11 +7,18 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "base",
+    "optionSwitches": {
+        "reservoirs": "Add mantle reservoirs after Sun & McDonough (1989)",
+        "showText":  "Default option to show diagram text"
+    },
+    "optionDefaults": {
+        "reservoirs": true,
+        "showText": true
+    },
+
     "diagramType": "binary",
-
-    "optionSwitches": {"reservoirs": "Add Earth reservoirs"},
-    "optionDefaults": {"reservoirs": true},
-
     "dataTransform": null,
     "axesDefinition": {
         "X": "Nb/Yb",

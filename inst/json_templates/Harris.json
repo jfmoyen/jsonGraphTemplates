@@ -7,6 +7,11 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "ternary",
     "dataTransform": null,
     "axesDefinition": {
@@ -94,33 +99,37 @@
             "plot.position": 106,
             "plot.name": "Harris et al. (1986)"
         },
-        "text4": {
+        "text1": {
             "plotFun": "text",
             "x": 0.323,
             "y": 0.314,
             "text": "VA",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
-        "text5": {
+        "text2": {
             "plotFun": "text",
             "x": 0.6,
             "y": 0.087,
             "text": "WP",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
-        "text6": {
+        "text36": {
             "plotFun": "text",
             "x": 0.6,
             "y": 0.477,
             "text": "Group 2",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
-        "text7": {
+        "text4": {
             "plotFun": "text",
             "x": 0.6,
             "y": 0.268,
             "text": "Group 3",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         }
     }
 }

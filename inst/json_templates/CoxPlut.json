@@ -9,8 +9,14 @@
     "templateHistory": "Converted from original GCDkit function",
     "diagramType": "binary",
 
-    "optionSwitches": {"alkline": "Alkaline/subalkaline boundary"},
-    "optionDefaults": {"alkline": true},
+    "RDialect": "base",
+    "optionSwitches": {
+        "alkline": "Alkaline/subalkaline boundary",
+        "showText":  "Default option to show diagram text"},
+    "optionDefaults": {
+        "alkline": true,
+        "showText": true
+    },
 
     "dataTransform": null,
     "axesDefinition": {
@@ -368,70 +374,80 @@
             "x": 70,
             "y": 8.5,
             "text": "Granite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text2": {
             "plotFun": "text",
             "x": 66,
             "y": 6,
             "text": "Quartz\ndiorite\n(granodiorite)",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text3": {
             "plotFun": "text",
             "x": 59,
             "y": 4.5,
             "text": "Diorite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text4": {
             "plotFun": "text",
             "x": 48.5,
             "y": 3.5,
             "text": "Gabbro",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text5": {
             "plotFun": "text",
             "x": 64,
             "y": 11.5,
             "text": "Syenite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text6": {
             "plotFun": "text",
             "x": 51.5,
             "y": 8.3,
             "text": "Syeno-\ndiorite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text7": {
             "plotFun": "text",
             "x": 56,
             "y": 13.5,
             "text": "Nepheline\nsyenite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text8": {
             "plotFun": "text",
             "x": 49.5,
             "y": 6.2,
             "text": "Gabbro",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text9": {
             "plotFun": "text",
             "x": 39,
             "y": 6.5,
             "text": "Ijolite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "text10": {
             "plotFun": "text",
             "x": 56.5,
             "y": 10,
             "text": "Syenite",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "showText": true
         },
         "lines16": {
             "plotFun": "lines",

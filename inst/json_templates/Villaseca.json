@@ -7,8 +7,13 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "GCDkit",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "binary",
-    "dataTransform": "function(){ DebonCalc(millications(wrdata)) }",
+    "dataTransform": "DebonCalcFull",
     "axesDefinition": {
         "X": "B",
         "Y": "A"
@@ -686,7 +691,8 @@
             "y": 100,
             "text": "h-P",
             "col": "pltcol2",
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text2": {
             "plotfun": "text",
@@ -694,7 +700,8 @@
             "y": 25,
             "text": "m-P",
             "col": "pltcol2",
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text3": {
             "plotfun": "text",
@@ -702,7 +709,8 @@
             "y": 10,
             "text": "l-P",
             "col": "pltcol2",
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text4": {
             "plotfun": "text",
@@ -710,7 +718,8 @@
             "y": 50,
             "text": "f-P",
             "col": "pltcol2",
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text5": {
             "plotfun": "text",
@@ -719,7 +728,8 @@
             "text": "Metaluminous",
             "col": "pltcol2",
             "adj": 0,
-            "font": 3
+            "font": 3,
+            "switch": "showText"
         },
         "text6": {
             "plotfun": "text",
@@ -728,7 +738,8 @@
             "text": "Peraluminous",
             "col": "pltcol2",
             "adj": 0,
-            "font": 3
+            "font": 3,
+            "switch": "showText"
         }
     }
 }

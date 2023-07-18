@@ -7,6 +7,11 @@
     "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "binary",
     "dataTransform": null,
     "axesDefinition": {
@@ -47,7 +52,7 @@
                 9,
                 0
             ],
-            "col": "red",
+            "col": "pltcol2",
             "lwd": 3
         },
         "lines12": {
@@ -64,7 +69,7 @@
                 20,
                 20
             ],
-            "col": "red",
+            "col": "pltcol2",
             "lwd": 3
         },
         "lines13": {
@@ -77,7 +82,7 @@
                 0,
                 9
             ],
-            "col": "black"
+            "col": "pltcol2"
         },
         "GCDkit": {
             "plotFun": "NULL",
@@ -94,7 +99,8 @@
             "adj": [
                 1,
                 0.5
-            ]
+            ],
+            "switch": "showText"
         },
         "text2": {
             "plotFun": "text",
@@ -105,7 +111,8 @@
             "adj": [
                 0,
                 0.5
-            ]
+            ],
+            "switch": "showText"
         }
     }
 }

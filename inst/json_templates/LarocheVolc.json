@@ -7,12 +7,16 @@
     "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "GCDkit",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
     "diagramType": "binary",
-    "dataTransform": "function(){ LaRocheCalc(wrdata) }",
+    "dataTransform": "LaRocheCalc",
     "axesDefinition": {
         "X": "R1",
         "Y": "R2"
-    },
+	},
     "axesName": {
         "X": "R1 = 4Si - 11(Na + K) - 2(Fe + Ti) ",
         "Y": "R2 = 6Ca + 2Mg + Al "
@@ -1028,7 +1032,8 @@
             "text": "ankaratrite",
             "cex": 1,
             "col": "pltcol2",
-            "srt": 30
+            "srt": 30,
+            "switch": "showText"
         },
         "text2": {
             "plotFun": "text",
@@ -1037,7 +1042,8 @@
             "text": "basanite",
             "cex": 1,
             "col": "pltcol2",
-            "srt": 30
+            "srt": 30,
+            "switch": "showText"
         },
         "text3": {
             "plotFun": "text",
@@ -1046,7 +1052,8 @@
             "text": "alkali basalt",
             "srt": 45,
             "cex": 0.85,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text4": {
             "plotFun": "text",
@@ -1054,7 +1061,8 @@
             "y": 1746,
             "text": "basalt",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text5": {
             "plotFun": "text",
@@ -1062,7 +1070,8 @@
             "y": 1880,
             "text": "tholeiite",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text6": {
             "plotFun": "text",
@@ -1070,7 +1079,8 @@
             "y": 1988,
             "text": "nephelinite",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text7": {
             "plotFun": "text",
@@ -1078,7 +1088,8 @@
             "y": 1648,
             "text": "tephrite",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text8": {
             "plotFun": "text",
@@ -1086,7 +1097,8 @@
             "y": 1530,
             "text": "",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text9": {
             "plotFun": "text",
@@ -1094,7 +1106,8 @@
             "y": 1450,
             "text": "hawaiite",
             "cex": 0.85,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text10": {
             "plotFun": "text",
@@ -1102,7 +1115,8 @@
             "y": 1360,
             "text": "lati-\nbasalt",
             "cex": 0.85,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text11": {
             "plotFun": "text",
@@ -1110,7 +1124,8 @@
             "y": 1397,
             "text": "andesi-\nbasalt",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text12": {
             "plotFun": "text",
@@ -1118,7 +1133,8 @@
             "y": 1352,
             "text": "phono-tephrite",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text13": {
             "plotFun": "text",
@@ -1126,7 +1142,8 @@
             "y": 650,
             "text": "",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text14": {
             "plotFun": "text",
@@ -1134,7 +1151,8 @@
             "y": 1145,
             "text": "mugearite",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text15": {
             "plotFun": "text",
@@ -1142,7 +1160,8 @@
             "y": 1020,
             "text": "latite",
             "cex": 0.85,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text16": {
             "plotFun": "text",
@@ -1150,7 +1169,8 @@
             "y": 1048,
             "text": "lati-\nandesite",
             "cex": 0.85,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text17": {
             "plotFun": "text",
@@ -1158,7 +1178,8 @@
             "y": 1182,
             "text": "andesite",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text18": {
             "plotFun": "text",
@@ -1166,7 +1187,8 @@
             "y": 905,
             "text": "phonolite",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text19": {
             "plotFun": "text",
@@ -1174,7 +1196,8 @@
             "y": 590,
             "text": "trachy-\nphonolite",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text20": {
             "plotFun": "text",
@@ -1182,7 +1205,8 @@
             "y": 457,
             "text": "trachyte",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text21": {
             "plotFun": "text",
@@ -1190,7 +1214,8 @@
             "y": 376,
             "text": "quartz\ntrachyte",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text22": {
             "plotFun": "text",
@@ -1199,7 +1224,8 @@
             "text": "alkali rhyolite",
             "cex": 1,
             "col": "pltcol2",
-            "srt": -5
+            "srt": -5,
+            "switch": "showText"
         },
         "text23": {
             "plotFun": "text",
@@ -1207,7 +1233,8 @@
             "y": 700,
             "text": "quartz\nlatite",
             "cex": 0.85,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text24": {
             "plotFun": "text",
@@ -1215,7 +1242,8 @@
             "y": 860,
             "text": "dacite",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text25": {
             "plotFun": "text",
@@ -1224,7 +1252,8 @@
             "text": "rhyolite",
             "cex": 1,
             "col": "pltcol2",
-            "srt": -5
+            "srt": -5,
+            "switch": "showText"
         },
         "text26": {
             "plotFun": "text",
@@ -1232,7 +1261,8 @@
             "y": 690,
             "text": "rhyodacite",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text27": {
             "plotFun": "text",
@@ -1240,7 +1270,8 @@
             "y": 2200,
             "text": "picritic rock",
             "cex": 1,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         }
     }
 }

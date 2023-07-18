@@ -7,7 +7,12 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
-    "diagramType": "binary",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
+   "diagramType": "binary",
     "dataTransform": null,
     "axesDefinition": {
         "X": "Nb/Y",
@@ -379,7 +384,8 @@
             "y": 0.003,
             "text": "basalt",
             "col": "pltcol2",
-            "adj": 0.5
+            "adj": 0.5,
+            "switch": "showText"
         },
         "text2": {
             "plotFun": "text",
@@ -387,7 +393,8 @@
             "y": 0.01,
             "text": "alkali\nbasalt",
             "col": "pltcol2",
-            "adj": 0.5
+            "adj": 0.5,
+            "switch": "showText"
         },
         "text3": {
             "plotFun": "text",
@@ -398,7 +405,8 @@
             "adj": [
                 0,
                 0.5
-            ]
+            ],
+            "switch": "showText"
         },
         "text4": {
             "plotFun": "text",
@@ -407,7 +415,8 @@
             "text": "andesite\nbasaltic andesite",
             "col": "pltcol2",
             "adj": 0.5,
-            "srt": 17
+            "srt": 17,
+            "switch": "showText"
         },
         "text5": {
             "plotFun": "text",
@@ -416,7 +425,8 @@
             "text": "trachy-\nandesite",
             "col": "pltcol2",
             "adj": 0.5,
-            "srt": 17
+            "srt": 17,
+            "switch": "showText"
         },
         "text6": {
             "plotFun": "text",
@@ -425,7 +435,8 @@
             "text": "tephriphonolite",
             "col": "pltcol2",
             "adj": 0.5,
-            "srt": 17
+            "srt": 17,
+            "switch": "showText"
         },
         "text7": {
             "plotFun": "text",
@@ -433,7 +444,8 @@
             "y": 0.2,
             "text": "rhyolite\ndacite",
             "col": "pltcol2",
-            "adj": 0.5
+            "adj": 0.5,
+            "switch": "showText"
         },
         "text8": {
             "plotFun": "text",
@@ -441,7 +453,8 @@
             "y": 0.2,
             "text": "trachyte",
             "col": "pltcol2",
-            "adj": 0.5
+            "adj": 0.5,
+            "switch": "showText"
         },
         "text9": {
             "plotFun": "text",
@@ -449,7 +462,8 @@
             "y": 0.4,
             "text": "phonolite",
             "col": "pltcol2",
-            "adj": 0.5
+            "adj": 0.5,
+            "switch": "showText"
         },
         "text10": {
             "plotFun": "text",
@@ -457,7 +471,8 @@
             "y": 0.6,
             "text": "alkali\nrhyolite",
             "col": "pltcol2",
-            "adj": 0.5
+            "adj": 0.5,
+            "switch": "showText"
         }
     }
 }

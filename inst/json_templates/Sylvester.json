@@ -7,6 +7,11 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "binary",
     "dataTransform": null,
     "dataFilter": "SiO2>68",
@@ -66,7 +71,8 @@
             "text": "Calc-alkaline & Strongly peraluminous",
             "cex": 1,
             "adj": 0,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text2": {
             "plotfun": "text",
@@ -75,7 +81,8 @@
             "text": "Alkaline",
             "cex": 1,
             "adj": 0,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text3": {
             "plotfun": "text",
@@ -84,7 +91,8 @@
             "text": "expression({SiO[2]} > 68*symbol(' ')*wt.*symbol('%'))",
             "cex": 1,
             "adj": 0,
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         }
     }
 }

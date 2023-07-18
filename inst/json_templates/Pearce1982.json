@@ -7,7 +7,12 @@
     "templateAuthor": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
-    "diagramType": "binary",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
+   "diagramType": "binary",
     "dataTransform": null,
     "axesDefinition": {
         "X": "Zr",
@@ -359,21 +364,24 @@
             "x": 300,
             "y": 10000,
             "text": "Within-Plate\nLavas",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text2": {
             "plotFun": "text",
             "x": 100,
             "y": 3000,
             "text": "Island Arc\nLavas",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text3": {
             "plotFun": "text",
             "x": 70,
             "y": 7000,
             "text": "MORB",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         }
     }
 }

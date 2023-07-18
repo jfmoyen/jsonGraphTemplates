@@ -7,6 +7,11 @@
     "templateAuthor": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "binary",
     "dataTransform": null,
     "axesDefinition": {
@@ -97,7 +102,8 @@
             "y": 100,
             "text": "TTG/adakite",
             "col": "pltcol2",
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         },
         "text2": {
             "plotFun": "text",
@@ -105,7 +111,8 @@
             "y": 22,
             "text": "ordinary",
             "col": "pltcol2",
-            "adj": 0
+            "adj": 0,
+            "switch": "showText"
         }
     }
 }

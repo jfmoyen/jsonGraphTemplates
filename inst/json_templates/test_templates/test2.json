@@ -14,7 +14,8 @@
                    "plotthat": true},
 
 "diagramType":"binary",
-"dataTransform":"function(){ OhtaAraiParams(wrdata) }",
+"dataTransform":"Mesonorm",
+"dataTransformParams":{"GUI":false,"precision":0.1},
 
 "axesDefinition": {  "X": "M",
                      "Y": "W+F"

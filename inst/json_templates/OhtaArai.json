@@ -7,8 +7,13 @@
     "templateAuthor": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+      
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "ternary",
-    "dataTransform": "function(){ OhtaAraiParams(wrdata) }",
+    "dataTransform": "OhtaAraiParams",
     "axesDefinition": {
         "A": "F",
         "B": "M",
@@ -216,7 +221,8 @@
             ],
             "adj": 1,
             "cex": 0.7,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         }
     }
 }

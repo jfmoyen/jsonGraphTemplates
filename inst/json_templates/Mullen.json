@@ -7,6 +7,11 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "ternary",
     "dataTransform": null,
     "dataFilter": "SiO2<54&SiO2>45",
@@ -116,7 +121,8 @@
             "y": 0.1,
             "text": "CAB",
             "col": "pltcol2",
-            "cex": 0.8
+            "cex": 0.8,
+            "switch": "showText"
         },
         "text5": {
             "plotFun": "text",
@@ -124,7 +130,8 @@
             "y": 0.5,
             "text": "OIT",
             "col": "pltcol2",
-            "cex": 0.8
+            "cex": 0.8,
+            "switch": "showText"
         },
         "text6": {
             "plotFun": "text",
@@ -132,7 +139,8 @@
             "y": 0.4,
             "text": "MORB",
             "col": "pltcol2",
-            "cex": 0.8
+            "cex": 0.8,
+            "switch": "showText"
         },
         "text7": {
             "plotFun": "text",
@@ -140,7 +148,8 @@
             "y": 0.3,
             "text": "IAT",
             "col": "pltcol2",
-            "cex": 0.8
+            "cex": 0.8,
+            "switch": "showText"
         },
         "text8": {
             "plotFun": "text",
@@ -148,7 +157,8 @@
             "y": 0.22,
             "text": "OIA",
             "col": "pltcol2",
-            "cex": 0.8
+            "cex": 0.8,
+            "switch": "showText"
         },
         "text9": {
             "plotFun": "text",
@@ -156,14 +166,16 @@
             "y": 0.15,
             "text": "Bon",
             "col": "pltcol2",
-            "cex": 0.8
+            "cex": 0.8,
+            "switch": "showText"
         },
         "text10": {
             "plotFun": "text",
             "x": 0.8,
             "y": 0.9,
             "text": "45 < SiO2 < 54",
-            "col": "pltcol3"
+            "col": "pltcol3",
+            "switch": "showText"
         }
     }
 }

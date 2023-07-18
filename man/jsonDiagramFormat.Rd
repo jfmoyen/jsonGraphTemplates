@@ -32,10 +32,14 @@ These items can be included to customize further the template
 \item{"templateHistory": }{Further comments on the template itself}
 }}
 
+\subsection{Data transformation}{
+\itemize{
+\item{"dataTransform": }{null, or a function of wrdata that returns a data matrix. If null, the current data will be used. Otherwise code{dataTransform(WR)} will be used. If a data transform function exists, it is possible to pass arguments to it using, in the parser, transform_options = list(...) }
+\item{"dataTransformParams": }{Parameters to be passed to the data transform function (always). Typically things such as verbose = F ... }
+}}
 
 \subsection{Data mapping}{
 \itemize{
-\item{"dataTransform": }{null, or a function of wrdata that returns a data matrix. If null, the current data will be used. Otherwise code{dataTransform(WR)} will be used.}
 \item{"dataFilter": }{null, or a string corresponding to a boolean filter, used by GCDkit::selectSamples or dplyr::filter for instance}
 \item{"axesName": }{The name of the axes, as will be printed on the graph. Defaults to axesDefintion. They are X and Y for binary, A, B and C for ternary. Do NOT include corresponding template elements in the file, they are automatically created by the parser.}
 \item{"suppressAxes": }{If present (and true), the axes will not be drawn. Neded for ternary plots, and some special plots where custom axes are required (and should be defined in the template)}

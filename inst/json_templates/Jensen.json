@@ -7,8 +7,14 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+      
+    "RDialect": "GCDkit",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
     "diagramType": "ternary",
-    "dataTransform": "function(){ millications(wrdata,print=F,save=F) }",
+    "dataTransform": "millications",
+	"dataTransformParams": {"print":false, "save":false},
     "axesDefinition": {
         "A": "Al2O3",
         "B": "FeOt+TiO2",
@@ -427,7 +433,8 @@
             "y": 0.4,
             "text": "High-Fe\ntholeiite\nbasalt",
             "cex": 0.85,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text5": {
             "plotFun": "text",
@@ -436,7 +443,8 @@
             "text": "Andesite",
             "srt": -60,
             "cex": 0.85,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text6": {
             "plotFun": "text",
@@ -445,7 +453,8 @@
             "text": "Dacite",
             "srt": -60,
             "cex": 0.85,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text7": {
             "plotFun": "text",
@@ -454,7 +463,8 @@
             "text": "Rhyolite",
             "srt": 30,
             "cex": 0.7,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text8": {
             "plotFun": "text",
@@ -463,7 +473,8 @@
             "text": "Rhyolite",
             "srt": -60,
             "cex": 0.7,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text9": {
             "plotFun": "text",
@@ -472,7 +483,8 @@
             "text": "Dacite",
             "srt": -60,
             "cex": 0.85,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text10": {
             "plotFun": "text",
@@ -481,7 +493,8 @@
             "text": "Andesite",
             "srt": -60,
             "cex": 0.85,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text11": {
             "plotFun": "text",
@@ -490,7 +503,8 @@
             "text": "Basalt",
             "srt": -60,
             "cex": 0.85,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text12": {
             "plotFun": "text",
@@ -498,7 +512,8 @@
             "y": 0.17,
             "text": "High-Mg\ntholeiite\nbasalt",
             "cex": 0.7,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text13": {
             "plotFun": "text",
@@ -506,7 +521,8 @@
             "y": 0.29,
             "text": "Komatiitic\nbasalt",
             "srt": -60,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text14": {
             "plotFun": "text",
@@ -514,21 +530,24 @@
             "y": 0.12,
             "text": "Komatiite",
             "srt": -60,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text15": {
             "plotFun": "text",
             "x": 0.414,
             "y": 0.3,
             "text": "TH",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text16": {
             "plotFun": "text",
             "x": 0.368,
             "y": 0.043,
             "text": "CA",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text17": {
             "plotFun": "text",
@@ -536,7 +555,8 @@
             "y": 0.27,
             "text": "KOMATIITE",
             "srt": -60,
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         }
     }
 }

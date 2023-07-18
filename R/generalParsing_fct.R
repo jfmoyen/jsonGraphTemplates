@@ -209,16 +209,20 @@ axes_parser_ternary<-function(graphDef){
 #' This is a matrix, as per GCDkit convention, but is actually
 #' useful for ggplot as well as it will allow coordinate mapping for instance!
 #' If used in ggplot, convert back to tibble.
+#' @param transform_options Options to pass to the transformation function
 #' @details the transform fn may, or may not be GCDkit. Obviously if it is,
 #' this depends on GCDkit...
-data_transformation<-function(graphDef,wrdata){
+data_transformation<-function(graphDef,wrdata,transform_options){
 
-  # If required by the template, calculate the transformed data
   if(is.null(graphDef$dataTransform)){
-    dd<-wrdata
-  }else{
-    dd<-eval(parse(text=graphDef$dataTransform))()
-  }
+      dd<-wrdata
+    }else{
+      trfFunction<-get(graphDef$dataTransform)
+      trfParams <- graphDef$dataTransformParams
+
+      args <- c(list(wrdata),trfParams,transform_options)
+      dd <- do.call(trfFunction,args=args )
+    }
     return(dd)
 }
 
@@ -235,7 +239,7 @@ data_transformation<-function(graphDef,wrdata){
 #' @param doFilter Boolean, should the data be filtered according to template rule?
 #'
 #'
-points_coordinates<-function(graphDef,wrdata,lbl,doFilter=T){
+points_coordinates<-function(graphDef,wrdata,lbl,transform_options,doFilter=T){
 
   # protect against odd things happening
   if(!(graphDef$diagramType%in%c("binary","ternary") ) ){
@@ -244,7 +248,7 @@ points_coordinates<-function(graphDef,wrdata,lbl,doFilter=T){
   }
 
   # Calculate the actual plot data
-    wrdata<-data_transformation(graphDef,wrdata)
+    wrdata<-data_transformation(graphDef,wrdata,transform_options)
 
   # Filter, if needed
   if(doFilter&&!is.null(graphDef$dataFilter)){

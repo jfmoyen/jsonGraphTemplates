@@ -1,5 +1,5 @@
 ########## Functions for data transformation ################
-# Mostly we use those from GCDkit, but we can define more
+# These do not depend on GCDkit
 
 ### This is to avoid check() notes when using global variables
 # or unquoted arguments in dplyr/ggplot

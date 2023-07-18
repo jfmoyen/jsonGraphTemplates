@@ -7,6 +7,11 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+    
     "diagramType": "binary",
     "dataTransform": null,
     "axesDefinition": {
@@ -158,7 +163,8 @@
             "adj": [
                 0,
                 0.5
-            ]
+            ],
+            "switch": "showText"
         },
         "text2": {
             "plotFun": "text",
@@ -169,7 +175,8 @@
             "adj": [
                 0,
                 0.5
-            ]
+            ],
+            "switch": "showText"
         },
         "text3": {
             "plotFun": "text",
@@ -180,7 +187,8 @@
             "adj": [
                 0,
                 0.5
-            ]
+            ],
+            "switch": "showText"
         },
         "text4": {
             "plotFun": "text",
@@ -188,7 +196,8 @@
             "y": 0.02,
             "text": "B",
             "col": "pltcol2",
-            "adj": 0.5
+            "adj": 0.5,
+            "switch": "showText"
         },
         "text5": {
             "plotFun": "text",
@@ -196,7 +205,8 @@
             "y": 0.02,
             "text": "BA/A",
             "col": "pltcol2",
-            "adj": 0.5
+            "adj": 0.5,
+            "switch": "showText"
         },
         "text6": {
             "plotFun": "text",
@@ -204,7 +214,8 @@
             "y": 0.02,
             "text": "D/R*",
             "col": "pltcol2",
-            "adj": 0.5
+            "adj": 0.5,
+            "switch": "showText"
         }
     }
 }

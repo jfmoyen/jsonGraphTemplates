@@ -7,7 +7,12 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
-    "diagramType": "ternary",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
+   "diagramType": "ternary",
     "dataTransform": null,
     "axesDefinition": {
         "A": "MgO",
@@ -127,7 +132,8 @@
             "adj": 1,
             "text": "Spreading Center\nIsland",
             "col": "pltcol2",
-            "cex": 0.8
+            "cex": 0.8,
+            "switch": "showText"
         },
         "text5": {
             "plotFun": "text",
@@ -135,7 +141,8 @@
             "y": 0.15,
             "text": "Orogenic",
             "col": "pltcol2",
-            "cex": 0.8
+            "cex": 0.8,
+            "switch": "showText"
         },
         "text6": {
             "plotFun": "text",
@@ -144,7 +151,8 @@
             "adj": 1,
             "text": "Ocean Ridge\nand Floor",
             "col": "pltcol2",
-            "cex": 0.8
+            "cex": 0.8,
+            "switch": "showText"
         },
         "text7": {
             "plotFun": "text",
@@ -153,7 +161,8 @@
             "adj": 1,
             "text": "Ocean Island",
             "col": "pltcol2",
-            "cex": 0.8
+            "cex": 0.8,
+            "switch": "showText"
         },
         "text8": {
             "plotFun": "text",
@@ -162,7 +171,8 @@
             "srt": 90,
             "text": "Continental",
             "col": "pltcol2",
-            "cex": 0.8
+            "cex": 0.8,
+            "switch": "showText"
         }
     }
 }

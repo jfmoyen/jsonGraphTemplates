@@ -7,7 +7,12 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
-    "diagramType": "binary",
+    
+    "RDialect": "base",
+    "optionSwitches": {"showText":  "Default option to show diagram text"},
+    "optionDefaults": {"showText": true},
+
+   "diagramType": "binary",
     "dataTransform": null,
     "axesDefinition": {
         "X": "Zr",
@@ -91,21 +96,24 @@
             "x": 600,
             "y": 5.8,
             "text": "Within-Plate\nBasalts",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text2": {
             "plotFun": "text",
             "x": 17,
             "y": 2.2,
             "text": "Island Arc\nBasalts",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text3": {
             "plotFun": "text",
             "x": 280,
             "y": 2.3,
             "text": "Mid-Ocean\nRidge Basalts",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         }
     }
 }
