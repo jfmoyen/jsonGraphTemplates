@@ -135,3 +135,47 @@ points(x=blatna_OConnorPlut_coords$wrdata[,"x.data"],
        pch=lbl.blatna$Symbol,col=lbl.blatna$Colour)
 
 
+
+#### Advanced switching
+# the template has
+# "optionSwitches": {"plotthetext": "Plot the word Tholeitic",
+#   "plottheline": "Plot the diagonal line",
+#   "plottheline2": "Also required to see the line",
+#   "showText": "Default option to show diagram text"
+# },
+# "optionDefaults": {"plotthetext":false,
+#   "plottheline": false,
+#   "plottheline2": true,
+#   "showText": true
+# },
+#
+# {"lines0": {
+#       ...
+#      "switch":["plottheline","plottheline2"]
+# },
+#   "text0": {
+#      ...
+#     "switch":["plotthetext","showText"]
+#   }
+
+options(gcd.plot.text = T)
+
+plotDiagram_json("testSwitches.json")
+# nothing specified, use defaults + gcd.plot.text - all false
+
+plotDiagram_json("testSwitches.json",template_options = c("plotthetext"=T))
+# plot the text
+options(gcd.plot.text = F)
+plotDiagram_json("testSwitches.json",template_options = c("plotthetext"=T))
+# Don't plot the text, because of gcd option !
+# You can still force it with
+plotDiagram_json("testSwitches.json",template_options = c("plotthetext"=T,"showText"=T))
+
+options(gcd.plot.text = T)
+#
+plotDiagram_json("testSwitches.json",template_options = c("plottheline"=T))
+# plots, because the two tags controlling the line are T
+
+plotDiagram_json("testSwitches.json",
+                 template_options = c("plottheline"=T,"plottheline2"=F))
+# no line !

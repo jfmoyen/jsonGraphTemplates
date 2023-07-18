@@ -64,7 +64,13 @@ The parser will interpret colors and switches, allowing to configure the templat
 
 Figaro parser tries to conform to GCDkit usage. Colours names pltcol1, pltcol2 and pltcol3 in json template will be replaced by plt.col[1] etc, unless the user explicitely says otherwise. If option gcd.plot.bw is set to TRUE, these three colours will be made black, no matter what.
 
-The above will NOT affect any colour defined otherwise in json template : "red" or "myColour" won't be changed by gcd.plot.bw, for instance.}
+The above will NOT affect any colour defined otherwise in json template : "red" or "myColour" won't be changed by gcd.plot.bw, for instance.
+
+In short, the order of preference is
+plt.col
+gcd.plot.bw
+user-specified option passed by color_options
+hard coded color name}
 
 \item{switching: }{Elements can be controlled by switching. If an element has a "switch" field, this fields contains the name of the (boolean) switch that will control its appearance. An element with no "switch" will always appear.
 The list of switches should be present in "optionSwitches".
@@ -78,6 +84,11 @@ For example:
 "optionDefaults": {"plotthis": false,
                    "plotthat": true}
 }
+
+A switch called showText will be recognized by the figaro parser, and set to the content of option(gcd.plot.text), unless explicitely set to something else. In other words, showText will take the following values, in order of precedence:
+user definition via template_options > gcd.plot.text > default.
+
+If several switches are given for an element, they ALL need to be true for this element to appear - be it through defaults, or user action.
 }
 }
 }

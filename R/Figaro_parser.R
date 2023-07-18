@@ -83,21 +83,23 @@ plotDiagram_json <- function(json, path = NULL,
     }
   }
 
-  #### GCDkit showText option ####
-  # If not user-supplied, we use GCDkit defaults
-  if(is.null(template_options["showText"])){
-
-    if(getOption("gcd.plot.text")){
-      template_options["showText"] <- T
-    }else{
-      template_options["showText"] <- F
-    }
-
-  }
-
-
   #### Read the json template ####
   graphDef <- json_loader(json,path)
+
+  #### GCDkit showText option ####
+
+  # If not user-supplied, we use GCDkit defaults
+  # Create a vector with all options defined in this template
+  topt <- unlist(graphDef$optionDefaults)
+
+  # Replace showText by GCDkit's definition
+  topt["showText"] <- getOption("gcd.plot.text")
+
+  # ... and, again, by user-definition, if any
+  nm <- names(template_options)
+  topt[nm] <- template_options[nm]
+
+  template_options <- topt
 
   #### Main switch - what are we trying to plot ? ####
   switch(EXPR = graphDef$diagramType,

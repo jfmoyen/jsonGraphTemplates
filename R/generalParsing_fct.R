@@ -33,6 +33,17 @@ json_loader<-function(json,path=NULL){
 
   graphDef<-jsonlite::read_json(thejson,simplifyVector = T)
 
+  # Here we can do some syntaxic check
+ if( !is.null(graphDef$optionDefaults)){
+   if( sort(names(graphDef$optionDefaults)) != sort(names(graphDef$optionSwitches)) ){
+     # If there are no defaults, complain loudly !
+     if(  !all(tpl_el$switch %in% names(default_options) ) ){
+       stop("Error in json template:\n
+           all switches MUST have defaults")
+     }
+   }
+ }
+
   return(graphDef)
 }
 
@@ -53,7 +64,8 @@ show_switches<-function(graphDef){
 #'
 #' @param json Name of the template file
 #' @param path Path to json file
-#' @param template_options See plotDiagram_json
+#' @param template_options List of all the options used in template, i.e. must match
+#' template's "optionDefaults": field
 #' @param color_options See plotDiagram_json
 parse_template<-function(graphDef,template_options=NULL,color_options=NULL){
 
@@ -63,9 +75,9 @@ parse_template<-function(graphDef,template_options=NULL,color_options=NULL){
     template_nice<-lapply(graphDef$template,
                           function(z){
                           template_element_parser(z,
-                                                  template_options,
+                                                  template_options = template_options,
                                                   default_options = graphDef$optionDefaults,
-                                                  color_options)
+                                                  color_options = color_options)
                          })
   }
   # Remove empty elements
@@ -84,7 +96,7 @@ parse_template<-function(graphDef,template_options=NULL,color_options=NULL){
 #' and modifies them as desired
 #' @param tpl_el A template element
 #' @param default_options Switch options, by default
-#' @param template_options See plotDiagram_json
+#' @param template_options See plotDiagram_json, parse_template
 #' @param color_options See plotDiagram_json
 template_element_parser<-function(tpl_el,default_options,
                                   template_options,color_options){
@@ -93,19 +105,16 @@ template_element_parser<-function(tpl_el,default_options,
   if(any(names(tpl_el) == "switch")){
 
     # If there are no defaults, complain loudly !
-    if(  !(tpl_el$switch %in% names(default_options) ) ){
-       stop("If you use switches, they must have defaults !\n(error in json template)")
+    if(  !all(tpl_el$switch %in% names(default_options) ) ){
+       stop("If you use switches, they must be defined !")
     }
 
-    # if the corresponding option is not set,
-    # remove switch and use the default
-    if( is.null(template_options)||is.na(template_options[tpl_el$switch]) ){
-      swState <- default_options[tpl_el$switch]
+    # At that point we can rely on all options being defined in template_options
+    if( all(template_options[tpl_el$switch]) ){
+      # remove switch if all true, keep the element
+      tpl_el$switch <- NULL
     }else{
-      swState <- template_options[tpl_el$switch]
-    }
-    tpl_el$switch <- NULL
-    if(swState == F){
+      # else drop the element
       tpl_el <- NULL
     }
   }
