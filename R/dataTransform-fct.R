@@ -91,3 +91,19 @@ OhtaAraiParams<-function(where){
 
   return(as.matrix(ret))
   }
+
+
+
+####### Demo transformation function #####
+#' Showing how to use options
+#' @export
+#' @param wrdata
+demoTrans <- function(wrdata,doubleBB=F){
+
+  if(doubleBB){mu <- 2}else{mu<-1}
+  AA <- wrdata[,"SiO2"]
+  BB <- wrdata[,"MgO"]*mu
+
+  return(as.matrix(cbind(AA,BB)))
+
+}

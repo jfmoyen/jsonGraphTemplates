@@ -74,6 +74,15 @@ options(gcd.plot.bw = F)
 options(gcd.plot.text = T)
 plt.col <- c("blue","gray8","darkblue")
 
+##### Data transformation functions can now take extra arguments ####
+#Default
+plotDiagram_json("optionsDemo.json")
+
+plotDiagram_json("optionsDemo.json",transform_options=c("doubleBB"=F))
+plotDiagram_json("optionsDemo.json",transform_options=c("doubleBB"=T))
+
+
+
 #### More advanced use ####
 ## We can break the diagram in useful(?) components
 # Load into R

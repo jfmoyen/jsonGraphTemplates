@@ -239,7 +239,7 @@ data_transformation<-function(graphDef,wrdata,transform_options){
 #' @param doFilter Boolean, should the data be filtered according to template rule?
 #'
 #'
-points_coordinates<-function(graphDef,wrdata,lbl,transform_options,doFilter=T){
+points_coordinates<-function(graphDef,wrdata,lbl,transform_options=NULL,doFilter=T){
 
   # protect against odd things happening
   if(!(graphDef$diagramType%in%c("binary","ternary") ) ){
@@ -248,7 +248,7 @@ points_coordinates<-function(graphDef,wrdata,lbl,transform_options,doFilter=T){
   }
 
   # Calculate the actual plot data
-    wrdata<-data_transformation(graphDef,wrdata,transform_options=NULL)
+    wrdata<-data_transformation(graphDef,wrdata,transform_options)
 
   # Filter, if needed
   if(doFilter&&!is.null(graphDef$dataFilter)){

@@ -14,15 +14,14 @@
                    "plotthat": true},
 
 "diagramType":"binary",
-"dataTransform":"Mesonorm",
-"dataTransformParams":{"GUI":false,"precision":0.1},
+"dataTransform":"demoTrans",
 
-"axesDefinition": {  "X": "M",
-                     "Y": "W+F"
+"axesDefinition": {  "X": "AA",
+                     "Y": "BB"
                       },
 
-"limits": { "X": [0,5] ,
-            "Y": [0,2]
+"limits": { "X": [50,100] ,
+            "Y": [0,20]
             },
 
 "template":  {"lines0": {

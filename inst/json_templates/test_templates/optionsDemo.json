@@ -1,0 +1,21 @@
+{
+"name":"test",
+"fullName":"Test diagram template",
+"details":"This is just a test to show how to pass options to the transformation fn",
+"reference":"Me, Myself and I (2023)",
+"url":"http://www.google.com",
+"templateAuthor": "J.-F. Moyen [jfmoyen@gmail.com]",
+"templateHistory": "Brand new template for demo purpose",
+
+"diagramType":"binary",
+"dataTransform":"demoTrans",
+
+"axesDefinition": {  "X": "AA",
+                     "Y": "BB"
+                      },
+
+"limits": { "X": [50,100] ,
+            "Y": [0,20]
+            }
+
+}
