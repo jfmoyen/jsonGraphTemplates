@@ -375,7 +375,7 @@
             "y": 8.5,
             "text": "Granite",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text2": {
             "plotFun": "text",
@@ -383,7 +383,7 @@
             "y": 6,
             "text": "Quartz\ndiorite\n(granodiorite)",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text3": {
             "plotFun": "text",
@@ -391,7 +391,7 @@
             "y": 4.5,
             "text": "Diorite",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text4": {
             "plotFun": "text",
@@ -399,7 +399,7 @@
             "y": 3.5,
             "text": "Gabbro",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text5": {
             "plotFun": "text",
@@ -407,7 +407,7 @@
             "y": 11.5,
             "text": "Syenite",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text6": {
             "plotFun": "text",
@@ -415,7 +415,7 @@
             "y": 8.3,
             "text": "Syeno-\ndiorite",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text7": {
             "plotFun": "text",
@@ -423,7 +423,7 @@
             "y": 13.5,
             "text": "Nepheline\nsyenite",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text8": {
             "plotFun": "text",
@@ -431,7 +431,7 @@
             "y": 6.2,
             "text": "Gabbro",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text9": {
             "plotFun": "text",
@@ -439,7 +439,7 @@
             "y": 6.5,
             "text": "Ijolite",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text10": {
             "plotFun": "text",
@@ -447,7 +447,7 @@
             "y": 10,
             "text": "Syenite",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "lines16": {
             "plotFun": "lines",
@@ -526,7 +526,7 @@
             "y": 16,
             "text": "Ultrabasic",
             "col": "pltcol3",
-            "switch":"alkline"
+            "switch":"showText"
         },
         "text14": {
             "plotFun": "text",
@@ -534,7 +534,7 @@
             "y": 16,
             "text": "Basic",
             "col": "pltcol3",
-            "switch":"alkline"
+            "switch":"showText"
         },
         "text15": {
             "plotFun": "text",
@@ -542,7 +542,7 @@
             "y": 16,
             "text": "Intermediate",
             "col": "pltcol3",
-            "switch":"alkline"
+            "switch":"showText"
         },
         "text16": {
             "plotFun": "text",
@@ -550,7 +550,7 @@
             "y": 16,
             "text": "Acid",
             "col": "pltcol3",
-            "switch":"alkline"
+            "switch":"showText"
         }
     }
 }

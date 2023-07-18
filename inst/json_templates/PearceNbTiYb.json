@@ -242,7 +242,8 @@
             "cex": 1,
             "col": "pltcol2",
             "adj": 0,
-            "srt": 2
+            "srt": 2,
+            "switch": "showText"
         },
         "text2": {
             "plotFun": "text",
@@ -252,7 +253,8 @@
             "cex": 1,
             "col": "pltcol2",
             "adj": 0,
-            "srt": 2
+            "srt": 2,
+            "switch": "showText"
         },
         "text3": {
             "plotFun": "text",
@@ -262,7 +264,8 @@
             "cex": 1,
             "col": "pltcol2",
             "adj": 0.5,
-            "srt": 5
+            "srt": 5,
+            "switch": "showText"
         },
         "text4": {
             "plotFun": "text",
@@ -273,7 +276,8 @@
             "col": "pltcol2",
             "adj": 0.5,
             "hadj": 0.5,
-            "srt": 5
+            "srt": 5,
+            "switch": "showText"
         },
         "text5": {
             "plotFun": "text",
@@ -284,7 +288,8 @@
             "col": "pltcol2",
             "adj": 0.5,
             "hadj": 0.5,
-            "srt": 5
+            "srt": 5,
+            "switch": "showText"
         },
         "text6": {
             "plotFun": "text",
@@ -295,7 +300,8 @@
             "col": "pltcol2",
             "adj": 0.5,
             "hadj": 0.5,
-            "srt": 5
+            "srt": 5,
+            "switch": "showText"
         },
         "SunMcDonoughMantle": {
             "plotFun": "reservoirs",
@@ -303,7 +309,7 @@
             "var.name": "reservoirs.data",
             "reserv.condition": "NMORB|EMORB|OIB.* McDonough",
             "labels": ["NMORB","EMORB","OIB"],
-            "col": "darkgreen",
+            "col": "pltcol3",
             "pch": "*",
             "cex": 1,
             "type": "p",

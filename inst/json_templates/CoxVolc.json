@@ -393,7 +393,7 @@
             "y": 8.5,
             "text": "Rhyolite",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text2": {
             "plotFun": "text",
@@ -401,7 +401,7 @@
             "y": 6.5,
             "text": "Dacite",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text3": {
             "plotFun": "text",
@@ -409,7 +409,7 @@
             "y": 4.5,
             "text": "Andesite",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text4": {
             "plotFun": "text",
@@ -417,7 +417,7 @@
             "y": 4,
             "text": "Basalt",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text5": {
             "plotFun": "text",
@@ -425,7 +425,7 @@
             "y": 11.5,
             "text": "Trachyte",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text6": {
             "plotFun": "text",
@@ -433,7 +433,7 @@
             "y": 8,
             "text": "Mugearite",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text7": {
             "plotFun": "text",
@@ -441,7 +441,7 @@
             "y": 13.5,
             "text": "Phonolite",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text8": {
             "plotFun": "text",
@@ -449,7 +449,7 @@
             "y": 6.3,
             "text": "Hawaiite",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text9": {
             "plotFun": "text",
@@ -457,7 +457,7 @@
             "y": 7,
             "text": "Nephelinite",
             "col": "pltcol2",
-            "showText": true
+            "switch": "showText"
         },
         "text11": {
             "plotFun": "text",
@@ -466,7 +466,7 @@
             "text": "Trachy-\nandesite",
             "col": "pltcol2",
             "cex": 1,
-            "showText": true
+            "switch": "showText"
         },
         "text12": {
             "plotFun": "text",
@@ -476,7 +476,7 @@
             "col": "pltcol2",
             "cex": 1,
             "srt": 90,
-            "showText": true
+            "switch": "showText"
         },
         "text13": {
             "plotFun": "text",
@@ -485,7 +485,7 @@
             "text": "Benmoreite",
             "col": "pltcol2",
             "cex": 1,
-            "showText": true
+            "switch": "showText"
         },
         "text14": {
             "plotFun": "text",
@@ -495,7 +495,7 @@
             "col": "pltcol2",
             "cex": 1,
             "srt": 45,
-            "showText": true
+            "switch": "showText"
         },
         "text15": {
             "plotFun": "text",
@@ -505,7 +505,7 @@
             "col": "pltcol2",
             "cex": 1,
             "srt": 45,
-            "showText": true
+            "switch": "showText"
         },
         "text16": {
             "plotFun": "text",
@@ -515,7 +515,7 @@
             "col": "pltcol2",
             "cex": 1,
             "srt": 45,
-            "showText": true
+            "switch": "showText"
         },
         "lines16": {
             "plotFun": "lines",
@@ -594,7 +594,7 @@
             "y": 16,
             "text": "Ultrabasic",
             "col": "pltcol3",
-            "switch":"alkline"
+            "switch":"showText"
         },
         "text20": {
             "plotFun": "text",
@@ -602,7 +602,7 @@
             "y": 16,
             "text": "Basic",
             "col": "pltcol3",
-            "switch":"alkline"
+            "switch":"showText"
         },
         "text21": {
             "plotFun": "text",
@@ -610,7 +610,7 @@
             "y": 16,
             "text": "Intermediate",
             "col": "pltcol3",
-            "switch":"alkline"
+            "switch":"showText"
         },
         "text22": {
             "plotFun": "text",
@@ -618,7 +618,7 @@
             "y": 16,
             "text": "Acid",
             "col": "pltcol3",
-            "switch":"alkline"
+            "switch":"showText"
         }
     }
 }

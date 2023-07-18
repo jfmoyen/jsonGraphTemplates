@@ -506,6 +506,7 @@
                 0.52,
                 0.52
             ],
+            "lty": "dashed",
             "col": "pltcol2"
         },
         "lines2": {
@@ -518,6 +519,7 @@
                 0.173,
                 0.173
             ],
+            "lty": "dashed",
             "col": "pltcol2"
         },
         "lines3": {
@@ -530,6 +532,7 @@
                 0.043,
                 0.043
             ],
+            "lty": "dashed",
             "col": "pltcol2"
         },
         "lines4": {
@@ -542,6 +545,7 @@
                 0.779,
                 0.779
             ],
+            "lty": "dashed",
             "col": "pltcol2"
         },
         "lines5": {
@@ -554,6 +558,7 @@
                 0,
                 0.519615
             ],
+            "lty": "dashed",
             "col": "pltcol2"
         },
         "lines6": {
@@ -566,6 +571,7 @@
                 0,
                 0.519615
             ],
+            "lty": "dashed",
             "col": "pltcol2"
         },
         "lines7": {
@@ -578,6 +584,7 @@
                 0,
                 0.519615
             ],
+            "lty": "dashed",
             "col": "pltcol2"
         },
         "lines8": {
@@ -590,6 +597,7 @@
                 0,
                 0.519615
             ],
+            "lty": "dashed",
             "col": "pltcol2"
         },
         "lines9": {
@@ -602,6 +610,7 @@
                 0,
                 0.519615
             ],
+            "lty": "dashed",
             "col": "pltcol2"
         },
         "lines10": {
@@ -614,6 +623,7 @@
                 0,
                 0.519615
             ],
+            "lty": "dashed",
             "col": "pltcol2"
         },
         "lines20": {
@@ -630,6 +640,7 @@
                 0.866025,
                 0
             ],
+            "lty": "solid",
             "col": "black"
         },
         "GCDkit": {

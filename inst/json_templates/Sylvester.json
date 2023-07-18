@@ -88,7 +88,7 @@
             "plotfun": "text",
             "x": 9,
             "y": 2.15,
-            "text": "expression({SiO[2]} > 68*symbol(' ')*wt.*symbol('%'))",
+            "text": "SiO2>68",
             "cex": 1,
             "adj": 0,
             "col": "pltcol3",

@@ -96,7 +96,8 @@
             "angle": 30,
             "length": 0.1,
             "lty": "solid",
-            "lwd": 1
+            "lwd": 1,
+            "switch": "showText"
         },
         "arrows2": {
             "plotFun": "arrows",
@@ -109,7 +110,8 @@
             "angle": 30,
             "length": 0.1,
             "lty": "solid",
-            "lwd": 1
+            "lwd": 1,
+            "switch": "showText"
         },
         "arrows3": {
             "plotFun": "arrows",
@@ -122,7 +124,8 @@
             "angle": 30,
             "length": 0.1,
             "lty": "solid",
-            "lwd": 1
+            "lwd": 1,
+            "switch": "showText"
         },
         "arrows4": {
             "plotFun": "arrows",
@@ -135,7 +138,8 @@
             "angle": 30,
             "length": 0.1,
             "lty": "solid",
-            "lwd": 1
+            "lwd": 1,
+            "switch": "showText"
         },
         "GCDkit": {
             "plotFun": "NULL",

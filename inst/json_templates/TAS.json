@@ -9,8 +9,13 @@
     "templateHistory": "Converted from original GCDkit function",
     
     "RDialect": "base",
-    "optionSwitches": {"showText":  "Default option to show diagram text"},
-    "optionDefaults": {"showText": true},
+    "optionSwitches": {
+        "alkline": "Alkaline/subalkaline boundary",
+        "showText":  "Default option to show diagram text"},
+    "optionDefaults": {
+        "alkline": true,
+        "showText": true
+    },
 
     "diagramType": "binary",
     "dataTransform": "recastAnhydrous",
@@ -361,7 +366,8 @@
                 10
             ],
             "lty": "dashed",
-            "col": "pltcol2"
+            "col": "pltcol3",
+            "switch":"alkline"
         },
         "GCDkit": {
             "plotfun": "NULL",
@@ -502,18 +508,18 @@
             "x": 38,
             "y": 2,
             "text": "Alkaline",
-            "col": "pltcol2",
+            "col": "pltcol3",
             "srt": 45,
-            "switch": "showText"
+            "switch":"alkline"
         },
         "text17": {
             "plotfun": "text",
             "x": 55,
             "y": 1,
             "text": "Subalkaline/Tholeiitic",
-            "col": "pltcol2",
+            "col": "pltcol3",
             "srt": 5,
-            "switch": "showText"
+            "switch":"alkline"
         },
         "text18": {
             "plotfun": "text",
