@@ -3,6 +3,7 @@
 export(DebonCalcFull)
 export(OhtaAraiParams)
 export(data_transformation)
+export(demoTrans)
 export(json_loader)
 export(parse_template)
 export(plotDiagram_json)
