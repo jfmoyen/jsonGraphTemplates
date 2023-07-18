@@ -65,7 +65,26 @@ plotDiagram_json <- function(json, path = NULL,
     )
   }
 
-  #### Colors - if the user did not specify them, use GCDkit defaults ####
+  #### Read the json template ####
+  graphDef <- json_loader(json,path)
+
+  #### GCDkit showText option ####
+  # If not user-supplied, we use GCDkit defaults
+  # Create a vector with all options defined in this template
+  topt <- unlist(graphDef$optionDefaults)
+
+  # Replace showText by GCDkit's definition
+  topt["showText"] <- getOption("gcd.plot.text")
+
+  # ... and, again, by user-definition, if any
+  nm <- names(template_options)
+  topt[nm] <- template_options[nm]
+
+  template_options <- topt
+
+  #### GCDkit color defaults ####
+  # if the user did not specify them, use GCDkit defaults
+
   if(is.null(color_options)){
 
     if(getOption("gcd.plot.bw")){
@@ -82,25 +101,6 @@ plotDiagram_json <- function(json, path = NULL,
       )
     }
   }
-
-  #### Read the json template ####
-  graphDef <- json_loader(json,path)
-
-  #### GCDkit showText option ####
-
-  # If not user-supplied, we use GCDkit defaults
-  # Create a vector with all options defined in this template
-  topt <- unlist(graphDef$optionDefaults)
-
-  # Replace showText by GCDkit's definition
-  topt["showText"] <- getOption("gcd.plot.text")
-
-  # ... and, again, by user-definition, if any
-  nm <- names(template_options)
-  topt[nm] <- template_options[nm]
-
-  template_options <- topt
-
   #### Main switch - what are we trying to plot ? ####
   switch(EXPR = graphDef$diagramType,
          "binary" = pp<-plotDiagram_json_binary(graphDef,wrdata,lbl,new=new,template_options,color_options,transform_options),
