@@ -219,83 +219,8 @@ data_transformation<-function(graphDef,wrdata){
   }else{
     dd<-eval(parse(text=graphDef$dataTransform))()
   }
-    return(wrdata)
+    return(dd)
 }
-
-#' #### Data Filtering, GCDkit style ####
-#' #' This function filters the data, if needed
-#' #' @export
-#' #'
-#' #' @param graphDef A graph definition, loaded from json
-#' #' @param wrdata WR data (typically WR in GCDkit, or equivalent).
-#' #' This is a matrix, as per GCDkit convention, but is actually
-#' #' useful for ggplot as well as it will allow coordinate mapping for instance!
-#' #' If used in ggplot, convert back to tibble.
-#' #' @param lbl label data (typically labels in GCDkit, or equivalent)
-#' #' @param doFilter Boolean, should the data be filtered acording to template rule?
-#' #' /!\ uses GCDkit (for filtering) !! Should maybe move to Figaro
-#' data_preparation<-function(graphDef,wrdata,lbl,doFilter=T){
-#'
-#'   # If required by the template, calculate the transformed data
-#'   if(is.null(graphDef$dataTransform)){
-#'     dd<-wrdata
-#'   }else{
-#'     dd<-eval(parse(text=graphDef$dataTransform))()
-#'   }
-#'
-#'   # If we have a filter
-#'   if(doFilter&&!is.null(graphDef$dataFilter)){
-#'     selected <- GCDkit::selectSubset(what=graphDef$dataFilter,
-#'                                      where=cbind(lbl,dd),
-#'                                      all.nomatch=F,
-#'                                      save=F)
-#'     if(selected==""){stop("No data to plot matching criteria")}
-#'     dd <- dd[selected,,drop=F]
-#'     lbl <- lbl[selected,,drop=F]
-#'   }
-#'
-#'   return(list(wrdata = dd,
-#'               lbl = lbl))
-#'
-#' }
-
-#' #### Data preparation #### DEPRECATED
-#' #' This function prepares the data by filtering it,
-#' #' if a filter condition was supplied; and by transforming it, if needed.
-#' #' @export
-#' #'
-#' #' @param graphDef A graph definition, loaded from json
-#' #' @param wrdata WR data (typically WR in GCDkit, or equivalent).
-#' #' This is a matrix, as per GCDkit convention, but is actually
-#' #' useful for ggplot as well as it will allow coordinate mapping for instance!
-#' #' If used in ggplot, convert back to tibble.
-#' #' @param lbl label data (typically labels in GCDkit, or equivalent)
-#' #' @param doFilter Boolean, should the data be filtered acording to template rule?
-#' #' /!\ uses GCDkit (for filtering) !! Should maybe move to Figaro
-#' data_preparation<-function(graphDef,wrdata,lbl,doFilter=T){
-#'
-#'   # If required by the template, calculate the transformed data
-#'   if(is.null(graphDef$dataTransform)){
-#'     dd<-wrdata
-#'   }else{
-#'     dd<-eval(parse(text=graphDef$dataTransform))()
-#'   }
-#'
-#'   # If we have a filter
-#'   if(doFilter&&!is.null(graphDef$dataFilter)){
-#'     selected <- GCDkit::selectSubset(what=graphDef$dataFilter,
-#'                              where=cbind(lbl,dd),
-#'                              all.nomatch=F,
-#'                              save=F)
-#'     if(selected==""){stop("No data to plot matching criteria")}
-#'     dd <- dd[selected,,drop=F]
-#'     lbl <- lbl[selected,,drop=F]
-#'   }
-#'
-#'   return(list(wrdata = dd,
-#'               lbl = lbl))
-#'
-#' }
 
 #### Calculate the coordinates of any point from a well-conformed data matrix ####
 #' Calculate the x.data, y.data, a.data etc for any dataset, following template rules

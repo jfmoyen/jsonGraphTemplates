@@ -81,7 +81,6 @@ plotDiagram_json <- function(json, path = NULL,
     }
   }
 
-
   #### GCDkit showText option ####
   # If not user-supplied, we use GCDkit defaults
   if(is.null(template_options["showText"])){

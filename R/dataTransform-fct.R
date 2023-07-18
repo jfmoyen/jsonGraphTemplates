@@ -48,14 +48,6 @@ recastAnhydrous <- function(where=WR){
 
 OhtaAraiParams<-function(where){
 
-  # This will fail if GCDkit is not here
-  if (!requireNamespace("GCDkit", quietly = TRUE)) {
-    stop(
-      "Package \"GCDkit\" must be installed to use this data transform",
-      call. = FALSE
-    )
-  }
-
   usedox<-c("SiO2","TiO2","Al2O3","Fe2O3t","MgO","CaO_corr","Na2O","K2O")
   oxsubset<-c("SiO2","TiO2","Al2O3","FeOt","MgO","CaO","Na2O","K2O","P2O5","CO2")
 
@@ -96,5 +88,6 @@ OhtaAraiParams<-function(where){
                -0.002*log(my.WR[,"MgO"])-0.448*log(my.WR[,"CaO_corr"])-0.464*log(my.WR[,"Na2O"])+0.008*log(my.WR[,"K2O"])-1.374)
 
   ret <- cbind(M,F,W)
+
   return(as.matrix(ret))
   }

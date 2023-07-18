@@ -14,21 +14,21 @@
                    "plotthat": true},
 
 "diagramType":"binary",
-"dataTransform":null,
+"dataTransform":"function(){ OhtaAraiParams(wrdata) }",
 
-"axesDefinition": {  "X": "SiO2/Al2O3",
-                     "Y": "MgO+FeOt"
+"axesDefinition": {  "X": "M",
+                     "Y": "W+F"
                       },
 
 "limits": { "X": [0,5] ,
-            "Y": [0,10]
+            "Y": [0,2]
             },
 
 "template":  {"lines0": {
                 "plotFun":"lines",
                 "x":[0,4.0],
                 "y":[0,10.0],
-                "col":"mycol",
+                "col":"pltcol1",
                 "switch":"plotthat",
                 "_notes":"Arbitrary boundary line"
                         },
@@ -37,7 +37,7 @@
                "x":2,
                "y":3.1,
                "text":"Tholeiite Series",
-               "col":"textcol",
+               "col":"plotcol3",
                "switch":"plotthis"
                       }
               }
