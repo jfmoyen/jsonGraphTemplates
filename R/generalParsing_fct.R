@@ -198,9 +198,10 @@ axes_parser_ternary<-function(graphDef){
               clab=clab))
 }
 
-#### Data preparation ####
-#' This function prepares the data by filtering it,
-#' if a filter condition was supplied; and by transforming it, if needed.
+
+#### Data transformation ####
+#' This function transforms the data using the function required
+#'
 #' @export
 #'
 #' @param graphDef A graph definition, loaded from json
@@ -208,32 +209,93 @@ axes_parser_ternary<-function(graphDef){
 #' This is a matrix, as per GCDkit convention, but is actually
 #' useful for ggplot as well as it will allow coordinate mapping for instance!
 #' If used in ggplot, convert back to tibble.
-#' @param lbl label data (typically labels in GCDkit, or equivalent)
-#' @param doFilter Boolean, should the data be filtered acording to template rule?
-#' /!\ uses GCDkit !! Should maybe move to Figaro
-data_preparation<-function(graphDef,wrdata,lbl,doFilter=T){
+#' @details the transform fn may, or may not be GCDkit. Obviously if it is,
+#' this depends on GCDkit...
+data_transformation<-function(graphDef,wrdata){
+
   # If required by the template, calculate the transformed data
   if(is.null(graphDef$dataTransform)){
     dd<-wrdata
   }else{
     dd<-eval(parse(text=graphDef$dataTransform))()
   }
-
-  # If we have a filter
-  if(doFilter&&!is.null(graphDef$dataFilter)){
-    selected <- GCDkit::selectSubset(what=graphDef$dataFilter,
-                             where=cbind(lbl,dd),
-                             all.nomatch=F,
-                             save=F)
-    if(selected==""){stop("No data to plot matching criteria")}
-    dd <- dd[selected,,drop=F]
-    lbl <- lbl[selected,,drop=F]
-  }
-
-  return(list(wrdata = dd,
-              lbl = lbl))
-
+    return(wrdata)
 }
+
+#' #### Data Filtering, GCDkit style ####
+#' #' This function filters the data, if needed
+#' #' @export
+#' #'
+#' #' @param graphDef A graph definition, loaded from json
+#' #' @param wrdata WR data (typically WR in GCDkit, or equivalent).
+#' #' This is a matrix, as per GCDkit convention, but is actually
+#' #' useful for ggplot as well as it will allow coordinate mapping for instance!
+#' #' If used in ggplot, convert back to tibble.
+#' #' @param lbl label data (typically labels in GCDkit, or equivalent)
+#' #' @param doFilter Boolean, should the data be filtered acording to template rule?
+#' #' /!\ uses GCDkit (for filtering) !! Should maybe move to Figaro
+#' data_preparation<-function(graphDef,wrdata,lbl,doFilter=T){
+#'
+#'   # If required by the template, calculate the transformed data
+#'   if(is.null(graphDef$dataTransform)){
+#'     dd<-wrdata
+#'   }else{
+#'     dd<-eval(parse(text=graphDef$dataTransform))()
+#'   }
+#'
+#'   # If we have a filter
+#'   if(doFilter&&!is.null(graphDef$dataFilter)){
+#'     selected <- GCDkit::selectSubset(what=graphDef$dataFilter,
+#'                                      where=cbind(lbl,dd),
+#'                                      all.nomatch=F,
+#'                                      save=F)
+#'     if(selected==""){stop("No data to plot matching criteria")}
+#'     dd <- dd[selected,,drop=F]
+#'     lbl <- lbl[selected,,drop=F]
+#'   }
+#'
+#'   return(list(wrdata = dd,
+#'               lbl = lbl))
+#'
+#' }
+
+#' #### Data preparation #### DEPRECATED
+#' #' This function prepares the data by filtering it,
+#' #' if a filter condition was supplied; and by transforming it, if needed.
+#' #' @export
+#' #'
+#' #' @param graphDef A graph definition, loaded from json
+#' #' @param wrdata WR data (typically WR in GCDkit, or equivalent).
+#' #' This is a matrix, as per GCDkit convention, but is actually
+#' #' useful for ggplot as well as it will allow coordinate mapping for instance!
+#' #' If used in ggplot, convert back to tibble.
+#' #' @param lbl label data (typically labels in GCDkit, or equivalent)
+#' #' @param doFilter Boolean, should the data be filtered acording to template rule?
+#' #' /!\ uses GCDkit (for filtering) !! Should maybe move to Figaro
+#' data_preparation<-function(graphDef,wrdata,lbl,doFilter=T){
+#'
+#'   # If required by the template, calculate the transformed data
+#'   if(is.null(graphDef$dataTransform)){
+#'     dd<-wrdata
+#'   }else{
+#'     dd<-eval(parse(text=graphDef$dataTransform))()
+#'   }
+#'
+#'   # If we have a filter
+#'   if(doFilter&&!is.null(graphDef$dataFilter)){
+#'     selected <- GCDkit::selectSubset(what=graphDef$dataFilter,
+#'                              where=cbind(lbl,dd),
+#'                              all.nomatch=F,
+#'                              save=F)
+#'     if(selected==""){stop("No data to plot matching criteria")}
+#'     dd <- dd[selected,,drop=F]
+#'     lbl <- lbl[selected,,drop=F]
+#'   }
+#'
+#'   return(list(wrdata = dd,
+#'               lbl = lbl))
+#'
+#' }
 
 #### Calculate the coordinates of any point from a well-conformed data matrix ####
 #' Calculate the x.data, y.data, a.data etc for any dataset, following template rules
@@ -249,25 +311,39 @@ data_preparation<-function(graphDef,wrdata,lbl,doFilter=T){
 #'
 #'
 points_coordinates<-function(graphDef,wrdata,lbl,doFilter=T){
-  preparedData <-data_preparation(graphDef,wrdata,lbl,doFilter=doFilter)
 
+  # protect against odd things happening
   if(!(graphDef$diagramType%in%c("binary","ternary") ) ){
     msg <- paste("Sorry, cannot work on graph of type",graphDef$diagramType,"\n",sep=" ")
     stop(msg)
   }
 
+  # Calculate the actual plot data
+    wrdata<-data_transformation(graphDef,wrdata)
+
+  # Filter, if needed
+  if(doFilter&&!is.null(graphDef$dataFilter)){
+    selected <- GCDkit::selectSubset(what=graphDef$dataFilter,
+                                     where=cbind(lbl,wrdata),
+                                     all.nomatch=F,
+                                     save=F)
+    if(selected==""){stop("No data to plot matching criteria")}
+    dd <- wrdata[selected,,drop=F]
+    lbl <- lbl[selected,,drop=F]
+  }
+
   if(graphDef$diagramType == "binary"){
-    x.data <- GCDkit::calcCore(graphDef$axesDefinition$X,where="preparedData$wrdata",redo=F)$results
-    y.data <- GCDkit::calcCore(graphDef$axesDefinition$Y,where="preparedData$wrdata",redo=F)$results
+    x.data <- GCDkit::calcCore(graphDef$axesDefinition$X,where="wrdata",redo=F)$results
+    y.data <- GCDkit::calcCore(graphDef$axesDefinition$Y,where="wrdata",redo=F)$results
 
     retVal <- cbind(x.data,y.data)
   }
 
   if(graphDef$diagramType == "ternary"){
     # Get the A, B and C data (apices)
-    a.data <- GCDkit::calcCore(graphDef$axesDefinition$A,where="preparedData$wrdata",redo=F)$results
-    b.data <- GCDkit::calcCore(graphDef$axesDefinition$B,where="preparedData$wrdata",redo=F)$results
-    c.data <- GCDkit::calcCore(graphDef$axesDefinition$C,where="preparedData$wrdata",redo=F)$results
+    a.data <- GCDkit::calcCore(graphDef$axesDefinition$A,where="wrdata",redo=F)$results
+    b.data <- GCDkit::calcCore(graphDef$axesDefinition$B,where="wrdata",redo=F)$results
+    c.data <- GCDkit::calcCore(graphDef$axesDefinition$C,where="wrdata",redo=F)$results
 
     # Convert to X and Y
     sum_apices <- a.data+b.data+c.data

@@ -41,8 +41,6 @@ recastAnhydrous <- function(where=WR){
   return(WRanh)
 }
 
-
-
 ############### Calculate Ohta & Arai parameters ####################
 #' Recalculate Otha + Arai M, F and W parameters
 #' @export
