@@ -23,6 +23,8 @@ points_coordinates(
 
 \item{lbl}{label data (typically labels in GCDkit, or equivalent)}
 
+\item{transform_options}{Options passed to the data transformation function}
+
 \item{doFilter}{Boolean, should the data be filtered according to template rule?}
 }
 \description{

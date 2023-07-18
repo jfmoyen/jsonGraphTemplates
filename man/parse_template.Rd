@@ -8,13 +8,12 @@ Works with template_element_parser}
 parse_template(graphDef, template_options = NULL, color_options = NULL)
 }
 \arguments{
-\item{template_options}{See plotDiagram_json}
+\item{graphDef}{Graph definition list, loaded by json_loader}
+
+\item{template_options}{List of all the options used in template, i.e. must match
+template's "optionDefaults": field}
 
 \item{color_options}{See plotDiagram_json}
-
-\item{json}{Name of the template file}
-
-\item{path}{Path to json file}
 }
 \description{
 Mostly, a wrapper to parse individual template elements

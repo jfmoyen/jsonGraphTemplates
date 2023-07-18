@@ -6,6 +6,11 @@
 \usage{
 demoTrans(wrdata, doubleBB = F)
 }
+\arguments{
+\item{wrdata}{a WR matrix}
+
+\item{doubleBB}{a tag that will do something...}
+}
 \description{
 Showing how to use options
 }

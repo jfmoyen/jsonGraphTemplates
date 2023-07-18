@@ -97,7 +97,8 @@ OhtaAraiParams<-function(where){
 ####### Demo transformation function #####
 #' Showing how to use options
 #' @export
-#' @param wrdata
+#' @param wrdata a WR matrix
+#' @param doubleBB a tag that will do something...
 demoTrans <- function(wrdata,doubleBB=F){
 
   if(doubleBB){mu <- 2}else{mu<-1}

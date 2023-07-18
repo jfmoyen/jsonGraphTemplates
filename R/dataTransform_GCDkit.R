@@ -15,5 +15,5 @@ if (!requireNamespace("GCDkit", quietly = TRUE)) {
   )
 }
 
-  return(DebonCalc(millications(wrdata)) )
+  return(GCDkit::DebonCalc(GCDkit::millications(wrdata)) )
 }

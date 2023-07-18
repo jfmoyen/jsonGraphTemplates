@@ -81,8 +81,6 @@ plotDiagram_json("optionsDemo.json")
 plotDiagram_json("optionsDemo.json",transform_options=c("doubleBB"=F))
 plotDiagram_json("optionsDemo.json",transform_options=c("doubleBB"=T))
 
-
-
 #### More advanced use ####
 ## We can break the diagram in useful(?) components
 # Load into R

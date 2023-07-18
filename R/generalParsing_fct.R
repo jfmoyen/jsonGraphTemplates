@@ -36,13 +36,10 @@ json_loader<-function(json,path=NULL){
   # Here we can do some syntaxic check
  if( !is.null(graphDef$optionDefaults)){
    if( sort(names(graphDef$optionDefaults)) != sort(names(graphDef$optionSwitches)) ){
-     # If there are no defaults, complain loudly !
-     if(  !all(tpl_el$switch %in% names(default_options) ) ){
-       stop("Error in json template:\n
+         stop("Error in json template:\n
            all switches MUST have defaults")
      }
    }
- }
 
   return(graphDef)
 }
@@ -62,8 +59,7 @@ show_switches<-function(graphDef){
 #' Works with template_element_parser
 #' @export
 #'
-#' @param json Name of the template file
-#' @param path Path to json file
+#' @param graphDef Graph definition list, loaded by json_loader
 #' @param template_options List of all the options used in template, i.e. must match
 #' template's "optionDefaults": field
 #' @param color_options See plotDiagram_json
@@ -245,6 +241,7 @@ data_transformation<-function(graphDef,wrdata,transform_options){
 #' @param graphDef A graph definition, loaded from json
 #' @param wrdata WR data (typically WR in GCDkit, or equivalent)
 #' @param lbl label data (typically labels in GCDkit, or equivalent)
+#' @param transform_options Options passed to the data transformation function
 #' @param doFilter Boolean, should the data be filtered according to template rule?
 #'
 #'

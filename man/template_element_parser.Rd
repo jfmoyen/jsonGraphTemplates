@@ -17,7 +17,7 @@ template_element_parser(
 
 \item{default_options}{Switch options, by default}
 
-\item{template_options}{See plotDiagram_json}
+\item{template_options}{See plotDiagram_json, parse_template}
 
 \item{color_options}{See plotDiagram_json}
 }

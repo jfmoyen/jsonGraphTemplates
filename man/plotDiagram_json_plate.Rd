@@ -2,7 +2,7 @@
 % Please edit documentation in R/Figaro_parser.R
 \name{plotDiagram_json_plate}
 \alias{plotDiagram_json_plate}
-\title{Inner function, for binary plots}
+\title{Inner function, for plates plots (deprecated)}
 \usage{
 plotDiagram_json_plate(graphDef, dd, lbl, template_options, color_options)
 }
@@ -14,12 +14,21 @@ plotDiagram_json_plate(graphDef, dd, lbl, template_options, color_options)
 \item{lbl}{The labels (GCDkit style)}
 
 \item{template_options}{Further arguments passed to the parser, see main function}
+
+\item{color_options}{Further arguments passed to the parser, see main function}
 }
 \description{
-Inner function, for binary plots
+Inner function, for plates plots (deprecated)
 }
 \details{
 Internal function, that does the actual plotting
+in the case of a plate. This function is not very nicely written, it relies on
+multiplePerPage and hopes it does the right thing. As multiplePerPage
+uses command defined as texts, well...
+Inner function, for binary plots
+
+Internal function, that does the actual plotting
 in the case of a plate.
 This is mostly code from multiplePerPage()
+All this function does is call recursively plotDiagram_json to fill the plate slots.
 }

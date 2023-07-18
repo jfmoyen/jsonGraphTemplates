@@ -284,45 +284,47 @@ plotDiagram_json_ternary <- function(graphDef,wrdata,lbl,new,
 #' multiplePerPage and hopes it does the right thing. As multiplePerPage
 #' uses command defined as texts, well...
 
-plotDiagram_json_plate_DEPRECATED <- function(graphDef,dd, lbl,
-                                    template_options,color_options){
-
-## Not nice, there must be a better way to do this !
-  assign("dd", dd, .GlobalEnv)
-  assign("lbl", lbl, .GlobalEnv)
-
-## multiplePerPage uses commands as strings, so we have to assemble them (! ...)
-  pltCommand <- paste("plotDiagram_json(json='",
-                      graphDef$plateSlots,
-                      "',wrdata=dd,lbl=lbl,",
-                      "new=F,",
-                      "template_options=template_options,",
-                      "color_options=color_options",")",sep="")
-
-  GCDkit::multiplePerPage(pltCommand,
-                          nrow = graphDef$nrow,
-                          ncol = graphDef$ncol,
-                          title= graphDef$fullName)
-
-## Cleanup
-  remove("dd", envir= .GlobalEnv)
-  remove("lbl", envir = .GlobalEnv)
-
-}
+# plotDiagram_json_plate_DEPRECATED <- function(graphDef,dd, lbl,
+#                                     template_options,color_options){
+#
+# ## Not nice, there must be a better way to do this !
+#   assign("dd", dd, .GlobalEnv)
+#   assign("lbl", lbl, .GlobalEnv)
+#
+# ## multiplePerPage uses commands as strings, so we have to assemble them (! ...)
+#   pltCommand <- paste("plotDiagram_json(json='",
+#                       graphDef$plateSlots,
+#                       "',wrdata=dd,lbl=lbl,",
+#                       "new=F,",
+#                       "template_options=template_options,",
+#                       "color_options=color_options",")",sep="")
+#
+#   GCDkit::multiplePerPage(pltCommand,
+#                           nrow = graphDef$nrow,
+#                           ncol = graphDef$ncol,
+#                           title= graphDef$fullName)
+#
+# ## Cleanup
+#   remove("dd", envir= .GlobalEnv)
+#   remove("lbl", envir = .GlobalEnv)
+#
+# }
 
 ############### Plot json template in Figaro: PLATES ####################
 #' Inner function, for binary plots
-#' @importFrom graphics mtext screen
+#' @importFrom graphics mtext screen par
 #' @importFrom grDevices n2mfrow
 #'
 #' @param graphDef The template, loaded into a list from json
 #' @param dd The plotting dataset
 #' @param lbl The labels (GCDkit style)
 #' @param template_options Further arguments passed to the parser, see main function
+#' @param color_options Further arguments passed to the parser, see main function
 #' @details
 #' Internal function, that does the actual plotting
 #' in the case of a plate.
 #' This is mostly code from multiplePerPage()
+#' All this function does is call recursively plotDiagram_json to fill the plate slots.
 
 plotDiagram_json_plate <- function(graphDef,dd, lbl,
                                      template_options,color_options){
@@ -358,7 +360,7 @@ plotDiagram_json_plate <- function(graphDef,dd, lbl,
   assign("plate.data", plate.data, .GlobalEnv)
 
   ## Graphic setup and title
-  par(oma = c(0, 0, 4, 0))
+  graphics::par(oma = c(0, 0, 4, 0))
   graphics::mtext(text = GCDkit::annotate(plate$title), side = 3, line = 0.25,
         outer = TRUE, cex = 1.5)
 
@@ -369,12 +371,12 @@ plotDiagram_json_plate <- function(graphDef,dd, lbl,
     ## Geometric considerations
     if (.Platform$OS.type == "windows" & .Platform$GUI ==
         "Rgui") {
-      par(mar = c(4.5, 5.5, 2, 1.5))
-      par(pty = "s")
+      graphics::par(mar = c(4.5, 5.5, 2, 1.5))
+      graphics::par(pty = "s")
     }
     else {
-      par(mar = c(2, 0.5, 1, 1))
-      par(pty = "s")
+      graphics::par(mar = c(2, 0.5, 1, 1))
+      graphics::par(pty = "s")
     }
 
     ## The actual plot
