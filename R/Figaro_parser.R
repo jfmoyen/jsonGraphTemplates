@@ -35,6 +35,16 @@ utils::globalVariables(c("demo","sheet","x.data","y.data","WR","mw","plt.col"))
 #'  is not installed. This is the original function, intended as a
 #'  replacement for GDkit::plotDiagram.
 #'
+#'  This function will honour gCDkit global options, UNLESS the user overwrites them.
+#'
+#'  Optional text (controlled by "switch": "showText" in the template): If the user specifies
+#'  the option in the call, with template_options=c("showText"=T) for instance,
+#'  the user choice will be followed. Else, the function will use options("gcd.plot.text").
+#'
+#'  Likewise, if the user supplies colours for pltcol1, pltcol2 and pltcol3 they will be honoured.
+#'  Otherwise, the system will use (1) black, if options("gcd.plot.bw") is true or
+#'  (2) the content of plt.col[] if false.
+#'
 
 plotDiagram_json <- function(json, path = NULL,
                              wrdata=WR,lbl=labels,
@@ -53,22 +63,37 @@ plotDiagram_json <- function(json, path = NULL,
     )
   }
 
-  #### Colors - use default, if defined ####
+  #### Colors - if the user did not specify them, use GCDkit defaults ####
   if(is.null(template_colors)){
-    template_colors<-c(
-      "pltcol1" = plt.col[1],
-      "pltcol2" = plt.col[2],
-      "pltcol3" = plt.col[3]
-    )
+
+    if(getOption("gcd.plot.bw")){
+      template_colors<-c(
+        "pltcol1" = "black",
+        "pltcol2" = "black",
+        "pltcol3" = "black"
+      )
+    }else{
+      template_colors<-c(
+        "pltcol1" = plt.col[1],
+        "pltcol2" = plt.col[2],
+        "pltcol3" = plt.col[3]
+      )
+    }
   }
-  #### Colors - use B&W, if defined
-  if(getOption("gcd.plot.bw")){
-    template_colors<-c(
-      "pltcol1" = "black",
-      "pltcol2" = "black",
-      "pltcol3" = "black"
-    )
+
+
+  #### GCDkit showText option ####
+  # If not user-supplied, we use GCDkit defaults
+  if(is.null(template_options["showText"])){
+
+    if(getOption("gcd.plot.text")){
+      template_options["showText"] <- T
+    }else{
+      template_options["showText"] <- F
+    }
+
   }
+
 
   #### Read the json template ####
   graphDef <- json_loader(json,path)

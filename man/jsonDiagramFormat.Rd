@@ -11,7 +11,8 @@ Diagram templates are defined using json format. json follows a tag:value conven
 \section{Mandatory}{
   \itemize{
   The following items are mandatory and must be present in the template
-    \item{"diagramType": }{One of "binary" or "ternary". Describes the geometry, and overall behviour of the diagram.}
+  \item{"Rdialect:" }{Indicates which "dialect" the template requires: plain R (\code{base}) or \code{GCDkit} ? }
+    \item{"diagramType": }{One of "binary", "ternary" or "plate". Describes the geometry, and overall behviour of the diagram. Plates are a collections of simpler diagram and the parser should be able to deal with them.}
     \item{"axesDefinition": }{Axes mapping. In a binary diagrams, axes are X and Y. In a ternary, apices are A, B and C. This should be either variables from the dataset, or vaues that can be calculated from them. In GCDkit they are calculated using calcCore, in ggplot using data-masking. In base R, only natural variables can be used; you can always calcualte in advance however. Do NOT include corresponding template elements in the file (even for ternary), they are automatically created by the parser.}
     \item{"limits": }{a list of two, X and Y, giving the range on each axis}
   }

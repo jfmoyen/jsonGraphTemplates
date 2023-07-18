@@ -7,6 +7,13 @@
     "templateAuthor": "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
+
+    "RDialect": "base",
+    "optionSwitches": {"showText": "Default option to show diagram text"
+                  },
+     "optionDefaults": {"showText": true
+                  },
+
     "diagramType": "ternary",
     "dataTransform": null,
     "axesDefinition": {
@@ -162,14 +169,16 @@
             "x": 0.5,
             "y": 0.55,
             "text": "Tholeiite Series",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         },
         "text5": {
             "plotFun": "text",
             "x": 0.5,
             "y": 0.1,
             "text": "Calc-alkaline Series",
-            "col": "pltcol2"
+            "col": "pltcol2",
+            "switch": "showText"
         }
     }
 }
