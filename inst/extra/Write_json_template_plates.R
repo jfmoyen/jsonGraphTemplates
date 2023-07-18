@@ -1,4 +1,4 @@
-##### A small, ad-hoc script to write json file from loaded Figaro template
+##### A small, ad-hoc script to write json file from loaded Figaro template for PLATES
 # Almost certainly it will need customization, and it is therefore given as-is
 # Also, expect to tweak manually the template in particular:
 # plt.col are converted to real colour names
@@ -9,46 +9,39 @@
 # .. and often, log specifications as well
 
 #### Main function ####
-readFigaroTemplate<-function(diagram,plot=F,...){
+readFigaroTemplate<-function(diag){
 
-  if(class(diagram)=="character"){
-    do.call(diagram,list(...))
-  }else{
-    diagram(...)
-  }
+  xlims <- diag$demo$call$xlim
+  ylims <- diag$demo$call$ylim
 
-  xlims <- sheet$demo$call$xlim
-  ylims <- sheet$demo$call$ylim
-
-  xAxis <- as.character(sheet$demo$call$xlab)
-  yAxis <- as.character(sheet$demo$call$ylab)
+  xAxis <- as.character(diag$demo$call$xlab)
+  yAxis <- as.character(diag$demo$call$ylab)
 
   ## X and Y scale (log or natural)
 
-  islog <- as.character(sheet$demo$call$log)
+  islog <- as.character(diag$demo$call$log)
 
-  template <- sheet$demo$template
-  template1 <- template
+  template <- diag$demo$template
 
   for(i in 1:length(template)){
     # Add name to the first element
     nm <- names(template[[i]])
     names(template[[i]]) <- c("plotFun",nm[-1])
-    # # Tag the lines used for classification
-    # if(i %in% template$clssf$use ){
-    #   template[[i]][["clssf"]] <- T
-    # }
   }
 
 
   return(list(
-    name = diagram,
-    fullName = sheet$demo$template$GCDkit$plot.name,
+    name = diag$demo$call$diagram,
+    fullName = diag$demo$template$GCDkit$plot.name,
     details = "",
     reference = "",
     url = "",
-    templateAuthor = "J.-F. Moyen [jfmoyen@gmail.com]",
+    templateAuthor= "V. Erban <erban@sopky.cz>, V. Janoušek <vojtech.janousek@geology.cz>",
+    templateConversion = "J.-F. Moyen <jfmoyen@gmail.com>",
     templateHistory = "Converted from original GCDkit function",
+    RDialect = "base",
+    optionSwitches = list(showText= "Default option to show diagram text"),
+    optionDefaults = list(showText= T),
     diagramType=sheet$demo$template$GCDkit$plot.type,
     dataTransform = NULL,
     axesDefinition = list(X=xAxis,Y=yAxis),
@@ -59,7 +52,7 @@ readFigaroTemplate<-function(diagram,plot=F,...){
 }
 
 ##########
-ee<-readFigaroTemplate("OhtaArai")
+ee<-readFigaroTemplate(plate[[1]])
 # ee$template$B$text<-NULL ##When text appears as expression
 ee.json <- prettify(toJSON(ee,null="null",auto_unbox = T))
-write(ee.json,"./inst/json_templates/OhtaArai.json")
+write(ee.json,"./inst/json_templates/plate_components/Frost_fig1.json")
