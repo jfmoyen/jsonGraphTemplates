@@ -12,7 +12,8 @@ plotDiagram_json(
   verbose = F,
   new = T,
   template_options = NULL,
-  template_colors = NULL
+  template_colors = NULL,
+  transform_options = NULL
 )
 }
 \arguments{
@@ -32,10 +33,12 @@ as in many cases we need GCDkit-calculated things such as A/CNK etc.}
 
 \item{template_options}{Options passed to the parser, as named vector
 They are of the form c("switch1" = T, "switch2" = F, etc)
-and they wll affect template elements that have a switch.}
+and they will affect template elements that have a switch.}
 
 \item{template_colors}{A named vector, with names corresponding to the colours
 found in the template, e.g. c(col1="red",col2="blue"). Defaults to black.}
+
+\item{transform_options}{Further options to be passed to data transformation function}
 }
 \description{
 Read a template defined in a json file and import it to  figaro graph
@@ -46,4 +49,14 @@ This function reads a json template and plots a Figaro graph
  a level of editing and interactivity). It can NOT work if GCDkit
  is not installed. This is the original function, intended as a
  replacement for GDkit::plotDiagram.
+
+ This function will honour gCDkit global options, UNLESS the user overwrites them.
+
+ Optional text (controlled by "switch": "showText" in the template): If the user specifies
+ the option in the call, with template_options=c("showText"=T) for instance,
+ the user choice will be followed. Else, the function will use options("gcd.plot.text").
+
+ Likewise, if the user supplies colours for pltcol1, pltcol2 and pltcol3 they will be honoured.
+ Otherwise, the system will use (1) black, if options("gcd.plot.bw") is true or
+ (2) the content of plt.col[] if false.
 }

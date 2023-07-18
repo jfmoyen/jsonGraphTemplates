@@ -8,7 +8,7 @@ and of course if the template includes a filter).
 This function should probably be made figaro-specific...#####
 /!\ uses GCDkit !! Should maybe move to Figaro}
 \usage{
-points_coordinates(graphDef, wrdata, lbl, doFilter = T)
+points_coordinates(graphDef, wrdata, lbl, transform_options, doFilter = T)
 }
 \arguments{
 \item{graphDef}{A graph definition, loaded from json}

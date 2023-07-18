@@ -55,7 +55,7 @@ show_switches<-function(graphDef){
 #' @param path Path to json file
 #' @param template_options See plotDiagram_json
 #' @param template_colors See plotDiagram_json
-parse_template<-function(graphDef,template_options,template_colors){
+parse_template<-function(graphDef,template_options=NULL,template_colors=NULL){
 
   if(is.null(graphDef$template)){
     template_nice <- NULL
@@ -248,7 +248,7 @@ points_coordinates<-function(graphDef,wrdata,lbl,transform_options,doFilter=T){
   }
 
   # Calculate the actual plot data
-    wrdata<-data_transformation(graphDef,wrdata,transform_options)
+    wrdata<-data_transformation(graphDef,wrdata,transform_options=NULL)
 
   # Filter, if needed
   if(doFilter&&!is.null(graphDef$dataFilter)){

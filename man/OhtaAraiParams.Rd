@@ -7,8 +7,7 @@
 OhtaAraiParams(where)
 }
 \arguments{
-\item{where}{A matrix with whole-rock composition, probably coming from GCDkit
-#' /!\ uses GCDkit !! Should maybe move to Figaro}
+\item{where}{A matrix with whole-rock composition, probably coming from GCDkit}
 }
 \description{
 Recalculate Otha + Arai M, F and W parameters

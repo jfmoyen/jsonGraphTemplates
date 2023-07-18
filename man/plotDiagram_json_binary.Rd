@@ -10,7 +10,8 @@ plotDiagram_json_binary(
   lbl,
   new,
   template_options,
-  template_colors
+  template_colors,
+  transform_options
 )
 }
 \arguments{
@@ -25,6 +26,8 @@ plotDiagram_json_binary(
 \item{template_options}{See plotDiagram_json}
 
 \item{template_colors}{See plotDiagram_json}
+
+\item{transform_options}{See plotDiagram_json}
 }
 \description{
 Inner function, for binary plots

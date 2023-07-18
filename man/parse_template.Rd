@@ -5,7 +5,7 @@
 \title{Mostly, a wrapper to parse individual template elements
 Works with template_element_parser}
 \usage{
-parse_template(graphDef, template_options, template_colors)
+parse_template(graphDef, template_options = NULL, template_colors = NULL)
 }
 \arguments{
 \item{template_options}{See plotDiagram_json}
