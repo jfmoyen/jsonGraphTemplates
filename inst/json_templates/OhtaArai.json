@@ -7,7 +7,7 @@
     "templateAuthor": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
-      
+
     "RDialect": "base",
     "optionSwitches": {"showText":  "Default option to show diagram text"},
     "optionDefaults": {"showText": true},
@@ -31,7 +31,7 @@
     },
     "template": {
         "lines21": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 1,
@@ -47,13 +47,13 @@
             "col": "black"
         },
         "GCDkit": {
-            "type": "NULL",
+            "plotFun": "NULL",
             "plot.type": "ternary",
             "plot.position": 305,
             "plot.name": "Ohta + Arai (2007) FMW weathering index"
         },
         "igtrend": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.0194,
                 0.075,
@@ -95,7 +95,7 @@
             "lwd": 2
         },
         "grtrend": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.1611,
                 0.2139,
@@ -124,7 +124,7 @@
             "lty": "dotted"
         },
         "ditrend": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.4556,
                 0.5056,
@@ -153,7 +153,7 @@
             "lty": "dotted"
         },
         "bstrend": {
-            "type": "lines",
+            "plotFun": "lines",
             "x": [
                 0.5222,
                 0.5833,
@@ -172,7 +172,7 @@
             "lty": "dotted"
         },
         "model_rocks": {
-            "type": "points",
+            "plotFun": "points",
             "x": [
                 0.15,
                 0.2222,
@@ -194,7 +194,7 @@
             "cex": 1.5
         },
         "mr_name": {
-            "type": "text",
+            "plotFun": "text",
             "x": [
                 0.135,
                 0.2072,

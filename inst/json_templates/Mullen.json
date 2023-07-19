@@ -7,7 +7,7 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
-    
+
     "RDialect": "base",
     "optionSwitches": {"showText":  "Default option to show diagram text"},
     "optionDefaults": {"showText": true},
@@ -173,7 +173,15 @@
             "plotFun": "text",
             "x": 0.8,
             "y": 0.9,
-            "text": "45 < SiO2 < 54",
+            "text": "expression(45*symbol(' ')*wt.*symbol('%') < {SiO[2]})",
+            "col": "pltcol3",
+            "switch": "showText"
+        },
+         "text11": {
+            "plotFun": "text",
+            "x": 0.8,
+            "y": 0.85,
+            "text": "expression({SiO[2]} < 54*symbol(' ')*wt.*symbol('%'))",
             "col": "pltcol3",
             "switch": "showText"
         }

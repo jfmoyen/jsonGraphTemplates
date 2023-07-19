@@ -34,40 +34,40 @@
     },
     "template": {
         "lines1": {
-            "plotfun": "abline",
+            "plotFun": "abline",
             "a": 0,
             "b": 100,
             "lty": "dashed",
             "col": "pltcol2"
         },
         "lines2": {
-            "plotfun": "abline",
+            "plotFun": "abline",
             "a": 0,
             "b": 20,
             "lty": "dashed",
             "col": "pltcol2"
         },
         "lines3": {
-            "plotfun": "abline",
+            "plotFun": "abline",
             "a": 0,
             "b": 50,
             "col": "pltcol2"
         },
         "lines4": {
-            "plotfun": "abline",
+            "plotFun": "abline",
             "a": 0,
             "b": 10,
             "lty": "dashed",
             "col": "pltcol2"
         },
         "GCDkit": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 209,
             "plot.name": "Shervais (1982)"
         },
         "text1": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 10,
             "y": 570,
             "text": "ARC",
@@ -76,7 +76,7 @@
             "switch": "showText"
         },
         "text2": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 15,
             "y": 570,
             "text": "OFB",
@@ -85,7 +85,7 @@
             "switch": "showText"
         },
         "text3": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 3,
             "y": 540,
             "text": "Ti/V=10",
@@ -94,7 +94,7 @@
             "switch": "showText"
         },
         "text4": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 13.2,
             "y": 540,
             "text": "Ti/V=20",
@@ -103,7 +103,7 @@
             "switch": "showText"
         },
         "text5": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 23.5,
             "y": 290,
             "text": "Ti/V=100",
@@ -112,7 +112,7 @@
             "switch": "showText"
         },
         "text6": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 23.5,
             "y": 540,
             "text": "Ti/V=50",

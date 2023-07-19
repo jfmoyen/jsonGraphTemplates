@@ -35,7 +35,7 @@
     },
     "template": {
         "clssf": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3,
@@ -72,7 +72,7 @@
             ]
         },
         "lines1": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 30,
                 41,
@@ -94,7 +94,7 @@
             "col": "pltcol2"
         },
         "lines2": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 41,
                 45,
@@ -110,7 +110,7 @@
             "col": "pltcol2"
         },
         "lines3": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 45,
                 52,
@@ -126,7 +126,7 @@
             "col": "pltcol2"
         },
         "lines4": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 52,
                 57,
@@ -142,7 +142,7 @@
             "col": "pltcol2"
         },
         "lines5": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 57,
                 63,
@@ -158,7 +158,7 @@
             "col": "pltcol2"
         },
         "lines6": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 63,
                 77,
@@ -174,7 +174,7 @@
             "col": "pltcol2"
         },
         "lines7": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 77,
                 100,
@@ -192,7 +192,7 @@
             "col": "pltcol2"
         },
         "lines8": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 45,
                 52,
@@ -206,7 +206,7 @@
             "col": "pltcol2"
         },
         "lines9": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 52,
                 57,
@@ -222,7 +222,7 @@
             "col": "pltcol2"
         },
         "lines10": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 57,
                 63,
@@ -238,7 +238,7 @@
             "col": "pltcol2"
         },
         "lines11": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 63,
                 69,
@@ -254,7 +254,7 @@
             "col": "pltcol2"
         },
         "lines12": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 41,
                 45,
@@ -274,7 +274,7 @@
             "col": "pltcol2"
         },
         "lines13": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 49.4,
                 53,
@@ -290,7 +290,7 @@
             "col": "pltcol2"
         },
         "lines14": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 53,
                 57.6,
@@ -306,7 +306,7 @@
             "col": "pltcol2"
         },
         "lines15": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 57.6,
                 69,
@@ -320,25 +320,25 @@
             "col": "pltcol2"
         },
         "lines16": {
-            "plotfun": "abline",
+            "plotFun": "abline",
             "v": 45,
             "lty": "dashed",
             "col": "pltcol3"
         },
         "lines17": {
-            "plotfun": "abline",
+            "plotFun": "abline",
             "v": 52,
             "lty": "dashed",
             "col": "pltcol3"
         },
         "lines18": {
-            "plotfun": "abline",
+            "plotFun": "abline",
             "v": 63,
             "lty": "dashed",
             "col": "pltcol3"
         },
         "lines19": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 39.2,
                 40,
@@ -370,13 +370,13 @@
             "switch":"alkline"
         },
         "GCDkit": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 21,
             "plot.name": "TAS (Le Bas et al. 1986)"
         },
         "text1": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 43,
             "y": 1.55,
             "text": "Picrobasalt",
@@ -386,7 +386,7 @@
             "switch": "showText"
         },
         "text2": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 48.5,
             "y": 2.8,
             "text": "Basalt",
@@ -395,7 +395,7 @@
             "switch": "showText"
         },
         "text3": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 54.8,
             "y": 3,
             "text": "Basaltic\nandesite",
@@ -404,7 +404,7 @@
             "switch": "showText"
         },
         "text4": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 59.9,
             "y": 3,
             "text": "Andesite",
@@ -413,7 +413,7 @@
             "switch": "showText"
         },
         "text5": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 67,
             "y": 3,
             "text": "Dacite",
@@ -422,7 +422,7 @@
             "switch": "showText"
         },
         "text6": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 75,
             "y": 8.3,
             "text": "Rhyolite",
@@ -430,7 +430,7 @@
             "switch": "showText"
         },
         "text7": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 63.5,
             "y": 11.2,
             "text": "Trachyte\nTrachydacite",
@@ -438,7 +438,7 @@
             "switch": "showText"
         },
         "text8": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 57.8,
             "y": 8.5,
             "text": "Trachy-\nandesite",
@@ -446,7 +446,7 @@
             "switch": "showText"
         },
         "text9": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 52.95,
             "y": 7,
             "text": "Basaltic\ntrachy-\nandesite",
@@ -455,7 +455,7 @@
             "switch": "showText"
         },
         "text10": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 49.2,
             "y": 5.65,
             "text": "Trachy-\nbasalt",
@@ -464,7 +464,7 @@
             "switch": "showText"
         },
         "text11": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 45,
             "y": 7,
             "text": "Tephrite\nBasanite",
@@ -472,7 +472,7 @@
             "switch": "showText"
         },
         "text12": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 49.2,
             "y": 9.3,
             "text": "Phono-\ntephrite",
@@ -480,7 +480,7 @@
             "switch": "showText"
         },
         "text13": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 53,
             "y": 11.5,
             "text": "Tephri-\nphonolite",
@@ -488,7 +488,7 @@
             "switch": "showText"
         },
         "text14": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 57,
             "y": 14,
             "text": "Phonolite",
@@ -496,7 +496,7 @@
             "switch": "showText"
         },
         "text15": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 43,
             "y": 12,
             "text": "Foidite",
@@ -504,7 +504,7 @@
             "switch": "showText"
         },
         "text16": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 38,
             "y": 2,
             "text": "Alkaline",
@@ -513,7 +513,7 @@
             "switch":"alkline"
         },
         "text17": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 55,
             "y": 1,
             "text": "Subalkaline/Tholeiitic",
@@ -522,7 +522,7 @@
             "switch":"alkline"
         },
         "text18": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 41,
             "y": 15.5,
             "text": "Ultrabasic",
@@ -530,7 +530,7 @@
             "switch": "showText"
         },
         "text19": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 49,
             "y": 15.5,
             "text": "Basic",
@@ -538,7 +538,7 @@
             "switch": "showText"
         },
         "text20": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 58,
             "y": 15.5,
             "text": "Intermediate",
@@ -546,7 +546,7 @@
             "switch": "showText"
         },
         "text21": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 67,
             "y": 15.5,
             "text": "Acid",

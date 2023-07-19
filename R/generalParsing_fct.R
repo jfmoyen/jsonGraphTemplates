@@ -110,8 +110,8 @@ template_element_parser<-function(tpl_el,default_options,
       # remove switch if all true, keep the element
       tpl_el$switch <- NULL
     }else{
-      # else drop the element
-      tpl_el <- NULL
+      # else drop the element and exit the function
+      tpl_el <- NULL; return(tpl_el)
     }
   }
 
@@ -131,9 +131,12 @@ template_element_parser<-function(tpl_el,default_options,
     }
   }
 
-
-#### Text defined as expressions
-
+#### Text defined as expressions - parse it!
+  if(tpl_el$plotFun == "text"){
+    if( grepl("expression",tpl_el$text) ){
+      tpl_el$text <- eval(parse(text = tpl_el$text) )
+    }
+  }
 
   return(tpl_el)
 }

@@ -84,7 +84,7 @@ plotDiagram_json <- function(json, path = NULL,
 
   #### GCDkit color defaults ####
   # if the user did not specify them, use GCDkit defaults
-
+  # NB in non-GCDkit parsers, plt.col should have sensible defaults !
   if(is.null(color_options)){
 
     if(getOption("gcd.plot.bw")){

@@ -35,7 +35,7 @@
     "log": "xy",
     "template": {
         "clssf": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3,
@@ -64,7 +64,7 @@
             ]
         },
         "lines1": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.4624,
                 0.7404,
@@ -89,7 +89,7 @@
             "lwd": 3
         },
         "lines2": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -0.1871,
                 0.4624,
@@ -110,7 +110,7 @@
             "lwd": 3
         },
         "lines3": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.4624,
                 1,
@@ -129,7 +129,7 @@
             "lwd": 3
         },
         "lines4": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 1,
                 1,
@@ -158,7 +158,7 @@
             "lwd": 3
         },
         "lines5": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 1,
                 0.2041,
@@ -183,7 +183,7 @@
             "lwd": 3
         },
         "lines6": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 0.0792,
                 0.2788,
@@ -204,7 +204,7 @@
             "lwd": 3
         },
         "lines7": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -0.1871,
                 -0.0269,
@@ -223,7 +223,7 @@
             "lwd": 3
         },
         "lines8": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -0.1871,
                 -0.1871,
@@ -246,7 +246,7 @@
             "lwd": 3
         },
         "lines9": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -0.3188,
                 -0.1871,
@@ -271,7 +271,7 @@
             "lwd": 3
         },
         "lines10": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -0.6778,
                 -0.3188,
@@ -290,7 +290,7 @@
             "lwd": 3
         },
         "lines11": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -0.1871,
                 -0.1871,
@@ -311,13 +311,13 @@
             "lwd": 3
         },
         "GCDkit": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 26,
             "plot.name": "Nb/Y - Zr/TiO2 (Winchester + Floyd 1977)"
         },
         "lines21": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 0.33,
                 0.94,
@@ -335,7 +335,7 @@
             "col": "pltcol2"
         },
         "lines22": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 1.2,
                 5.5,
@@ -351,7 +351,7 @@
             "col": "pltcol2"
         },
         "lines23": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 2.9,
                 1.4,
@@ -367,7 +367,7 @@
             "col": "pltcol2"
         },
         "lines24": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 0.94,
                 0.65,
@@ -381,7 +381,7 @@
             "col": "pltcol2"
         },
         "lines25": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 0.36,
                 0.65
@@ -393,7 +393,7 @@
             "col": "pltcol2"
         },
         "lines26": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 0.027,
                 0.21,
@@ -410,7 +410,7 @@
             "col": "pltcol2"
         },
         "lines27": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 0.022,
                 0.34
@@ -423,7 +423,7 @@
             "col": "pltcol2"
         },
         "lines28": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 0.19,
                 0.65
@@ -436,7 +436,7 @@
             "col": "pltcol2"
         },
         "lines29": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 5.5,
                 10
@@ -449,7 +449,7 @@
             "col": "pltcol2"
         },
         "lines30": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 1.9,
                 2.1,
@@ -470,7 +470,7 @@
             "lty": "dashed"
         },
         "text1": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 4,
             "y": 2,
             "text": "Phonolite",
@@ -480,7 +480,7 @@
             "switch": "showText"
         },
         "text2": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 2,
             "y": 0.15,
             "text": "Trachyte",
@@ -490,7 +490,7 @@
             "switch": "showText"
         },
         "text3": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 0.2,
             "y": 0.3,
             "text": "Rhyolite",
@@ -500,7 +500,7 @@
             "switch": "showText"
         },
         "text4": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 0.02,
             "y": 0.008,
             "text": "Andesite/Basalt",
@@ -510,7 +510,7 @@
             "switch": "showText"
         },
         "text5": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 0.02,
             "y": 0.1,
             "text": "Rhyodacite/Dacite",
@@ -520,7 +520,7 @@
             "switch": "showText"
         },
         "text6": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 0.04,
             "y": 0.002,
             "text": "SubAlkaline Basalt",
@@ -530,7 +530,7 @@
             "switch": "showText"
         },
         "text7": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 1,
             "y": 0.05,
             "text": "Trachy-\nandesite",
@@ -540,7 +540,7 @@
             "switch": "showText"
         },
         "text8": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 1,
             "y": 0.003,
             "text": "Alk-Bas",
@@ -550,7 +550,7 @@
             "switch": "showText"
         },
         "text9": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 0.5,
             "y": 2,
             "text": "Comendite\nPantellerite",
@@ -560,7 +560,7 @@
             "switch": "showText"
         },
         "text10": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 3.5,
             "y": 0.01,
             "text": "Basanite\nNephelinite",
@@ -570,7 +570,7 @@
             "switch": "showText"
         },
         "text11": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 0.015,
             "y": 0.04,
             "text": "Andesite",

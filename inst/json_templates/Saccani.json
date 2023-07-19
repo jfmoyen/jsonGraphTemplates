@@ -35,7 +35,7 @@
     "log": "xy",
     "template": {
         "lines1": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 0.01,
                 2.2
@@ -47,7 +47,7 @@
             "col": "pltcol2"
         },
         "lines2": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 0.01,
                 0.306,
@@ -61,7 +61,7 @@
             "col": "pltcol2"
         },
         "lines3": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 0.306,
                 0.5
@@ -73,7 +73,7 @@
             "col": "pltcol2"
         },
         "points1": {
-            "plotfun": "points",
+            "plotFun": "points",
             "x": 0.306,
             "y": 0.708,
             "pch": 16,
@@ -81,7 +81,7 @@
             "cex": 2
         },
         "arrows1": {
-            "plotfun": "arrows",
+            "plotFun": "arrows",
             "x0": 0.1,
             "y0": 0.015,
             "x1": 2,
@@ -94,13 +94,13 @@
             "lwd": 2
         },
         "GCDkit": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 200.5,
             "plot.name": "NbN - ThN (Saccani 2015)"
         },
         "text5": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 2.1,
             "y": 0.013,
             "text": "DIVERGENT PLATE &\nWITHIN-PLATE SETTINGS",
@@ -113,7 +113,7 @@
             "switch": "showText"
         },
         "text6": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 0.09,
             "y": 0.013,
             "text": "CONVERGENT\nPLATE SETTINGS",
@@ -126,7 +126,7 @@
             "switch": "showText"
         },
         "text7": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 0.2,
             "y": 17.5,
             "text": "V o l c a n i c   A r c   A r r a y",
@@ -140,7 +140,7 @@
             "switch": "showText"
         },
         "text8": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 2.89,
             "y": 3.55,
             "text": "M O R B - O I B  A r r a y",
@@ -154,7 +154,7 @@
             "switch": "showText"
         },
         "text9": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 0.35,
             "y": 0.708,
             "text": "PM",
@@ -163,7 +163,7 @@
             "switch": "showText"
         },
         "text10": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 0.8,
             "y": 40,
             "text": "Continental margin\nvolcanic arc & \npolygenetic crust\nisland arc",
@@ -176,7 +176,7 @@
             "switch": "showText"
         },
         "text10.1": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 0.26,
             "y": 2.74,
             "text": "forearc &\nintra-arc",
@@ -189,7 +189,7 @@
             "switch": "showText"
         },
         "text10.2": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 0.03,
             "y": 0.12,
             "text": "nascent forearc",

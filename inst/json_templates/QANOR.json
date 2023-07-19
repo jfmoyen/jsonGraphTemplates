@@ -7,18 +7,18 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>, J.-F. Moyen <jfmoyen@gmail.com>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
-    
+
     "RDialect": "GCDkit",
     "optionSwitches": {
         "showText":  "Default option to show diagram text"},
     "optionDefaults": {
         "showText": true
     },
-    
+
     "diagramType": "binary",
     "dataTransform": "Mesonorm",
 	"dataTransformParams": {"GUI":false},
-	
+
     "axesDefinition": {
         "X": "100*Anorthite/(Orthoclase+Anorthite)",
         "Y": "100*Quartz/(Quartz+Orthoclase+Albite+Anorthite)"
@@ -39,7 +39,7 @@
     },
     "template": {
         "clssf": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3,
@@ -82,7 +82,7 @@
             ]
         },
         "polygon2": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -0.1,
                 12.5,
@@ -99,7 +99,7 @@
             ]
         },
         "polygon3a": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 12.5,
                 22.4,
@@ -116,7 +116,7 @@
             ]
         },
         "polygon3b": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 22.4,
                 40,
@@ -133,7 +133,7 @@
             ]
         },
         "polygon4": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 40,
                 62,
@@ -150,7 +150,7 @@
             ]
         },
         "polygon5a": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 62,
                 81.8,
@@ -167,7 +167,7 @@
             ]
         },
         "polygon5b": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 81.8,
                 100.1,
@@ -184,7 +184,7 @@
             ]
         },
         "polygon6s": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -0.1,
                 16.25,
@@ -201,7 +201,7 @@
             ]
         },
         "polygon7s": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 16.25,
                 29.6,
@@ -218,7 +218,7 @@
             ]
         },
         "polygon8s": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 29.6,
                 47.5,
@@ -235,7 +235,7 @@
             ]
         },
         "polygon9s": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 47.5,
                 68,
@@ -252,7 +252,7 @@
             ]
         },
         "polygon10as": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 68,
                 86.45,
@@ -269,7 +269,7 @@
             ]
         },
         "polygon10bs": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 86.45,
                 100.1,
@@ -286,7 +286,7 @@
             ]
         },
         "polygon6": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 -0.1,
                 17.5,
@@ -303,7 +303,7 @@
             ]
         },
         "polygon7": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 17.5,
                 32,
@@ -320,7 +320,7 @@
             ]
         },
         "polygon8": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 32,
                 50,
@@ -337,7 +337,7 @@
             ]
         },
         "polygon9": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 50,
                 70,
@@ -354,7 +354,7 @@
             ]
         },
         "polygon10a": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 70,
                 88,
@@ -371,7 +371,7 @@
             ]
         },
         "polygon10b": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "x": [
                 88,
                 100.1,
@@ -388,23 +388,23 @@
             ]
         },
         "GCDkit": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 38.5,
             "plot.name": "Q-ANOR plot (Streckeisen + Le Maitre 1979)"
         },
         "lines1": {
-            "plotfun": "abline",
+            "plotFun": "abline",
             "h": 5,
             "col": "pltcol2"
         },
         "lines2": {
-            "plotfun": "abline",
+            "plotFun": "abline",
             "h": 20,
             "col": "pltcol2"
         },
         "lines3": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 70,
                 50
@@ -416,7 +416,7 @@
             "col": "pltcol2"
         },
         "lines4": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 50,
                 40,
@@ -430,7 +430,7 @@
             "col": "pltcol2"
         },
         "lines5": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 50,
                 40,
@@ -444,7 +444,7 @@
             "col": "pltcol2"
         },
         "lines6": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 17.5,
                 10,
@@ -458,7 +458,7 @@
             "col": "pltcol2"
         },
         "lines7": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 32,
                 29.6,
@@ -472,7 +472,7 @@
             "col": "pltcol2"
         },
         "lines8": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 88,
                 72.5
@@ -485,7 +485,7 @@
             "lty": "dashed"
         },
         "text1": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 5,
             "y": 25,
             "text": "(2)",
@@ -493,7 +493,7 @@
             "switch": "showText"
         },
         "text2": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 15,
             "y": 25,
             "text": "(3a)",
@@ -501,7 +501,7 @@
             "switch": "showText"
         },
         "text3": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 28,
             "y": 25,
             "text": "(3b)",
@@ -509,7 +509,7 @@
             "switch": "showText"
         },
         "text4": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 50,
             "y": 25,
             "text": "(4)",
@@ -517,7 +517,7 @@
             "switch": "showText"
         },
         "text5": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 70,
             "y": 25,
             "text": "(5a)",
@@ -525,7 +525,7 @@
             "switch": "showText"
         },
         "text6": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 90,
             "y": 25,
             "text": "(5b)",
@@ -533,7 +533,7 @@
             "switch": "showText"
         },
         "text7": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 7,
             "y": 13,
             "text": "(6*)",
@@ -541,7 +541,7 @@
             "switch": "showText"
         },
         "text8": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 20,
             "y": 13,
             "text": "(7*)",
@@ -549,7 +549,7 @@
             "switch": "showText"
         },
         "text9": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 35,
             "y": 13,
             "text": "(8*)",
@@ -557,7 +557,7 @@
             "switch": "showText"
         },
         "text10": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 55,
             "y": 13,
             "text": "(9*)",
@@ -565,7 +565,7 @@
             "switch": "showText"
         },
         "text11": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 75,
             "y": 13,
             "text": "(10a*)",
@@ -573,7 +573,7 @@
             "switch": "showText"
         },
         "text12": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 92,
             "y": 13,
             "text": "(10b*)",
@@ -581,7 +581,7 @@
             "switch": "showText"
         },
         "text13": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 9,
             "y": 2.5,
             "text": "(6)",
@@ -589,7 +589,7 @@
             "switch": "showText"
         },
         "text14": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 25,
             "y": 2.5,
             "text": "(7)",
@@ -597,7 +597,7 @@
             "switch": "showText"
         },
         "text15": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 40,
             "y": 2.5,
             "text": "(8)",
@@ -605,7 +605,7 @@
             "switch": "showText"
         },
         "text16": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 58,
             "y": 2.5,
             "text": "(9)",
@@ -613,7 +613,7 @@
             "switch": "showText"
         },
         "text17": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 78,
             "y": 2.5,
             "text": "(10a)",
@@ -621,7 +621,7 @@
             "switch": "showText"
         },
         "text18": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 95,
             "y": 2.5,
             "text": "(10b)",

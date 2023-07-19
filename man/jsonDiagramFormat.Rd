@@ -52,8 +52,8 @@ These items can be included to customize further the template
 The template proper is a list of potentially many elements. They all belong to a "template": element, itself a dictionary of the form "element_name":"description". Each template element starts with a "type" element that defines how it will be interpreted by the parser. The following types are understood:
 \itemize{
 \item{"plotFun":"NULL" }{Indicates which plotting function to use. Elements with plotFun "NULL" won't be plotted on the template. They can, however, be used for clasification}
-\item{"type":"lines"}{Elements of type lines will draw lines. Lines are defined by x, y, possibly col, lty }
-\item{"type:""test" }{ .... }
+\item{"plotFun":"lines"}{Elements of type lines will draw lines. Lines are defined by x, y, possibly col, lty }
+\item{"plotFun:""text" }{Text elements can be defined as plain strings, or as expressions, i.e. both \code{"text": "SiO2"} and \code{"text": "expression({SiO[2]})"  } will work - of course, the latter will be formatted.}
 }
 
 \subsection{Special template items}{
@@ -66,11 +66,8 @@ Figaro parser tries to conform to GCDkit usage. Colours names pltcol1, pltcol2 a
 
 The above will NOT affect any colour defined otherwise in json template : "red" or "myColour" won't be changed by gcd.plot.bw, for instance.
 
-In short, the order of preference is
-plt.col
-gcd.plot.bw
-user-specified option passed by color_options
-hard coded color name}
+In short, the order of preference is hard coded color > user-specified (color_options) > gcd.plot.bw > plt.col
+}
 
 \item{switching: }{Elements can be controlled by switching. If an element has a "switch" field, this fields contains the name of the (boolean) switch that will control its appearance. An element with no "switch" will always appear.
 The list of switches should be present in "optionSwitches".

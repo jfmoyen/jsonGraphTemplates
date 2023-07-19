@@ -30,7 +30,7 @@
     },
     "template": {
         "clssf": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3,
@@ -45,7 +45,7 @@
             ]
         },
         "lines1": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 1,
                 1,
@@ -62,7 +62,7 @@
             ]
         },
         "lines2": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 1,
                 2,
@@ -79,7 +79,7 @@
             ]
         },
         "lines3": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 1,
                 1,
@@ -96,7 +96,7 @@
             ]
         },
         "lines4": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 1,
                 2,
@@ -113,17 +113,17 @@
             ]
         },
         "lines11": {
-            "plotfun": "abline",
+            "plotFun": "abline",
             "h": 1,
             "col": "pltcol2"
         },
         "lines12": {
-            "plotfun": "abline",
+            "plotFun": "abline",
             "v": 1,
             "col": "pltcol2"
         },
         "lines13": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 7
@@ -136,13 +136,13 @@
             "lty": "dashed"
         },
         "GCDkit": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 14,
             "plot.name": "A/CNK - A/NK (Shand 1943)"
         },
         "text1": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 0.55,
             "y": 6,
             "text": "Metaluminous",
@@ -151,7 +151,7 @@
             "switch": "showText"
         },
         "text2": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 1.05,
             "y": 6,
             "text": "Peraluminous",
@@ -160,7 +160,7 @@
             "switch": "showText"
         },
         "text3": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 0.55,
             "y": 0.5,
             "text": "Peralkaline",

@@ -34,7 +34,7 @@
     },
     "template": {
         "clssf": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "use": [
                 2,
                 3,
@@ -53,7 +53,7 @@
             ]
         },
         "lines1": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 0.41,
                 6.86,
@@ -104,7 +104,7 @@
             ]
         },
         "lines2": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 132.6,
                 126.2,
@@ -149,7 +149,7 @@
             ]
         },
         "lines3": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 200.3,
                 193.8,
@@ -264,7 +264,7 @@
             ]
         },
         "lines4": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 37.94,
                 43.73,
@@ -383,7 +383,7 @@
             ]
         },
         "lines5": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 6.86,
@@ -450,7 +450,7 @@
             ]
         },
         "lines6": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 600,
@@ -467,7 +467,7 @@
             ]
         },
         "lines7": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 0,
                 6.86,
@@ -532,7 +532,7 @@
             "lty": "dashed"
         },
         "lines8": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 38.78,
                 43.73,
@@ -601,7 +601,7 @@
             "lty": "dashed"
         },
         "lines9": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 29.16,
                 30.81,
@@ -640,7 +640,7 @@
             "lty": "dashed"
         },
         "lines10": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 33.27,
                 38.6,
@@ -675,18 +675,18 @@
             "lty": "dashed"
         },
         "lines11": {
-            "plotfun": "abline",
+            "plotFun": "abline",
             "h": 0,
             "col": 1
         },
         "GCDkit": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 36,
             "plot.name": "B-A plot (modified by Villaseca et al. 1998)"
         },
         "text1": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 150,
             "y": 100,
             "text": "h-P",
@@ -695,7 +695,7 @@
             "switch": "showText"
         },
         "text2": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 150,
             "y": 25,
             "text": "m-P",
@@ -704,7 +704,7 @@
             "switch": "showText"
         },
         "text3": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 60,
             "y": 10,
             "text": "l-P",
@@ -713,7 +713,7 @@
             "switch": "showText"
         },
         "text4": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 10,
             "y": 50,
             "text": "f-P",
@@ -722,7 +722,7 @@
             "switch": "showText"
         },
         "text5": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 100,
             "y": -70,
             "text": "Metaluminous",
@@ -732,7 +732,7 @@
             "switch": "showText"
         },
         "text6": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 100,
             "y": 70,
             "text": "Peraluminous",

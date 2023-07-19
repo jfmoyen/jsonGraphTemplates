@@ -7,7 +7,7 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
-    
+
     "RDialect": "base",
     "optionSwitches": {"showText":  "Default option to show diagram text"},
     "optionDefaults": {"showText": true},
@@ -31,7 +31,7 @@
     },
     "template": {
         "lines1": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 1.6,
                 4.4,
@@ -46,7 +46,7 @@
             "lty": "solid"
         },
         "lines2": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 3,
                 4.4
@@ -59,13 +59,13 @@
             "lty": "dashed"
         },
         "GCDkit": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 107,
             "plot.name": "Sylvester (1989)"
         },
         "text1": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 1,
             "y": 1.85,
             "text": "Calc-alkaline & Strongly peraluminous",
@@ -75,7 +75,7 @@
             "switch": "showText"
         },
         "text2": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 1,
             "y": 1.15,
             "text": "Alkaline",
@@ -85,10 +85,10 @@
             "switch": "showText"
         },
         "text3": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 9,
             "y": 2.15,
-            "text": "SiO2>68",
+            "text": "expression({SiO[2]} > 68*symbol(' ')*wt.*symbol('%'))" ,
             "cex": 1,
             "adj": 0,
             "col": "pltcol3",

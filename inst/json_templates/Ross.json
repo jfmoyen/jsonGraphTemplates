@@ -7,7 +7,7 @@
     "templateAuthor": "V. Janoušek <vojtech.janousek@geology.cz>",
     "templateConversion": "J.-F. Moyen <jfmoyen@gmail.com>",
     "templateHistory": "Converted from original GCDkit function",
-    
+
     "RDialect": "base",
     "optionSwitches": {"showText":  "Default option to show diagram text"},
     "optionDefaults": {"showText": true},
@@ -31,7 +31,7 @@
     "log": "xy",
     "template": {
         "lines1": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 1,
                 20
@@ -43,7 +43,7 @@
             "col": "pltcol2"
         },
         "lines2": {
-            "plotfun": "lines",
+            "plotFun": "lines",
             "x": [
                 1,
                 20
@@ -55,13 +55,13 @@
             "col": "pltcol2"
         },
         "GCDkit": {
-            "plotfun": "NULL",
+            "plotFun": "NULL",
             "plot.type": "binary",
             "plot.position": 303,
             "plot.name": "Ross + Bedard (2009) Zr/Y-Th/Yb"
         },
         "text1": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 10,
             "y": 0.4,
             "text": "\"Calc-alkaline\"",
@@ -71,7 +71,7 @@
             "switch": "showText"
         },
         "text2": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 7.2,
             "y": 0.1,
             "text": "\"Transitional\"",
@@ -81,7 +81,7 @@
             "switch": "showText"
         },
         "text3": {
-            "plotfun": "text",
+            "plotFun": "text",
             "x": 5,
             "y": 0.03,
             "text": "\"Tholeiitic\"",

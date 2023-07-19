@@ -1,7 +1,7 @@
 Package: jsonGraphTemplates
 Type: Package
 Title: Use json defined Templates to plot Graphs
-Version: 0.5.0
+Version: 0.5.1
 Author: J.-F. Moyen <jfmoyen@gmail.com>
 Maintainer: J.-F. Moyen <jfmoyen@gmail.com>
 Description: Primary maneant for GCDkit, this packages allows
