@@ -146,6 +146,12 @@ template_element_parser<-function(tpl_el,default_options,
 #' @param graphDef A graph definition, loaded from json
 #' @param W Axis to process
 #' /!\ uses GCDkit !! Should maybe move to Figaro
+# In fact the problem is worse. In a non GCDkit context we can
+# not use GCDkit::annotate. The axes are defined as variables
+# which allows to use them in the data. So we must find either
+# (i) a non-GCDkit way to do the equivalent of annotate or
+# (ii) perhaps easier, override axes labels somehow (and manually).
+
 .make.names<-function(graphDef,W){
   if(!is.null(graphDef$axesName[[W]])){
     wlab <- GCDkit::annotate(graphDef$axesName[[W]])
